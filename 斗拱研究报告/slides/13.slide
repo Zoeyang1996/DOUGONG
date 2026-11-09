@@ -1,0 +1,98 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>三个阶段的体量对比</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>03 · 形制演变</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'column' }}>
+
+        {/* 三阶段图 */}
+        <Box style={{ width: 1160, height: 248 }}>
+            <svg width={1160} height={248} viewBox='0 0 1160 248'>
+                {/* 基线 */}
+                <line x1='20' y1='222' x2='1140' y2='222' stroke='#D6DCE5' strokeWidth='1.5' />
+
+                {/* 唐—宋 */}
+                <g>
+                    <rect x='112' y='118' width='24' height='104' fill='#9C7A5B' />
+                    <rect x='88' y='100' width='72' height='18' fill='#C9A882' />
+                    <rect x='70' y='82' width='108' height='18' fill='#C9A882' />
+                    <rect x='52' y='64' width='144' height='18' fill='#C9A882' />
+                    <rect x='34' y='46' width='180' height='18' fill='#C9A882' />
+                    <rect x='34' y='34' width='180' height='12' fill='#1E4FA8' opacity='0.9' />
+                    <text x='124' y='20' fontSize='15' fill='#1E4FA8' textAnchor='middle' fontFamily='Arial'>TANG–SONG</text>
+                    <text x='124' y='244' fontSize='14' fill='#8B97A8' textAnchor='middle' fontFamily='Arial'>height ≈ 1/2 column</text>
+                </g>
+
+                {/* 中间过渡 */}
+                <g>
+                    <rect x='512' y='136' width='24' height='86' fill='#9C7A5B' />
+                    <rect x='492' y='120' width='64' height='16' fill='#C9A882' />
+                    <rect x='476' y='104' width='96' height='16' fill='#C9A882' />
+                    <rect x='460' y='88' width='128' height='16' fill='#C9A882' />
+                    <rect x='460' y='78' width='128' height='10' fill='#1E4FA8' opacity='0.9' />
+                    <text x='524' y='62' fontSize='15' fill='#1E4FA8' textAnchor='middle' fontFamily='Arial'>YUAN</text>
+                    <text x='524' y='244' fontSize='14' fill='#8B97A8' textAnchor='middle' fontFamily='Arial'>height ≈ 2/7 column</text>
+                </g>
+
+                {/* 明—清 */}
+                <g>
+                    <rect x='892' y='168' width='24' height='54' fill='#9C7A5B' />
+                    <rect x='878' y='156' width='52' height='12' fill='#C9A882' />
+                    <rect x='866' y='144' width='76' height='12' fill='#C9A882' />
+                    <rect x='854' y='132' width='100' height='12' fill='#C9A882' />
+                    <rect x='842' y='120' width='124' height='12' fill='#C9A882' />
+                    <rect x='842' y='112' width='124' height='8' fill='#1E4FA8' opacity='0.9' />
+                    <text x='904' y='96' fontSize='15' fill='#1E4FA8' textAnchor='middle' fontFamily='Arial'>MING–QING</text>
+                    <text x='904' y='244' fontSize='14' fill='#8B97A8' textAnchor='middle' fontFamily='Arial'>height ≈ 1/5 column</text>
+                </g>
+
+                {/* 递减箭头 */}
+                <line x1='250' y1='70' x2='430' y2='104' stroke='#D9534F' strokeWidth='1.5' strokeDasharray='6 5' />
+                <line x1='640' y1='100' x2='820' y2='132' stroke='#D9534F' strokeWidth='1.5' strokeDasharray='6 5' />
+            </svg>
+        </Box>
+
+        {/* 三阶段说明 */}
+        <Box style={{ width: 1160, height: 160, flexDirection: 'row', gap: 24, marginTop: 8 }}>
+
+            <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1E4FA8', paddingTop: 14 }}>
+                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>第一阶段 西周—南北朝</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 8 }}>
+                    斗拱尚是孤立的柱头托架,各朵之间互不相连。汉代起在柱间使用人字拱。
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1E4FA8', paddingTop: 14 }}>
+                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>第二阶段 唐—元</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 8 }}>
+                    斗拱与梁架拉结,连成"铺作层"水平框架。斗拱高近柱身一半,出檐达 3–4 米。
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1E4FA8', paddingTop: 14 }}>
+                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>第三阶段 明—清</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 8 }}>
+                    梁直接压在斗拱最上一跳,斗拱不再承重。尺度缩小、间距加密,转为等级标识。
+                </Text>
+            </Box>
+
+        </Box>
+
+        {/* 规律条 */}
+        <Box style={{ width: 1160, height: 64, marginTop: 16, background: '#E8EFF8', flexDirection: 'row', alignItems: 'center', paddingLeft: 20, paddingRight: 20 }}>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1, width: 96 }}>演变规律</Text>
+            <Text style={{ fontSize: 18, color: '#1A2230', flex: 1 }}>
+                体量由大变小 · 用材由雄壮到纤巧 · 分布由疏朗到繁密 · 功能由结构到装饰
+            </Text>
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>13 / 20</Text>
+    </Box>
+
+</Slide>

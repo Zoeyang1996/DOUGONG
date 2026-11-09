@@ -1,0 +1,132 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>一朵斗拱的六个零件组</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>02 · 构件体系</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:分层示意 */}
+        <Box style={{ width: 500, flexDirection: 'column' }}>
+            <svg width={480} height={450} viewBox='0 0 480 420'>
+                {/* 中心轴线 */}
+                <line x1='240' y1='40' x2='240' y2='400' stroke='#E8EFF8' strokeWidth='1' strokeDasharray='4 6' />
+
+                {/* 6 层,自下而上 */}
+                {/* 1 栌斗 */}
+                <path d='M212 392 L268 392 L276 356 L204 356 Z' fill='#8B6446' />
+                <rect x='200' y='348' width='80' height='8' fill='#C9A882' />
+
+                {/* 2 华栱 */}
+                <rect x='118' y='306' width='244' height='20' fill='#C9A882' />
+                <rect x='206' y='294' width='68' height='12' fill='#9C7A5B' />
+
+                {/* 3 横栱 */}
+                <rect x='150' y='252' width='180' height='18' fill='#C9A882' />
+                <rect x='218' y='240' width='44' height='12' fill='#9C7A5B' />
+
+                {/* 4 昂 */}
+                <path d='M336 186 L150 216' stroke='#8B6446' strokeWidth='14' strokeLinecap='butt' />
+                <path d='M336 186 L150 216' stroke='#5E4330' strokeWidth='1.5' opacity='0.35' />
+
+                {/* 5 枋 */}
+                <rect x='140' y='144' width='200' height='18' fill='#9C7A5B' />
+
+                {/* 6 耍头 + 衬枋头 */}
+                <rect x='168' y='102' width='144' height='16' fill='#C9A882' />
+                <rect x='196' y='76' width='88' height='14' fill='#8B6446' />
+
+                {/* 编号标记 */}
+                <circle cx='392' cy='372' r='15' fill='#1E4FA8' />
+                <text x='392' y='378' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>1</text>
+                <line x1='280' y1='372' x2='375' y2='372' stroke='#D6DCE5' strokeWidth='1' />
+
+                <circle cx='392' cy='314' r='15' fill='#1E4FA8' />
+                <text x='392' y='320' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>2</text>
+                <line x1='366' y1='314' x2='375' y2='314' stroke='#D6DCE5' strokeWidth='1' />
+
+                <circle cx='392' cy='261' r='15' fill='#1E4FA8' />
+                <text x='392' y='267' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>3</text>
+                <line x1='334' y1='261' x2='375' y2='261' stroke='#D6DCE5' strokeWidth='1' />
+
+                <circle cx='392' cy='202' r='15' fill='#1E4FA8' />
+                <text x='392' y='208' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>4</text>
+                <line x1='340' y1='202' x2='375' y2='202' stroke='#D6DCE5' strokeWidth='1' />
+
+                <circle cx='392' cy='153' r='15' fill='#1E4FA8' />
+                <text x='392' y='159' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>5</text>
+                <line x1='344' y1='153' x2='375' y2='153' stroke='#D6DCE5' strokeWidth='1' />
+
+                <circle cx='392' cy='95' r='15' fill='#1E4FA8' />
+                <text x='392' y='101' fontSize='16' fill='#FFFFFF' textAnchor='middle' fontFamily='Arial'>6</text>
+                <line x1='288' y1='95' x2='375' y2='95' stroke='#D6DCE5' strokeWidth='1' />
+
+                <text x='30' y='404' fontSize='13' fill='#8B97A8' fontFamily='Arial'>exploded view · 6 layers</text>
+            </svg>
+            <Text style={{ fontSize: 15, color: '#8B97A8' }}>
+                分层爆炸示意:同层构件以榫卯互扣,层与层之间以斗垫托
+            </Text>
+        </Box>
+
+        {/* 右:六类清单 */}
+        <Box style={{ width: 660, flexDirection: 'column', paddingLeft: 20 }}>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingBottom: 14, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>1</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>斗</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    方形垫块,起垫托与固定作用。分栌斗、交互斗、齐心斗、散斗四类。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingTop: 14, paddingBottom: 14, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>2</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>栱</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    弓形横木,两端卷杀。纵向为华栱,横向为横栱(泥道、瓜子、慢、令栱)。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingTop: 14, paddingBottom: 14, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>3</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>横栱层</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    与出跳方向垂直的稳定构件,卯口开在上方,让华栱与昂穿过。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingTop: 14, paddingBottom: 14, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>4</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>昂</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    斜置构件。下昂加大出檐,上昂增加高度。保国寺的下昂长逾两椽跨。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingTop: 14, paddingBottom: 14, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>5</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>枋</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    柱头枋、罗汉枋等横向联系构件,把各朵斗拱串联成整体框架。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', paddingTop: 14 }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 34 }}>6</Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230', width: 96 }}>耍头</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.55, flex: 1 }}>
+                    最上层外伸构件,与令栱相交。衬枋头为其内侧对应件,非每朵皆有。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>08 / 20</Text>
+    </Box>
+
+</Slide>

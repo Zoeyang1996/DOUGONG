@@ -1,0 +1,83 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>文献、数据与图示来源</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>04 · 来源说明</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:文献 */}
+        <Box style={{ width: 720, flexDirection: 'column', paddingRight: 36 }}>
+            <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1, marginBottom: 14 }}>主要文献与数据来源</Text>
+
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [1] 李诫. 营造法式[M]. 北宋(1103). —— 术语、材分制、铺作规定
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [2] 张十庆. 宁波保国寺大殿勘测分析与基础研究[M]. 南京: 东南大学出版社, 2012. —— 构件级测绘数据
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [3] 郭黛姮. 东来第一山——保国寺[M]. 北京: 文物出版社, 2003. —— 全寺建筑与价值研究
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [4] 窦学智, 等. 余姚保国寺大雄宝殿[J]. 文物参考资料, 1957(8): 54-60. —— 最早实测数据
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [5] 刘畅. 保国寺大殿大木结构测量数据解读[J]. 中国建筑史论汇刊, 2008(0): 27-64.
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [6] 清工部. 工程做法则例[M]. 1734. —— 清式名称体系
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [7] 中国科学院. 宋式形制和构造[EB/OL]. 中国科普博览.
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [8] 科普中国. 斗拱 / 十八斗[EB/OL]. 中国科学技术协会.
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, marginBottom: 8 }}>
+                [9] 中国宁波网. 木构重辉:解码宁波保国寺千年大殿文化基因[N]. 2021-03-23.
+            </Text>
+            <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55 }}>
+                [10] 同济大学. 基于虚拟现实技术的传统木构认知与建造[EB/OL]. 实验空间.
+            </Text>
+        </Box>
+
+        {/* 右:图示说明 */}
+        <Box style={{ width: 440, flexDirection: 'column', paddingLeft: 40, borderLeft: '1px solid #D6DCE5' }}>
+
+            <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>关于本报告的图示</Text>
+
+            <Box style={{ height: 112, background: '#E8EFF8', marginTop: 16, flexDirection: 'column', justifyContent: 'center', paddingLeft: 16, paddingRight: 16 }}>
+                <Text style={{ fontSize: 15, color: '#1E4FA8', fontWeight: 'bold', letterSpacing: 1 }}>全部为矢量示意图</Text>
+                <Text style={{ fontSize: 16, color: '#1A2230', lineHeight: 1.5, marginTop: 6 }}>
+                    本报告 6 幅结构图均为据文献数据重绘的矢量图,不是实物照片,也不含第三方图像素材。
+                </Text>
+            </Box>
+
+            <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.7, marginTop: 18 }}>
+                这样处理的原因:示意图可以确保每一处标注的构件名称、层数、位置与正文严格对应;而网络图片常存在朝代标注错误、构件指认错误与授权不明的问题。
+            </Text>
+
+            <Box style={{ width: 360, height: 1, background: '#E5E7EB', marginTop: 20, marginBottom: 18 }} />
+
+            <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.7 }}>
+                实物照片的候选清单(含来源链接、许可协议、逐张核对结论与不采用原因)另附
+                <span style={{ fontWeight: 'bold', color: '#1E4FA8' }}>《图片素材清单》</span>,
+                供后续按需替换。
+            </Text>
+
+            <Text style={{ fontSize: 13, color: '#8B97A8', lineHeight: 1.6, marginTop: 20 }}>
+                注:部分形制比例(斗拱与柱高之比)各家表述略有差异,本报告采用区间表述并标注出处,未给出单一精确值。
+            </Text>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>20 / 20</Text>
+    </Box>
+
+</Slide>

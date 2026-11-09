@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="author" content="" />
+<title>保国寺 _中国宁波网_专题稿件</title>
+<script>
+    function loadScript(url, callback){
+        var script = document.createElement ("script")
+        script.type = "text/javascript";
+        if (script.readyState){ //IE
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" || script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else { //Others
+            script.onload = function(){
+                callback();
+            };
+        }
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    function addSheetFile(path){
+        var fileref = document.createElement("link")
+        fileref.rel = "stylesheet";
+        fileref.type = "text/css";
+        fileref.href = path;
+        fileref.media = "screen";
+        var headobj = document.getElementsByTagName('head')[0];
+        headobj.appendChild(fileref);
+    }
+    window.onload = function(){
+        var ua=navigator.userAgent.toLowerCase();
+        var bIsIpad=ua.match(/ipad/i)=="ipad";
+        var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";
+        var bIsAndroid=ua.match(/android/i)=="android";
+        var bIsWM=ua.match(/windows mobile/i)=="windows mobile";
+        if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){
+            addSheetFile('http://news.cnnb.com.cn/packages/2015/css/mobile/article.css');
+            addSheetFile('http://news.cnnb.com.cn/packages/2015/css/MPreview.mobile.css');
+            loadScript("http://news.cnnb.com.cn/packages/2015/js/jquery-2.1.4.min.js",function(){
+                loadScript("http://news.cnnb.com.cn/packages/2015/js/MPreview.mobile.min.js",function(){
+                    $('#pc,embed').remove();
+                    $('#mobile').css('display', 'block');
+                    $('a').each(function(index, el) {
+                        $(this).attr('target', '_self');
+                    });
+                    var w = $(document).width() * 0.9;
+                    var h = w * 2 / 3;
+                    if(typeof(video) != "undefined"){
+                        CKobject.embed('http://flash.cnnb.com.cn:8080/ckplayer6.7/ckplayer/ckplayer.swf','a1','ckplayer_a1',w,h,true,flashvars,video,params);
+                    }
+                    $(window).bind('orientationchange',function(e){
+                        window.location.reload();
+                    });
+                    // var data = [];
+                    var title  = '保国寺 ';
+                    var direction = 'left';
+                    var wrap = document.querySelector('#overlay');
+                    var elem = document.querySelectorAll('.contentArea img');
+                    $('.contentArea img').each(function(index, el) {
+                        $(this).removeAttr('style');
+                        $(this).removeAttr('height');
+                        // data.push($(this).attr('src'));
+                    });
+                    $("a").on('touch',function(e){
+                        var href = $(this).attr("href");
+                        var classname = $(this).attr("class");
+                        // alert(classname);
+                        if(classname == "gototop"){
+                            $('body,html').animate({scrollTop:0},1000);
+                        }else{
+                            window.location.href = href;
+                        }
+                    })
+                    for(var i = 0,len = elem.length;i < len;i++){
+                        elem[i].addEventListener('touch', function(e) {
+                            // e.preventDefault();
+                            wrap.className = wrap.className + ' in';
+                            var item = [];
+                            item.push(this.src);
+                            setTimeout(function() {
+                                MPreview({
+                                    data: item,
+                                    title: title,
+                                    direction: direction,
+                                    wrap: '#overlay',
+                                    init: function() {
+                                        // window.console && console.log('MPreview.mobile init');
+                                    },
+                                    close: function() {
+                                        wrap.className = wrap.className.replace(' in', '');
+                                    }
+                                });
+                            }, 400);
+                        });
+                    };
+                });
+            });
+        }else{
+            addSheetFile('http://news.cnnb.com.cn/packages/2015/css/article.css');
+            loadScript("http://news.cnnb.com.cn/packages/2015/js/jquery-1.11.3.min.js",function(){
+                loadScript("http://news.cnnb.com.cn/packages/2015/js/public.js",function(){
+                    $('#mobile').remove();
+                    $('#pc').css('display', 'block');
+                    $('a').each(function(index, el) {
+                        $(this).attr('target', '_blank');
+                    });
+                    $('#news_more_page_div_id a').each(function(index, el) {
+                        $(this).attr('target', '_self');
+                    });
+                    $('#Zoom img').each(function(index, el) {
+                        $(this).removeAttr('style');
+                        $(this).removeAttr('height');
+                    });
+                });
+            });
+        }
+    }
+</script>
+</head>
+
+<body>
+<style>
+    #pc,#mobile{display: none;}
+</style>
+<div id="pc">
+    <div id="topMenu" class="scope">
+        <div class="logo"><img src="http://news.cnnb.com.cn/packages/2015/images/1_2.jpg" /></div>
+        <ul class="mainNav menu1">
+            <li><a href="">首页</a></li>
+            <li class="dropdown">
+                <a href='http://news.cnnb.com.cn/'  rel='dropmenu1'>新闻</a>
+                <ul>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/gnyw/gnsz/">时政要闻</a></li>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/gnyw/gngdxw/index.shtml">各地热点</a></li>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/gjyw/">国际要闻</a></li>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/gjyw/hqsy/index.shtml">环球视野</a></li>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/shxw/">社会</a></li>
+                <li class="dropNav"><a href="http://news.cnnb.com.cn/ylxw/">娱乐</a></li>
+                <li class="dropNav"><a href="http://www.cnnb.com.cn/xwzxzt/tytd/">文体</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='http://nbnews.cnnb.com.cn/'  rel='dropmenu1'>宁波</a>
+                <ul>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/sz/">时政经济</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/cj/">民生城事</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/sh/">突发现场</a></li>
+                <li class="dropNav"><a href="hhttp://nbnews.cnnb.com.cn/kjw/">科技教育</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/wt/">文化体育</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='http://nb8185.cnnb.com.cn/'  rel='dropmenu1'>e点通</a>
+                <ul>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/tiezi/ys_list.php">好医生</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/packages/2015/index.html">好律师</a></li>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/tiezi/minsheng_list.php">部门值守</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='http://bbs.cnnb.com.cn/'  rel='dropmenu1'>论坛</a>
+                <ul>
+                <li class="dropNav"><a href="http://love.cnnb.com.cn/">三江缘</a></li>
+                <li class="dropNav"><a href="http://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=2">报料</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='#'  rel='dropmenu1'>行业</a>
+                <ul>
+                <li class="dropNav"><a href="http://finance.cnnb.com.cn/">财经</a></li>
+                <li class="dropNav"><a href="http://travel.cnnb.com.cn/">旅游</a></li>
+                <li class="dropNav"><a href="http://jk.cnnb.com.cn/">健康</a></li>
+                <li class="dropNav"><a href="http://car.cnnb.com.cn/">汽车</a></li>
+                <li class="dropNav"><a href="http://house.cnnb.com.cn/">房产</a></li>
+                </ul>
+            </li>
+            <li><a href="">视频</a></li>
+        </ul>
+        <ul class="subNav">
+            <li><a href="http://www.cnnb.com.cn/search/index.html">搜索</a></li>
+            <li><a href="http://vipmail.cnnb.com.cn/">邮箱</a></li>
+            <li><a href="http://www.cnnb.com.cn/home/sitemap.html">网站地图</a></li>
+        </ul>
+    </div>
+<div id="ad_01_01">
+    <div class="left">
+        <!-- AFP Control Code/Caption.首页头条通栏(左)-->
+        <script language="JavaScript1.1" src="http://shows.cnnb.com.cn/adpolestar/door/;ap=5A7F2D2E_A58B_DEFA_97A5_AB260E64F9D4;ct=js;pu=cnnb;/?"></script>
+        <!-- AFP Control Code End/No.-->
+    </div>
+    <div class="right">
+        <!-- AFP Control Code/Caption.首页头条通栏(右)-->
+        <script language="JavaScript1.1" src="http://shows.cnnb.com.cn/adpolestar/door/;ap=74185686_1D32_BF43_DC3F_7855180AED20;ct=js;pu=cnnb;/?"></script>
+        <!-- AFP Control Code End/No.-->
+    </div>
+</div>
+
+    <div class="mainArea scope">
+        <div class="titleArea">
+            <div class="leftPart">
+                <div class="position"><span class="type"></span><span>
+<!--enorth cms block start [ name="v5.position" ]-->
+您当前的位置 ：
+<a href=http://www.cnnb.com.cn/index.shtml>中国宁波网</a>
+&nbsp;&gt;&nbsp;
+<a href=http://www.cnnb.com.cn/xwzxzt/index.shtml>新闻中心专题</a>
+&nbsp;&gt;&nbsp;
+<a href=http://zt.cnnb.com.cn/gj/index.shtml>专题稿件</a>
+<!--enorth cms block end [ name="v5.position" cost="17"]--></span></div>
+                <div class="heading">保国寺 </div>
+                <div class="subheading"></div>
+                <div class="source"><span class="left">稿源： 
+<!--enorth cms block start [ name="v5.source2013" ]-->
+宁波文化网
+
+<!--enorth cms block end [ name="v5.source2013" cost="7"]-->　 2016-04-11 17:32:00</span><span class="right">报料热线：81850000   </span></div>
+            </div>
+            <div class="rightPart">
+                <div class="right"><img src="http://news.cnnb.com.cn/packages/2015/images/erweima.png" /></div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="leftPart">
+                <div class="tool">
+                    <div class="shareBar">
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style_24x24">
+                            <a class="jiathis_button_tsina"></a>
+                            <a class="jiathis_button_tqq"></a>
+                            <a class="jiathis_button_weixin"></a>
+                            <a class="jiathis_button_qzone"></a>
+                            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        </div>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+                    </div>
+                    <div class="fontSize">
+                        <a onclick="doZoom(18)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_14.jpg" /></a>
+                        <a onclick="doZoom(16)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_15.jpg" /></a>
+                        <a onclick="doZoom(14)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_16.png" /></a>
+                    </div>
+                    <script type="text/javascript">
+                        function doZoom(size) {
+                            var zoom = document.all ? document.all['Zoom'] : document.getElementById('Zoom');
+                            zoom.style.fontSize = size + 'px';
+                        }
+                    </script>
+                </div>
+                <style>
+                    #topic a{font-size: 14px;font-weight: bold;color: #092992;}
+                    .mainArea .contentArea .leftPart .article div img{width: 100%;}
+                </style>
+                <div class="article" >
+                    <center id="topic">
+<!--enorth cms block start [ name="v5.topic" ]-->
+
+<!--enorth cms block end [ name="v5.topic" cost="4"]--></center>
+                    <div id="Zoom"><embed src="http://tvplayer.people.com.cn/player.php/xml/L3B2c2VydmljZS94bWwvLzIwMTQvOS83LzVmOTFjNGRlLTZkOGEtNDAwYS04ZDRlLTFiN2ZiZmViZjQxMC54bWw=/playerByOsmf.swf" quality="high" width="640" height="525" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" name="ptvplayer" id="ptvplayer"></embed>
+
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213871_806058.jpg" /></p>
+
+<p style="text-align: center">大殿</p>
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213872_933528.jpg" /></p>
+
+<p style="text-align: center">远景</p>
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213873_202716.jpg" /></p>
+
+<p style="text-align: center">大殿镂空藻井</p>
+
+<p>　　保国寺位于宁波城区西北，占地面积13280平方米，建筑面积6000平方米。</p>
+
+<p>　　相传东汉光武帝建武年间，有骠骑将军张意及其子中书郎张齐芳隐居于此，佛教传入，舍宅为寺，后改灵山寺。唐武宗会昌灭佛，灵山寺毁，唐广明年间(880-881)重建，赐额“保国寺”。宋英宗治平元年(1064)称“精进院”，后又更名“保国寺”。宋真宗祥符年间，复有德贤、德诚两大师中兴保国。元、明两代500年间，历经兴葺。</p>
+
+<p>　　现存建筑在中轴线上自南而北有山门、经幢、天王殿、大殿、观音殿、藏经楼，两侧有钟、鼓楼和僧舍。保国寺大殿是全寺的主殿。重建于北宋大中祥符六年(1013)，为单檐九脊殿，平面进深大于面阔，呈纵长方形，这在同时代的佛殿建筑中极为罕见。整个大殿的全部结构皆用斗拱之间的巧妙衔接和精确的榫卯技术，不用一枚铁钉将建筑物的各个构件牢固地结合在一起，承托起整个殿堂屋顶50余吨的重量。用材硕大，相当于宋《营造法式》的五等材。在大殿前槽天花板上，还巧妙地安排了三个与整体结构有机衔接的镂空藻井，用天花板和藻井遮住了大殿的梁架，下面不易看到，故被称为“无梁殿”。无梁殿除建筑风格独特外，还有虫不蛀，鸟不入，蜘蛛不结网，灰尘不上梁之奇。结构独特，气势宏伟，是国内现存重要的木构建筑之一。</p>
+
+<p>　　保国寺大殿在中国建筑史上具有很高的历史、艺术和科学价值。大殿营造时正值宁波“海上丝绸之路”全盛时期，与阿育王寺、天童禅寺一样，保国寺在天台宗传播等方面起到了一定的作用，其建筑艺术对日本、高丽等国家的佛教建筑有较大的影响，是宁波“海上丝绸之路”重要的文化遗存。清华大学著名建筑史教授郭黛姮先生在其所著《东来第一山——保国寺》中论述到：保国寺大殿建筑比世界建筑巨著《营造法式》还早90年，成为《营造法式》的实例见证。2004年7月，国际古迹遗址理事会尤嘎先生在考察保国寺期间，更是由衷地发出“宁波人民有创造力”“这就是世界文化遗产”的赞叹，对宁波先民伟大的创造给予高度评价。</p>
+
+<p>　　1961年3月被国务院公布为第一批全国重点文物保护单位。</p>
+
+<p>　　资料提供：保国寺古建筑博物馆</p>
+ 
+
+<!--enorth cms block start [ name="v5.pages" ]-->
+
+<!--enorth cms block end [ name="v5.pages" cost="3"]--></div>
+                    <p class="right"><b>编辑：</b> 孙研</p>
+                    <p class="clearfix"></p>
+                    <div>
+                    	<img src="http://www.cnnb.com.cn/pic/0/04/21/41/4214177_806742.jpg" alt="" />
+                    </div>
+                </div>
+<div>
+<!--<a href="http://www.lulong.cn" target="_blank"><img src="http://www.cnnb.com.cn/pic/0/04/16/04/4160461_914457.gif" width="650" height="40"></a>-->
+</div>
+
+                <div class="quickLink">
+                    <div class="link"><a href="http://www.cnnb.com.cn/">中国宁波网首页</a></div>
+                    <div class="link"><a href="http://news.cnnb.com.cn/">新闻中心首页</a></div>
+                </div>
+                <div class="picnewsArea">
+                    <div class="title">图片新闻</div>
+                    <ul>
+
+<!--enorth cms block start [ name="gnyw_jctp" ]-->
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497003.shtml' target='_blank' title='陆军驻渝某师开展防化训练'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005462_3d1b602f.jpg' alt='陆军驻渝某师开展防化训练' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497003.shtml'>陆军驻渝某师开展防化训练</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497073.shtml' target='_blank' title='这个美女球技不输男生'><img src='http://www.cnnb.com.cn/pic/003/000/055/00300005538_eba0b000.jpg' alt='这个美女球技不输男生' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497073.shtml'>这个美女球技不输男生</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497071.shtml' target='_blank' title='航拍：瑰丽盐田'><img src='http://www.cnnb.com.cn/pic/003/000/055/00300005540_132941ea.jpg' alt='航拍：瑰丽盐田' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497071.shtml'>航拍：瑰丽盐田</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497061.shtml' target='_blank' title='南京小学生着汉服行十岁成长礼'><img src='http://www.cnnb.com.cn/pic/003/000/055/00300005542_8df71419.jpg' alt='南京小学生着汉服行十岁成长礼' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497061.shtml'>南京小学生着汉服行十岁成长礼</a></div></li>
+<!--enorth cms block end [ name="gnyw_jctp" cost="49"]-->                    </ul>
+                    <ul>
+
+<!--enorth cms block start [ name="gjxw_jctp" ]-->
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497110.shtml' target='_blank' title='英王室公布女王寿辰照片 "七孙拱照"抢镜'><img src='http://www.cnnb.com.cn/pic/003/000/056/00300005668_e83b91f2.jpg' alt='英王室公布女王寿辰照片 "七孙拱照"抢镜' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497110.shtml'>英王室公布女王寿辰照片 "七孙拱照"抢镜</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497000.shtml' target='_blank' title='英年轻妈妈帮助11个月大女儿成“网红”惹争议'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005465_e88b4853.jpg' alt='英年轻妈妈帮助11个月大女儿成“网红”惹争议' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497000.shtml'>英年轻妈妈帮助11个月大女儿成“网红”惹争议</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008496999.shtml' target='_blank' title='显微镜下的口腔细菌：细长如海洋植物'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005466_10f233ea.jpg' alt='显微镜下的口腔细菌：细长如海洋植物' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008496999.shtml'>显微镜下的口腔细菌：细长如海洋植物</a></div></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/22/008497163.shtml' target='_blank' title='死海岸边干涸 现大量地陷洞'><img src='http://www.cnnb.com.cn/pic/003/000/056/00300005669_4656c04f.jpg' alt='死海岸边干涸 现大量地陷洞' width='150' height='90'></a><div class='tip'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497163.shtml'>死海岸边干涸 现大量地陷洞</a></div></li>
+<!--enorth cms block end [ name="gjxw_jctp" cost="48"]-->                    </ul>
+                </div>
+            </div>
+            <div class="rightPart">
+                <style media="screen">
+                    .ovh{overflow: hidden;}
+                    li.withPic {height: 72px;margin: 20px 0;}
+                    li.withPic img {float: left;margin-right: 10px;width: 90pt;height: 72px;}
+                    li.withPic .content {float: left;width: 175px;}
+                    p.date {font-family: "Arial";padding-top: 5px;font-size: 12px;color: #999;}
+                    ul.items li {height: 30px;overflow: hidden;}
+                    ul.items li a {font-size: 14px;color: rgb(57, 57, 57);line-height: 1.5em;white-space: nowrap;font-family: 'MicroSoft YaHei',"微软雅黑";}
+                </style>
+                <div class="rightPart">
+                    <div class="section-01 ovh">
+                        <div class="module"><span class="orangle">24小时</span>新闻点击榜</div>
+                        <ul>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493725.shtml' target='_blank' title='“浙B”车主注意啦！下月启动车险改革将影响你保费'>“浙B”车主注意啦！下月启动车险改革将影响...</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493608.shtml' target='_blank' title='旅行挣钱两不误：25岁女子辞职环游世界成网红'>旅行挣钱两不误：25岁女子辞职环游世界成网红</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493684.shtml' target='_blank' title='马来西亚发现7.9米长巨蟒'>马来西亚发现7.9米长巨蟒</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493607.shtml' target='_blank' title='男子造“房车”为家 流浪20多年为寻亲生父母'>男子造“房车”为家 流浪20多年为寻亲生父母</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493722.shtml' target='_blank' title='联合国面试“最高掌门”'>联合国面试“最高掌门”</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493719.shtml' target='_blank' title='东莞工地坍塌'>东莞工地坍塌</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493438.shtml' target='_blank' title='联合国面试“最高掌门”看点多 巾帼不让须眉'>联合国面试“最高掌门”看点多 巾帼不让须眉</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2016/04/13/008493581.shtml' target='_blank' title='宁波市区汽车站4月18日起实行实名购票'>宁波市区汽车站4月18日起实行实名购票</a></li>                        </ul>
+                    </div>
+                    <div class="section-03 ovh">
+                        <div class="module"><a href="http://news.cnnb.com.cn/"><span class="orangle">热点</span>推荐</a></div>
+                        <ul>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008496924.shtml' target='_blank' title='中国广电申请业务牌照或将成为第四大电信运营商'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005417_9ca7a760.jpg' alt='中国广电申请业务牌照或将成为第四大电信运营商'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008496924.shtml' target='_blank' title='中国广电申请业务牌照或将成为第四大电信运营商'>中国广电申请业务牌照或将成为第四大电信运营商</a></p>
+<p class='date'>2016-04-22 08:18</p>
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008496898.shtml' target='_blank' title='6岁男孩一夜哭着找妈妈 清晨时分他从21楼坠下'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005418_d73798cd.jpg' alt='6岁男孩一夜哭着找妈妈 清晨时分他从21楼坠下'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008496898.shtml' target='_blank' title='6岁男孩一夜哭着找妈妈 清晨时分他从21楼坠下'>6岁男孩一夜哭着找妈妈 清晨时分他从21楼坠下</a></p>
+<p class='date'>2016-04-22 08:02</p>
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008496909.shtml' target='_blank' title='重庆裸泳者抢镜新人婚纱照 高喊"给我来两张"'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005419_14583be7.jpg' alt='重庆裸泳者抢镜新人婚纱照 高喊"给我来两张"'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008496909.shtml' target='_blank' title='重庆裸泳者抢镜新人婚纱照 高喊"给我来两张"'>重庆裸泳者抢镜新人婚纱照 高喊"给我来两张"</a></p>
+<p class='date'>2016-04-22 08:12</p>
+</div>
+</li>                        </ul>
+                        <ul class="items">
+
+<!--enorth cms block start [ name="ktx_focus" ]-->
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496942.shtml" target="_blank">男子寄油画遭损获赔4万</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496906.shtml" target="_blank">人太多！北京南锣鼓巷将不接待旅游团</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496905.shtml" target="_blank">靖边女童被碾死 嫌犯系纪委干部</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496908.shtml" target="_blank">考生交完1.5万学费却被告知未被录取</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008497011.shtml" target="_blank">南京地铁一女子大声呵斥吓跑偷拍色狼</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496950.shtml" target="_blank">英国民众庆祝女王90岁生日</a>
+</li>
+<!--enorth cms block end [ name="ktx_focus" cost="12"]-->                        </ul>
+                        <ul>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008496890.shtml' target='_blank' title='"血汗海鲜工厂"获普利策奖 美调查记者薪水不高'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005428_8263c7ac.jpg' alt='"血汗海鲜工厂"获普利策奖 美调查记者薪水不高'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008496890.shtml' target='_blank' title='"血汗海鲜工厂"获普利策奖 美调查记者薪水不高'>"血汗海鲜工厂"获普利策奖 美调查记者薪水不高</a></p>
+<p class='date'>2016-04-22 07:56</p>
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008497002.shtml' target='_blank' title='惊险！摄影师 “贴面”拍摄南非大白鲨'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005463_300ffadc.jpg' alt='惊险！摄影师 “贴面”拍摄南非大白鲨'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497002.shtml' target='_blank' title='惊险！摄影师 “贴面”拍摄南非大白鲨'>惊险！摄影师 “贴面”拍摄南非大白鲨</a></p>
+<p class='date'>2016-04-22 09:41</p>
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2016/04/22/008497019.shtml' target='_blank' title='金马桶进驻美博物馆：可以用'><img src='http://www.cnnb.com.cn/pic/003/000/054/00300005478_bc3ecb17.jpg' alt='金马桶进驻美博物馆：可以用'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2016/04/22/008497019.shtml' target='_blank' title='金马桶进驻美博物馆：可以用'>金马桶进驻美博物馆：可以用</a></p>
+<p class='date'>2016-04-22 10:05</p>
+</div>
+</li>                        </ul>
+                    </div>
+                    <div class="section-01 ovh">
+                        <div class="module"><a href="http://nbnews.cnnb.com.cn/"><span class="orangle">本地</span>看点</a></div>
+                        <ul>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496864.shtml" target="_blank">总投资9000万 宁波机场门户颜值飙升</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496952.shtml" target="_blank">宁波这位老人赴西部支教筹款两百万建4所小学</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496893.shtml" target="_blank">高新区小学招生政策 三类学龄儿童不作地段生</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496907.shtml" target="_blank">宁波全市今年新启棚改达500万平方米</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496895.shtml" target="_blank">27万持证师生可在12家新华书店“借”新书</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2016/04/21/008496845.shtml" target="_blank">未来几天还有雨</a>
+<a href="http://news.cnnb.com.cn/system/2016/04/22/008496869.shtml" target="_blank">宁波下月进入雷电高发期</a>
+</li>                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot" style="width:1050px;margin:auto;">
+        <iframe width="1050" scrolling="no" height="214" frameborder="0" src="http://news.cnnb.com.cn/packages/public/foot.html"></iframe>
+    </div>
+</div>
+<div id="mobile">
+    <div id="header">
+        <div class="logo"><a href="http://www.cnnb.com.cn/home/index_mobile.html" style="display:block;height:100%;"></a></div>
+        <div class="channel left"><a href="http://news.cnnb.com.cn/index_mobile.html" style="color:#fff;">看天下</a></div>
+        <div class="channel left" style="border:none;"><a href="http://nbnews.cnnb.com.cn/index_mobile.html" style="color:#fff;">看宁波</a></div>
+        <ul class="menu">
+            <!-- <li><a href=""><img src="images/mobile/03.png" alt="" /></a></li> -->
+            <!-- <li><a href="#"><img src="images/mobile/04.png" /></a></li> -->
+        </ul>
+    </div>
+    <div class="newsArea">
+        <div class="newsTitle">
+            <p class="title">保国寺 </p>
+            <p class="subtitle"></p>
+            <p ><span class="source">稿源： 
+<!--enorth cms block start [ name="v5.source2013" ]-->
+宁波文化网
+
+<!--enorth cms block end [ name="v5.source2013" cost="8"]--></span><span class="time">2016-04-11 17:32:00</span></p>
+            <!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_m"></div>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+        </div>
+        <div class="contentArea">
+            <embed src="http://tvplayer.people.com.cn/player.php/xml/L3B2c2VydmljZS94bWwvLzIwMTQvOS83LzVmOTFjNGRlLTZkOGEtNDAwYS04ZDRlLTFiN2ZiZmViZjQxMC54bWw=/playerByOsmf.swf" quality="high" width="640" height="525" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" name="ptvplayer" id="ptvplayer"></embed>
+
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213871_806058.jpg" /></p>
+
+<p style="text-align: center">大殿</p>
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213872_933528.jpg" /></p>
+
+<p style="text-align: center">远景</p>
+
+<p style="text-align: center"><img src="http://www.cnnb.com.cn/pic/0/04/21/38/4213873_202716.jpg" /></p>
+
+<p style="text-align: center">大殿镂空藻井</p>
+
+<p>　　保国寺位于宁波城区西北，占地面积13280平方米，建筑面积6000平方米。</p>
+
+<p>　　相传东汉光武帝建武年间，有骠骑将军张意及其子中书郎张齐芳隐居于此，佛教传入，舍宅为寺，后改灵山寺。唐武宗会昌灭佛，灵山寺毁，唐广明年间(880-881)重建，赐额“保国寺”。宋英宗治平元年(1064)称“精进院”，后又更名“保国寺”。宋真宗祥符年间，复有德贤、德诚两大师中兴保国。元、明两代500年间，历经兴葺。</p>
+
+<p>　　现存建筑在中轴线上自南而北有山门、经幢、天王殿、大殿、观音殿、藏经楼，两侧有钟、鼓楼和僧舍。保国寺大殿是全寺的主殿。重建于北宋大中祥符六年(1013)，为单檐九脊殿，平面进深大于面阔，呈纵长方形，这在同时代的佛殿建筑中极为罕见。整个大殿的全部结构皆用斗拱之间的巧妙衔接和精确的榫卯技术，不用一枚铁钉将建筑物的各个构件牢固地结合在一起，承托起整个殿堂屋顶50余吨的重量。用材硕大，相当于宋《营造法式》的五等材。在大殿前槽天花板上，还巧妙地安排了三个与整体结构有机衔接的镂空藻井，用天花板和藻井遮住了大殿的梁架，下面不易看到，故被称为“无梁殿”。无梁殿除建筑风格独特外，还有虫不蛀，鸟不入，蜘蛛不结网，灰尘不上梁之奇。结构独特，气势宏伟，是国内现存重要的木构建筑之一。</p>
+
+<p>　　保国寺大殿在中国建筑史上具有很高的历史、艺术和科学价值。大殿营造时正值宁波“海上丝绸之路”全盛时期，与阿育王寺、天童禅寺一样，保国寺在天台宗传播等方面起到了一定的作用，其建筑艺术对日本、高丽等国家的佛教建筑有较大的影响，是宁波“海上丝绸之路”重要的文化遗存。清华大学著名建筑史教授郭黛姮先生在其所著《东来第一山——保国寺》中论述到：保国寺大殿建筑比世界建筑巨著《营造法式》还早90年，成为《营造法式》的实例见证。2004年7月，国际古迹遗址理事会尤嘎先生在考察保国寺期间，更是由衷地发出“宁波人民有创造力”“这就是世界文化遗产”的赞叹，对宁波先民伟大的创造给予高度评价。</p>
+
+<p>　　1961年3月被国务院公布为第一批全国重点文物保护单位。</p>
+
+<p>　　资料提供：保国寺古建筑博物馆</p>
+ 
+
+<!--enorth cms block start [ name="v5.pages" ]-->
+
+<!--enorth cms block end [ name="v5.pages" cost="3"]-->            <p class="editor">编辑： 孙研</p>
+            <br>
+            <div>
+            	<a href="http://m.cnnb.com.cn"><img src="http://www.cnnb.com.cn/pic/0/04/21/41/4214178_061342.jpg" alt="" width="600" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="link-01"><a href="http://www.cnnb.com.cn/home/index_mobile.html">回首页</a><a class="gototop">回顶部</a></div>
+    <div class="footer">
+        <p style="font-size:14px">中国宁波网(宁波网传媒有限公司)版权所有</p>
+        <p style="font-size:12px;">Copyright(C) 2001-2015 cnnb.com.cn　All Rights Reserved</p>
+    </div>
+    <style>
+        .overlay { background: #000; width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999999;
+            -webkit-transition: all 300ms ease-in 0s;
+                    transition: all 300ms ease-in 0s;
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            -webkit-transform: translate3d(100%, 0px, 0px); 
+                transform: translate3d(100%, 0px, 0px);
+        }
+        .overlay.in { 
+            -webkit-transform: translate3d(0px, 0px, 0px); 
+                    transform: translate3d(0px, 0px, 0px);
+        }
+    </style>
+    <div class="overlay" id="overlay"></div>
+</div>
+<div style="display:none">
+    <script type="text/javascript">
+        document.write(unescape("%3Cscript src='http://webd.cnnb.com.cn/webdig.js?z=5' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        wd_paramtracker("_wdxid=010010010011004000000000011100000008492676")
+    </script>
+    <script src="http://www.cnnb.com.cn/sys/online_calc.js?ver=1"></script>
+</div>
+</body>
+</html>
+
+
+<!--enorth cms page [ enorth parse_date="2016/04/22 15:22:50.050", cost="340", server=":=$encp$=:4c4bb872f4d3832853a996f8290d6423", error_count="0"]-->

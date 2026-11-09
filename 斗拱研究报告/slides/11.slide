@@ -1,0 +1,89 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>一根斜木,把出挑变成承重</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>02 · 受力原理</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'column' }}>
+
+        {/* 上:杠杆图 */}
+        <Box style={{ width: 1160, height: 268, flexDirection: 'row' }}>
+
+            <Box style={{ width: 640 }}>
+                <svg width={620} height={260} viewBox='0 0 620 260'>
+                    {/* 屋面线 */}
+                    <line x1='40' y1='90' x2='580' y2='90' stroke='#1E4FA8' strokeWidth='4' />
+                    <text x='40' y='80' fontSize='12' fill='#8B97A8' fontFamily='Arial'>roof / purlin</text>
+
+                    {/* 昂(内高外低) */}
+                    <path d='M80 110 L520 196' stroke='#8B6446' strokeWidth='16' strokeLinecap='butt' />
+                    <path d='M80 110 L520 196' stroke='#5E4330' strokeWidth='2' opacity='0.35' />
+
+                    {/* 支点:斗拱处 */}
+                    <path d='M300 160 L330 160 L315 186 Z' fill='#1E4FA8' />
+                    <circle cx='315' cy='172' r='4' fill='#FFFFFF' />
+
+                    {/* 外端荷载 */}
+                    <line x1='520' y1='210' x2='520' y2='248' stroke='#D9534F' strokeWidth='3' />
+                    <path d='M514 240 L520 252 L526 240' fill='none' stroke='#D9534F' strokeWidth='3' />
+                    <text x='534' y='236' fontSize='13' fill='#D9534F' fontFamily='Arial'>eave load</text>
+
+                    {/* 内端上顶 */}
+                    <line x1='80' y1='110' x2='80' y2='68' stroke='#D9534F' strokeWidth='3' />
+                    <path d='M74 76 L80 64 L86 76' fill='none' stroke='#D9534F' strokeWidth='3' />
+                    <text x='24' y='56' fontSize='13' fill='#D9534F' fontFamily='Arial'>tail locks</text>
+                    <text x='24' y='42' fontSize='13' fill='#D9534F' fontFamily='Arial'>the beam</text>
+
+                    {/* 内柱 */}
+                    <rect x='64' y='110' width='32' height='120' fill='#9C7A5B' />
+
+                    {/* 红色圆弧示意转动 */}
+                    <path d='M478 176 A170 170 0 0 0 468 148' fill='none' stroke='#D9534F' strokeWidth='1.5' strokeDasharray='5 4' />
+
+                    <text x='300' y='250' fontSize='12' fill='#8B97A8' fontFamily='Arial'>fulcrum at the bracket set</text>
+                </svg>
+            </Box>
+
+            <Box style={{ width: 520, flexDirection: 'column', paddingLeft: 30, justifyContent: 'center' }}>
+                <Text style={{ fontSize: 15, color: '#8B97A8', letterSpacing: 2 }}>双向作用</Text>
+                <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.5, marginTop: 14 }}>
+                    昂尾压在梁下或槫下,前端挑住屋檐。
+                </Text>
+                <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.7, marginTop: 12 }}>
+                    屋檐荷载下压,昂尾即上翘顶紧梁身,形成力矩平衡。
+                    昂因此在"不增加斗拱高度"的前提下,把出檐推得更远。
+                </Text>
+            </Box>
+
+        </Box>
+
+        {/* 下:两栏说明 */}
+        <Box style={{ width: 1160, height: 228, flexDirection: 'row', marginTop: 24, gap: 24 }}>
+
+            <Box style={{ flex: 1, borderTop: '2px solid #1E4FA8', paddingTop: 18, flexDirection: 'column' }}>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230' }}>下昂 / 上昂:一对反向构件</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.7, marginTop: 10 }}>
+                    下昂大体平行于屋面,作用是<span style={{ fontWeight: 'bold' }}>少增高度、多增出挑</span>;
+                    上昂自斗拱中心向外上方斜出,作用是<span style={{ fontWeight: 'bold' }}>少增出挑、多增高度</span>。二者目标正好相反。
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, borderTop: '2px solid #1E4FA8', paddingTop: 18, flexDirection: 'column' }}>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230' }}>保国寺的做法:昂身长逾两椽跨</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.7, marginTop: 10 }}>
+                    前檐柱头铺作的下昂,昂尾一直延伸到内柱华栱之下,中间承下平槫——
+                    <span style={{ color: '#D9534F', fontWeight: 'bold' }}>文献称其"作用如斜梁"</span>。这是一根昂同时承担了挑檐与承梁两件事。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>11 / 20</Text>
+    </Box>
+
+</Slide>

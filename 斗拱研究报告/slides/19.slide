@@ -1,0 +1,121 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>结论与转化路径</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>04 · 结论</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:三条结论 */}
+        <Box style={{ width: 660, flexDirection: 'column', paddingRight: 40 }}>
+
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>三条结论</Text>
+
+            <Box style={{ flexDirection: 'row', marginTop: 22 }}>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#D9534F', width: 40 }}>一</Text>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 21, fontWeight: '600', color: '#1A2230', lineHeight: 1.45 }}>
+                        斗拱是"力的换向机构",不是装饰符号
+                    </Text>
+                    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 6 }}>
+                        出挑把竖直荷载转为水平,昂尾再把水平力收回柱身。把它当装饰讲,等于放弃它最重要的信息。
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', marginTop: 22 }}>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#D9534F', width: 40 }}>二</Text>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 21, fontWeight: '600', color: '#1A2230', lineHeight: 1.45 }}>
+                        断代的关键线索在"梁与斗拱的交接"
+                    </Text>
+                    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 6 }}>
+                        唐—宋梁插入斗拱,明清梁压在斗拱之上。这一处交接比斗拱外观更稳定,也更难被后世改动。
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', marginTop: 22 }}>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#D9534F', width: 40 }}>三</Text>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 21, fontWeight: '600', color: '#1A2230', lineHeight: 1.45 }}>
+                        保国寺大殿是《营造法式》的南方实证
+                    </Text>
+                    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.65, marginTop: 6 }}>
+                        它处在前《法式》的过渡位置,拼合瓜棱柱、七铺作斗拱、镊口鼓卯等做法,为"制度源自南方"提供了物证。
+                    </Text>
+                </Box>
+            </Box>
+
+        </Box>
+
+        {/* 右:转化路径 */}
+        <Box style={{ width: 460, flexDirection: 'column', paddingLeft: 44, borderLeft: '1px solid #D6DCE5' }}>
+
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>从研究到产品</Text>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 20 }}>
+                <Box style={{ width: 34, height: 34, background: '#1E4FA8', alignItems: 'center', justifyContent: 'center', marginRight: 14 }}>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>1</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>形制转模型</Text>
+                    <Text style={{ fontSize: 16, color: '#4A5568', lineHeight: 1.55, marginTop: 3 }}>
+                        13 种基础构件 → 一朵七铺作,零件级可拆
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 18 }}>
+                <Box style={{ width: 34, height: 34, background: '#1E4FA8', alignItems: 'center', justifyContent: 'center', marginRight: 14 }}>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>2</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>术语转交互</Text>
+                    <Text style={{ fontSize: 16, color: '#4A5568', lineHeight: 1.55, marginTop: 3 }}>
+                        点击识名 + 装配游戏,把名称记成肌肉记忆
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 18 }}>
+                <Box style={{ width: 34, height: 34, background: '#1E4FA8', alignItems: 'center', justifyContent: 'center', marginRight: 14 }}>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>3</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>铺作转闯关</Text>
+                    <Text style={{ fontSize: 16, color: '#4A5568', lineHeight: 1.55, marginTop: 3 }}>
+                        定位 → 数跳 → 套公式 → 判偷心,四步通关
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 18 }}>
+                <Box style={{ width: 34, height: 34, background: '#D9534F', alignItems: 'center', justifyContent: 'center', marginRight: 14 }}>
+                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>4</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>受力转实验</Text>
+                    <Text style={{ fontSize: 16, color: '#4A5568', lineHeight: 1.55, marginTop: 3 }}>
+                        力流演示 + 昂的杠杆拖动,让"为什么不会塌"可操作
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ height: 64, background: '#E8EFF8', marginTop: 22, flexDirection: 'row', alignItems: 'center', paddingLeft: 14, paddingRight: 14 }}>
+                <Text style={{ fontSize: 15, color: '#1A2230', lineHeight: 1.45 }}>
+                    一套资产、两种终端:触屏与头显共用同一份三维模型。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>19 / 20</Text>
+    </Box>
+
+</Slide>

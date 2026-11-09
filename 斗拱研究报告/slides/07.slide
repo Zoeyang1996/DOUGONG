@@ -1,0 +1,107 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>它在哪里:柱顶与屋檐之间的承接层</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>02 · 构件体系</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:剖面图 */}
+        <Box style={{ width: 520, flexDirection: 'column' }}>
+            <svg width={500} height={440} viewBox='0 0 400 352'>
+                {/* 屋面 */}
+                <path d='M20 96 L200 46 L380 96' fill='none' stroke='#1E4FA8' strokeWidth='3' />
+                <path d='M20 96 L200 58 L380 96' fill='#E8EFF8' opacity='0.55' />
+                <rect x='14' y='96' width='372' height='10' fill='#1E4FA8' opacity='0.85' />
+
+                {/* 斗拱层 */}
+                <rect x='120' y='106' width='160' height='13' fill='#C9A882' />
+                <rect x='104' y='119' width='192' height='13' fill='#C9A882' />
+                <rect x='90' y='132' width='220' height='13' fill='#C9A882' />
+                <rect x='78' y='145' width='244' height='13' fill='#C9A882' />
+                <path d='M82 145 L110 106' stroke='#8B6446' strokeWidth='6' />
+                <path d='M318 145 L290 106' stroke='#8B6446' strokeWidth='6' />
+
+                {/* 栌斗 */}
+                <path d='M176 158 L224 158 L232 186 L168 186 Z' fill='#8B6446' />
+
+                {/* 柱 */}
+                <rect x='186' y='186' width='28' height='132' fill='#9C7A5B' />
+
+                {/* 台基 */}
+                <rect x='60' y='318' width='280' height='14' fill='#D6DCE5' />
+                <line x1='20' y1='332' x2='380' y2='332' stroke='#8B97A8' strokeWidth='1.5' />
+
+                {/* 标注引线 */}
+                <line x1='330' y1='130' x2='372' y2='130' stroke='#D9534F' strokeWidth='1.5' />
+                <circle cx='330' cy='130' r='4' fill='#D9534F' />
+                <text x='374' y='126' fontSize='13' fill='#D9534F' fontFamily='Arial'>dougong</text>
+                <text x='374' y='142' fontSize='13' fill='#D9534F' fontFamily='Arial'>layer</text>
+
+                <line x1='218' y1='240' x2='278' y2='240' stroke='#8B97A8' strokeWidth='1' />
+                <text x='282' y='245' fontSize='13' fill='#4A5568' fontFamily='Arial'>column</text>
+
+                <line x1='14' y1='101' x2='60' y2='101' stroke='#8B97A8' strokeWidth='1' />
+                <text x='16' y='120' fontSize='13' fill='#4A5568' fontFamily='Arial'>eave</text>
+
+                <line x1='120' y1='325' x2='120' y2='300' stroke='#8B97A8' strokeWidth='1' />
+                <text x='100' y='348' fontSize='13' fill='#4A5568' fontFamily='Arial'>platform</text>
+            </svg>
+            <Text style={{ fontSize: 15, color: '#8B97A8', marginTop: 6 }}>
+                剖面示意:斗拱位于柱顶与屋面之间,把集中荷载转为均布
+            </Text>
+        </Box>
+
+        {/* 右:定义与作用 */}
+        <Box style={{ width: 640, flexDirection: 'column', paddingLeft: 40 }}>
+
+            <Box style={{ width: 4, height: 3, background: '#1E4FA8' }} />
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1E4FA8', marginTop: 16, letterSpacing: 1 }}>定义</Text>
+            <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.7, marginTop: 12 }}>
+                由"斗"(方形垫块)与"栱"(弓形横木)层层交叠、以榫卯咬合而成的构件组。
+                宋《营造法式》称<span style={{ fontWeight: 'bold', color: '#1E4FA8' }}>"铺作"</span>,
+                清《工程做法则例》称<span style={{ fontWeight: 'bold', color: '#1E4FA8' }}>"斗科"</span>。
+            </Text>
+
+            <Box style={{ width: 600, height: 1, background: '#E5E7EB', marginTop: 26, marginBottom: 26 }} />
+
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>三重作用</Text>
+
+            <Box style={{ flexDirection: 'row', marginTop: 16 }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 72 }}>传力</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.6, flex: 1 }}>
+                    把屋面的集中荷载逐层分散,经柱身传到基础。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', marginTop: 14 }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 72 }}>出檐</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.6, flex: 1 }}>
+                    把屋檐向外挑出 3–4 米,使雨水远离墙身与台基。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', marginTop: 14 }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1E4FA8', width: 72 }}>抗震</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.6, flex: 1 }}>
+                    榫卯节点允许微小位移,地震时以摩擦与变形消耗能量。
+                </Text>
+            </Box>
+
+            <Box style={{ height: 56, background: '#E8EFF8', marginTop: 24, flexDirection: 'row', alignItems: 'center', paddingLeft: 18 }}>
+                <Text style={{ fontSize: 17, color: '#1A2230' }}>
+                    计数的单位是"<span style={{ fontWeight: 'bold', color: '#1E4FA8' }}>朵</span>":一朵斗拱,即一组铺作。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>07 / 20</Text>
+    </Box>
+
+</Slide>

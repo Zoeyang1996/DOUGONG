@@ -1,0 +1,65 @@
+=== boot pid=84905 ts=2026-11-09 11:11:02.669 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js create 斗拱研究报告.pptx ===
+[2026-11-09 11:11:02.662] [INFO ] [pid=84905] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=85024 ts=2026-11-09 11:11:23.989 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/01.slide ===
+[2026-11-09 11:11:23.984] [INFO ] [pid=85024] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:11:24.014] [INFO ] [pid=85024] [slide-version] fileId=C965B548 version=0 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85115 ts=2026-11-09 11:11:40.210 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/02.slide ===
+[2026-11-09 11:11:40.205] [INFO ] [pid=85115] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:11:40.243] [INFO ] [pid=85115] [slide-version] fileId=C965B548 version=1 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85186 ts=2026-11-09 11:11:51.438 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/03.slide ===
+[2026-11-09 11:11:51.433] [INFO ] [pid=85186] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:11:51.464] [INFO ] [pid=85186] [slide-version] fileId=C965B548 version=2 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85315 ts=2026-11-09 11:12:13.819 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/04.slide ===
+[2026-11-09 11:12:13.809] [INFO ] [pid=85315] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:12:13.850] [INFO ] [pid=85315] [slide-version] fileId=C965B548 version=3 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85459 ts=2026-11-09 11:12:37.844 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/05.slide ===
+[2026-11-09 11:12:37.838] [INFO ] [pid=85459] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:12:37.879] [INFO ] [pid=85459] [slide-version] fileId=sid_mw8o version=0 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85581 ts=2026-11-09 11:12:49.514 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/06.slide ===
+[2026-11-09 11:12:49.509] [INFO ] [pid=85581] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:12:49.541] [INFO ] [pid=85581] [slide-version] fileId=sid_mw8o version=1 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85701 ts=2026-11-09 11:13:10.063 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/07.slide ===
+[2026-11-09 11:13:10.048] [INFO ] [pid=85701] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:13:10.094] [INFO ] [pid=85701] [slide-version] fileId=sid_mw8o version=2 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85839 ts=2026-11-09 11:13:34.945 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/08.slide ===
+[2026-11-09 11:13:34.939] [INFO ] [pid=85839] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:13:34.976] [INFO ] [pid=85839] [slide-version] fileId=sid_mw8o version=3 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=85965 ts=2026-11-09 11:13:57.699 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/09.slide ===
+[2026-11-09 11:13:57.684] [INFO ] [pid=85965] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:13:57.731] [INFO ] [pid=85965] [slide-version] fileId=sid_mw8o version=0 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86096 ts=2026-11-09 11:14:22.055 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/10.slide ===
+[2026-11-09 11:14:22.048] [INFO ] [pid=86096] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:14:22.093] [INFO ] [pid=86096] [slide-version] fileId=sid_mw8o version=1 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86242 ts=2026-11-09 11:14:45.987 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/11.slide ===
+[2026-11-09 11:14:45.980] [INFO ] [pid=86242] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:14:46.022] [INFO ] [pid=86242] [slide-version] fileId=sid_mw8o version=2 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86308 ts=2026-11-09 11:14:57.433 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/12.slide ===
+[2026-11-09 11:14:57.421] [INFO ] [pid=86308] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:14:57.463] [INFO ] [pid=86308] [slide-version] fileId=sid_mw8o version=3 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86416 ts=2026-11-09 11:15:17.452 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/13.slide ===
+[2026-11-09 11:15:17.447] [INFO ] [pid=86416] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:15:17.479] [INFO ] [pid=86416] [slide-version] fileId=sid_mw8o version=4 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86521 ts=2026-11-09 11:15:33.797 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/14.slide ===
+[2026-11-09 11:15:33.784] [INFO ] [pid=86521] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:15:33.831] [INFO ] [pid=86521] [slide-version] fileId=sid_mw8o version=5 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86638 ts=2026-11-09 11:15:54.343 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/15.slide ===
+[2026-11-09 11:15:54.337] [INFO ] [pid=86638] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:15:54.376] [INFO ] [pid=86638] [slide-version] fileId=sid_mw8o version=6 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86719 ts=2026-11-09 11:16:05.856 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/16.slide ===
+[2026-11-09 11:16:05.851] [INFO ] [pid=86719] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:16:05.888] [INFO ] [pid=86719] [slide-version] fileId=sid_mw8o version=7 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86836 ts=2026-11-09 11:16:26.401 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/17.slide ===
+[2026-11-09 11:16:26.388] [INFO ] [pid=86836] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:16:26.430] [INFO ] [pid=86836] [slide-version] fileId=sid_mw8o version=8 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=86943 ts=2026-11-09 11:16:45.302 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/17.slide --page-index 16 ===
+[2026-11-09 11:16:45.287] [INFO ] [pid=86943] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:16:45.332] [INFO ] [pid=86943] [slide-version] fileId=sid_mw8o version=9 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=87096 ts=2026-11-09 11:17:07.614 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/18.slide ===
+[2026-11-09 11:17:07.601] [INFO ] [pid=87096] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:17:07.644] [INFO ] [pid=87096] [slide-version] fileId=sid_mw8o version=10 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=87204 ts=2026-11-09 11:17:26.213 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/19.slide ===
+[2026-11-09 11:17:26.196] [INFO ] [pid=87204] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:17:26.248] [INFO ] [pid=87204] [slide-version] fileId=sid_mw8o version=11 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx
+=== boot pid=87322 ts=2026-11-09 11:17:46.939 cwd=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告 argv=/Users/yangzhe/.workbuddy/binaries/node/versions/22.22.2-6/lib/node_modules/@tencent/slidep/dist/index.js upsert-dsl 斗拱研究报告.pptx --dsl-file slides/20.slide ===
+[2026-11-09 11:17:46.933] [INFO ] [pid=87322] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-11-09 11:17:46.980] [INFO ] [pid=87322] [slide-version] fileId=sid_mw8o version=12 filePath=/Users/yangzhe/Desktop/浙江工商/DOUGONG/斗拱研究报告/斗拱研究报告.pptx

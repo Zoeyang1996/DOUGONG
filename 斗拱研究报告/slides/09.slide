@@ -1,0 +1,102 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>两套命名:宋称"铺作",清称"斗科"</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>02 · 术语体系</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:对照表 */}
+        <Box style={{ width: 720, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', paddingBottom: 12, borderBottom: '2px solid #1E4FA8' }}>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', width: 168 }}>宋《营造法式》</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', width: 150 }}>清《工程做法则例》</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', width: 168 }}>宋《营造法式》</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', flex: 1 }}>清《工程做法则例》</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>铺作</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', width: 150 }}>斗科</Text>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>栌斗</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', flex: 1 }}>坐斗</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>柱头铺作</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', width: 150 }}>柱头科</Text>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>交互斗</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', flex: 1 }}>十八斗</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>补间铺作</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', width: 150 }}>平身科</Text>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>散斗</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', flex: 1 }}>三才升</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>转角铺作</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', width: 150 }}>角科</Text>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>华栱</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', flex: 1 }}>翘</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>泥道栱</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', width: 150 }}>正心瓜栱</Text>
+                <Text style={{ fontSize: 19, color: '#1A2230', width: 168 }}>令栱</Text>
+                <Text style={{ fontSize: 19, color: '#4A5568', flex: 1 }}>厢栱</Text>
+            </Box>
+
+            <Text style={{ fontSize: 14, color: '#8B97A8', marginTop: 18, lineHeight: 1.5 }}>
+                对照依据:宋《营造法式》与清工部《工程做法则例》(1734)。表中仅列最常用的八组,两套体系并非逐字等价。
+            </Text>
+        </Box>
+
+        {/* 右:为什么必须用宋式 */}
+        <Box style={{ width: 440, flexDirection: 'column', paddingLeft: 44 }}>
+
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230' }}>讲保国寺,必须用宋式</Text>
+
+            <Box style={{ width: 3, height: 42, background: '#1E4FA8', marginTop: 20, paddingLeft: 0 }} />
+
+            <Box style={{ flexDirection: 'row', marginTop: 4 }}>
+                <Box style={{ width: 3, height: 96, background: '#1E4FA8', marginRight: 16 }} />
+                <Box style={{ flexDirection: 'column', flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>时代决定体系</Text>
+                    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.6, marginTop: 4 }}>
+                        大殿建于 1013 年,早于清《工程做法则例》七百余年,清式名称在当时并不存在。
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', marginTop: 24 }}>
+                <Box style={{ width: 3, height: 96, background: '#1E4FA8', marginRight: 16 }} />
+                <Box style={{ flexDirection: 'column', flex: 1 }}>
+                    <Text style={{ fontSize: 18, fontWeight: '600', color: '#1A2230' }}>构件并不等价</Text>
+                    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.6, marginTop: 4 }}>
+                        清式斗拱已退化为装饰,构件比例与组合方式改变,用清名描述宋构会掩盖形制差异。
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ height: 92, background: '#E8EFF8', marginTop: 28, flexDirection: 'column', justifyContent: 'center', paddingLeft: 18, paddingRight: 18 }}>
+                <Text style={{ fontSize: 15, color: '#1E4FA8', fontWeight: 'bold', letterSpacing: 1 }}>统一口径</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', lineHeight: 1.5, marginTop: 6 }}>
+                    本报告全篇使用宋式名称;出现清式名称时,均以括号标注对照。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>09 / 20</Text>
+    </Box>
+
+</Slide>

@@ -1,0 +1,73 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    {/* 顶部标题条 */}
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>斗拱为何难懂:三重认知门槛</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>01 · 研究背景</Text>
+    </Box>
+
+    {/* 主体 */}
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'column' }}>
+
+        {/* 信息横幅 */}
+        <Box style={{ width: 1160, height: 84, background: '#E8EFF8', flexDirection: 'row', alignItems: 'center', paddingLeft: 24, paddingRight: 24, borderLeft: '4px solid #1E4FA8' }}>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 2, width: 96 }}>核心问题</Text>
+            <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5, flex: 1 }}>
+                斗拱是结构构件,却被当作装饰符号传播;观众看得见它,却说不清它由什么组成、凭什么承重。
+            </Text>
+        </Box>
+
+        {/* 三栏 */}
+        <Box style={{ flexDirection: 'row', gap: 24, marginTop: 24, height: 292 }}>
+
+            <Box style={{ flex: 1, border: '1px solid #D6DCE5', padding: 22, flexDirection: 'column' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 8 }}>
+                    <Text style={{ fontSize: 52, fontWeight: 'bold', color: '#1E4FA8', lineHeight: 1 }}>4</Text>
+                    <Text style={{ fontSize: 15, color: '#8B97A8', paddingBottom: 6 }}>种斗</Text>
+                </Box>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', marginTop: 16 }}>术语壁垒</Text>
+                <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.65, marginTop: 10 }}>
+                    《营造法式》为斗分四类、横栱分四类、构件分六类;宋称"铺作",清称"斗科",两套体系并存。
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, border: '1px solid #D6DCE5', padding: 22, flexDirection: 'column' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 8 }}>
+                    <Text style={{ fontSize: 52, fontWeight: 'bold', color: '#1E4FA8', lineHeight: 1 }}>4</Text>
+                    <Text style={{ fontSize: 15, color: '#8B97A8', paddingBottom: 6 }}>种横栱</Text>
+                </Box>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', marginTop: 16 }}>结构遮蔽</Text>
+                <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.65, marginTop: 10 }}>
+                    斗拱位于檐下高处,层层叠压于内部。仰视只能看见最下一层栌斗,看不到出跳的层次关系。
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, border: '1px solid #D6DCE5', padding: 22, flexDirection: 'column' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 8 }}>
+                    <Text style={{ fontSize: 52, fontWeight: 'bold', color: '#1E4FA8', lineHeight: 1 }}>6</Text>
+                    <Text style={{ fontSize: 15, color: '#8B97A8', paddingBottom: 6 }}>类构件</Text>
+                </Box>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', marginTop: 16 }}>断代失据</Text>
+                <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.65, marginTop: 10 }}>
+                    从西周雏形到清代装饰件,体量与功能变化剧烈。公众无法据形制外观判断建筑年代。
+                </Text>
+            </Box>
+
+        </Box>
+
+        {/* 结论条 */}
+        <Box style={{ width: 1160, height: 72, marginTop: 24, flexDirection: 'row', alignItems: 'center', paddingLeft: 24, paddingRight: 24, borderTop: '1px solid #D6DCE5', borderBottom: '1px solid #D6DCE5' }}>
+            <Text style={{ fontSize: 20, color: '#1A2230', flex: 1, lineHeight: 1.5 }}>
+                三重门槛指向同一个结论:<span style={{ color: '#D9534F', fontWeight: 'bold' }}>斗拱科普缺的不是知识,而是"看得见的拆解过程"</span>。
+            </Text>
+        </Box>
+
+    </Box>
+
+    {/* 页脚 */}
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>04 / 20</Text>
+    </Box>
+
+</Slide>

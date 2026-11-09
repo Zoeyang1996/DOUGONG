@@ -1,0 +1,89 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>四个实例:同一构件,四种答案</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>04 · 实例对比</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'column' }}>
+
+        {/* 对比表 */}
+        <Box style={{ width: 1160, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', paddingBottom: 10, borderBottom: '2px solid #1E4FA8' }}>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', width: 232 }}>建筑(时代)</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', width: 306 }}>斗拱形制</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', width: 92 }}>出跳</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', flex: 1 }}>结构特征</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 232 }}>佛光寺东大殿(唐,857)</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 306 }}>八铺作双杪三下昂</Text>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1E4FA8', width: 92 }}>5</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', flex: 1 }}>单栱出挑达 2 米,宋代最高等级</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 232 }}>独乐寺观音阁(辽,984)</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 306 }}>四杪七铺作</Text>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1E4FA8', width: 92 }}>4</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', flex: 1 }}>柱头与补间出跳不同,形成收放节奏</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12, borderTop: '1px solid #D9534F', borderBottom: '1px solid #D9534F' }}>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1A2230', width: 232 }}>保国寺大殿(北宋,1013)</Text>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1A2230', width: 306 }}>七铺作双杪双下昂单偷心</Text>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#D9534F', width: 92 }}>4</Text>
+                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1A2230', flex: 1 }}>下昂长逾两椽跨,作用如斜梁</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 12, paddingBottom: 12 }}>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 232 }}>故宫太和殿(清,1695 重建)</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', width: 306 }}>平身科五踩重翘</Text>
+                <Text style={{ fontSize: 17, color: '#8B97A8', width: 92 }}>—</Text>
+                <Text style={{ fontSize: 17, color: '#4A5568', flex: 1 }}>构件厚度减至唐宋的 1/2,已装饰化</Text>
+            </Box>
+        </Box>
+
+        {/* 条形图 */}
+        <Box style={{ width: 1160, flexDirection: 'column', marginTop: 26 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 10 }}>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>铺作数对比</Text>
+                <Text style={{ fontSize: 14, color: '#8B97A8', marginLeft: 14 }}>仅宋式体系可横向比较;清式用"踩",不对应</Text>
+            </Box>
+
+            <Box style={{ width: 1160 }}>
+                <svg width={1160} height={168} viewBox='0 0 1160 168'>
+                    {/* 轴 */}
+                    <line x1='150' y1='140' x2='1100' y2='140' stroke='#D6DCE5' strokeWidth='1' />
+
+                    {/* 佛光寺 8 */}
+                    <text x='140' y='30' fontSize='14' fill='#4A5568' textAnchor='end' fontFamily='Arial'>Foguang Si (Tang)</text>
+                    <rect x='150' y='14' width='880' height='26' fill='#3D7BD9' />
+                    <text x='1044' y='34' fontSize='15' fill='#1E4FA8' fontFamily='Arial'>8</text>
+
+                    {/* 独乐寺 7 */}
+                    <text x='140' y='72' fontSize='14' fill='#4A5568' textAnchor='end' fontFamily='Arial'>Dule Si (Liao)</text>
+                    <rect x='150' y='56' width='770' height='26' fill='#3D7BD9' />
+                    <text x='934' y='76' fontSize='15' fill='#1E4FA8' fontFamily='Arial'>7</text>
+
+                    {/* 保国寺 7 */}
+                    <text x='140' y='114' fontSize='14' fill='#D9534F' textAnchor='end' fontFamily='Arial'>Baoguo Si (Song)</text>
+                    <rect x='150' y='98' width='770' height='26' fill='#D9534F' />
+                    <text x='934' y='118' fontSize='15' fill='#D9534F' fontFamily='Arial'>7</text>
+
+                    <text x='150' y='162' fontSize='12' fill='#8B97A8' fontFamily='Arial'>4 pu</text>
+                    <text x='590' y='162' fontSize='12' fill='#8B97A8' fontFamily='Arial'>6 pu</text>
+                    <text x='1030' y='162' fontSize='12' fill='#8B97A8' fontFamily='Arial'>8 pu</text>
+                </svg>
+            </Box>
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>18 / 20</Text>
+    </Box>
+
+</Slide>

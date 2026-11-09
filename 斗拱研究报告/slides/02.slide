@@ -1,0 +1,51 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'row', position: 'relative' }}>
+
+    {/* 左:目录标识 */}
+    <Box style={{ width: 300, flexDirection: 'column', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 16, color: '#8B97A8', letterSpacing: 4, marginBottom: 16 }}>CONTENTS</Text>
+        <Text style={{ fontSize: 56, fontWeight: 'bold', color: '#1A2230', letterSpacing: 6 }}>目录</Text>
+        <Box style={{ width: 56, height: 4, background: '#1E4FA8', marginTop: 28 }} />
+    </Box>
+
+    {/* 右:章节清单 */}
+    <Box style={{ width: 840, flexDirection: 'column', justifyContent: 'center', marginLeft: 20 }}>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', paddingBottom: 26, borderBottom: '1px solid #D6DCE5' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#1E4FA8', width: 90 }}>01</Text>
+            <Box style={{ flexDirection: 'column', flex: 1 }}>
+                <Text style={{ fontSize: 26, fontWeight: '600', color: '#1A2230' }}>研究背景与意义</Text>
+                <Text style={{ fontSize: 16, color: '#8B97A8', marginTop: 6, letterSpacing: 0.5 }}>Why Dougong, Why Baoguo Temple</Text>
+            </Box>
+            <Text style={{ fontSize: 18, color: '#4A5568' }}>P04</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', paddingBottom: 26, paddingTop: 26, borderBottom: '1px solid #D6DCE5' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#1E4FA8', width: 90 }}>02</Text>
+            <Box style={{ flexDirection: 'column', flex: 1 }}>
+                <Text style={{ fontSize: 26, fontWeight: '600', color: '#1A2230' }}>构件体系与受力原理</Text>
+                <Text style={{ fontSize: 16, color: '#8B97A8', marginTop: 6, letterSpacing: 0.5 }}>Components, Nomenclature and Load Path</Text>
+            </Box>
+            <Text style={{ fontSize: 18, color: '#4A5568' }}>P07</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', paddingBottom: 26, paddingTop: 26, borderBottom: '1px solid #D6DCE5' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#1E4FA8', width: 90 }}>03</Text>
+            <Box style={{ flexDirection: 'column', flex: 1 }}>
+                <Text style={{ fontSize: 26, fontWeight: '600', color: '#1A2230' }}>形制演变</Text>
+                <Text style={{ fontSize: 16, color: '#8B97A8', marginTop: 6, letterSpacing: 0.5 }}>From Bearing Member to Ornament</Text>
+            </Box>
+            <Text style={{ fontSize: 18, color: '#4A5568' }}>P13</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', paddingTop: 26 }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#1E4FA8', width: 90 }}>04</Text>
+            <Box style={{ flexDirection: 'column', flex: 1 }}>
+                <Text style={{ fontSize: 26, fontWeight: '600', color: '#1A2230' }}>实例分析与结论</Text>
+                <Text style={{ fontSize: 16, color: '#8B97A8', marginTop: 6, letterSpacing: 0.5 }}>Case Study, Comparison and Conclusion</Text>
+            </Box>
+            <Text style={{ fontSize: 18, color: '#4A5568' }}>P17</Text>
+        </Box>
+
+    </Box>
+
+</Slide>

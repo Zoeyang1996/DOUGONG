@@ -1,0 +1,91 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', flexDirection: 'column', position: 'relative' }}>
+
+    <Box style={{ width: 1160, height: 56, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>明—清:不再承重的斗拱</Text>
+        <Text style={{ fontSize: 16, color: '#C9DAF3', letterSpacing: 1 }}>03 · 形制演变</Text>
+    </Box>
+
+    <Box style={{ width: 1160, height: 520, marginTop: 24, flexDirection: 'row' }}>
+
+        {/* 左:对照表 */}
+        <Box style={{ width: 700, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', paddingBottom: 10, borderBottom: '2px solid #1E4FA8' }}>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8B97A8', width: 152 }}>指标</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', flex: 1 }}>唐—宋</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', flex: 1 }}>明—清</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11, paddingBottom: 11, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>与梁的关系</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>梁插入斗拱之中</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>梁压在斗拱最上一跳</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11, paddingBottom: 11, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>斗拱尺度</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>高近柱身 1/2</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>缩小至约 1 米</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11, paddingBottom: 11, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>柱间朵数</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>1–2 朵</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>4–8 朵,间距加密</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11, paddingBottom: 11, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>构件厚度</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>基准</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>减至唐宋的 1/2</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11, paddingBottom: 11, borderBottom: '1px solid #E5E7EB' }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>承载角色</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>结构主力</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>装饰与等级标识</Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'row', paddingTop: 11 }}>
+                <Text style={{ fontSize: 17, color: '#4A5568', width: 152 }}>名称体系</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>铺作 / 朵</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', flex: 1 }}>斗科 / 攒(1734 年定制)</Text>
+            </Box>
+
+            <Text style={{ fontSize: 14, color: '#8B97A8', marginTop: 16, lineHeight: 1.5 }}>
+                数据据科普中国·斗拱词条、新疆日报《斗拱里藏着古建筑千年不倒的奥秘》(2025) 整理。
+            </Text>
+        </Box>
+
+        {/* 右:两点说明 */}
+        <Box style={{ width: 460, flexDirection: 'column', paddingLeft: 48 }}>
+
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230' }}>斗拱变成了"尺子"</Text>
+            <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.7, marginTop: 10 }}>
+                当结构功能退去,斗拱转而度量等级。唐代规定三品以上官员宅邸可用七铺作,<span style={{ fontWeight: 'bold', color: '#D9534F' }}>普通民居禁用</span>;
+                明清故宫三大殿斗拱七层,王府限五层。
+            </Text>
+
+            <Box style={{ width: 400, height: 1, background: '#E5E7EB', marginTop: 26, marginBottom: 26 }} />
+
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1A2230' }}>太和殿的斗拱</Text>
+            <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.7, marginTop: 10 }}>
+                平身科仍保持五踩重翘结构,但纵向构件厚度已减至唐宋时期的二分之一。它仍在,但已不是它。
+            </Text>
+
+            <Box style={{ height: 96, background: '#E8EFF8', marginTop: 28, flexDirection: 'column', justifyContent: 'center', paddingLeft: 18, paddingRight: 18 }}>
+                <Text style={{ fontSize: 15, color: '#1E4FA8', fontWeight: 'bold', letterSpacing: 1 }}>断代意义</Text>
+                <Text style={{ fontSize: 17, color: '#1A2230', lineHeight: 1.55, marginTop: 6 }}>
+                    梁与斗拱的交接方式,是比斗拱外观更快、更可靠的断代依据。
+                </Text>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 60, right: 60, top: 672, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>斗拱:形制、受力与千年演变</Text>
+        <Text style={{ fontSize: 14, color: '#8B97A8' }}>15 / 20</Text>
+    </Box>
+
+</Slide>
