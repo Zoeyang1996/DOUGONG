@@ -1,0 +1,20 @@
+{
+  "mesh_objects": 2873,
+  "non_manifold_evaluated": [],
+  "packed_images": 21,
+  "removed_duplicate_or_unsupported_objects": [
+    "前三椽栿_中三椽栿_后乳栿_11",
+    "前三椽栿_中三椽栿_后乳栿_21",
+    "山花内斜承",
+    "山花内斜承.001",
+    "山花内斜承.002",
+    "山花内斜承.003",
+    "山花内斜承.004",
+    "山花内斜承.005",
+    "山花内斜承.006",
+    "山花内斜承.007",
+    "山花内斜承.008",
+    "山花内斜承.009"
+  ],
+  "limits": "not an as-built survey; no structural calculation or exhaustive collision validation"
+}

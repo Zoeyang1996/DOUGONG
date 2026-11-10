@@ -1,0 +1,19 @@
+E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\build_interior.py:12: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(n);m.diffuse_color=(*c,1);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*c,1);p.inputs['Roughness'].default_value=.7;return m
+E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\build_interior.py:72: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  S.world.use_nodes=True;S.world.node_tree.nodes['Background'].inputs[0].default_value=(.25,.28,.32,1);S.world.node_tree.nodes['Background'].inputs[1].default_value=.7
+00:01.391  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:01.391  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:09.156  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\01_柱网与联系梁.png'
+02:03.266  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\02_铺作与梁架.png'
+08:21.469  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\03_内部结构总览.png'
+08:31.719  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\04_去椽架观察内部.png'
+08:44.500  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\05_前廊藻井仰视.png'
+08:50.969  render           | Saved: 'E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_interior_v01\06_东侧梁架.png'
+Info: Saved as "stage01_柱网.blend"
+Info: Saved as "stage02_梁架.blend"
+Info: Saved as "保国寺大殿_内部结构_v01.blend"
+READY 2779 0
+
+Blender quit
