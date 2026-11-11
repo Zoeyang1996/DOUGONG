@@ -1,0 +1,9 @@
+[
+ {"id":"baoguo","name":"保国寺大殿","country":"中国","region":"浙江","dynasty":"宋","year":1013,"lat":29.984,"lon":121.515,"text":"从宁波出发，观察柱、铺作与殿内空间的关系。此项后续将接入已制作的保国寺模型。","source":"用户保国寺实地调研资料及研究目录","url":null,"status":"候选样本；现存构件年代及坐标待逐条校核"},
+ {"id":"nanchan","name":"南禅寺大殿","country":"中国","region":"山西","dynasty":"唐","year":782,"lat":38.737,"lon":113.109,"text":"中国早期木构建筑的候选对照样本。正式条目将结合可靠资料介绍现存建筑与构件。","source":"本地研究资料线索","url":null,"status":"候选样本；资料与坐标待校核"},
+ {"id":"foguang","name":"佛光寺东大殿","country":"中国","region":"山西","dynasty":"唐","year":857,"lat":38.869,"lon":113.386,"text":"拟用于认识唐代木构与斗拱的对照条目。","source":"本地研究资料线索","url":null,"status":"候选样本；资料与坐标待校核"},
+ {"id":"dule","name":"独乐寺观音阁","country":"中国","region":"天津","dynasty":"辽","year":984,"lat":40.049,"lon":117.399,"text":"拟用于认识楼阁木构的对照条目。","source":"本地研究资料线索","url":null,"status":"候选样本；资料与坐标待校核"},
+ {"id":"yingxian","name":"应县木塔","country":"中国","region":"山西","dynasty":"辽","year":1056,"lat":39.566,"lon":113.183,"text":"拟用于观察多层木构及斗拱组织的候选条目。","source":"本地研究资料线索","url":null,"status":"候选样本；资料与坐标待校核"},
+ {"id":"horyuji","name":"法隆寺地域佛教建筑","country":"日本","region":"奈良","dynasty":null,"year":null,"lat":34.614,"lon":135.735,"text":"包含早期木构建筑的建筑群。此处作为日本对照样本，不主张其与宁波工匠存在关联。","source":"UNESCO · Buddhist Monuments in the Horyu-ji Area","url":"https://whc.unesco.org/en/list/660/","status":"建筑群资料已有来源；单体年代与构件信息待细化"},
+ {"id":"urnes","name":"乌尔内斯木板教堂","country":"挪威","region":"韦斯特兰","dynasty":null,"year":1130,"lat":61.298,"lon":7.322,"text":"以挪威木板教堂呈现欧洲木构传统。对照木构连接与空间组织，不套用中国斗拱分类。","source":"UNESCO · Urnes Stave Church；挪威古迹保护协会","url":"https://whc.unesco.org/en/list/58/","status":"约1130年；坐标为展示用近似值"}
+]

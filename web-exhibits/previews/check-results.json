@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-11T04:26:58.237Z",
+  "viewport": "1600×1000",
+  "errors": [],
+  "checks": [
+    {
+      "name": "第一幕六段滚动",
+      "passed": true
+    },
+    {
+      "name": "唐代筛选显示2项候选样本",
+      "passed": true
+    },
+    {
+      "name": "日本聚焦及详情",
+      "passed": true
+    },
+    {
+      "name": "欧洲条目及来源链接",
+      "passed": true
+    },
+    {
+      "name": "姓名开始计一次",
+      "passed": true
+    },
+    {
+      "name": "第1关6件拖拽装配完成",
+      "passed": true
+    },
+    {
+      "name": "第2关8件拖拽装配完成",
+      "passed": true
+    },
+    {
+      "name": "第3关10件拖拽装配完成",
+      "passed": true
+    },
+    {
+      "name": "刷新后保留已用2次并阻止第三次",
+      "passed": true
+    },
+    {
+      "name": "第四幕内容留空",
+      "passed": true
+    }
+  ]
+}

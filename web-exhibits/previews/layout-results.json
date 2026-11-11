@@ -1,0 +1,22 @@
+{
+  "viewport": "1366×768",
+  "checks": [
+    {
+      "name": "点击三维构件显示说明",
+      "passed": true
+    },
+    {
+      "name": "地球页横屏无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "1366横屏第三关10件全部可见",
+      "passed": true
+    },
+    {
+      "name": "第三关20秒耗尽进入失败结果",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

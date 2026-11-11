@@ -1,0 +1,170 @@
+00:00.500  blend            | Read blend: "E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\models\baoguosi_zhutou_v01\保国寺主铺作_v01_形制草模.blend"
+E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\web-exhibits\blender\prepare_assets.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes=True
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+12:26:03 | INFO: Starting glTF 2.0 export
+12:26:03 | INFO: Extracting primitive: ang_xiaang_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: ang_xiaang_02_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: context_gualeng_column_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_ang_head_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_ang_head_02_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_jiaohu_t1_0_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_jiaohu_t1_0.36_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_jiaohu_t1_-0.36_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_jiaohu_t2_0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_jiaohu_t2_-0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_ludou_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_center2_0_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_center2_0.49_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_center2_-0.49_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_0.72_0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_0.72_-0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_0_0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_0_-0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_-0.72_0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l3_-0.72_-0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_0.72_0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_0.72_-0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_0_0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_0_-0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_-0.72_0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_-0.72_-0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_-1.08_0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_l4_-1.08_-0.47_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_nidao_0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_nidao_-0.34_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_0.72_0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_0.72_-0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_0_0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_0_-0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_-0.72_0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_-0.72_-0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_-1.44_0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: dou_sandou_top_-1.44_-0.35_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: Cube.045
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: Cube.046
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: Cube.044
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_guazigong_l3_0_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_guazigong_l3_0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_guazigong_l3_-0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_huagong_tiao1_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_huagong_tiao2_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_linggong_0_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_linggong_0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_linggong_-0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_linggong_-1.44_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_mangong_center_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_mangong_l4_0_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_mangong_l4_0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_mangong_l4_-0.72_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_mangong_l4_-1.08_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: gong_nidaogong_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: timber_shuatou_01_mesh
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: Cylinder.001
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Extracting primitive: Cylinder
+12:26:03 | INFO: Primitives created: 1
+12:26:03 | INFO: Finished glTF 2.0 export in 0.06709456443786621 s
+E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\web-exhibits\blender\prepare_assets.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('暖木');m.diffuse_color=(.48,.23,.09,1);m.use_nodes=True;m.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=m.diffuse_color
+
+Extensions: writing cache failed ([WinError 5] 拒绝访问。: 'C:\\Users\\Administrator\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions').
+Info: Saved as "榫卯原理演示.blend"
+12:26:04 | INFO: Starting glTF 2.0 export
+12:26:04 | INFO: Extracting primitive: Cube
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.002
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.003
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Finished glTF 2.0 export in 0.005924701690673828 s
+E:\Program Files\github\2027技能大赛\保国寺斗拱\DOUGONG\web-exhibits\blender\prepare_assets.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('游戏木');m.diffuse_color=(.48,.23,.09,1);m.use_nodes=True;m.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=m.diffuse_color
+
+Extensions: writing cache failed ([WinError 5] 拒绝访问。: 'C:\\Users\\Administrator\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions').
+Info: Saved as "拼装交互占位件.blend"
+12:26:04 | INFO: Starting glTF 2.0 export
+12:26:04 | INFO: Extracting primitive: Cube
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.001
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.002
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.003
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.004
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.005
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.006
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.007
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.008
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Extracting primitive: Cube.009
+12:26:04 | INFO: Primitives created: 1
+12:26:04 | INFO: Finished glTF 2.0 export in 0.011128664016723633 s
+
+ASSETS_READY
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
