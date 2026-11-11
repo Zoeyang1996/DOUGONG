@@ -1,0 +1,25 @@
+[
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend",
+    "name": "_test_noanim",
+    "out": "output/fbx\\_test_noanim.fbx",
+    "ok": true,
+    "meshes": 59,
+    "triangles": 3172,
+    "removed": [
+      "Camera",
+      "Plane",
+      "主光",
+      "参考_37f6b9701sd1af240159492ef45c6f44",
+      "参考_cc7a4f051r19a9534ca0ee41238d5bc8",
+      "参考_保国寺铺作",
+      "展台",
+      "补光",
+      "轮廓光"
+    ],
+    "removed_count": 9,
+    "has_anim": false,
+    "size_mb": 1.28,
+    "sec": 0.4
+  }
+]

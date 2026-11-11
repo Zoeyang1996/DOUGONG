@@ -1,0 +1,288 @@
+[
+  {
+    "name": "baoguosi-guoleng-column-v01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-guoleng-column-v01.fbx",
+    "ok": true,
+    "meshes": 96,
+    "triangles": 56544,
+    "materials": 3,
+    "bbox_m": [
+      3.3,
+      3.0,
+      3.8
+    ],
+    "sample_names": [
+      "A_前左_主拼木_1",
+      "A_前左_主拼木_2",
+      "A_前左_主拼木_3",
+      "A_前左_主拼木_4",
+      "A_前左_暗榫_1_1",
+      "A_前左_暗榫_1_2"
+    ],
+    "size_mb": 1.87
+  },
+  {
+    "name": "baoguosi-guoleng-joint-section.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-guoleng-joint-section.fbx",
+    "ok": true,
+    "meshes": 16,
+    "triangles": 11216,
+    "materials": 3,
+    "bbox_m": [
+      0.7,
+      0.7,
+      0.75
+    ],
+    "sample_names": [
+      "构造剖段_主拼木_1",
+      "构造剖段_主拼木_2",
+      "构造剖段_主拼木_3",
+      "构造剖段_主拼木_4",
+      "构造剖段_暗榫_1_1",
+      "构造剖段_暗榫_1_2"
+    ],
+    "size_mb": 0.37
+  },
+  {
+    "name": "baoguosi-hall-interior-v01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-hall-interior-v01.fbx",
+    "ok": true,
+    "meshes": 2869,
+    "triangles": 307724,
+    "materials": 18,
+    "bbox_m": [
+      14.6,
+      17.85,
+      11.499
+    ],
+    "sample_names": [
+      "东次间小藻井_上八角井",
+      "东次间小藻井_上八角井.001",
+      "东次间小藻井_上八角井.002",
+      "东次间小藻井_上八角井.003",
+      "东次间小藻井_上八角井.004",
+      "东次间小藻井_上八角井.005"
+    ],
+    "size_mb": 13.65
+  },
+  {
+    "name": "baoguosi-hall-stage01-column-grid.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-hall-stage01-column-grid.fbx",
+    "ok": true,
+    "meshes": 161,
+    "triangles": 66380,
+    "materials": 15,
+    "bbox_m": [
+      14.6,
+      17.85,
+      8.556
+    ],
+    "sample_names": [
+      "佛坛_须弥座轮廓",
+      "佛坛_须弥座轮廓.001",
+      "佛坛_须弥座轮廓.002",
+      "内柱_11_A_前左_主拼木_1",
+      "内柱_11_A_前左_主拼木_2",
+      "内柱_11_A_前左_主拼木_3"
+    ],
+    "size_mb": 2.19
+  },
+  {
+    "name": "baoguosi-hall-stage02-beam-frame.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-hall-stage02-beam-frame.fbx",
+    "ok": true,
+    "meshes": 1180,
+    "triangles": 130080,
+    "materials": 17,
+    "bbox_m": [
+      14.6,
+      17.85,
+      11.499
+    ],
+    "sample_names": [
+      "中三椽栿_主梁",
+      "中三椽栿_主梁.001",
+      "佛坛_须弥座轮廓",
+      "佛坛_须弥座轮廓.001",
+      "佛坛_须弥座轮廓.002",
+      "内柱_11_A_前左_主拼木_1"
+    ],
+    "size_mb": 5.92
+  },
+  {
+    "name": "baoguosi-zhutou-puzuo-v01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\baoguosi-zhutou-puzuo-v01.fbx",
+    "ok": true,
+    "meshes": 59,
+    "triangles": 34228,
+    "materials": 4,
+    "bbox_m": [
+      1.9,
+      3.749,
+      3.65
+    ],
+    "sample_names": [
+      "ang_xiaang_01",
+      "ang_xiaang_02",
+      "context_gualeng_column",
+      "dou_ang_head_01",
+      "dou_ang_head_02",
+      "dou_jiaohu_t1_-0.36"
+    ],
+    "size_mb": 1.28
+  },
+  {
+    "name": "puzuo-bujian-01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-bujian-01.fbx",
+    "ok": true,
+    "meshes": 47,
+    "triangles": 2860,
+    "materials": 5,
+    "bbox_m": [
+      1.577,
+      3.426,
+      4.214
+    ],
+    "sample_names": [
+      "01_瓜棱柱",
+      "02_阑额（月梁）",
+      "03_栌斗（海棠瓣）",
+      "04_泥道拱",
+      "05_散斗",
+      "06_散斗"
+    ],
+    "size_mb": 0.15
+  },
+  {
+    "name": "puzuo-zhuanjiao-01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhuanjiao-01.fbx",
+    "ok": true,
+    "meshes": 104,
+    "triangles": 3406,
+    "materials": 3,
+    "bbox_m": [
+      5.116,
+      5.116,
+      6.806
+    ],
+    "sample_names": [
+      "下昂_xiang_t3_F",
+      "下昂_xiang_t3_S",
+      "下昂_xiang_t4_F",
+      "下昂_xiang_t4_S",
+      "交互斗_jiaohudou_t1_F",
+      "交互斗_jiaohudou_t1_S"
+    ],
+    "size_mb": 0.3
+  },
+  {
+    "name": "puzuo-zhuanjiao-02.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhuanjiao-02.fbx",
+    "ok": true,
+    "meshes": 104,
+    "triangles": 3406,
+    "materials": 3,
+    "bbox_m": [
+      5.116,
+      5.116,
+      6.806
+    ],
+    "sample_names": [
+      "下昂_xiang_t3_F",
+      "下昂_xiang_t3_S",
+      "下昂_xiang_t4_F",
+      "下昂_xiang_t4_S",
+      "交互斗_jiaohudou_t1_F",
+      "交互斗_jiaohudou_t1_S"
+    ],
+    "size_mb": 0.27
+  },
+  {
+    "name": "puzuo-zhuanjiao-03.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhuanjiao-03.fbx",
+    "ok": true,
+    "meshes": 92,
+    "triangles": 5676,
+    "materials": 4,
+    "bbox_m": [
+      5.117,
+      5.117,
+      4.141
+    ],
+    "sample_names": [
+      "A01_檐柱",
+      "A02_阑额_前檐",
+      "A03_阑额_山面",
+      "B01_栌斗_八棱瓜斗",
+      "C01_一跳通栱_沿X（山面华栱兼前檐泥道栱）",
+      "C02_一跳通栱_沿Y（前檐华栱兼山面泥道栱）"
+    ],
+    "size_mb": 0.27
+  },
+  {
+    "name": "puzuo-zhutou-01.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhutou-01.fbx",
+    "ok": true,
+    "meshes": 56,
+    "triangles": 14492,
+    "materials": 4,
+    "bbox_m": [
+      5.76,
+      3.4,
+      8.92
+    ],
+    "sample_names": [
+      "A01_基座",
+      "A02_柱础",
+      "A03_立柱",
+      "A04_阑额",
+      "B01_櫍斗",
+      "C01_泥道栱"
+    ],
+    "size_mb": 0.32
+  },
+  {
+    "name": "puzuo-zhutou-02.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhutou-02.fbx",
+    "ok": true,
+    "meshes": 45,
+    "triangles": 1688,
+    "materials": 2,
+    "bbox_m": [
+      3.145,
+      4.644,
+      9.738
+    ],
+    "sample_names": [
+      "下昂_xiang_t3",
+      "下昂_xiang_t4",
+      "交互斗_jiaohudou_t1_1",
+      "交互斗_jiaohudou_t1_里",
+      "交互斗_jiaohudou_t2_1",
+      "交互斗_jiaohudou_t2_里"
+    ],
+    "size_mb": 0.13
+  },
+  {
+    "name": "puzuo-zhutou-03.fbx",
+    "path": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\output\\fbx\\puzuo-zhutou-03.fbx",
+    "ok": true,
+    "meshes": 39,
+    "triangles": 14644,
+    "materials": 4,
+    "bbox_m": [
+      1.5,
+      2.22,
+      2.8
+    ],
+    "sample_names": [
+      "A01_檐柱",
+      "A02_阑额",
+      "B01_栌斗",
+      "C01_泥道栱",
+      "C02_头跳华栱",
+      "D01_散斗_1"
+    ],
+    "size_mb": 0.3
+  }
+]

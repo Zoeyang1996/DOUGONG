@@ -1,0 +1,225 @@
+[
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend",
+    "name": "baoguosi-zhutou-puzuo-v01",
+    "out": "output/fbx\\baoguosi-zhutou-puzuo-v01.fbx",
+    "ok": true,
+    "objects_total": 59,
+    "mesh_total": 59,
+    "meshes": 59,
+    "triangles": 3172,
+    "removed": [
+      "Camera",
+      "Plane",
+      "主光",
+      "参考_37f6b9701sd1af240159492ef45c6f44",
+      "参考_cc7a4f051r19a9534ca0ee41238d5bc8",
+      "参考_保国寺铺作",
+      "展台",
+      "补光",
+      "轮廓光"
+    ],
+    "removed_count": 9,
+    "size_mb": 1.28,
+    "sec": 0.4
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_guoleng_v01/保国寺四根瓜棱柱_v01.blend",
+    "name": "baoguosi-guoleng-column-v01",
+    "out": "output/fbx\\baoguosi-guoleng-column-v01.fbx",
+    "ok": true,
+    "objects_total": 120,
+    "mesh_total": 112,
+    "meshes": 96,
+    "triangles": 13728,
+    "removed": [],
+    "removed_count": 0,
+    "size_mb": 1.87,
+    "sec": 0.3
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_guoleng_v01/保国寺四根瓜棱柱_v01.blend",
+    "name": "baoguosi-guoleng-joint-section",
+    "out": "output/fbx\\baoguosi-guoleng-joint-section.fbx",
+    "ok": true,
+    "objects_total": 120,
+    "mesh_total": 112,
+    "meshes": 16,
+    "triangles": 2992,
+    "removed": [],
+    "removed_count": 0,
+    "size_mb": 0.37,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/保国寺大殿_内部结构_v01.blend",
+    "name": "baoguosi-hall-interior-v01",
+    "out": "output/fbx\\baoguosi-hall-interior-v01.fbx",
+    "ok": true,
+    "objects_total": 2869,
+    "mesh_total": 2869,
+    "meshes": 2869,
+    "triangles": 66668,
+    "removed": [
+      "东侧正投影",
+      "前廊内部_仰视",
+      "总览_东南向",
+      "柔光",
+      "柔光.001",
+      "柔光.002",
+      "柱网俯视"
+    ],
+    "removed_count": 7,
+    "size_mb": 13.65,
+    "sec": 9.0
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/stage01_柱网.blend",
+    "name": "baoguosi-hall-stage01-column-grid",
+    "out": "output/fbx\\baoguosi-hall-stage01-column-grid.fbx",
+    "ok": true,
+    "objects_total": 161,
+    "mesh_total": 161,
+    "meshes": 161,
+    "triangles": 22316,
+    "removed": [
+      "总览_东南向",
+      "柔光",
+      "柔光.001",
+      "柔光.002"
+    ],
+    "removed_count": 4,
+    "size_mb": 2.19,
+    "sec": 0.5
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/stage02_梁架.blend",
+    "name": "baoguosi-hall-stage02-beam-frame",
+    "out": "output/fbx\\baoguosi-hall-stage02-beam-frame.fbx",
+    "ok": true,
+    "objects_total": 1180,
+    "mesh_total": 1180,
+    "meshes": 1180,
+    "triangles": 45120,
+    "removed": [
+      "总览_东南向",
+      "柔光",
+      "柔光.001",
+      "柔光.002"
+    ],
+    "removed_count": 4,
+    "size_mb": 5.92,
+    "sec": 2.0
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作1.blend",
+    "name": "puzuo-zhutou-01",
+    "out": "output/fbx\\puzuo-zhutou-01.fbx",
+    "ok": true,
+    "objects_total": 59,
+    "mesh_total": 56,
+    "meshes": 56,
+    "triangles": 14492,
+    "removed": [
+      "地面",
+      "相机"
+    ],
+    "removed_count": 2,
+    "size_mb": 0.32,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作2.blend",
+    "name": "puzuo-zhutou-02",
+    "out": "output/fbx\\puzuo-zhutou-02.fbx",
+    "ok": true,
+    "objects_total": 52,
+    "mesh_total": 45,
+    "meshes": 45,
+    "triangles": 1688,
+    "removed": [
+      "背景板_bg"
+    ],
+    "removed_count": 1,
+    "size_mb": 0.13,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作3.blend",
+    "name": "puzuo-zhutou-03",
+    "out": "output/fbx\\puzuo-zhutou-03.fbx",
+    "ok": true,
+    "objects_total": 43,
+    "mesh_total": 39,
+    "meshes": 39,
+    "triangles": 3028,
+    "removed": [
+      "地面",
+      "相机"
+    ],
+    "removed_count": 2,
+    "size_mb": 0.3,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/补间铺作1.blend",
+    "name": "puzuo-bujian-01",
+    "out": "output/fbx\\puzuo-bujian-01.fbx",
+    "ok": true,
+    "objects_total": 64,
+    "mesh_total": 47,
+    "meshes": 47,
+    "triangles": 2860,
+    "removed": [
+      "floor"
+    ],
+    "removed_count": 1,
+    "size_mb": 0.15,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作1.blend",
+    "name": "puzuo-zhuanjiao-01",
+    "out": "output/fbx\\puzuo-zhuanjiao-01.fbx",
+    "ok": true,
+    "objects_total": 114,
+    "mesh_total": 104,
+    "meshes": 104,
+    "triangles": 3406,
+    "removed": [],
+    "removed_count": 0,
+    "size_mb": 0.3,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作2.blend",
+    "name": "puzuo-zhuanjiao-02",
+    "out": "output/fbx\\puzuo-zhuanjiao-02.fbx",
+    "ok": true,
+    "objects_total": 114,
+    "mesh_total": 104,
+    "meshes": 104,
+    "triangles": 3406,
+    "removed": [],
+    "removed_count": 0,
+    "size_mb": 0.27,
+    "sec": 0.1
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作3.blend",
+    "name": "puzuo-zhuanjiao-03",
+    "out": "output/fbx\\puzuo-zhuanjiao-03.fbx",
+    "ok": true,
+    "objects_total": 95,
+    "mesh_total": 92,
+    "meshes": 92,
+    "triangles": 5676,
+    "removed": [
+      "地面",
+      "相机"
+    ],
+    "removed_count": 2,
+    "size_mb": 0.27,
+    "sec": 0.1
+  }
+]

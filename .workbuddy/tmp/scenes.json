@@ -1,0 +1,139 @@
+[
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend",
+    "name": "baoguosi-zhutou-puzuo-v01",
+    "scenes": [
+      [
+        "Scene",
+        61,
+        68
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_guoleng_v01/保国寺四根瓜棱柱_v01.blend",
+    "name": "baoguosi-guoleng-column-v01",
+    "scenes": [
+      [
+        "01_四根内柱_组合与展开",
+        96,
+        100
+      ],
+      [
+        "02_榫卯剖段_组合与展开",
+        16,
+        20
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/保国寺大殿_内部结构_v01.blend",
+    "name": "baoguosi-hall-interior-v01",
+    "scenes": [
+      [
+        "保国寺大殿_内部构架",
+        2869,
+        2876
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/stage01_柱网.blend",
+    "name": "baoguosi-hall-stage01-column-grid",
+    "scenes": [
+      [
+        "保国寺大殿_内部构架",
+        161,
+        165
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/baoguosi_interior_v01/stage02_梁架.blend",
+    "name": "baoguosi-hall-stage02-beam-frame",
+    "scenes": [
+      [
+        "保国寺大殿_内部构架",
+        1180,
+        1184
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作1.blend",
+    "name": "puzuo-zhutou-01",
+    "scenes": [
+      [
+        "Scene",
+        57,
+        61
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作2.blend",
+    "name": "puzuo-zhutou-02",
+    "scenes": [
+      [
+        "Scene",
+        46,
+        53
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/柱头铺作3.blend",
+    "name": "puzuo-zhutou-03",
+    "scenes": [
+      [
+        "Scene",
+        40,
+        45
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/补间铺作1.blend",
+    "name": "puzuo-bujian-01",
+    "scenes": [
+      [
+        "Scene",
+        48,
+        65
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作1.blend",
+    "name": "puzuo-zhuanjiao-01",
+    "scenes": [
+      [
+        "Scene",
+        104,
+        114
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作2.blend",
+    "name": "puzuo-zhuanjiao-02",
+    "scenes": [
+      [
+        "Scene",
+        104,
+        114
+      ]
+    ]
+  },
+  {
+    "src": "E:\\Program Files\\github\\2027技能大赛\\保国寺斗拱\\DOUGONG\\models/保国寺铺作/保国寺铺作/转角铺作3.blend",
+    "name": "puzuo-zhuanjiao-03",
+    "scenes": [
+      [
+        "Scene",
+        93,
+        97
+      ]
+    ]
+  }
+]

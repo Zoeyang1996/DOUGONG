@@ -1,0 +1,417 @@
+[
+  {
+    "file": "models/baoguosi_guoleng_v01/保国寺四根瓜棱柱_v01.blend",
+    "ok": true,
+    "objects_total": 120,
+    "meshes": 112,
+    "triangles": 16720,
+    "lights": 6,
+    "cameras": 2,
+    "light_names": [
+      "柔光",
+      "柔光.001",
+      "柔光.002",
+      "柔光.003",
+      "柔光.004",
+      "柔光.005"
+    ],
+    "collections": [
+      {
+        "name": "A_前左",
+        "meshes": 24
+      },
+      {
+        "name": "B_前右",
+        "meshes": 24
+      },
+      {
+        "name": "C_后左",
+        "meshes": 24
+      },
+      {
+        "name": "D_后右",
+        "meshes": 24
+      },
+      {
+        "name": "构造剖段",
+        "meshes": 16
+      },
+      {
+        "name": "Collection",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 3,
+    "materials_with_image": 0,
+    "material_sample": [
+      "主拼木_暖木色",
+      "暗榫_深色硬木",
+      "补缝瓜瓣_浅木色"
+    ],
+    "has_actions": true,
+    "frames": [
+      1,
+      160
+    ],
+    "obj_name_sample": [
+      "A_前左_主拼木_1",
+      "A_前左_主拼木_2",
+      "A_前左_主拼木_3",
+      "A_前左_主拼木_4",
+      "A_前左_暗榫_1_1",
+      "A_前左_暗榫_1_2",
+      "A_前左_暗榫_1_3",
+      "A_前左_暗榫_1_4",
+      "A_前左_暗榫_2_1",
+      "A_前左_暗榫_2_2"
+    ]
+  },
+  {
+    "file": "models/baoguosi_interior_v01/stage01_柱网.blend",
+    "ok": true,
+    "objects_total": 165,
+    "meshes": 161,
+    "triangles": 22316,
+    "lights": 3,
+    "cameras": 1,
+    "light_names": [
+      "柔光",
+      "柔光.001",
+      "柔光.002"
+    ],
+    "collections": [
+      {
+        "name": "01_十六柱柱网",
+        "meshes": 108
+      },
+      {
+        "name": "00_台基柱础与佛坛",
+        "meshes": 25
+      },
+      {
+        "name": "02_阑额与柱头枋",
+        "meshes": 18
+      },
+      {
+        "name": "04_内槽铺作与梁架",
+        "meshes": 10
+      },
+      {
+        "name": "03_外槽铺作",
+        "meshes": 0
+      },
+      {
+        "name": "05_槫与椽架_可隐藏",
+        "meshes": 0
+      },
+      {
+        "name": "06_前廊三藻井与平棊",
+        "meshes": 0
+      },
+      {
+        "name": "90_原始参考图",
+        "meshes": 0
+      },
+      {
+        "name": "99_灯光相机",
+        "meshes": 0
+      },
+      {
+        "name": "Collection",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 16,
+    "materials_with_image": 0,
+    "material_sample": [
+      "Material",
+      "主拼木_暖木色",
+      "主拼木_暖木色.001",
+      "主拼木_暖木色.002",
+      "主拼木_暖木色.003",
+      "展示台基",
+      "暗榫_深色硬木",
+      "暗榫_深色硬木.001"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "佛坛_须弥座轮廓",
+      "佛坛_须弥座轮廓.001",
+      "佛坛_须弥座轮廓.002",
+      "内柱_11_A_前左_主拼木_1",
+      "内柱_11_A_前左_主拼木_2",
+      "内柱_11_A_前左_主拼木_3",
+      "内柱_11_A_前左_主拼木_4",
+      "内柱_11_A_前左_暗榫_1_1",
+      "内柱_11_A_前左_暗榫_1_2",
+      "内柱_11_A_前左_暗榫_1_3"
+    ]
+  },
+  {
+    "file": "models/baoguosi_interior_v01/stage02_梁架.blend",
+    "ok": true,
+    "objects_total": 1184,
+    "meshes": 1180,
+    "triangles": 45120,
+    "lights": 3,
+    "cameras": 1,
+    "light_names": [
+      "柔光",
+      "柔光.001",
+      "柔光.002"
+    ],
+    "collections": [
+      {
+        "name": "03_外槽铺作",
+        "meshes": 570
+      },
+      {
+        "name": "05_槫与椽架_可隐藏",
+        "meshes": 307
+      },
+      {
+        "name": "04_内槽铺作与梁架",
+        "meshes": 152
+      },
+      {
+        "name": "01_十六柱柱网",
+        "meshes": 108
+      },
+      {
+        "name": "00_台基柱础与佛坛",
+        "meshes": 25
+      },
+      {
+        "name": "02_阑额与柱头枋",
+        "meshes": 18
+      },
+      {
+        "name": "06_前廊三藻井与平棊",
+        "meshes": 0
+      },
+      {
+        "name": "90_原始参考图",
+        "meshes": 0
+      },
+      {
+        "name": "99_灯光相机",
+        "meshes": 0
+      },
+      {
+        "name": "Collection",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 18,
+    "materials_with_image": 0,
+    "material_sample": [
+      "Material",
+      "主拼木_暖木色",
+      "主拼木_暖木色.001",
+      "主拼木_暖木色.002",
+      "主拼木_暖木色.003",
+      "展示台基",
+      "斗与栱_浅朱褐",
+      "暗榫_深色硬木"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "中三椽栿_主梁",
+      "中三椽栿_主梁.001",
+      "佛坛_须弥座轮廓",
+      "佛坛_须弥座轮廓.001",
+      "佛坛_须弥座轮廓.002",
+      "内柱_11_A_前左_主拼木_1",
+      "内柱_11_A_前左_主拼木_2",
+      "内柱_11_A_前左_主拼木_3",
+      "内柱_11_A_前左_主拼木_4",
+      "内柱_11_A_前左_暗榫_1_1"
+    ]
+  },
+  {
+    "file": "models/baoguosi_interior_v01/保国寺大殿_内部结构_v01.blend",
+    "ok": true,
+    "objects_total": 2876,
+    "meshes": 2869,
+    "triangles": 66668,
+    "lights": 3,
+    "cameras": 4,
+    "light_names": [
+      "柔光",
+      "柔光.001",
+      "柔光.002"
+    ],
+    "collections": [
+      {
+        "name": "06_前廊三藻井与平棊",
+        "meshes": 1695
+      },
+      {
+        "name": "03_外槽铺作",
+        "meshes": 570
+      },
+      {
+        "name": "07_椽子_默认隐藏便于看内部",
+        "meshes": 278
+      },
+      {
+        "name": "04_内槽铺作与梁架",
+        "meshes": 152
+      },
+      {
+        "name": "01_十六柱柱网",
+        "meshes": 108
+      },
+      {
+        "name": "00_台基柱础与佛坛",
+        "meshes": 25
+      },
+      {
+        "name": "02_阑额与柱头枋",
+        "meshes": 22
+      },
+      {
+        "name": "05_槫与椽架_可隐藏",
+        "meshes": 19
+      },
+      {
+        "name": "90_原始参考图",
+        "meshes": 0
+      },
+      {
+        "name": "99_灯光相机",
+        "meshes": 0
+      },
+      {
+        "name": "Collection",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 18,
+    "materials_with_image": 0,
+    "material_sample": [
+      "主拼木_暖木色",
+      "主拼木_暖木色.001",
+      "主拼木_暖木色.002",
+      "主拼木_暖木色.003",
+      "展示台基",
+      "斗与栱_浅朱褐",
+      "暗榫_深色硬木",
+      "暗榫_深色硬木.001"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "东次间小藻井_上八角井",
+      "东次间小藻井_上八角井.001",
+      "东次间小藻井_上八角井.002",
+      "东次间小藻井_上八角井.003",
+      "东次间小藻井_上八角井.004",
+      "东次间小藻井_上八角井.005",
+      "东次间小藻井_上八角井.006",
+      "东次间小藻井_上八角井.007",
+      "东次间小藻井_下八角井",
+      "东次间小藻井_下八角井.001"
+    ]
+  },
+  {
+    "file": "models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend",
+    "ok": true,
+    "objects_total": 68,
+    "meshes": 61,
+    "triangles": 3554,
+    "lights": 3,
+    "cameras": 1,
+    "light_names": [
+      "主光",
+      "补光",
+      "轮廓光"
+    ],
+    "collections": [
+      {
+        "name": "04_第二下昂",
+        "meshes": 14
+      },
+      {
+        "name": "05_耍头与上层横栱",
+        "meshes": 13
+      },
+      {
+        "name": "03_第一下昂",
+        "meshes": 11
+      },
+      {
+        "name": "01_第一杪_外跳偷心",
+        "meshes": 7
+      },
+      {
+        "name": "02_第二杪",
+        "meshes": 7
+      },
+      {
+        "name": "06_承托与槫_局部示意",
+        "meshes": 5
+      },
+      {
+        "name": "00_柱头与栌斗",
+        "meshes": 2
+      },
+      {
+        "name": "90_摄影棚_非建筑构件",
+        "meshes": 2
+      },
+      {
+        "name": "91_参考图_已打包",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 6,
+    "materials_with_image": 0,
+    "material_sample": [
+      "展台_炭灰",
+      "木材_关联梁枋",
+      "木材_斗_浅褐",
+      "木材_昂_深褐",
+      "木材_栱_暖褐",
+      "背景"
+    ],
+    "has_actions": true,
+    "frames": [
+      1,
+      150
+    ],
+    "obj_name_sample": [
+      "ang_xiaang_01",
+      "ang_xiaang_02",
+      "context_gualeng_column",
+      "dou_ang_head_01",
+      "dou_ang_head_02",
+      "dou_jiaohu_t1_-0.36",
+      "dou_jiaohu_t1_0",
+      "dou_jiaohu_t1_0.36",
+      "dou_jiaohu_t2_-0.72",
+      "dou_jiaohu_t2_0.72"
+    ]
+  }
+]

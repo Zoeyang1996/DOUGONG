@@ -1,0 +1,558 @@
+[
+  {
+    "file": "models/保国寺铺作/保国寺铺作/柱头铺作1.blend",
+    "ok": true,
+    "objects_total": 61,
+    "meshes": 57,
+    "triangles": 14494,
+    "lights": 3,
+    "cameras": 1,
+    "light_names": [
+      "主光",
+      "轮廓光",
+      "辅光"
+    ],
+    "collections": [
+      {
+        "name": "06_斗类",
+        "meshes": 24
+      },
+      {
+        "name": "08_檐口",
+        "meshes": 7
+      },
+      {
+        "name": "02_扶壁栱与柱头枋",
+        "meshes": 6
+      },
+      {
+        "name": "05_横栱",
+        "meshes": 5
+      },
+      {
+        "name": "07_栿与耍头",
+        "meshes": 5
+      },
+      {
+        "name": "00_柱与基座",
+        "meshes": 4
+      },
+      {
+        "name": "03_出跳华栱",
+        "meshes": 2
+      },
+      {
+        "name": "04_下昂",
+        "meshes": 2
+      },
+      {
+        "name": "01_櫍斗",
+        "meshes": 1
+      },
+      {
+        "name": "09_场景",
+        "meshes": 1
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 5,
+    "materials_with_image": 0,
+    "material_sample": [
+      "地面",
+      "木_斗栱",
+      "木_昂",
+      "木_构件",
+      "石_柱础"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "A01_基座",
+      "A02_柱础",
+      "A03_立柱",
+      "A04_阑额",
+      "B01_櫍斗",
+      "C01_泥道栱",
+      "C02_慢栱_柱心",
+      "C03_柱头枋一",
+      "C04_柱头枋二",
+      "C05_柱头枋三"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/柱头铺作2.blend",
+    "ok": true,
+    "objects_total": 53,
+    "meshes": 46,
+    "triangles": 1690,
+    "lights": 4,
+    "cameras": 2,
+    "light_names": [
+      "Fill_补光",
+      "Key_主光",
+      "Rim_轮廓光",
+      "Sun_主光"
+    ],
+    "collections": [
+      {
+        "name": "03_计心横栱",
+        "meshes": 15
+      },
+      {
+        "name": "02_出跳华栱昂",
+        "meshes": 13
+      },
+      {
+        "name": "06_枋类",
+        "meshes": 10
+      },
+      {
+        "name": "05_里跳挑斡",
+        "meshes": 3
+      },
+      {
+        "name": "08_柱与基座",
+        "meshes": 3
+      },
+      {
+        "name": "01_栌斗",
+        "meshes": 1
+      },
+      {
+        "name": "04_转角45度构件",
+        "meshes": 0
+      },
+      {
+        "name": "07_藻井示意",
+        "meshes": 0
+      }
+    ],
+    "top_level_meshes": [
+      "背景板_bg"
+    ],
+    "top_level_count": 1,
+    "materials": 3,
+    "materials_with_image": 0,
+    "material_sample": [
+      "MAT_white",
+      "老木_枋类略深",
+      "老木_深褐"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "下昂_xiang_t3",
+      "下昂_xiang_t4",
+      "交互斗_jiaohudou_t1_1",
+      "交互斗_jiaohudou_t1_里",
+      "交互斗_jiaohudou_t2_1",
+      "交互斗_jiaohudou_t2_里",
+      "交互斗_jiaohudou_t3_1",
+      "交互斗_jiaohudou_t4_1",
+      "令栱_linggong_t4",
+      "华栱_huagong_t1"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/柱头铺作3.blend",
+    "ok": true,
+    "objects_total": 45,
+    "meshes": 40,
+    "triangles": 3030,
+    "lights": 4,
+    "cameras": 1,
+    "light_names": [
+      "主光",
+      "天光",
+      "轮廓光",
+      "辅光"
+    ],
+    "collections": [
+      {
+        "name": "保国寺前檐柱头铺作",
+        "meshes": 39
+      },
+      {
+        "name": "01_第一跳",
+        "meshes": 7
+      },
+      {
+        "name": "02_第二跳",
+        "meshes": 7
+      },
+      {
+        "name": "03_第三跳",
+        "meshes": 7
+      },
+      {
+        "name": "05_第五跳",
+        "meshes": 7
+      },
+      {
+        "name": "04_第四跳",
+        "meshes": 6
+      },
+      {
+        "name": "00_柱额与栌斗",
+        "meshes": 3
+      },
+      {
+        "name": "06_替木与撩檐槫",
+        "meshes": 2
+      }
+    ],
+    "top_level_meshes": [
+      "地面"
+    ],
+    "top_level_count": 1,
+    "materials": 5,
+    "materials_with_image": 0,
+    "material_sample": [
+      "地",
+      "木_斗",
+      "木_柱额",
+      "木_栱昂",
+      "木_槫"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "A01_檐柱",
+      "A02_阑额",
+      "B01_栌斗",
+      "C01_泥道栱",
+      "C02_头跳华栱",
+      "D01_散斗_1",
+      "D01_散斗_2",
+      "D02_齐心斗",
+      "D03_交互斗_跳1",
+      "D04_交互斗_里跳1"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/补间铺作1.blend",
+    "ok": true,
+    "objects_total": 65,
+    "meshes": 48,
+    "triangles": 2862,
+    "lights": 3,
+    "cameras": 1,
+    "light_names": [
+      "fill",
+      "key",
+      "rim"
+    ],
+    "collections": [
+      {
+        "name": "保国寺大殿_外檐补间铺作",
+        "meshes": 47
+      },
+      {
+        "name": "30 第二跳·华栱（计心）",
+        "meshes": 13
+      },
+      {
+        "name": "70 里跳·承槫",
+        "meshes": 8
+      },
+      {
+        "name": "40 第三跳·下昂一",
+        "meshes": 7
+      },
+      {
+        "name": "60 令栱·耍头·撩檐枋",
+        "meshes": 6
+      },
+      {
+        "name": "10 栌斗层",
+        "meshes": 5
+      },
+      {
+        "name": "20 第一跳·华栱（偷心）",
+        "meshes": 3
+      },
+      {
+        "name": "00 柱与阑额",
+        "meshes": 2
+      },
+      {
+        "name": "50 第四跳·下昂二",
+        "meshes": 2
+      },
+      {
+        "name": "80 上部·槫与椽",
+        "meshes": 1
+      }
+    ],
+    "top_level_meshes": [
+      "floor"
+    ],
+    "top_level_count": 1,
+    "materials": 6,
+    "materials_with_image": 0,
+    "material_sample": [
+      "floor_mat",
+      "木_拱",
+      "木_斗",
+      "木_昂",
+      "木_枋",
+      "木_柱"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "01_瓜棱柱",
+      "02_阑额（月梁）",
+      "03_栌斗（海棠瓣）",
+      "04_泥道拱",
+      "05_散斗",
+      "06_散斗",
+      "07_柱头枋（下）",
+      "08_华栱一（一跳）",
+      "09_交互斗（一跳头）",
+      "10_交互斗（一跳头）"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/转角铺作1.blend",
+    "ok": true,
+    "objects_total": 114,
+    "meshes": 104,
+    "triangles": 3406,
+    "lights": 6,
+    "cameras": 3,
+    "light_names": [
+      "Bounce_反光",
+      "Fill_补光",
+      "Inner_内角补光",
+      "Key_主光",
+      "Outer_外角补光",
+      "Rim_轮廓光"
+    ],
+    "collections": [
+      {
+        "name": "02_出跳华栱昂",
+        "meshes": 26
+      },
+      {
+        "name": "03_计心横栱",
+        "meshes": 24
+      },
+      {
+        "name": "04_转角45度构件",
+        "meshes": 22
+      },
+      {
+        "name": "06_枋类",
+        "meshes": 20
+      },
+      {
+        "name": "05_里跳挑斡",
+        "meshes": 7
+      },
+      {
+        "name": "07_藻井示意",
+        "meshes": 3
+      },
+      {
+        "name": "01_栌斗",
+        "meshes": 2
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 3,
+    "materials_with_image": 0,
+    "material_sample": [
+      "老木_枋类略深",
+      "老木_深褐",
+      "藻井示意_素色"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "下昂_xiang_t3_F",
+      "下昂_xiang_t3_S",
+      "下昂_xiang_t4_F",
+      "下昂_xiang_t4_S",
+      "交互斗_jiaohudou_t1_F",
+      "交互斗_jiaohudou_t1_S",
+      "交互斗_jiaohudou_t1li_F",
+      "交互斗_jiaohudou_t1li_S",
+      "交互斗_jiaohudou_t2_F",
+      "交互斗_jiaohudou_t2_S"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/转角铺作2.blend",
+    "ok": true,
+    "objects_total": 114,
+    "meshes": 104,
+    "triangles": 3406,
+    "lights": 6,
+    "cameras": 3,
+    "light_names": [
+      "Bounce_反光",
+      "Fill_补光",
+      "Inner_内角补光",
+      "Key_主光",
+      "Outer_外角补光",
+      "Rim_轮廓光"
+    ],
+    "collections": [
+      {
+        "name": "02_出跳华栱昂",
+        "meshes": 26
+      },
+      {
+        "name": "03_计心横栱",
+        "meshes": 24
+      },
+      {
+        "name": "04_转角45度构件",
+        "meshes": 22
+      },
+      {
+        "name": "06_枋类",
+        "meshes": 20
+      },
+      {
+        "name": "05_里跳挑斡",
+        "meshes": 7
+      },
+      {
+        "name": "07_藻井示意",
+        "meshes": 3
+      },
+      {
+        "name": "01_栌斗",
+        "meshes": 2
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 3,
+    "materials_with_image": 0,
+    "material_sample": [
+      "老木_枋类略深",
+      "老木_深褐",
+      "藻井示意_素色"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "下昂_xiang_t3_F",
+      "下昂_xiang_t3_S",
+      "下昂_xiang_t4_F",
+      "下昂_xiang_t4_S",
+      "交互斗_jiaohudou_t1_F",
+      "交互斗_jiaohudou_t1_S",
+      "交互斗_jiaohudou_t1li_F",
+      "交互斗_jiaohudou_t1li_S",
+      "交互斗_jiaohudou_t2_F",
+      "交互斗_jiaohudou_t2_S"
+    ]
+  },
+  {
+    "file": "models/保国寺铺作/保国寺铺作/转角铺作3.blend",
+    "ok": true,
+    "objects_total": 97,
+    "meshes": 93,
+    "triangles": 5678,
+    "lights": 2,
+    "cameras": 1,
+    "light_names": [
+      "主光",
+      "辅光"
+    ],
+    "collections": [
+      {
+        "name": "06_耍头与撩檐枋",
+        "meshes": 18
+      },
+      {
+        "name": "04_第三跳_下昂一",
+        "meshes": 17
+      },
+      {
+        "name": "05_第四跳_下昂二",
+        "meshes": 15
+      },
+      {
+        "name": "03_第二跳_计心",
+        "meshes": 11
+      },
+      {
+        "name": "07_柱心缝扶壁",
+        "meshes": 10
+      },
+      {
+        "name": "02_第一跳_偷心",
+        "meshes": 9
+      },
+      {
+        "name": "08_里跳昂尾挑斡",
+        "meshes": 8
+      },
+      {
+        "name": "00_柱额基层",
+        "meshes": 3
+      },
+      {
+        "name": "01_栌斗",
+        "meshes": 1
+      },
+      {
+        "name": "09_场景",
+        "meshes": 1
+      }
+    ],
+    "top_level_meshes": [],
+    "top_level_count": 0,
+    "materials": 5,
+    "materials_with_image": 0,
+    "material_sample": [
+      "地面",
+      "木_斗",
+      "木_昂",
+      "木_柱额枋",
+      "木_栱"
+    ],
+    "has_actions": false,
+    "frames": [
+      1,
+      250
+    ],
+    "obj_name_sample": [
+      "A01_檐柱",
+      "A02_阑额_前檐",
+      "A03_阑额_山面",
+      "B01_栌斗_八棱瓜斗",
+      "C01_一跳通栱_沿X（山面华栱兼前檐泥道栱）",
+      "C02_一跳通栱_沿Y（前檐华栱兼山面泥道栱）",
+      "C03_角华栱一（列栱）",
+      "D01_交互斗_山面跳1",
+      "D02_交互斗_前檐跳1",
+      "D03_交互斗_角跳1"
+    ]
+  }
+]
