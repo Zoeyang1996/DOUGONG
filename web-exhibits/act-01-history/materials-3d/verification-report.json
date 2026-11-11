@@ -1,0 +1,101 @@
+[
+  {
+    "id": "G1",
+    "imported_meshes": 2,
+    "glb_bytes": 889020,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "G2",
+    "imported_meshes": 4,
+    "glb_bytes": 907432,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "G3",
+    "imported_meshes": 5,
+    "glb_bytes": 911496,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "G4",
+    "imported_meshes": 32,
+    "glb_bytes": 1143452,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "G5",
+    "imported_meshes": 53,
+    "glb_bytes": 1358736,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "G6",
+    "imported_meshes": 24,
+    "glb_bytes": 1066380,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "K1",
+    "imported_meshes": 1,
+    "glb_bytes": 888724,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "K2",
+    "imported_meshes": 1,
+    "glb_bytes": 882476,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "K3",
+    "imported_meshes": 1,
+    "glb_bytes": 885168,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "K4",
+    "imported_meshes": 1,
+    "glb_bytes": 880320,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  },
+  {
+    "id": "K5",
+    "imported_meshes": 1,
+    "glb_bytes": 882648,
+    "material_count": 1,
+    "draco": true,
+    "transform_errors": [],
+    "roundtrip": "pass"
+  }
+]

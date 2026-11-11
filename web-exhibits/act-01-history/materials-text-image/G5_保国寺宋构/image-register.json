@@ -1,0 +1,49 @@
+[
+  {
+    "file": "references/保国寺侧向图_原作者待查_仅内部.jpg",
+    "source_page_url": "local:research/斗拱可视化资料/保国寺铺作.jpg",
+    "author_or_institution": "本地转载图，原书与作者待查",
+    "object_and_date_basis": "参考图，版本/作者/页码待核",
+    "image_type": "原始下载或用户原图副本，未裁切",
+    "usage_conditions": "本地转载参考，原书作者未查明；仅内部",
+    "relationship_to_model": "仅辅助理解外形/环境；不决定隐藏节点或精确尺寸",
+    "recommended_for_evidence_badge": false,
+    "license_url": null,
+    "review_status": "待审"
+  },
+  {
+    "file": "references/保国寺现状外观_用户提供.jpg",
+    "source_page_url": "local:research/保国寺实地调研照片/516b4f325h43760af614fa3534c93205.jpg",
+    "author_or_institution": "用户提供；拟署名待确认",
+    "object_and_date_basis": "保国寺现状外观，含后世变化，非1013年原貌",
+    "image_type": "原始下载或用户原图副本，未裁切",
+    "usage_conditions": "用户提供现场照片，正式署名待确认",
+    "relationship_to_model": "仅辅助理解外形/环境；不决定隐藏节点或精确尺寸",
+    "recommended_for_evidence_badge": true,
+    "license_url": null,
+    "review_status": "待审"
+  },
+  {
+    "file": "references/现场展陈木构模型_用户提供.jpg",
+    "source_page_url": "local:research/保国寺实地调研照片/37f6b9701sd1af240159492ef45c6f44.jpg",
+    "author_or_institution": "用户提供；拟署名待确认",
+    "object_and_date_basis": "保国寺展陈木结构模型，不是原构件",
+    "image_type": "原始下载或用户原图副本，未裁切",
+    "usage_conditions": "用户提供现场照片，正式署名待确认",
+    "relationship_to_model": "仅辅助理解外形/环境；不决定隐藏节点或精确尺寸",
+    "recommended_for_evidence_badge": true,
+    "license_url": null,
+    "review_status": "待审"
+  },
+  {
+    "file": "renders/",
+    "source_page_url": "本项目Blender生成",
+    "author_or_institution": "项目制作",
+    "object_and_date_basis": "本轮形制/原理示意，不作历史证据",
+    "image_type": "原创模型渲染",
+    "usage_conditions": "用于素材审核；模型形制通过校核后再用于正式科普",
+    "relationship_to_model": "直接展示对应中心模型",
+    "recommended_for_evidence_badge": false,
+    "review_status": "待审"
+  }
+]

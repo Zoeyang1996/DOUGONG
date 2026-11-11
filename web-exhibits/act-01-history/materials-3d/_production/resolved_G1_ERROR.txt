@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/yangzhe/Desktop/浙江工商/DOUGONG/web-exhibits/act-01-history/materials-3d/_production/build_assets.py", line 317, in <module>
+    results.append(export(key))
+                   ~~~~~~^^^^^
+  File "/Users/yangzhe/Desktop/浙江工商/DOUGONG/web-exhibits/act-01-history/materials-3d/_production/build_assets.py", line 265, in export
+    root,scale=setup_scene();meta=[];random.seed(12)
+               ~~~~~~~~~~~^^
+  File "/Users/yangzhe/Desktop/浙江工商/DOUGONG/web-exhibits/act-01-history/materials-3d/_production/build_assets.py", line 260, in setup_scene
+    sc.use_nodes=True;nt=sc.node_tree;nt.nodes.clear();rl=nt.nodes.new('CompositorNodeRLayers');alpha=nt.nodes.new('CompositorNodeAlphaOver');alpha.inputs[1].default_value=(.88,.85,.78,1);nt.links.new(rl.outputs['Image'],alpha.inputs[2]);out=nt.nodes.new('CompositorNodeComposite');nt.links.new(alpha.outputs[0],out.inputs[0])
+                         ^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'node_tree'

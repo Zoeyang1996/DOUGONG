@@ -1,0 +1,118 @@
+{
+  "S01": {
+    "title": "远古江南·海陆山河——河姆渡文化发现50周年考古成果特展",
+    "author": "中国国家博物馆",
+    "url": "https://www.chnmuseum.cn/portals/0/web/zt/202311hmdwh/",
+    "supports": "河姆渡文化年代、梁头榫实物、干栏建筑背景。",
+    "limit": "并不能证明本轮G1/G2虚拟节点对应某件出土器物。",
+    "accessed": "2026-11-11"
+  },
+  "S04": {
+    "title": "绿釉三层陶楼",
+    "author": "河南博物院",
+    "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/zpjc/tq/article7b37de012be44686ac39588368ed3dd8.html",
+    "supports": "东汉陶楼及熊形栱等形象。",
+    "limit": "馆图335×508，细部有限；G3不复原熊形栱，不据此断言汉代统一节点。",
+    "accessed": "2026-11-11"
+  },
+  "S05": {
+    "title": "斗栱千千万",
+    "author": "故宫博物院",
+    "url": "https://www.dpm.org.cn/architectural_art/246282.html",
+    "supports": "明清斗栱位置、斗口、装饰作用及仍具支撑作用。",
+    "limit": "不能推出清代所有斗栱完全不承重。",
+    "accessed": "2026-11-11"
+  },
+  "S06": {
+    "title": "佛光寺东大殿实测数据解读（论文首页）",
+    "author": "张荣、刘畅等；故宫博物院院刊",
+    "url": "https://www.dpm.org.cn/Uploads/pdf/5075/T00028_00.pdf",
+    "supports": "857年、实测研究及下昂斜度研究。",
+    "limit": "仅取得首页，未取得完整测绘图；模型不得称精确复原。",
+    "accessed": "2026-11-11"
+  },
+  "S07": {
+    "title": "《营造法式》",
+    "author": "故宫博物院",
+    "url": "https://www.dpm.org.cn/ancient/mingqing/149329.html",
+    "supports": "1103年刊行及版本信息。",
+    "limit": "本轮未使用书页作背景，也不声称保国寺按此书施工。",
+    "accessed": "2026-11-11"
+  },
+  "S09": {
+    "title": "太和殿",
+    "author": "故宫博物院",
+    "url": "https://www.dpm.org.cn/explore/building/236465.html",
+    "supports": "清代重建及整体建筑背景。",
+    "limit": "未选定具体檐层的完整节点图，故G6降为清式教学示意。",
+    "accessed": "2026-11-11"
+  },
+  "S11": {
+    "title": "昂",
+    "author": "故宫博物院",
+    "url": "https://www.dpm.org.cn/lemmas/241883.html",
+    "supports": "清式昂的术语背景。",
+    "limit": "不直接套用到保国寺下昂的尺寸或力学解释。",
+    "accessed": "2026-11-11"
+  },
+  "S12": {
+    "title": "古建保护常识·斗栱分件",
+    "author": "沈阳故宫博物院",
+    "url": "https://www.sypm.org.cn/xinwen_2/1.html",
+    "supports": "大斗、翘、昂、三才升等明清名称；明清柱头科仍有承重功能。",
+    "limit": "术语单元注明清式语境；不把清式标准尺寸用于宋构。",
+    "accessed": "2026-11-11"
+  },
+  "S13": {
+    "title": "佛光寺研究论文单页：屋架比例与下昂角度",
+    "author": "故宫博物院院刊（全文书目信息待补）",
+    "url": "https://www.dpm.org.cn/Uploads/File/pdf/9e/dc/5d/9edc5d81a97c78e43173912d114a38dc.pdf",
+    "supports": "下昂与屋架斜度关系的研究线索。",
+    "limit": "只取得单页，不以此宣称完成全部构件校核。",
+    "accessed": "2026-11-11"
+  },
+  "S14": {
+    "title": "觅古在杭城——北京大学2017年中学生考古暑期课堂第六天实况报道",
+    "author": "良渚博物院展览教育部",
+    "url": "https://www.lzmuseum.cn/jgwmg/detail.aspx?artid=2024",
+    "supports": "保国寺1013年、双杪双下昂七铺作与一跳偷心。",
+    "limit": "实地讲解记录，不提供各木件精确尺寸。",
+    "accessed": "2026-11-11"
+  },
+  "C04": {
+    "title": "Wutai 2009 492.jpg",
+    "author": "G41rn8",
+    "url": "https://commons.wikimedia.org/wiki/File:Wutai_2009_492.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "supports": "佛光寺东大殿檐下转角环境。",
+    "limit": "是转角照片，不能当柱头铺作的逐件依据。",
+    "accessed": "2026-11-11"
+  },
+  "C06": {
+    "title": "Interlocking wooden brackets.jpg",
+    "author": "The war moose",
+    "url": "https://commons.wikimedia.org/wiki/File:Interlocking_wooden_brackets.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "supports": "故宫内檐装饰性斗栱的环境图。",
+    "limit": "殿名未详；不是太和殿外檐平身科证据，不建议直接作G6的节点对照图。",
+    "accessed": "2026-11-11"
+  },
+  "L01": {
+    "title": "保国寺铺作.jpg",
+    "author": "本地转载图，原书与作者待查",
+    "url": "local:research/斗拱可视化资料/保国寺铺作.jpg",
+    "supports": "保国寺侧向形制参考。",
+    "limit": "只作内部建模参考，不能替代测绘。",
+    "accessed": "2026-11-11"
+  },
+  "L02": {
+    "title": "现场木构模型照片",
+    "author": "用户提供；拟署名待确认",
+    "url": "local:research/保国寺实地调研照片/37f6b9701sd1af240159492ef45c6f44.jpg",
+    "supports": "展陈木构模型的空间联系。",
+    "limit": "照片拍的是展陈模型，不是原构件。",
+    "accessed": "2026-11-11"
+  }
+}

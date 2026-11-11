@@ -1,0 +1,33 @@
+{
+  "text_lengths": [
+    {
+      "id": "G4",
+      "body_chars": 64
+    },
+    {
+      "id": "G5",
+      "body_chars": 68
+    },
+    {
+      "id": "K",
+      "body_chars": 0
+    },
+    {
+      "id": "G2",
+      "body_chars": 59
+    },
+    {
+      "id": "G3",
+      "body_chars": 63
+    },
+    {
+      "id": "G1",
+      "body_chars": 59
+    },
+    {
+      "id": "G6",
+      "body_chars": 65
+    }
+  ],
+  "broken_links": []
+}

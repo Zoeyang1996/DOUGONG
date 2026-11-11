@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "K2",
+  "title": "拱（栱）",
+  "asset_type": "术语示意",
+  "status": "待核",
+  "coordinates": "glTF Y-up; Blender Z-up; conversion [x,z,-y]",
+  "presentation": "轮廓归一，非同比例",
+  "display_scale": 2.423077011954858,
+  "parts_count": 1,
+  "assembly_events": 1,
+  "events": {
+    "1": {
+      "label": "拱（栱）独立观察",
+      "depends_on": []
+    }
+  },
+  "parts": [
+    {
+      "id": "k2_gong_01",
+      "name_cn": "拱_横向栱示例",
+      "group": "K2",
+      "order": 1,
+      "assembly_event": "拱（栱）独立观察",
+      "depends_on": [],
+      "appear": {
+        "offset": [
+          -0.022886,
+          1.24,
+          -0.062989
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "target": {
+        "pos": [
+          -0.0,
+          -0.014135,
+          -0.0
+        ],
+        "quat": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "type": "术语示意",
+      "source": [
+        "S12"
+      ],
+      "status": "待核",
+      "note": "沿面宽方向横置的弓形构件示例。"
+    }
+  ],
+  "notes": [
+    "沿面宽方向横置的弓形构件示例。",
+    "order是教学落位顺序草案，非已经校核的历史施工顺序；专家核校前禁止称真实施工动画。",
+    "根节点原点为中心；模型底部不强制为0。后续退场只移动ROOT。"
+  ]
+}

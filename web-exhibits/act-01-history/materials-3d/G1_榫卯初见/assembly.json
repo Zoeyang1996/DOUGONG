@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "G1",
+  "title": "榫卯初见",
+  "asset_type": "原理示意",
+  "status": "待核",
+  "coordinates": "glTF Y-up; Blender Z-up; conversion [x,z,-y]",
+  "presentation": "轮廓归一，非同比例",
+  "display_scale": 2.290909090909091,
+  "parts_count": 2,
+  "assembly_events": 2,
+  "events": {
+    "1": {
+      "label": "卯件就位",
+      "depends_on": []
+    },
+    "2": {
+      "label": "榫件沿轴向插合",
+      "depends_on": [
+        1
+      ]
+    }
+  },
+  "parts": [
+    {
+      "id": "g1_mortise_01",
+      "name_cn": "卯件",
+      "group": "G1",
+      "order": 1,
+      "assembly_event": "卯件就位",
+      "depends_on": [],
+      "appear": {
+        "offset": [
+          -0.75,
+          0.0,
+          -0.0
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "target": {
+        "pos": [
+          -0.945,
+          0.0,
+          -0.0
+        ],
+        "quat": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "type": "原理示意",
+      "source": [
+        "S01"
+      ],
+      "status": "待核",
+      "note": "通用方榫与通卯；不是河姆渡梁头榫的器物复原。"
+    },
+    {
+      "id": "g1_tenon_02",
+      "name_cn": "榫件_整木凸榫与肩部",
+      "group": "G1",
+      "order": 2,
+      "assembly_event": "榫件沿轴向插合",
+      "depends_on": [
+        1
+      ],
+      "appear": {
+        "offset": [
+          0.75,
+          0.0,
+          -0.0
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "target": {
+        "pos": [
+          -0.114545,
+          0.0,
+          -0.0
+        ],
+        "quat": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "type": "原理示意",
+      "source": [
+        "S01"
+      ],
+      "status": "待核",
+      "note": "通用方榫与通卯；不是河姆渡梁头榫的器物复原。"
+    }
+  ],
+  "notes": [
+    "通用方榫与通卯；不是河姆渡梁头榫的器物复原。",
+    "order是教学落位顺序草案，非已经校核的历史施工顺序；专家核校前禁止称真实施工动画。",
+    "根节点原点为中心；模型底部不强制为0。后续退场只移动ROOT。"
+  ]
+}

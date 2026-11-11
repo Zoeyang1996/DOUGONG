@@ -1,0 +1,25 @@
+[
+  {
+    "file": "references/Wutai_2009_492_960px.jpg",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Wutai_2009_492.jpg",
+    "author_or_institution": "G41rn8",
+    "object_and_date_basis": "佛光寺东大殿檐下转角，建筑背景唐857年；照片非柱头正投影",
+    "image_type": "来源站提供的960px缩略图，原样下载、未裁切",
+    "usage_conditions": "CC BY-SA 4.0；G41rn8 / Wikimedia Commons；注明裁切并保留许可链接",
+    "relationship_to_model": "仅辅助理解外形/环境；不决定隐藏节点或精确尺寸",
+    "recommended_for_evidence_badge": true,
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "review_status": "待审"
+  },
+  {
+    "file": "renders/",
+    "source_page_url": "本项目Blender生成",
+    "author_or_institution": "项目制作",
+    "object_and_date_basis": "本轮形制/原理示意，不作历史证据",
+    "image_type": "原创模型渲染",
+    "usage_conditions": "用于素材审核；模型形制通过校核后再用于正式科普",
+    "relationship_to_model": "直接展示对应中心模型",
+    "recommended_for_evidence_badge": false,
+    "review_status": "待审"
+  }
+]

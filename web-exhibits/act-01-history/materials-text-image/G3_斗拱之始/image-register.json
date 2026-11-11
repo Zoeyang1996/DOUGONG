@@ -1,0 +1,25 @@
+[
+  {
+    "file": "references/东汉陶楼_河南博物院_仅内部参考.jpg",
+    "source_page_url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/zpjc/tq/article7b37de012be44686ac39588368ed3dd8.html",
+    "author_or_institution": "河南博物院",
+    "object_and_date_basis": "东汉绿釉三层陶楼，馆方定年",
+    "image_type": "原始下载或用户原图副本，未裁切",
+    "usage_conditions": "官网公开图，未取得授权；仅内部样稿",
+    "relationship_to_model": "仅辅助理解外形/环境；不决定隐藏节点或精确尺寸",
+    "recommended_for_evidence_badge": false,
+    "license_url": null,
+    "review_status": "待审"
+  },
+  {
+    "file": "renders/",
+    "source_page_url": "本项目Blender生成",
+    "author_or_institution": "项目制作",
+    "object_and_date_basis": "本轮形制/原理示意，不作历史证据",
+    "image_type": "原创模型渲染",
+    "usage_conditions": "用于素材审核；模型形制通过校核后再用于正式科普",
+    "relationship_to_model": "直接展示对应中心模型",
+    "recommended_for_evidence_badge": false,
+    "review_status": "待审"
+  }
+]

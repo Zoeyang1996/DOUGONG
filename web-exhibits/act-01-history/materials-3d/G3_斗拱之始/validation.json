@@ -1,0 +1,14 @@
+{
+  "id": "G3",
+  "mesh_count": 5,
+  "non_manifold_base_meshes": [],
+  "glb_bytes": 911496,
+  "shared_materials": 1,
+  "image_size": [
+    1024,
+    1024
+  ],
+  "historical_status": "待核",
+  "render": "render.png",
+  "roundtrip": "pass"
+}

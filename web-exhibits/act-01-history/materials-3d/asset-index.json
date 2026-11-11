@@ -1,0 +1,156 @@
+[
+  {
+    "id": "G1",
+    "folder": "G1_榫卯初见",
+    "mesh_count": 2,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 889020,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "G2",
+    "folder": "G2_走入生活",
+    "mesh_count": 4,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 907432,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "G3",
+    "folder": "G3_斗拱之始",
+    "mesh_count": 5,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 911496,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "G4",
+    "folder": "G4_唐代铺作",
+    "mesh_count": 32,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 1143452,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "G5",
+    "folder": "G5_保国寺宋构",
+    "mesh_count": 53,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 1358736,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "G6",
+    "folder": "G6_清式斗科",
+    "mesh_count": 24,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 1066380,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "K1",
+    "folder": "K1_斗",
+    "mesh_count": 1,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 888724,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "K2",
+    "folder": "K2_拱栱",
+    "mesh_count": 1,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 882476,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "K3",
+    "folder": "K3_升",
+    "mesh_count": 1,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 885168,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "K4",
+    "folder": "K4_昂",
+    "mesh_count": 1,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 880320,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  },
+  {
+    "id": "K5",
+    "folder": "K5_翘",
+    "mesh_count": 1,
+    "non_manifold_base_meshes": [],
+    "glb_bytes": 882648,
+    "shared_materials": 1,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "historical_status": "待核",
+    "render": "render.png"
+  }
+]

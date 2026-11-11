@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "K4",
+  "title": "昂",
+  "asset_type": "术语示意",
+  "status": "待核",
+  "coordinates": "glTF Y-up; Blender Z-up; conversion [x,z,-y]",
+  "presentation": "轮廓归一，非同比例",
+  "display_scale": 1.9227794083040364,
+  "parts_count": 1,
+  "assembly_events": 1,
+  "events": {
+    "1": {
+      "label": "昂独立观察",
+      "depends_on": []
+    }
+  },
+  "parts": [
+    {
+      "id": "k4_ang_01",
+      "name_cn": "昂_斜昂示意",
+      "group": "K4",
+      "order": 1,
+      "assembly_event": "昂独立观察",
+      "depends_on": [],
+      "appear": {
+        "offset": [
+          -0.022886,
+          1.24,
+          -0.062989
+        ],
+        "rot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "target": {
+        "pos": [
+          0.0,
+          -0.129708,
+          0.167038
+        ],
+        "quat": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "type": "术语示意",
+      "source": [
+        "S11",
+        "S12"
+      ],
+      "status": "待核",
+      "note": "斜昂轮廓示例；不把各时代所有昂一律解释成同样的杠杆。"
+    }
+  ],
+  "notes": [
+    "斜昂轮廓示例；不把各时代所有昂一律解释成同样的杠杆。",
+    "order是教学落位顺序草案，非已经校核的历史施工顺序；专家核校前禁止称真实施工动画。",
+    "根节点原点为中心；模型底部不强制为0。后续退场只移动ROOT。"
+  ]
+}

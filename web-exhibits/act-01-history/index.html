@@ -1,12 +1,127 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一木相接 · 从榫卯到斗拱</title><link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script></head><body>
-<header class="masthead"><a class="brand" href="../index.html">木构之间<small>BAOGUO · TIMBER STORIES</small></a><nav class="nav"><span class="current">01 / 一木相接</span><a href="../act-02-globe/">木构星图 ↗</a><span class="tag optional">视觉交互样稿</span></nav></header>
-<aside class="chapter-nav" aria-label="章节"><button data-step="0" class="active">01 <span>榫卯初见</span></button><button data-step="1">02 <span>走入生活</span></button><button data-step="2">03 <span>斗拱之始</span></button><button data-step="3">04 <span>历代之变</span></button><button data-step="4">05 <span>认识构件</span></button><button data-step="5">06 <span>相遇保国寺</span></button></aside>
-<div class="model-stage"><div class="orbit-ring"></div><div id="scene"></div><div class="model-caption"><span id="model-name">榫与卯 / 结构原理示意</span><span>触碰木件，发现它的名字 ↗</span></div><div class="scale-mark">STRUCTURE STUDY<br><b id="chapter-count">01 / 06</b></div><article id="object-note" hidden><button id="close-note" aria-label="关闭说明">×</button><span class="eyebrow">A CLOSER LOOK</span><h3 id="object-name"></h3><p id="object-text"></p></article></div>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一木相接 · 从榫卯到斗拱</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0906'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23b8402a' font-family='serif'%3E木%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/examples/jsm/loaders/DRACOLoader.js":"./vendor/DRACOLoader.js"}}</script>
+</head>
+<body>
+
+<!-- 加载幕 -->
+<div id="veil" aria-hidden="true">
+  <div class="veil-inner">
+    <span class="veil-mark">木</span>
+    <p class="veil-title">一木相接</p>
+    <p class="veil-sub">从榫卯到斗拱</p>
+    <div class="veil-bar"><i id="veil-progress"></i></div>
+  </div>
+</div>
+
+<!-- 三维舞台 -->
+<div id="stage" aria-hidden="true"></div>
+
+<!-- 影院氛围层 -->
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="letterbox letterbox-top" aria-hidden="true"></div>
+<div class="letterbox letterbox-bottom" aria-hidden="true"></div>
+
+<!-- 顶部 -->
+<header class="masthead">
+  <span class="brand">木构之间</span>
+  <span class="act">第一幕 · 历史</span>
+</header>
+
+<!-- 右侧章节竖轨 -->
+<nav class="rail" aria-label="章节">
+  <span class="rail-line"><i id="rail-fill"></i></span>
+  <button data-step="0"><i>壹</i><span>榫卯初见</span></button>
+  <button data-step="1"><i>贰</i><span>走入生活</span></button>
+  <button data-step="2"><i>叁</i><span>斗拱之始</span></button>
+  <button data-step="3"><i>肆</i><span>历代之变</span></button>
+  <button data-step="4"><i>伍</i><span>认识构件</span></button>
+  <button data-step="5"><i>陆</i><span>相遇保国寺</span></button>
+</nav>
+
+<!-- 时代标签（第四章） -->
+<div id="era" aria-hidden="true">
+  <span data-era="0">唐 · 佛光寺</span>
+  <span data-era="1">宋 · 保国寺</span>
+  <span data-era="2">清 · 太和殿</span>
+</div>
+
+<!-- 拾取说明卡 -->
+<aside id="note" hidden>
+  <button id="note-close" aria-label="关闭">×</button>
+  <span class="note-eyebrow" id="note-eyebrow">构件</span>
+  <h3 id="note-name"></h3>
+  <p id="note-text"></p>
+</aside>
+
+<!-- 叙事流 -->
 <main class="story">
-<section><div class="eyebrow">ACT 01 · A STORY OF CONNECTION</div><h1>一木，<br>与另一木<br><em>相接。</em></h1><p class="lead">从一个榫头、一处卯口出发，<br>沿着木构的故事，走进保国寺。</p><div class="scroll-cue">↓ <span>向下滑动，让故事生长</span></div><small class="footer-note">当前为镜头与交互样稿。历史文案、器物复原待核。</small></section>
-<section><span class="eyebrow">02 · INTO EVERYDAY LIFE</span><h2>从手中器物，<br>到栖身之所。</h2><p class="lead">这一段将沿着工具、器物与建筑，<br>观察木件连接方式如何走入生活。</p><p class="quiet">素材位置已预留：器物细节 → 连接方式 → 建筑节点。<br>当前显示榫卯原理模型，器物模型待依据资料建制。</p></section>
-<section><span class="eyebrow">03 · BETWEEN COLUMN & ROOF</span><h2>柱与屋顶之间，<br>一层层展开。</h2><p class="lead">镜头从柱头向上，认识斗与栱，<br>进入斗拱出现与发展的故事。</p><p class="quiet">本段预留历史证据、早期实例与结构演进。<br>右侧为已有斗拱形制草模，尚非历史复原定稿。</p></section>
-<section><span class="eyebrow">04 · THROUGH THE DYNASTIES</span><h2>时代变迁，<br>木构各有姿态。</h2><p class="lead">同一视角，对照不同时代的斗拱。<br>看轮廓、出挑与构件关系如何变化。</p><div class="era-row"><span>唐</span><span>宋</span><span>明清</span></div><p class="quiet">朝代对照模型待建。此处仅演示镜头轨迹，<br>不把当前草模当作各朝代实物。</p></section>
-<section><span class="eyebrow">05 · EVERY PIECE HAS A NAME</span><h2>认识一件，<br>读懂一层。</h2><p class="lead">点一点右侧的构件，<br>从名字开始认识它们。</p><div class="term-row"><span>斗</span><span>栱</span><span>枋</span><span>昂</span></div><p class="quiet">正式版将结合模型高亮，解释构件的位置和作用。</p></section>
-<section><span class="eyebrow">06 · MEET BAOGUO TEMPLE</span><h2>让目光，<br>回到眼前的大殿。</h2><p class="lead">把刚刚认识的结构，<br>放回保国寺的建筑空间。</p><img class="hall-thumb" src="../shared/images/hall.png" alt="现有保国寺内部结构草模预览"><p class="quiet">内部结构草模 · 尺寸及节点仍待校核</p><a class="next-link" href="../act-02-globe/">去木构星图，继续发现 →</a></section>
-</main><div class="page-progress"><i></i></div><script type="module" src="app.js"></script></body></html>
+
+  <section class="panel hero" id="hero">
+    <p class="eyebrow">ACT 01 · A STORY OF TIMBER</p>
+    <h1>一木相接</h1>
+    <p class="sub">从一处榫卯，走到保国寺的檐下</p>
+    <div class="scroll-cue"><span>徐 徐 下 滑</span><i></i></div>
+  </section>
+
+  <section class="panel" data-chapter="0">
+    <div class="caption">
+      <span class="num">壹</span>
+      <h2>榫卯初见</h2>
+      <p class="line">一凸一凹，木与木相握。</p>
+    </div>
+  </section>
+
+  <section class="panel" data-chapter="1">
+    <div class="caption">
+      <span class="num">贰</span>
+      <h2>走入生活</h2>
+      <p class="line">自手中之器，至栖身之所。</p>
+    </div>
+  </section>
+
+  <section class="panel" data-chapter="2">
+    <div class="caption">
+      <span class="num">叁</span>
+      <h2>斗拱之始</h2>
+      <p class="line">檐下层层，木作生花。</p>
+    </div>
+  </section>
+
+  <section class="panel" data-chapter="3">
+    <div class="caption">
+      <span class="num">肆</span>
+      <h2>历代之变</h2>
+      <p class="line">同一屋檐下，时代各有姿态。</p>
+    </div>
+  </section>
+
+  <section class="panel" data-chapter="4">
+    <div class="caption">
+      <span class="num">伍</span>
+      <h2>认识构件</h2>
+      <p class="line">斗 · 栱 · 升 · 昂 · 翘，各有其名。</p>
+    </div>
+  </section>
+
+  <section class="panel" data-chapter="5">
+    <div class="caption">
+      <span class="num">陆</span>
+      <h2>相遇保国寺</h2>
+      <p class="line">大中祥符六年，木构犹在。</p>
+      <p class="year">1013</p>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

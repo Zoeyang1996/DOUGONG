@@ -1,0 +1,24 @@
+[
+  {
+    "file": "G1_榫卯初见/references/河姆渡梁头榫_国博_仅内部参考.jpg",
+    "url": "https://www.chnmuseum.cn/portals/0/web/zt/202311hmdwh/img/1/pic8_1_b.jpg",
+    "size": [
+      900,
+      601
+    ],
+    "status": "downloaded"
+  },
+  {
+    "file": "G3_斗拱之始/references/东汉陶楼_河南博物院_仅内部参考.jpg",
+    "url": "https://www.chnmus.net/sitesources/20200602174021479.jpg",
+    "size": [
+      335,
+      508
+    ],
+    "status": "downloaded"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Interlocking_wooden_brackets.jpg",
+    "status": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>"
+  }
+]
