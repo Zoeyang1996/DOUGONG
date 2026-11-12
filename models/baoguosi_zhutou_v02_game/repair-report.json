@@ -1,0 +1,1138 @@
+{
+  "source": "baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend",
+  "parts": 57,
+  "overlaps_before": [
+    {
+      "a": "gong_nidaogong_01",
+      "b": "gong_huagong_tiao1_01",
+      "volume": 0.014761371967693095
+    },
+    {
+      "a": "gong_nidaogong_01",
+      "b": "dou_jiaohu_t1_0",
+      "volume": 0.00041601913372242994
+    },
+    {
+      "a": "gong_nidaogong_01",
+      "b": "dou_sandou_nidao_-0.34",
+      "volume": 0.000416019189150632
+    },
+    {
+      "a": "gong_nidaogong_01",
+      "b": "dou_sandou_nidao_0.34",
+      "volume": 0.000416019189150632
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_-0.36",
+      "volume": 0.0004160191162433866
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_0",
+      "volume": 0.00041601913372242994
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_0.36",
+      "volume": 0.0004160191162433864
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "gong_mangong_center_01",
+      "volume": 0.002591999987125393
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_jiaohu_t2_-0.72",
+      "volume": 0.00019570887043931194
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_jiaohu_t2_0.72",
+      "volume": 0.00019570887060548286
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_sandou_center2_0",
+      "volume": 0.00019570888832068627
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_-0.49",
+      "volume": 0.00019570887060547823
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_0",
+      "volume": 0.0001957088884868563
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_0.49",
+      "volume": 0.00019570887060547828
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_guazigong_l3_-0.72",
+      "volume": 0.00017285535328667462
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "dou_ang_head_01",
+      "volume": 0.0015898287314184216
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_mangong_l4_-0.72",
+      "volume": 0.0017468273835839643
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_mangong_l4_0",
+      "volume": 0.0006705018398501282
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "timber_shuatou_01",
+      "volume": 0.012337526384366033
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_linggong_0",
+      "volume": 0.0005087206452117476
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_linggong_0.72",
+      "volume": 0.001836902388450667
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "fang_context_0.72",
+      "volume": 0.00010457551348752505
+    },
+    {
+      "a": "gong_guazigong_l3_-0.72",
+      "b": "dou_sandou_l3_-0.72_-0.34",
+      "volume": 0.0001957113588433177
+    },
+    {
+      "a": "gong_guazigong_l3_-0.72",
+      "b": "dou_sandou_l3_-0.72_0.34",
+      "volume": 0.0001957113588433177
+    },
+    {
+      "a": "gong_guazigong_l3_0",
+      "b": "dou_sandou_l3_0_-0.34",
+      "volume": 0.00019571134669195964
+    },
+    {
+      "a": "gong_guazigong_l3_0",
+      "b": "dou_sandou_l3_0_0.34",
+      "volume": 0.00019571134669195964
+    },
+    {
+      "a": "gong_guazigong_l3_0.72",
+      "b": "dou_sandou_l3_0.72_-0.34",
+      "volume": 0.0001957113588433177
+    },
+    {
+      "a": "gong_guazigong_l3_0.72",
+      "b": "dou_sandou_l3_0.72_0.34",
+      "volume": 0.0001957113588433177
+    },
+    {
+      "a": "dou_ang_head_01",
+      "b": "gong_mangong_l4_-1.08",
+      "volume": 0.0004416004817954216
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "gong_mangong_l4_-1.08",
+      "volume": 0.0001720137225502353
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "dou_ang_head_02",
+      "volume": 0.0014457140421301105
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "timber_shuatou_01",
+      "volume": 0.014122424417906176
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "gong_linggong_-0.72",
+      "volume": 0.003191479644478648
+    },
+    {
+      "a": "gong_mangong_l4_-1.08",
+      "b": "dou_sandou_l4_-1.08_-0.47",
+      "volume": 0.00019571116442155978
+    },
+    {
+      "a": "gong_mangong_l4_-1.08",
+      "b": "dou_sandou_l4_-1.08_0.47",
+      "volume": 0.0001957111644215598
+    },
+    {
+      "a": "gong_mangong_l4_-0.72",
+      "b": "dou_sandou_l4_-0.72_-0.47",
+      "volume": 0.00019571135884332202
+    },
+    {
+      "a": "gong_mangong_l4_-0.72",
+      "b": "dou_sandou_l4_-0.72_0.47",
+      "volume": 0.0001957113588433203
+    },
+    {
+      "a": "gong_mangong_l4_0",
+      "b": "dou_sandou_l4_0_-0.47",
+      "volume": 0.0001957113466919582
+    },
+    {
+      "a": "gong_mangong_l4_0",
+      "b": "dou_sandou_l4_0_0.47",
+      "volume": 0.00019571134669195823
+    },
+    {
+      "a": "gong_mangong_l4_0.72",
+      "b": "dou_sandou_l4_0.72_-0.47",
+      "volume": 0.0001957113588433203
+    },
+    {
+      "a": "gong_mangong_l4_0.72",
+      "b": "dou_sandou_l4_0.72_0.47",
+      "volume": 0.00019571135884332202
+    },
+    {
+      "a": "dou_ang_head_02",
+      "b": "timber_shuatou_01",
+      "volume": 0.000900506275400479
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_-1.44",
+      "volume": 0.003263996240616452
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_-0.72",
+      "volume": 0.0032639994831084908
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_0",
+      "volume": 0.0032639992804527358
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_0.72",
+      "volume": 0.0016319997415542437
+    },
+    {
+      "a": "gong_linggong_-1.44",
+      "b": "dou_sandou_top_-1.44_-0.35",
+      "volume": 0.0001957111644215662
+    },
+    {
+      "a": "gong_linggong_-1.44",
+      "b": "dou_sandou_top_-1.44_0.35",
+      "volume": 0.0001957111644215662
+    },
+    {
+      "a": "dou_sandou_top_-1.44_-0.35",
+      "b": "fang_context_-1.44",
+      "volume": 0.00024150134158323032
+    },
+    {
+      "a": "dou_sandou_top_-1.44_0.35",
+      "b": "fang_context_-1.44",
+      "volume": 0.00024150134158323032
+    },
+    {
+      "a": "gong_linggong_-0.72",
+      "b": "dou_sandou_top_-0.72_-0.35",
+      "volume": 0.00019571135884331162
+    },
+    {
+      "a": "gong_linggong_-0.72",
+      "b": "dou_sandou_top_-0.72_0.35",
+      "volume": 0.00019571135884331162
+    },
+    {
+      "a": "gong_linggong_0",
+      "b": "dou_sandou_top_0_-0.35",
+      "volume": 0.00019571134669195883
+    },
+    {
+      "a": "gong_linggong_0",
+      "b": "dou_sandou_top_0_0.35",
+      "volume": 0.00019571134669195888
+    },
+    {
+      "a": "gong_linggong_0.72",
+      "b": "dou_sandou_top_0.72_-0.35",
+      "volume": 0.00019571135884331162
+    },
+    {
+      "a": "gong_linggong_0.72",
+      "b": "dou_sandou_top_0.72_0.35",
+      "volume": 0.00019571135884331162
+    },
+    {
+      "a": "dou_sandou_top_0.72_-0.35",
+      "b": "fang_context_0.72",
+      "volume": 0.00024150051903659491
+    },
+    {
+      "a": "dou_sandou_top_0.72_0.35",
+      "b": "fang_context_0.72",
+      "volume": 0.00024150051903659491
+    },
+    {
+      "a": "fang_context_-1.44",
+      "b": "tuan_context_-1.44",
+      "volume": 0.00037945396254076896
+    }
+  ],
+  "repairs": [
+    {
+      "a": "gong_nidaogong_01",
+      "b": "gong_huagong_tiao1_01",
+      "volume": 0.014761371967693095,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "gong_nidaogong_01",
+      "b": "dou_sandou_nidao_-0.34",
+      "volume": 0.000416019189150632,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_nidaogong_01",
+      "b": "dou_sandou_nidao_0.34",
+      "volume": 0.000416019189150632,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_-0.36",
+      "volume": 0.0004160191162433866,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_0",
+      "volume": 0.00041601913372242994,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao1_01",
+      "b": "dou_jiaohu_t1_0.36",
+      "volume": 0.0004160191162433864,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "gong_mangong_center_01",
+      "volume": 0.002591999987125393,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_jiaohu_t2_-0.72",
+      "volume": 0.00019570887043931194,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_jiaohu_t2_0.72",
+      "volume": 0.00019570887060548286,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_huagong_tiao2_01",
+      "b": "dou_sandou_center2_0",
+      "volume": 0.00019570888832068627,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_-0.49",
+      "volume": 0.00019570887060547823,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_0",
+      "volume": 0.0001957088884868563,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_center_01",
+      "b": "dou_sandou_center2_0.49",
+      "volume": 0.00019570887060547828,
+      "method": "承口避让"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_guazigong_l3_-0.72",
+      "volume": 0.00017285535328667462,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "dou_ang_head_01",
+      "volume": 0.0015898287314184216,
+      "method": "承口避让"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_mangong_l4_-0.72",
+      "volume": 0.0017468273835839643,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_mangong_l4_0",
+      "volume": 0.0006705018398501282,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "timber_shuatou_01",
+      "volume": 0.012337526384366033,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_linggong_0",
+      "volume": 0.0005087206452117476,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "gong_linggong_0.72",
+      "volume": 0.001836902388450667,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_01",
+      "b": "fang_context_0.72",
+      "volume": 0.00010457551348752505,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "gong_guazigong_l3_-0.72",
+      "b": "dou_sandou_l3_-0.72_-0.34",
+      "volume": 0.0001957113588433177,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_guazigong_l3_-0.72",
+      "b": "dou_sandou_l3_-0.72_0.34",
+      "volume": 0.0001957113588433177,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_guazigong_l3_0",
+      "b": "dou_sandou_l3_0_-0.34",
+      "volume": 0.00019571134669195964,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_guazigong_l3_0",
+      "b": "dou_sandou_l3_0_0.34",
+      "volume": 0.00019571134669195964,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_guazigong_l3_0.72",
+      "b": "dou_sandou_l3_0.72_-0.34",
+      "volume": 0.0001957113588433177,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_guazigong_l3_0.72",
+      "b": "dou_sandou_l3_0.72_0.34",
+      "volume": 0.0001957113588433177,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_ang_head_01",
+      "b": "gong_mangong_l4_-1.08",
+      "volume": 0.0004416004817954216,
+      "method": "承口避让"
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "gong_mangong_l4_-1.08",
+      "volume": 0.0001720137225502353,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "dou_ang_head_02",
+      "volume": 0.0014457140421301105,
+      "method": "承口避让"
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "timber_shuatou_01",
+      "volume": 0.014122424417906176,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "ang_xiaang_02",
+      "b": "gong_linggong_-0.72",
+      "volume": 0.003191479644478648,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "gong_mangong_l4_-1.08",
+      "b": "dou_sandou_l4_-1.08_-0.47",
+      "volume": 0.00019571116442155978,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_-1.08",
+      "b": "dou_sandou_l4_-1.08_0.47",
+      "volume": 0.0001957111644215598,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_-0.72",
+      "b": "dou_sandou_l4_-0.72_-0.47",
+      "volume": 0.00019571135884332202,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_-0.72",
+      "b": "dou_sandou_l4_-0.72_0.47",
+      "volume": 0.0001957113588433203,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_0",
+      "b": "dou_sandou_l4_0_-0.47",
+      "volume": 0.0001957113466919582,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_0",
+      "b": "dou_sandou_l4_0_0.47",
+      "volume": 0.00019571134669195823,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_0.72",
+      "b": "dou_sandou_l4_0.72_-0.47",
+      "volume": 0.0001957113588433203,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_mangong_l4_0.72",
+      "b": "dou_sandou_l4_0.72_0.47",
+      "volume": 0.00019571135884332202,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_ang_head_02",
+      "b": "timber_shuatou_01",
+      "volume": 0.000900506275400479,
+      "method": "承口避让"
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_-1.44",
+      "volume": 0.003263996240616452,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_-0.72",
+      "volume": 0.0032639994831084908,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_0",
+      "volume": 0.0032639992804527358,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_0.72",
+      "volume": 0.0016319997415542437,
+      "method": "互补半搭接"
+    },
+    {
+      "a": "gong_linggong_-1.44",
+      "b": "dou_sandou_top_-1.44_-0.35",
+      "volume": 0.0001957111644215662,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_-1.44",
+      "b": "dou_sandou_top_-1.44_0.35",
+      "volume": 0.0001957111644215662,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_sandou_top_-1.44_-0.35",
+      "b": "fang_context_-1.44",
+      "volume": 0.00024150134158323032,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_sandou_top_-1.44_0.35",
+      "b": "fang_context_-1.44",
+      "volume": 0.00024150134158323032,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_-0.72",
+      "b": "dou_sandou_top_-0.72_-0.35",
+      "volume": 0.00019571135884331162,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_-0.72",
+      "b": "dou_sandou_top_-0.72_0.35",
+      "volume": 0.00019571135884331162,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_0",
+      "b": "dou_sandou_top_0_-0.35",
+      "volume": 0.00019571134669195883,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_0",
+      "b": "dou_sandou_top_0_0.35",
+      "volume": 0.00019571134669195888,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_0.72",
+      "b": "dou_sandou_top_0.72_-0.35",
+      "volume": 0.00019571135884331162,
+      "method": "承口避让"
+    },
+    {
+      "a": "gong_linggong_0.72",
+      "b": "dou_sandou_top_0.72_0.35",
+      "volume": 0.00019571135884331162,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_sandou_top_0.72_-0.35",
+      "b": "fang_context_0.72",
+      "volume": 0.00024150051903659491,
+      "method": "承口避让"
+    },
+    {
+      "a": "dou_sandou_top_0.72_0.35",
+      "b": "fang_context_0.72",
+      "volume": 0.00024150051903659491,
+      "method": "承口避让"
+    },
+    {
+      "a": "fang_context_-1.44",
+      "b": "tuan_context_-1.44",
+      "volume": 0.00037945396254076896,
+      "method": "承口避让"
+    }
+  ],
+  "overlaps_after": [],
+  "tolerance_m3": 1e-08,
+  "mesh_checks": [
+    {
+      "id": "context_gualeng_column",
+      "volume_before": 0.2684984672412696,
+      "volume_after": 0.2684984672412696,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_ludou_01",
+      "volume_before": 0.06541199712062191,
+      "volume_after": 0.06541199712062191,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_nidaogong_01",
+      "volume_before": 0.0374116850790529,
+      "volume_after": 0.030026863688355096,
+      "retained_ratio": 0.8026065552756236,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_huagong_tiao1_01",
+      "volume_before": 0.03878223143497078,
+      "volume_after": 0.031397468743451486,
+      "retained_ratio": 0.8095838630662109,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_jiaohu_t1_-0.36",
+      "volume_before": 0.0047317711184535075,
+      "volume_after": 0.00431575211444959,
+      "retained_ratio": 0.9120796434169273,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_jiaohu_t1_0",
+      "volume_before": 0.004731770973181977,
+      "volume_after": 0.004315751783949915,
+      "retained_ratio": 0.9120796015720303,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_jiaohu_t1_0.36",
+      "volume_before": 0.004731771118453508,
+      "volume_after": 0.004315752114449592,
+      "retained_ratio": 0.9120796434169275,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_nidao_-0.34",
+      "volume_before": 0.005309271826000266,
+      "volume_after": 0.004893252525423632,
+      "retained_ratio": 0.9216428703952719,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_nidao_0.34",
+      "volume_before": 0.0053092718260002655,
+      "volume_after": 0.0048932525254236315,
+      "retained_ratio": 0.9216428703952719,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_huagong_tiao2_01",
+      "volume_before": 0.028827541347249186,
+      "volume_after": 0.027530823387037988,
+      "retained_ratio": 0.9550180868846474,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_mangong_center_01",
+      "volume_before": 0.02140488132995895,
+      "volume_after": 0.02010815735457132,
+      "retained_ratio": 0.9394192401537544,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_jiaohu_t2_-0.72",
+      "volume_before": 0.004731769091229253,
+      "volume_after": 0.004536060332074146,
+      "retained_ratio": 0.9586394104653436,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_jiaohu_t2_0.72",
+      "volume_before": 0.004731769091229253,
+      "volume_after": 0.004536060329960416,
+      "retained_ratio": 0.9586394100186335,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_center2_-0.49",
+      "volume_before": 0.005309269502203283,
+      "volume_after": 0.005113560742882001,
+      "retained_ratio": 0.9631382887532711,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_center2_0",
+      "volume_before": 0.005309269356931998,
+      "volume_after": 0.00506185146868867,
+      "retained_ratio": 0.9533988819157784,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_center2_0.49",
+      "volume_before": 0.005309269502203283,
+      "volume_after": 0.005113560742882001,
+      "retained_ratio": 0.9631382887532711,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "ang_xiaang_01",
+      "volume_before": 0.09146253053372162,
+      "volume_after": 0.08296913845062574,
+      "retained_ratio": 0.907138015605588,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_guazigong_l3_-0.72",
+      "volume_before": 0.015881048643393975,
+      "volume_after": 0.015837526044002712,
+      "retained_ratio": 0.9972594631268655,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_-0.72_-0.34",
+      "volume_before": 0.005309274354633709,
+      "volume_after": 0.005113562916975294,
+      "retained_ratio": 0.9631378179792863,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_-0.72_0.34",
+      "volume_before": 0.005309274354633709,
+      "volume_after": 0.005113562916911029,
+      "retained_ratio": 0.9631378179671821,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_guazigong_l3_0",
+      "volume_before": 0.01588104765736875,
+      "volume_after": 0.01588104765736875,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_0_-0.34",
+      "volume_before": 0.005309274127405698,
+      "volume_after": 0.005113562698850992,
+      "retained_ratio": 0.9631378181163274,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_0_0.34",
+      "volume_before": 0.005309274127405697,
+      "volume_after": 0.005113562698850992,
+      "retained_ratio": 0.9631378181163276,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_guazigong_l3_0.72",
+      "volume_before": 0.01588104864339398,
+      "volume_after": 0.01588104864339398,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_0.72_-0.34",
+      "volume_before": 0.005309274354633705,
+      "volume_after": 0.005113562913927638,
+      "retained_ratio": 0.9631378174052619,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l3_0.72_0.34",
+      "volume_before": 0.005309274354633705,
+      "volume_after": 0.005113562913927638,
+      "retained_ratio": 0.9631378174052619,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_ang_head_01",
+      "volume_before": 0.004731774984481086,
+      "volume_after": 0.002700345768460269,
+      "retained_ratio": 0.5706834702234693,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "ang_xiaang_02",
+      "volume_before": 0.10875376935351636,
+      "volume_after": 0.1006140125997421,
+      "retained_ratio": 0.9251542562417763,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_mangong_l4_-1.08",
+      "volume_before": 0.02071438927466058,
+      "volume_after": 0.020671079699207378,
+      "retained_ratio": 0.9979092033620233,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_-1.08_-0.47",
+      "volume_before": 0.0053092737675175476,
+      "volume_after": 0.005113562545194822,
+      "retained_ratio": 0.963137854461358,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_-1.08_0.47",
+      "volume_before": 0.005309273767517549,
+      "volume_after": 0.005113562543068098,
+      "retained_ratio": 0.9631378540607899,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_mangong_l4_-0.72",
+      "volume_before": 0.02071440985257697,
+      "volume_after": 0.01965543073399307,
+      "retained_ratio": 0.94887717651043,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_-0.72_-0.47",
+      "volume_before": 0.005309273767517546,
+      "volume_after": 0.005113562351060896,
+      "retained_ratio": 0.963137817896296,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_-0.72_0.47",
+      "volume_before": 0.005309273767517549,
+      "volume_after": 0.005113562350156876,
+      "retained_ratio": 0.9631378177260236,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_mangong_l4_0",
+      "volume_before": 0.020714408566457183,
+      "volume_after": 0.020531643191012937,
+      "retained_ratio": 0.9911768962720858,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_0_-0.47",
+      "volume_before": 0.005309273540289568,
+      "volume_after": 0.00511356213598428,
+      "retained_ratio": 0.9631378186073618,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_0_0.47",
+      "volume_before": 0.005309273540289566,
+      "volume_after": 0.005113562134441705,
+      "retained_ratio": 0.9631378183168186,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_mangong_l4_0.72",
+      "volume_before": 0.02071440985257697,
+      "volume_after": 0.02071440985257697,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_0.72_-0.47",
+      "volume_before": 0.005309273767517551,
+      "volume_after": 0.005113562351060908,
+      "retained_ratio": 0.9631378178962975,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_l4_0.72_0.47",
+      "volume_before": 0.005309273767517549,
+      "volume_after": 0.005113562350156888,
+      "retained_ratio": 0.9631378177260259,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_ang_head_02",
+      "volume_before": 0.004731769992591714,
+      "volume_after": 0.0023855495665311348,
+      "retained_ratio": 0.5041558592801564,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "timber_shuatou_01",
+      "volume_before": 0.06442998792916507,
+      "volume_after": 0.046550142453550256,
+      "retained_ratio": 0.7224918698530243,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_linggong_-1.44",
+      "volume_before": 0.016226271200474034,
+      "volume_after": 0.014593252899941463,
+      "retained_ratio": 0.8993596076167601,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_-1.44_-0.35",
+      "volume_before": 0.005309270927366338,
+      "volume_after": 0.0048720583379439665,
+      "retained_ratio": 0.9176511058855965,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_-1.44_0.35",
+      "volume_before": 0.005309270927366338,
+      "volume_after": 0.0048720583379439665,
+      "retained_ratio": 0.9176511058855965,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_linggong_-0.72",
+      "volume_before": 0.016226287319841503,
+      "volume_after": 0.014504676544527908,
+      "retained_ratio": 0.8938998958062077,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_-0.72_-0.35",
+      "volume_before": 0.005309270927366364,
+      "volume_after": 0.005113559486660299,
+      "retained_ratio": 0.9631377936098005,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_-0.72_0.35",
+      "volume_before": 0.005309270927366369,
+      "volume_after": 0.0051135594866603025,
+      "retained_ratio": 0.9631377936098002,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_linggong_0",
+      "volume_before": 0.016226286312381065,
+      "volume_after": 0.014593266514837024,
+      "retained_ratio": 0.8993596090870155,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_0_-0.35",
+      "volume_before": 0.005309270700138341,
+      "volume_after": 0.0051135592715836325,
+      "retained_ratio": 0.9631377943208642,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_0_0.35",
+      "volume_before": 0.005309270700138341,
+      "volume_after": 0.0051135592715836325,
+      "retained_ratio": 0.9631377943208642,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "gong_linggong_0.72",
+      "volume_before": 0.0162262873198415,
+      "volume_after": 0.014964460876275636,
+      "retained_ratio": 0.9222356649618239,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_0.72_-0.35",
+      "volume_before": 0.005309270927366352,
+      "volume_after": 0.004872058966068805,
+      "retained_ratio": 0.917651224192768,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "dou_sandou_top_0.72_0.35",
+      "volume_before": 0.005309270927366348,
+      "volume_after": 0.00487205896748564,
+      "retained_ratio": 0.917651224459629,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "fang_context_-1.44",
+      "volume_before": 0.05032005022527025,
+      "volume_after": 0.05032005022527025,
+      "retained_ratio": 1.0,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "fang_context_0.72",
+      "volume_before": 0.050320012733931774,
+      "volume_after": 0.05024134434935513,
+      "retained_ratio": 0.9984366382220011,
+      "non_manifold_edges": 0,
+      "islands": 1
+    },
+    {
+      "id": "tuan_context_-1.44",
+      "volume_before": 0.06562071676368271,
+      "volume_after": 0.06524126269616179,
+      "retained_ratio": 0.9942174653640643,
+      "non_manifold_edges": 0,
+      "islands": 1
+    }
+  ],
+  "residual_repairs": [
+    {
+      "a": "ang_xiaang_02",
+      "b": "gong_linggong_-0.72",
+      "volume": 8.033531908075078e-05
+    },
+    {
+      "a": "timber_shuatou_01",
+      "b": "gong_linggong_-0.72",
+      "volume": 2.715651051027309e-06
+    }
+  ],
+  "removed_cutoff_chips": [
+    {
+      "id": "timber_shuatou_01",
+      "fragment_span_m": 0.06495827436447144
+    },
+    {
+      "id": "gong_linggong_-0.72",
+      "fragment_span_m": 0.06514531373977661
+    },
+    {
+      "id": "gong_linggong_0",
+      "fragment_span_m": 0.11999999731779099
+    }
+  ],
+  "scope": "游戏展示几何修正，不代表历史榫卯或加工尺寸。"
+}

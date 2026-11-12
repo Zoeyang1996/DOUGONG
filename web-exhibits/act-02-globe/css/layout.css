@@ -1,0 +1,242 @@
+/* ─────────────────────────────────────────────
+   木构星图 · 布局层
+   ───────────────────────────────────────────── */
+
+/* ── 页头 ───────────────────────────────── */
+
+.masthead {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 104px;
+  margin: 0 4%;
+  border-bottom: 1px solid var(--rule);
+}
+
+.masthead::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 64px;
+  height: 1px;
+  background: var(--red);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  white-space: nowrap;
+  transition: transform 120ms var(--ease-press);
+}
+
+.brand:active { transform: translateY(1px) scale(.99); }
+
+.seal {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--red);
+  color: #f8e6c8;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .18);
+  transition: transform 260ms var(--ease), box-shadow 260ms var(--ease);
+}
+
+.brand:hover .seal {
+  transform: rotate(-3deg) scale(1.04);
+  box-shadow: 0 3px 10px rgba(120, 40, 12, .32);
+}
+
+.brand-text {
+  display: block;
+  font-size: 17px;
+  letter-spacing: .18em;
+  line-height: 1.35;
+}
+
+.brand-text small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: .26em;
+  color: var(--ink-45);
+}
+
+.title-block {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.masthead h1 {
+  font-size: clamp(21px, 1.9vw, 32px);
+  letter-spacing: .26em;
+  text-indent: .26em;
+  line-height: 1.2;
+}
+
+/* ── 主舞台 ─────────────────────────────── */
+
+.atlas {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(300px, 26%) minmax(0, 1fr) clamp(176px, 15%, 250px);
+  gap: clamp(14px, 1.6vw, 34px);
+  height: calc(100svh - 168px);
+  min-height: min(540px, calc(100svh - 186px));
+  max-height: 1300px;
+  margin: 0 4%;
+  padding: 18px 0 0;
+}
+
+/* ── 页脚 ───────────────────────────────── */
+
+.colophon {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 64px;
+  margin: 0 4%;
+  border-top: 1px solid var(--rule);
+  font-size: 12px;
+  letter-spacing: .16em;
+  color: var(--ink-60);
+}
+
+.colophon .motto { white-space: nowrap; }
+
+.colophon #about {
+  font-size: 12px;
+  color: var(--ink-80);
+  letter-spacing: .16em;
+}
+
+.colophon .folio {
+  color: var(--ink);
+  font-size: 12px;
+  letter-spacing: .2em;
+  white-space: nowrap;
+}
+
+.colophon .folio i { font-style: normal; margin: 0 9px; color: var(--red); }
+
+/* ── 说明弹窗 ───────────────────────────── */
+
+dialog {
+  width: min(580px, calc(100% - 36px));
+  border: 1px solid var(--ink);
+  background: var(--plate);
+  color: var(--ink);
+  padding: 38px 40px 34px;
+  box-shadow: 0 24px 60px rgba(70, 38, 12, .35);
+}
+
+dialog::backdrop {
+  background: rgba(46, 26, 8, .5);
+  backdrop-filter: blur(6px) saturate(.8);
+}
+
+dialog h2 {
+  font-size: 27px;
+  letter-spacing: .18em;
+  margin: 14px 0 18px;
+}
+
+dialog p {
+  font-size: 14.5px;
+  line-height: 2;
+  color: var(--ink-80);
+  margin: 0 0 12px;
+}
+
+dialog .eyebrow { color: var(--red); }
+
+#close-about {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 44px;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--ink-60);
+  transition: color 160ms var(--ease), transform 200ms var(--ease);
+}
+
+#close-about:hover { color: var(--red); transform: rotate(90deg); }
+
+/* ── 响应式 ─────────────────────────────── */
+
+@media (min-width: 1800px) {
+  :root { font-size: 19px; }
+  .atlas { grid-template-columns: minmax(390px, 27%) minmax(0, 1fr) 250px; }
+  .masthead { height: 124px; }
+  .atlas { height: calc(100svh - 196px); }
+}
+
+@media (max-width: 1180px) {
+  .masthead { height: 92px; gap: 12px; }
+  .masthead h1 { letter-spacing: .16em; text-indent: .16em; }
+  .atlas { grid-template-columns: 256px minmax(0, 1fr) 196px; gap: 14px; height: calc(100svh - 152px); }
+  .colophon { height: 58px; }
+}
+
+@media (max-width: 900px) {
+  .masthead { gap: 14px; }
+  .atlas { grid-template-columns: 224px minmax(0, 1fr) 182px; }
+}
+
+@media (max-width: 860px) {
+  .brand-text { display: none; }
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    height: 80px;
+    margin: 0 5%;
+    gap: 10px;
+  }
+  .masthead h1 { font-size: 17px; letter-spacing: .1em; text-indent: .1em; }
+  .title-block { gap: 5px; }
+  .title-block .eyebrow { font-size: 8px; letter-spacing: .2em; }
+  .title-block .eyebrow i { width: 12px; }
+  .brand-text { display: none; }
+  .seal { width: 32px; height: 32px; font-size: 18px; }
+  .tool-pill { padding: 7px 10px; font-size: 0; gap: 0; }
+  .tool-pill .glyph { font-size: 15px; }
+
+  .atlas {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    gap: 0;
+    margin: 0 5%;
+    padding-top: 10px;
+  }
+  .navigation { order: 0; }
+  .earth-stage { order: 1; }
+  .panel { order: 2; }
+
+  .colophon { height: 58px; margin: 0 5%; font-size: 10px; }
+  .colophon .motto { display: none; }
+  .colophon .folio { font-size: 10px; }
+}
+
+@media (max-width: 380px) {
+  .masthead h1 { font-size: 15px; }
+}

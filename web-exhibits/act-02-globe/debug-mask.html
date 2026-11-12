@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>mask debug</title>
+<style>body{margin:0;background:#222;color:#eee;font:12px monospace}canvas{display:block;width:900px;height:450px;border:1px solid #555;margin:8px}figure{margin:0}</style>
+</head>
+<body>
+<figure><figcaption id="c1">canvas 直接绘制（R 通道）</figcaption><canvas id="a" width="1024" height="512"></canvas></figure>
+<figure><figcaption id="c2">buildEarthTexture 的 R 通道</figcaption><canvas id="b" width="1024" height="512"></canvas></figure>
+<script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script>
+<script type="module">
+import { buildEarthTexture } from './js/globe/texture.js';
+
+const geo = await fetch('../shared/data/land.geojson').then((r) => r.json());
+
+// 1) 直接绘制
+const W = 1024, H = 512;
+const c = document.getElementById('a');
+const ctx = c.getContext('2d');
+ctx.fillStyle = '#000';
+ctx.fillRect(0, 0, W, H);
+ctx.fillStyle = '#fff';
+for (const f of geo.features) {
+  const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates;
+  for (const rings of polys) {
+    const path = new Path2D();
+    for (const ring of rings) {
+      ring.forEach(([lon, lat], i) => {
+        const x = ((lon + 180) / 360) * W;
+        const y = ((90 - Math.max(-89.9, Math.min(89.9, lat))) / 180) * H;
+        if (i === 0) path.moveTo(x, y); else path.lineTo(x, y);
+      });
+      path.closePath();
+    }
+    ctx.fill(path, 'evenodd');
+  }
+}
+
+// 2) buildEarthTexture 的 R 通道，缩到 1024×512 显示为灰度
+const tex = await buildEarthTexture(geo);
+const data = tex.image.data;
+const tw = tex.image.width;
+const th = tex.image.height;
+const tb = document.getElementById('b');
+const bctx = tb.getContext('2d');
+const w = tb.width;
+const h = tb.height;
+const img = bctx.createImageData(w, h);
+for (let y = 0; y < h; y += 1) {
+  for (let x = 0; x < w; x += 1) {
+    const s = (Math.floor((y * th) / h) * tw + Math.floor((x * tw) / w)) * 4;
+    const v = data[s];
+    const d = (y * w + x) * 4;
+    img.data[d] = v;
+    img.data[d + 1] = v;
+    img.data[d + 2] = v;
+    img.data[d + 3] = 255;
+  }
+}
+bctx.putImageData(img, 0, 0);
+document.getElementById('c2').textContent += ` (${tw}×${th} → ${w}×${h} 灰度)`;
+</script>
+</body>
+</html>

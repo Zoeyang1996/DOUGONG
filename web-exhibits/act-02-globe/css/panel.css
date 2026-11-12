@@ -1,0 +1,534 @@
+/* ─────────────────────────────────────────────
+   木构星图 · 面板与导航
+   ───────────────────────────────────────────── */
+
+.panel {
+  position: relative;
+  align-self: stretch;
+  min-height: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.panel-inner {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 26px 30px 30px 2px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(28, 23, 18, .3) transparent;
+}
+
+.panel-inner::-webkit-scrollbar { width: 4px; }
+.panel-inner::-webkit-scrollbar-thumb { background: rgba(28, 23, 18, .25); }
+
+/* ── 通用文字 ───────────────────────────── */
+
+.overline {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .26em;
+  color: var(--red);
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(28, 23, 18, .16);
+}
+
+.panel h2 {
+  font-size: clamp(30px, 2.5vw, 42px);
+  line-height: 1.42;
+  letter-spacing: .1em;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+.panel h2.detail-title {
+  font-size: clamp(24px, 1.9vw, 32px);
+  line-height: 1.5;
+  letter-spacing: .05em;
+  margin-bottom: 10px;
+}
+
+.intro-title span { display: block; }
+
+.lead {
+  font-size: 14.5px;
+  line-height: 1.95;
+  letter-spacing: .045em;
+  margin: 0 0 22px;
+  color: rgba(28, 23, 18, .78);
+  text-wrap: pretty;
+}
+
+/* ── 数目 ───────────────────────────────── */
+
+.count {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding-top: 15px;
+  border-top: 1px solid var(--rule);
+}
+
+.count strong {
+  font-family: var(--display);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--ink);
+}
+
+.count span {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .2em;
+  color: var(--ink-45);
+}
+
+.period {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .16em;
+  color: var(--red);
+  border: 1px solid rgba(191, 58, 30, .38);
+  padding: 4px 9px;
+  margin: 0 0 18px;
+}
+
+/* ── 建筑名录 ───────────────────────────── */
+
+.building-list {
+  margin-top: 22px;
+  border-top: 1px solid var(--rule);
+  padding-top: 2px;
+}
+
+.building-list summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 11.5px;
+  letter-spacing: .2em;
+  color: var(--ink-60);
+  list-style: none;
+  transition: color var(--dur) var(--ease);
+}
+
+.building-list summary::-webkit-details-marker { display: none; }
+
+.building-list summary::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: var(--red);
+  transition: transform 260ms var(--ease);
+}
+
+.building-list summary::after {
+  content: '展开';
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .18em;
+  color: var(--ink-45);
+}
+
+.building-list[open] summary::after { content: '收起'; }
+.building-list summary:hover { color: var(--red); }
+.building-list summary:active { transform: translateY(1px); }
+.building-list[open] summary::before { transform: rotate(45deg); }
+
+.building-list button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 9px 2px 9px 16px;
+  text-align: left;
+  font-size: 14.5px;
+  letter-spacing: .03em;
+  border-top: 1px solid rgba(28, 23, 18, .1);
+  transition: color 200ms var(--ease), padding-left 240ms var(--ease),
+              background 200ms var(--ease);
+}
+
+.building-list button::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--red);
+  transform: translateY(-50%);
+  transition: width 240ms var(--ease);
+}
+
+.building-list button .num {
+  vertical-align: baseline;
+  font-size: 9px;
+  letter-spacing: .06em;
+  margin-right: 2px;
+}
+
+.building-list button .row-name { flex: 1; }
+
+.building-list button .row-arrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(28, 23, 18, .26);
+  transition: transform 240ms var(--ease), color 200ms var(--ease);
+}
+
+.building-list button:hover {
+  color: var(--red-deep);
+  padding-left: 23px;
+  background: rgba(255, 246, 226, .6);
+}
+
+.building-list button:hover::before { width: 11px; }
+.building-list button:hover .row-arrow { transform: translate(2px, -2px); color: var(--red); }
+.building-list button:active { background: rgba(255, 246, 226, .95); }
+
+/* ── 详情 ───────────────────────────────── */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  margin: 0 0 12px;
+  font-size: 11.5px;
+  letter-spacing: .16em;
+  color: var(--ink-60);
+  transition: color 180ms var(--ease), gap 200ms var(--ease);
+}
+
+.back .arrow { transition: transform 240ms var(--ease); }
+.back:hover { color: var(--red); gap: 12px; }
+.back:hover .arrow { transform: translateX(-3px); }
+.back:active { transform: translateY(1px); }
+
+.photo-frame {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 7px;
+  background: #fbeccd;
+  border: 1px solid var(--rule);
+  box-shadow: 0 10px 24px -18px rgba(70, 36, 8, .75);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+  filter: grayscale(1) sepia(.5) saturate(1.6) contrast(1.05) brightness(1.02);
+  mix-blend-mode: multiply;
+  transition: filter 500ms var(--ease);
+}
+
+.photo-frame:hover .photo {
+  filter: grayscale(.25) sepia(.38) saturate(1.55) contrast(1.02);
+}
+
+.photo-frame .caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 2px 1px;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: .14em;
+  color: var(--ink-45);
+}
+
+.photo-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1.62;
+  border: 1px dashed var(--rule);
+  font-size: 12px;
+  letter-spacing: .14em;
+  color: var(--ink-45);
+}
+
+.detail-meta {
+  font-size: 12.5px;
+  line-height: 1.75;
+  letter-spacing: .03em;
+  color: var(--ink-60);
+  margin: 0 0 8px;
+}
+
+.detail-year {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  color: var(--red);
+  border-left: 2px solid var(--red);
+  padding-left: 9px;
+  margin: 0 0 14px;
+}
+
+.detail-body {
+  font-size: 14px;
+  line-height: 2.05;
+  letter-spacing: .02em;
+  color: rgba(28, 23, 18, .8);
+  margin: 0;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.detail-quote {
+  margin: 16px 0 0;
+  padding: 9px 0 9px 13px;
+  border-left: 2px solid var(--red);
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: rgba(28, 23, 18, .8);
+}
+
+.detail-spec {
+  margin: 18px 0 0;
+  padding-top: 13px;
+  border-top: 1px solid rgba(28, 23, 18, .16);
+  font-size: 11.5px;
+  line-height: 1.85;
+  letter-spacing: .03em;
+  color: var(--ink-60);
+}
+
+.detail-spec dt {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: .2em;
+  color: var(--ink-45);
+  margin-top: 9px;
+}
+
+.detail-spec dt:first-child { margin-top: 0; }
+.detail-spec dd { margin: 2px 0 0; }
+
+.status {
+  display: block;
+  font-size: 11.5px;
+  line-height: 1.8;
+  color: var(--red-deep);
+  border-left: 2px solid var(--red);
+  padding-left: 10px;
+  margin: 0 0 12px;
+}
+
+.detail-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
+.detail-next button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  font-size: 11.5px;
+  letter-spacing: .1em;
+  color: var(--ink-60);
+  transition: color 180ms var(--ease), gap 200ms var(--ease);
+}
+
+.detail-next button .arrow { transition: transform 240ms var(--ease); }
+.detail-next button:hover { color: var(--red); }
+.detail-next #prev:hover { gap: 11px; }
+.detail-next #prev:hover .arrow { transform: translateX(-3px); }
+.detail-next #next:hover { gap: 11px; }
+.detail-next #next:hover .arrow { transform: translateX(3px); }
+.detail-next button:active { transform: translateY(1px); }
+
+/* ── 右侧导航 · 地区 ─────────────────────── */
+
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(14px, 1.6vw, 28px);
+  height: 100%;
+  z-index: 4;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(16px, 2.2vh, 30px);
+  padding-right: 2px;
+}
+
+.countries button {
+  position: relative;
+  font-size: clamp(26px, 2.2vw, 38px);
+  letter-spacing: .1em;
+  line-height: 1.2;
+  color: var(--ink);
+  transition: color 220ms var(--ease), transform 220ms var(--ease),
+              letter-spacing 260ms var(--ease);
+}
+
+.countries button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 320ms var(--ease);
+}
+
+.countries button:hover {
+  color: var(--red);
+  transform: translateX(-3px);
+  letter-spacing: .2em;
+}
+
+.countries button:hover::after { transform: scaleX(1); }
+.countries button:active { transform: translateX(-1px) scale(.97); }
+.countries button.active { color: var(--red-deep); }
+
+.countries button.active::after {
+  transform: scaleX(1);
+  background: var(--red);
+  height: 2px;
+}
+
+.countries button .num { display: none; }
+
+/* ── 右侧导航 · 朝代 ─────────────────────── */
+
+.eras {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1px;
+  padding-left: clamp(9px, .9vw, 16px);
+  border-left: 1px solid var(--rule);
+}
+
+.eras button {
+  position: relative;
+  min-height: 32px;
+  padding: 2px 0;
+  text-align: left;
+  white-space: nowrap;
+  font-size: clamp(13px, .95vw, 17px);
+  letter-spacing: .08em;
+  color: var(--ink-60);
+  transition: color 200ms var(--ease), padding-left 240ms var(--ease);
+}
+
+.eras button::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 3px;
+  height: 0;
+  background: var(--red);
+  transform: translateY(-50%);
+  transition: height 240ms var(--ease);
+}
+
+.eras button:hover { color: var(--red); padding-left: 7px; }
+.eras button:active { transform: translateY(1px); }
+.eras button.active { color: var(--red-deep); }
+.eras button.active::before { height: 12px; }
+
+.eras button .era-num { display: none; }
+
+/* ── 响应式 ─────────────────────────────── */
+
+@media (max-width: 1500px) {
+  .countries button { letter-spacing: .1em; }
+  .countries button:hover { letter-spacing: .13em; }
+}
+
+@media (max-width: 1180px) {
+  .panel-inner { padding: 22px 14px 26px 18px; }
+  .panel h2 { font-size: 26px; }
+  .lead { font-size: 13px; line-height: 1.9; }
+  .count strong { font-size: 44px; }
+  .navigation { gap: 22px; }
+  .countries button { font-size: 21px; }
+  .eras button { font-size: 13px; min-height: 29px; }
+  .detail-body { font-size: 13px; }
+}
+
+@media (max-width: 760px) {
+  .panel { margin-top: 12px; }
+  .panel-inner { overflow: visible; padding: 22px 4px 26px; }
+  .navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: 100%;
+    padding-top: 2px;
+  }
+  .countries {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 10px;
+    padding: 0;
+    border-bottom: 1px solid rgba(28, 23, 18, .16);
+  }
+  .countries button { font-size: 22px; padding: 8px 4px; }
+  .countries button::after { bottom: 4px; }
+  .eras {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    border-left: 0;
+    padding: 2px 0 0;
+  }
+  .eras button {
+    flex: 0 0 auto;
+    min-height: 36px;
+    padding: 4px 9px;
+    font-size: 12.5px;
+  }
+  .eras button::before {
+    left: 50%;
+    top: auto;
+    bottom: 2px;
+    width: 4px;
+    height: 0;
+    transform: translateX(-50%);
+  }
+  .eras button:hover { padding-left: 9px; }
+  .eras button.active::before { height: 4px; width: 4px; }
+  .panel h2 { font-size: 28px; }
+  .panel h2.detail-title { font-size: 24px; }
+  .lead { font-size: 14px; }
+  .detail-body { font-size: 14px; }
+  .photo { max-height: 280px; }
+  .building-list button { font-size: 14.5px; }
+}

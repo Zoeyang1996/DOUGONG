@@ -1,9 +1,85 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eee9de"><title>世界现存木构建筑图册 · 木构之间</title><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script></head>
-<body><header><a class="brand" href="../index.html"><span class="seal">木</span>木构之间</a><h1>世界现存木构建筑图册</h1><button id="fullscreen" aria-label="进入全屏">全屏 <span aria-hidden="true">⛶</span></button></header>
-<main class="atlas"><aside id="panel" class="panel" aria-label="图册介绍"><div id="panel-content"></div></aside>
-<section class="earth-stage" aria-label="可旋转的建筑地球"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div id="globe"></div><svg id="leaders" aria-hidden="true"></svg><div id="map-labels"></div><div id="globe-error" hidden>地球暂时无法显示，可从左侧名录继续浏览。</div><div class="map-tools"><button id="zoom-in" aria-label="放大地球">＋</button><button id="zoom-out" aria-label="缩小地球">−</button><button id="reset" aria-label="返回全球视角">◎</button></div><p class="gesture">拖动旋转 · 双指缩放 · 轻触古建</p></section>
-<nav class="navigation" aria-label="地区与朝代"><div class="countries"><button data-country="中国">中国</button><button data-country="日本">日本</button><button data-country="欧洲">欧洲</button></div><div id="eras" class="eras" aria-label="中国朝代" hidden></div></nav>
-</main><footer><span>一木承千年，一览见天地。</span><button id="about">图册说明</button><span class="folio">木构星图 <i> / </i> 贰</span></footer>
-<dialog id="about-dialog"><button id="close-about" aria-label="关闭说明">×</button><h2>关于这本图册</h2><p>依据项目现有资料收录 39 条代表性木构建筑记录，其中中国 31 条、日本 4 条、欧洲 4 条。统计为图册条目数量，包含个别建筑群，不代表现存总量。</p><p>年代以现存主体为依据，保留资料中的待核与争议说明。地图坐标为资料提供的近似位置，不用于导航。</p><p>现有照片仅供内部学习与演示，公开发布前须替换为获授权图片。部分史料仍需复核。</p><p>支持鼠标拖动、滚轮缩放，以及触摸拖动、双指缩放。键盘可用 Tab 选择控件，Enter 打开条目，Esc 返回上层。</p></dialog>
-<script type="module" src="app.js"></script></body></html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e7b878">
+<title>世界现存木构建筑图册 · 木构之间</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/panel.css">
+<link rel="stylesheet" href="css/globe.css">
+<script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="masthead">
+  <a class="brand" href="../index.html">
+    <span class="seal">木</span>
+    <span class="brand-text">木构之间<small>TIMBER&nbsp;ATLAS</small></span>
+  </a>
+  <div class="title-block">
+    <p class="eyebrow"><i></i>卷二 · 世界现存木构建筑图册<i></i></p>
+    <h1>循木而行，遍访千年</h1>
+  </div>
+  <button id="fullscreen" class="tool-pill" aria-label="进入全屏">全屏<span class="glyph" aria-hidden="true">⛶</span></button>
+</header>
+
+<main class="atlas">
+  <aside id="panel" class="panel" aria-label="图册说明与建筑详情">
+    <div class="panel-inner">
+      <div id="panel-content"></div>
+    </div>
+  </aside>
+
+  <section class="earth-stage" aria-label="可旋转的建筑地球">
+    <div class="stage-frame" aria-hidden="true">
+      <span class="tick tl"></span><span class="tick tr"></span>
+      <span class="tick bl"></span><span class="tick br"></span>
+    </div>
+    <div id="dial" class="dial" aria-hidden="true"></div>
+    <div class="globe-shadow" aria-hidden="true"></div>
+    <div id="globe"></div>
+    <svg id="leaders" aria-hidden="true"></svg>
+    <div id="map-labels"></div>
+    <div id="globe-error" hidden>地球暂时无法显示，可从左侧名录继续浏览。</div>
+    <div class="map-tools">
+      <button id="zoom-in" aria-label="放大地球"><span aria-hidden="true">＋</span></button>
+      <button id="zoom-out" aria-label="缩小地球"><span aria-hidden="true">－</span></button>
+      <button id="reset" aria-label="返回全球视角"><span aria-hidden="true">◎</span></button>
+    </div>
+    <p class="gesture">拖动旋转<i>·</i>双指缩放<i>·</i>轻触古建</p>
+  </section>
+
+  <nav class="navigation" aria-label="地区与朝代">
+    <div class="countries">
+      <button data-country="中国">中国</button>
+      <button data-country="日本">日本</button>
+      <button data-country="欧洲">欧洲</button>
+    </div>
+    <div id="eras" class="eras" aria-label="中国朝代" hidden></div>
+  </nav>
+</main>
+
+<footer class="colophon">
+  <span class="motto">一木承千年，一览见天地。</span>
+  <button id="about" class="ink-link">图册说明</button>
+  <span class="folio">木构星图<i>/</i>贰</span>
+</footer>
+
+<dialog id="about-dialog">
+  <button id="close-about" aria-label="关闭说明">×</button>
+  <p class="eyebrow"><i></i>凡例<i></i></p>
+  <h2>关于这本图册</h2>
+  <p>依据项目现有资料收录 39 条代表性木构建筑记录，其中中国 31 条、日本 4 条、欧洲 4 条。统计为图册条目数量，包含个别建筑群，不代表现存总量。</p>
+  <p>年代以现存主体为依据，保留资料中的待核与争议说明。地图坐标为资料提供的近似位置，不用于导航。</p>
+  <p>现有照片仅供内部学习与演示，公开发布前须替换为获授权图片。部分史料仍需复核。</p>
+  <p>支持鼠标拖动、滚轮缩放，以及触摸拖动、双指缩放。键盘可用 Tab 选择控件，Enter 打开条目，Esc 返回上层。</p>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
