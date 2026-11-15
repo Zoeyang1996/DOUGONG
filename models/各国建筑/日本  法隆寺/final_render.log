@@ -1,0 +1,14 @@
+00:00.547  blend            | Read blend: "D:\技能大赛\各国建筑\日本法隆寺\法隆寺五重塔_v3.blend"
+00:13.500  render           | Saved: 'D:\技能大赛\各国建筑\日本法隆寺\out_01_正面.png'
+00:26.719  render           | Saved: 'D:\技能大赛\各国建筑\日本法隆寺\out_02_斜视.png'
+00:43.750  render           | Saved: 'D:\技能大赛\各国建筑\日本法隆寺\out_03_仰视.png'
+01:06.813  render           | Saved: 'D:\技能大赛\各国建筑\日本法隆寺\out_04_细部.png'
+01:12.204  render           | Saved: 'D:\技能大赛\各国建筑\日本法隆寺\out_05_相輪.png'
+DONE 01_正面
+DONE 02_斜视
+DONE 03_仰视
+DONE 04_细部
+DONE 05_相輪
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
