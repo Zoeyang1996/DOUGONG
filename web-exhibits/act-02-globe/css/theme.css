@@ -37,6 +37,31 @@
   --ease-press: cubic-bezier(.3, .9, .3, 1);
   --dur: 240ms;
 
+  /* 间距刻度：4 的倍数，全页只用这一套 */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* 版面高度 */
+  --nav: 76px;
+  --foot: 58px;
+
+  /* 字号：正文 16，最小 13 */
+  --t-body: 16px;
+  --t-small: 14px;
+  --t-label: 13px;
+  --t-h2: clamp(28px, 2.1vw, 38px);
+
+  /* 地球画布与向左溢出的宽度：画布大于舞台，球放大后不被裁切 */
+  --globe-canvas: min(100svh, 1040px);
+  --bleed: clamp(140px, 22vw, 360px);
+  --globe-size: 520px;
+
   font-family: var(--serif);
   color: var(--ink);
   background: var(--paper);
@@ -84,21 +109,33 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--s-2);
   margin: 0;
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: .34em;
-  text-transform: uppercase;
+  font-size: var(--t-label);
+  letter-spacing: .08em;
   color: var(--ink-60);
 }
 
 .eyebrow i {
   display: block;
-  width: 22px;
+  width: 18px;
   height: 1px;
   background: var(--red);
   opacity: .8;
+}
+
+/* 只给读屏器的标题与说明 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .num {

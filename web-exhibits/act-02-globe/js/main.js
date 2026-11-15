@@ -1,15 +1,18 @@
-import { loadBuildings, filterBuildings, featuredPoints, centroid } from './data.js';
+import {
+  loadBuildings, filterBuildings, featuredPoints, centroid, provinceCounts,
+} from './data.js';
 import { ERAS, REGIONS, OVERVIEW_FOCUS } from './content.js';
 import { createPanel } from './panel.js';
 import { createLabels } from './labels.js';
-import { buildDial } from './dial.js';
 import { createGlobe } from './globe/globe.js';
 
 const $ = (selector) => document.querySelector(selector);
-const isNarrow = () => window.matchMedia('(max-width: 760px)').matches;
+const isNarrow = () => window.matchMedia('(max-width: 1023px)').matches;
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const state = { country: null, era: '全部', selected: null, visible: [] };
+const state = {
+  country: null, era: '全部', province: null, selected: null, visible: [], provinces: [],
+};
 
 const all = await loadBuildings();
 
@@ -22,6 +25,7 @@ const panel = createPanel({
     back: back,
     prev: () => step(-1),
     next: () => step(1),
+    province: setProvince,
   },
 });
 
@@ -31,17 +35,27 @@ const labels = createLabels({
   onPick: pick,
 });
 
-buildDial($('#dial'));
 buildEraNav();
 
-const dialHost = $('#dial');
-let dialSize = 0;
+const stageHost = $('.earth-stage');
+let underlap = false;
+let globeSize = 0;
 
-function syncDial(view) {
-  const size = Math.round(view.radius() * 2 + 30);
-  if (Math.abs(size - dialSize) < 1) return;
-  dialSize = size;
-  dialHost.style.width = `${size}px`;
+/** 每帧的舞台联动：球压到说明栏时浮出纸面蒙版，并把球的直径交给阴影层 */
+function syncStage(view) {
+  const stageWidth = view.stageWidth || view.width;
+  const bleed = view.bleed || 0;
+  const next = view.radius() > stageWidth / 2 - bleed / 2 + 24;
+  if (next !== underlap) {
+    underlap = next;
+    document.body.classList.toggle('is-underlap', underlap);
+  }
+
+  const size = Math.round(view.radius() * 2);
+  if (Math.abs(size - globeSize) > 1) {
+    globeSize = size;
+    stageHost.style.setProperty('--globe-size', `${size}px`);
+  }
 }
 
 let globe = null;
@@ -56,13 +70,24 @@ function labelPoints() {
 }
 
 function syncLabels() {
-  const order = new Map(state.visible.map((item, index) => [item.id, index + 1]));
-  labels.setPoints(state.country ? labelPoints() : [], state.selected, order);
+  labels.setPoints(state.country ? labelPoints() : [], state.selected);
 }
 
 function refresh() {
   state.visible = filterBuildings(all, state);
+
+  // 朝代与省份同时生效时可能一条不剩，此时放掉省份，回到朝代总览
+  if (state.province && !state.visible.length) {
+    state.province = null;
+    state.visible = filterBuildings(all, state);
+  }
+
   if (state.selected && !state.visible.includes(state.selected)) state.selected = null;
+
+  // 省份数量只受地区与朝代影响：选中某省后，仍然看得到其余各省的分布
+  state.provinces = state.country === '中国'
+    ? provinceCounts(filterBuildings(all, { country: state.country, era: state.era }))
+    : [];
 
   syncNav();
   panel.render(state);
@@ -75,7 +100,7 @@ function refresh() {
 function pick(item) {
   state.selected = item;
   refresh();
-  globe?.focus(item.lat, item.lon, 5.2);
+  globe?.focus(item.lat, item.lon, 'building');
   if (isNarrow()) {
     $('#panel').scrollIntoView({
       behavior: reducedMotion() ? 'auto' : 'smooth',
@@ -87,6 +112,29 @@ function pick(item) {
 function back() {
   state.selected = null;
   refresh();
+  // 退回上一层：单座 → 省份 / 朝代 → 地区 → 全球
+  focusScope();
+}
+
+/**
+ * 按当前层级把镜头落到位：省份 → 朝代 → 地区 → 全球。
+ * 省份级与单座级共用最深的镜头距离，只把落点换成该省重心。
+ */
+function focusScope() {
+  if (state.selected) return;
+  const center = centroid(state.visible);
+
+  if (state.province && center) {
+    globe?.focus(center[0], center[1], 'province');
+    return;
+  }
+  if (state.country && state.era !== '全部' && center) {
+    globe?.focus(center[0], center[1], 'era');
+    return;
+  }
+  const focus = state.country ? REGIONS[state.country]?.focus : null;
+  if (focus) globe?.focus(focus[0], focus[1], 'region');
+  else globe?.focus(OVERVIEW_FOCUS[0], OVERVIEW_FOCUS[1], 'overview');
 }
 
 function step(direction) {
@@ -99,26 +147,35 @@ function step(direction) {
 function setCountry(country) {
   state.country = country;
   state.era = '全部';
+  state.province = null;
   state.selected = null;
   refresh();
-  const focus = REGIONS[country]?.focus;
-  if (focus) globe?.focus(focus[0], focus[1], focus[2]);
+  focusScope();
 }
 
 function setEra(era) {
   state.era = era;
   state.selected = null;
   refresh();
-  const center = centroid(state.visible);
-  if (center) globe?.focus(center[0], center[1], 5.3);
+  // 朝代的落点取本朝代所有条目的重心，即那几处建筑所在的省份
+  focusScope();
+}
+
+/** 点省份统计格：选中即筛到该省并飞到该省重心，再点一次回到全省 */
+function setProvince(province) {
+  state.province = province;
+  state.selected = null;
+  refresh();
+  focusScope();
 }
 
 function reset() {
   state.country = null;
   state.era = '全部';
+  state.province = null;
   state.selected = null;
   refresh();
-  globe?.focus(OVERVIEW_FOCUS[0], OVERVIEW_FOCUS[1], OVERVIEW_FOCUS[2]);
+  focusScope();
 }
 
 function buildEraNav() {
@@ -128,11 +185,7 @@ function buildEraNav() {
     const button = document.createElement('button');
     button.type = 'button';
     button.dataset.era = entry.key;
-    button.innerHTML = '';
-    const index = document.createElement('span');
-    index.className = 'era-num';
-    index.textContent = String(ERAS.indexOf(entry)).padStart(2, '0');
-    button.append(index, document.createTextNode(entry.label));
+    button.textContent = entry.label;
     button.addEventListener('click', () => setEra(entry.key));
     host.append(button);
   });
@@ -184,6 +237,7 @@ document.addEventListener('fullscreenchange', () => {
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape' || $('#about-dialog').open) return;
   if (state.selected) back();
+  else if (state.province) setProvince(null);
   else if (state.country && state.era !== '全部') setEra('全部');
   else if (state.country) reset();
 });
@@ -198,11 +252,13 @@ try {
     items: all,
     onPick: pick,
     onFrame: (view) => {
-      syncDial(view);
+      syncStage(view);
       labels.update(view);
     },
   });
   $('#globe').classList.add('is-ready');
+  // 首屏直接落在“全球”这一级镜头上，避免初始距离与阶梯对不上
+  globe.focus(OVERVIEW_FOCUS[0], OVERVIEW_FOCUS[1], 'overview', { instant: true });
 } catch (error) {
   console.error(error);
   $('#globe-error').hidden = false;

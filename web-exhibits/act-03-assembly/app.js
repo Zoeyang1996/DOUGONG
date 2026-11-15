@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from '../shared/vendor/OrbitControls.js';
 import { GLTFLoader } from '../shared/vendor/GLTFLoader.js';
 import { Challenge } from './game-state.mjs';
+import { timberMesh } from './wood-material.js';
 
 const $ = q => document.querySelector(q);
 const host = $('#assembly');
@@ -29,7 +30,7 @@ const definitions = [
 ];
 let renderer, scene, camera, controls, groups = [], base = [], selected = null;
 let drag = null, loaded = false, doneShown = false, width = 0, height = 0;
-let flyIns = [], pointerIds = new Set();
+let flyIns = [];
 $('#progress-track').innerHTML = '<i></i>'.repeat(game.total);
 
 function status(message) { $('#feedback').textContent = message; }
@@ -44,7 +45,8 @@ function select(index) {
     g.button.classList.toggle('selected', i === index);
     g.button.setAttribute('aria-pressed', String(i === index));
     g.ghosts.forEach(mesh => {
-      mesh.material.opacity = i === index ? .32 : .07;
+      mesh.material.opacity = i === index ? .65 : .16;
+      mesh.visible = i >= game.placed && (i === index || i === game.placed);
       mesh.material.color.set(i === index ? 0x52725b : 0x86907d);
     });
   });
@@ -56,7 +58,7 @@ function clearSelection() {
   selected = null; $('#target').hidden = true;
   groups.forEach(g => {
     g.button.classList.remove('selected'); g.button.setAttribute('aria-pressed', 'false');
-    g.ghosts.forEach(m => { m.material.opacity = .07; m.material.color.set(0x86907d); });
+    g.ghosts.forEach(m => { m.visible = game.status === 'playing' && groups.indexOf(g) === game.placed; m.material.opacity = .22; m.material.color.set(0x64705e); });
   });
 }
 function progress() {
@@ -72,7 +74,7 @@ function start() {
   clearDrag(); clearSelection(); flyIns = []; doneShown = false;
   groups.forEach(g => {
     g.meshes.forEach(m => { m.visible = false; m.position.set(0,0,0); });
-    g.ghosts.forEach(m => m.visible = true);
+    g.ghosts.forEach(m => m.visible = groups.indexOf(g) === 0);
   });
   game.start(performance.now()); $('#result').hidden = true; $('#start').hidden = true; $('#restart').hidden = false;
   $('#stage-label').textContent = '营造中'; $('#selection-label').textContent = '选一组木件，放入左侧轮廓。';
@@ -89,7 +91,7 @@ function place(index) {
     status(`顺序还差一步：先安放${groups[game.placed].name}。`); return;
   }
   const g = groups[index];
-  g.meshes.forEach(m => { m.visible = true; if (!reduced) m.position.y = .18; });
+  g.meshes.forEach(m => { m.visible = true; if (!reduced) m.position.y = .13; });
   g.ghosts.forEach(m => m.visible = false);
   if (!reduced) flyIns.push({ meshes:g.meshes, start:performance.now() });
   clearSelection(); progress(); setTimer();
@@ -174,34 +176,41 @@ function thumbnail(meshes,thumbRenderer) {
   const sc=new THREE.Scene(),root=new THREE.Group();
   meshes.forEach(m=>{const c=m.clone();c.visible=true;root.add(c)});
   const box=new THREE.Box3().setFromObject(root),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());
-  root.position.sub(center);sc.add(root,new THREE.HemisphereLight(0xfff5df,0x647260,2.8));
-  const light=new THREE.DirectionalLight(0xffeed7,3);light.position.set(3,5,4);sc.add(light);
-  const extent=Math.max(size.x,size.y,size.z),cam=new THREE.PerspectiveCamera(30,1.7,.01,100);
-  cam.position.set(extent*1.5,extent*1.2,extent*2.2);cam.lookAt(0,0,0);
+  root.position.sub(center);sc.add(root,new THREE.HemisphereLight(0xfff5e8,0x49483e,.9));
+  const light=new THREE.DirectionalLight(0xffeed7,3.1);light.position.set(3,5,4);sc.add(light);
+  const extent=Math.max(size.x,size.y,size.z),cam=new THREE.OrthographicCamera(-1.7,1.7,1,-1,.01,100);
+  cam.position.set(extent*1.5,extent*1.2,extent*2.2);cam.lookAt(0,0,0);cam.updateMatrixWorld(true);
+  let halfX=0,halfY=0;
+  for(const x of [-size.x/2,size.x/2])for(const y of [-size.y/2,size.y/2])for(const z of [-size.z/2,size.z/2]){
+    const v=new THREE.Vector3(x,y,z).applyMatrix4(cam.matrixWorldInverse);halfX=Math.max(halfX,Math.abs(v.x));halfY=Math.max(halfY,Math.abs(v.y));
+  }
+  const fit=Math.max(halfY,halfX/1.7)*1.08;cam.left=-fit*1.7;cam.right=fit*1.7;cam.top=fit;cam.bottom=-fit;cam.updateProjectionMatrix();
   thumbRenderer.render(sc,cam);return thumbRenderer.domElement.toDataURL('image/png');
 }
 async function init() {
   scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(33,1,.01,100);
   renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));
-  renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
+  renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
   renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;host.append(renderer.domElement);
   controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.enablePan=false;
   controls.minDistance=4.5;controls.maxDistance=14;controls.maxPolarAngle=Math.PI*.79;controls.rotateSpeed=.7;
   resetView();
-  scene.add(new THREE.HemisphereLight(0xfff3df,0x65705c,2.5));
-  const sun=new THREE.DirectionalLight(0xffe9c8,3.3);sun.position.set(3,7,5);sun.castShadow=true;
-  sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-4;sun.shadow.camera.right=4;sun.shadow.camera.top=4;sun.shadow.camera.bottom=-4;sun.shadow.normalBias=.025;scene.add(sun);
-  const rim=new THREE.DirectionalLight(0xffffff,1.8);rim.position.set(-4,3,-4);scene.add(rim);
-  const disk=new THREE.Mesh(new THREE.CylinderGeometry(1.65,1.7,.07,96),new THREE.MeshStandardMaterial({color:0xc8c9b8,roughness:.9}));
-  disk.position.set(0,-1.095,-.1);disk.receiveShadow=true;scene.add(disk);
+  scene.add(new THREE.HemisphereLight(0xf2f0e7,0x38372f,.75));
+  const sun=new THREE.DirectionalLight(0xffe9c8,3.3);sun.position.set(-3,6,4);sun.castShadow=true;
+  sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-4;sun.shadow.camera.right=4;sun.shadow.camera.top=4;sun.shadow.camera.bottom=-4;sun.shadow.normalBias=.002;sun.shadow.bias=-.00008;sun.shadow.radius=3;scene.add(sun);
+  const rim=new THREE.DirectionalLight(0xe2e9ee,.65);rim.position.set(-4,3,-4);scene.add(rim);
+  const disk=new THREE.Mesh(new THREE.CylinderGeometry(1.65,1.68,.16,96),new THREE.MeshStandardMaterial({color:0x747265,roughness:.87}));
+  disk.position.set(0,-1.13,-.1);disk.receiveShadow=true;scene.add(disk);
   const ring=new THREE.Mesh(new THREE.TorusGeometry(1.85,.006,6,120),new THREE.MeshBasicMaterial({color:0xbac0ad}));ring.rotation.x=-Math.PI/2;ring.position.set(0,-1.13,-.1);scene.add(ring);
+  const floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.ShadowMaterial({opacity:.24}));
+  floor.rotation.x=-Math.PI/2;floor.position.y=-1.215;floor.receiveShadow=true;disk.castShadow=true;scene.add(floor);
   const source=(await new GLTFLoader().loadAsync('./assets/baoguosi-zhutou-v02.glb')).scene;
   source.updateMatrixWorld(true);
   const meshes=[];
   source.traverse(o=>{
     if(!o.isMesh)return;
     const geometry=o.geometry.clone().applyMatrix4(o.matrixWorld);
-    const mesh=new THREE.Mesh(geometry,o.material.clone());mesh.name=o.name;mesh.userData={...o.userData};mesh.castShadow=true;mesh.receiveShadow=true;
+    const mesh=timberMesh(geometry,o.name);mesh.name=o.name;mesh.userData={...o.userData};mesh.castShadow=true;mesh.receiveShadow=true;
     meshes.push(mesh);scene.add(mesh);
   });
   const matches=(m,fn)=>fn(m.userData.originalName||m.name);
@@ -209,13 +218,13 @@ async function init() {
   groups=definitions.map(([name,test])=>({name,meshes:meshes.filter(m=>matches(m,test)),ghosts:[]}));
   base=meshes.filter(m=>m.name==='context_gualeng_column');
   if(groups.some(g=>g.meshes.length===0)||groups.reduce((s,g)=>s+g.meshes.length,0)+base.length!==meshes.length)throw Error('构件清单与模型不一致');
-  const thumbRenderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});thumbRenderer.setSize(340,200);thumbRenderer.outputColorSpace=THREE.SRGBColorSpace;thumbRenderer.toneMapping=THREE.ACESFilmicToneMapping;
+  const thumbRenderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});thumbRenderer.setSize(340,200);thumbRenderer.outputColorSpace=THREE.SRGBColorSpace;thumbRenderer.toneMapping=THREE.ACESFilmicToneMapping;thumbRenderer.toneMappingExposure=1.05;
   groups.forEach((g,index)=>{
     const box=new THREE.Box3();g.meshes.forEach(m=>box.expandByObject(m));g.center=box.getCenter(new THREE.Vector3());
     g.thumbnail=thumbnail(g.meshes,thumbRenderer);
     g.meshes.forEach(mesh=>{
-      mesh.visible=false;
-      const ghost=new THREE.Mesh(mesh.geometry,new THREE.MeshStandardMaterial({color:0x86907d,transparent:true,opacity:.07,depthWrite:false,roughness:1}));
+      mesh.visible=true;
+      const ghost=new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry,32),new THREE.LineBasicMaterial({color:0x64705e,transparent:true,opacity:.22,depthWrite:false}));ghost.visible=false;
       scene.add(ghost);g.ghosts.push(ghost);
     });
     const b=document.createElement('button');g.button=b;b.className='piece';b.dataset.index=index;b.style.setProperty('--tilt',[-10,8,-4,5,-7,11][index%6]+'deg');
@@ -227,9 +236,10 @@ async function init() {
   // Spread pieces in a deterministic mixed order, with large touch regions.
   const scatter=[7,0,14,3,10,5,16,8,1,12,4,17,2,15,11,6,13,9];
   $('#parts').replaceChildren(...scatter.map(i=>groups[i].button));
+  const reference=thumbnail(meshes,thumbRenderer);document.querySelectorAll('img[src="assets/assembled-reference.png"]').forEach(img=>img.src=reference);
   thumbRenderer.dispose();thumbRenderer.forceContextLoss();
   $('#piece-total').textContent=meshes.length-base.length;
-  $('#load-state').hidden=true;loaded=true;$('#start').disabled=false;progress();
+  $('#stage-label').textContent='完成预览';$('#load-state').hidden=true;loaded=true;$('#start').disabled=false;progress();
   $('#step-label').textContent='从栌斗开始，逐层拼起。';
   new ResizeObserver(()=>{
     width=host.clientWidth;height=host.clientHeight;if(!width||!height)return;
@@ -242,7 +252,7 @@ async function init() {
   renderer.setAnimationLoop(t=>{
     controls.update();
     if(game.status==='playing'){game.tick(performance.now());setTimer();if(game.status==='lost')finish();}
-    flyIns=flyIns.filter(f=>{const p=Math.min(1,(t-f.start)/330),offset=.18*Math.pow(1-p,3);f.meshes.forEach(m=>m.position.y=offset);return p<1});
+    flyIns=flyIns.filter(f=>{const p=Math.min(1,(t-f.start)/260),offset=.13*(1-p*p);f.meshes.forEach(m=>m.position.y=offset);return p<1});
     if(selected!==null&&game.status==='playing'){
       const p=targetScreen(selected);$('#target').style.left=p.localX+'px';$('#target').style.top=p.localY+'px';
     }

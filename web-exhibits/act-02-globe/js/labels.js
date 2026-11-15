@@ -1,23 +1,22 @@
-import { el, pad } from './dom.js';
+import { el } from './dom.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
 /**
  * 地名签：由细引线连到朱点，纵向自动避让，并尽量对齐成一列，
- * 像旧地图边缘的图版注记。
+ * 像旧地图边缘的图版注记。只留建筑名，不再挂编号。
  */
 export function createLabels({ layer, leaderHost, onPick }) {
   let entries = [];
   let widths = [];
 
-  function setPoints(points, selected, order) {
+  function setPoints(points, selected) {
     layer.replaceChildren();
     leaderHost.replaceChildren();
     entries = [];
     widths = [];
 
     points.forEach((item) => {
-      const number = order && order.has(item.id) ? order.get(item.id) : 0;
       const button = el(
         'button',
         {
@@ -26,7 +25,6 @@ export function createLabels({ layer, leaderHost, onPick }) {
           'aria-label': '查看' + item.name,
           onClick: () => onPick(item),
         },
-        el('span', { class: 'idx', text: pad(number) }),
         el('span', { text: item.name }),
       );
 
@@ -49,31 +47,51 @@ export function createLabels({ layer, leaderHost, onPick }) {
   function update(view) {
     if (!view.width || !entries.length) return;
 
-    const spacing = view.width < 540 ? 32 : 36;
-    const stageWidth = view.width;
-    const stageHeight = view.height;
-    const topPad = 74;
+    const narrow = view.width < 540;
+    const spacing = narrow ? 46 : 50;
+    const stageRight = view.stageRight || view.width;
+    const stageTop = view.stageTop || 0;
+    const stageBottom = stageTop + (view.stageHeight || view.height);
+    const topPad = stageTop + 24;
+    // 右下角是缩放工具栏（窄屏 36px 高 + 44px 热区），标签列止于其上
+    const bottomPad = stageBottom - (narrow ? 120 : 56);
     const placed = [];
 
     entries.forEach((entry, index) => {
       const projection = view.project(entry.item.lat, entry.item.lon);
       entry.x = projection.x;
       entry.y = projection.y;
-      if (projection.front && projection.y > -24 && projection.y < stageHeight + 24) {
+      if (projection.front && projection.y > stageTop - 16 && projection.y < stageBottom + 16) {
         placed.push({ index, anchorX: projection.x, anchorY: projection.y, y: projection.y });
       }
     });
 
     placed.sort((a, b) => a.anchorY - b.anchorY);
 
-    // 注记自上而下排成一列，像图版侧栏的注记
+    // 可用高度不够时压缩间距，保证整列仍在 topPad—bottomPad 之间
+    const available = Math.max(0, bottomPad - topPad);
+    const gap = placed.length > 1
+      ? Math.min(spacing, available / (placed.length - 1))
+      : spacing;
+
+    // 每张签尽量贴住自己的锚点高度，再自上而下避让，引线就不会拉成斜长线
     placed.forEach((slot, index) => {
-      slot.y = topPad + index * spacing;
+      const target = Math.min(Math.max(slot.anchorY, topPad), bottomPad);
+      slot.y = index === 0 ? target : Math.max(target, placed[index - 1].y + gap);
     });
 
-    // 栏位贴住舞台右缘：引线自海面引出，不压住大陆
-    const maxWidth = Math.max(...widths, 90);
-    const columnX = Math.max(8, stageWidth - maxWidth - 12);
+    // 整列平移一次：先按触底量上推，再按越顶量下压。
+    // 只平移不求值，避免同一段偏移被重复叠加到同一张签上。
+    const lastSlot = placed[placed.length - 1];
+    const pushUp = lastSlot ? Math.max(0, lastSlot.y - bottomPad) : 0;
+    if (pushUp) placed.forEach((slot) => { slot.y -= pushUp; });
+
+    const topOverflow = placed.length ? Math.max(0, topPad - placed[0].y) : 0;
+    if (topOverflow) placed.forEach((slot) => { slot.y += topOverflow; });
+
+    // 栏位贴住舞台右缘：引线自球面引出，不压住大陆
+    const maxWidth = Math.max(...widths, 88);
+    const columnX = Math.max(8, stageRight - maxWidth - 12);
 
     const placedMap = new Map(placed.map((slot) => [slot.index, slot]));
 

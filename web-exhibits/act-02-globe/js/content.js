@@ -85,7 +85,6 @@ export const REGIONS = {
 export const OVERVIEW_FOCUS = [28, 85, 7.6];
 
 export const INTRO = {
-  overline: '木构星图 · 卷二',
   title: ['以木为骨', '与时间相逢'],
-  lede: '山河远阔，古建无声。<br>从东方殿宇到北欧教堂，<br>在一颗地球上寻访木的千年。',
+  lede: '从东方殿宇到北欧教堂，在一颗地球上寻访木的千年。',
 };

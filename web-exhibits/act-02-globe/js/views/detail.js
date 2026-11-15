@@ -1,7 +1,7 @@
-import { el, pad } from '../dom.js';
+import { el } from '../dom.js';
 
-/** 单条建筑详情。 */
-export function renderDetail({ item, index, total, backLabel, onBack, onPrev, onNext }) {
+/** 单条建筑详情：标题、年代、地点、正文、形制。 */
+export function renderDetail({ item, backLabel, onBack, onPrev, onNext }) {
   return [
     el(
       'button',
@@ -9,12 +9,11 @@ export function renderDetail({ item, index, total, backLabel, onBack, onPrev, on
       el('span', { class: 'arrow', 'aria-hidden': 'true', text: '←' }),
       backLabel,
     ),
-    el('p', { class: 'overline', text: `条目 ${pad(index + 1)} / ${pad(total)} · ${item.region} · ${item.era}` }),
     photoFrame(item),
     el('h2', { class: 'detail-title', text: item.name }),
     el('p', { class: 'detail-year', text: item.year }),
     el('p', { class: 'detail-meta', text: item.place }),
-    needsNote(item.status) ? el('p', { class: 'status', text: `${item.status} · 依现有资料保留说明` }) : null,
+    needsNote(item.status) ? el('p', { class: 'status', text: item.status }) : null,
     el('p', { class: 'detail-body', text: item.text }),
     item.quote ? el('blockquote', { class: 'detail-quote', text: item.quote }) : null,
     specList(item),
@@ -53,17 +52,8 @@ function photoFrame(item) {
     image.replaceWith(el('div', { class: 'photo-fallback', text: '此建筑照片暂缺' }));
   });
 
-  return el(
-    'figure',
-    { class: 'photo-frame' },
-    image,
-    el(
-      'figcaption',
-      { class: 'caption' },
-      el('span', { text: `图版 ${item.id.slice(-2)}` }),
-      el('span', { text: `${item.region} · ${item.era}` }),
-    ),
-  );
+  // 图下不放说明文字：图版信息已在标题与形制栏中
+  return el('figure', { class: 'photo-frame' }, image);
 }
 
 function specList(item) {
@@ -71,7 +61,6 @@ function specList(item) {
     ['形制', item.type],
     ['构造', item.structure],
     ['坐标', item.coordNote],
-    ['资料', item.source],
   ].filter(([, value]) => value);
 
   return el(

@@ -85,6 +85,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   const view = {
     width: 0,
     height: 0,
+    stageTop: 0,
+    stageHeight: 0,
+    stageRight: 0,
+    stageWidth: 0,
+    bleed: 0,
     radius() {
       const distance = camera.position.length();
       const halfFov = THREE.MathUtils.degToRad(camera.fov) / 2;
@@ -109,17 +114,39 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   let tween = null;
   let idleAllowed = false;
   let lastInteraction = performance.now();
+  /**
+   * 镜头阶梯：以“球在屏幕上不越界的最大半径”为 1。
+   * 全球 → 地区 → 朝代 → 省份 / 单座，逐级放大，后两级同时把目标转到画面中心。
+   * 省份与单座共用最深一档：整球可见的前提下已到极限，再近就必须让球边出血。
+   */
+  const LENS = { overview: 0.6, region: 0.86, era: 0.94, province: 1, building: 1 };
+  let maxRadius = 240;
+  let fitDistance = MIN_DIST;
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const tanHalfFov = () => Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  const distanceForRadius = (r) => (RADIUS * view.height) / (2 * Math.max(1, r) * tanHalfFov());
+  const nearestDistance = () => Math.max(MIN_DIST, distanceForRadius(maxRadius));
+  const farthestDistance = () => Math.max(nearestDistance() + 0.6, distanceForRadius(maxRadius * 0.34));
+
+  function lensDistance(level) {
+    if (typeof level === 'number') return level;
+    const ratio = LENS[level] ?? LENS.building;
+    return distanceForRadius(maxRadius * ratio);
+  }
 
   controls.addEventListener('start', () => {
     tween = null;
     lastInteraction = performance.now();
   });
 
-  function focus(lat, lon, distance, { instant = false } = {}) {
+  function focus(lat, lon, level = 'building', { instant = false } = {}) {
     const targetDir = sphPoint(lat, lon, 1);
+    const toDistance = THREE.MathUtils.clamp(
+      lensDistance(level), nearestDistance(), farthestDistance(),
+    );
     if (instant || reduced) {
-      camera.position.copy(targetDir.multiplyScalar(distance));
+      camera.position.copy(targetDir.multiplyScalar(toDistance));
       controls.update();
       tween = null;
       return;
@@ -129,7 +156,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
       toDir: targetDir,
       rotation: new THREE.Quaternion().setFromUnitVectors(camera.position.clone().normalize(), targetDir),
       fromDistance: camera.position.length(),
-      toDistance: distance,
+      toDistance,
       start: performance.now(),
     };
   }
@@ -137,18 +164,57 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   function zoom(factor) {
     tween = null;
     lastInteraction = performance.now();
-    const next = THREE.MathUtils.clamp(camera.position.length() * factor, MIN_DIST, MAX_DIST);
+    const next = THREE.MathUtils.clamp(
+      camera.position.length() * factor, nearestDistance(), farthestDistance(),
+    );
     camera.position.setLength(next);
     controls.update();
   }
 
   // ── 尺寸与焦距 ──
+  const stageEl = host.parentElement;
+
+  /** 只算舞台边界与镜头上限，不重设画布 */
+  function layoutMetrics() {
+    if (!view.width || !view.height) return;
+    const box = host.getBoundingClientRect();
+    const stage = stageEl.getBoundingClientRect();
+    view.stageTop = stage.top - box.top;
+    view.stageHeight = stage.height;
+    view.stageRight = stage.right - box.left;
+    view.stageWidth = stage.width;
+    view.bleed = Math.max(0, stage.left - box.left);
+
+    // 球可用的最大半径：上下不越出视口、右侧不压导航、整球仍在画布内
+    const midY = stage.top + stage.height / 2;
+    const viewportH = window.innerHeight || stage.height * 2;
+    const roomAbove = midY - 12;
+    const roomBelow = viewportH - midY - 12;
+    const roomRight = stage.width / 2 + view.bleed / 2 - 16;
+    const roomCanvas = view.height / 2 - 6;
+    maxRadius = Math.max(120, Math.min(roomAbove, roomBelow, roomRight, roomCanvas));
+    fitDistance = distanceForRadius(maxRadius);
+
+    view.maxRadius = maxRadius;
+
+    // 让轨道控制器与镜头阶梯共用同一组上下限，避免滚轮/双指越界
+    controls.minDistance = nearestDistance();
+    controls.maxDistance = farthestDistance();
+
+    if (camera.position.length() < nearestDistance()) {
+      camera.position.setLength(nearestDistance());
+      controls.update();
+    }
+  }
+
   function resize() {
     const width = host.clientWidth;
     const height = host.clientHeight;
     if (!width || !height) return;
+
     view.width = width;
     view.height = height;
+
     renderer.setSize(width, height, false);
     camera.aspect = width / height;
     camera.fov = THREE.MathUtils.radToDeg(
@@ -156,9 +222,12 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     );
     camera.updateProjectionMatrix();
     uniforms.uCell.value = 4.6 * renderer.getPixelRatio();
+
+    layoutMetrics();
   }
 
   new ResizeObserver(resize).observe(host);
+  new ResizeObserver(layoutMetrics).observe(stageEl);
   resize();
 
   // ── 交互：滚轮、双指、轻触 ──
@@ -192,7 +261,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
       const pts = [...pointers.values()];
       const dist = Math.hypot(pts[0][0] - pts[1][0], pts[0][1] - pts[1][1]);
       if (dist > 0 && pinchStart.dist > 0) {
-        const next = THREE.MathUtils.clamp(pinchStart.length * (pinchStart.dist / dist), MIN_DIST, MAX_DIST);
+        const next = THREE.MathUtils.clamp(
+          pinchStart.length * (pinchStart.dist / dist),
+          nearestDistance(),
+          farthestDistance(),
+        );
         camera.position.setLength(next);
         controls.update();
       }
@@ -218,7 +291,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     let best = null;
-    let bestDist = 26;
+    let bestDist = 30;
 
     items.forEach((item) => {
       if (!isFront(item.lat, item.lon)) return;
@@ -261,7 +334,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     view,
     focus,
     zoom,
-    reset: () => focus(28, 85, 7.4),
+    reset: () => focus(28, 85, 'overview'),
     setVisible: (list) => markers.setVisible(list),
     setActive: (item) => markers.setActive(item),
     setIdleSpin: (value) => {
