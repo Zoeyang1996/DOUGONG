@@ -4,6 +4,7 @@
 
 | 你要做什么 | 去哪里 |
 |---|---|
+| 准备高职组人工智能赛道 PPT、四岗实操与讲解 | [竞赛演示](竞赛演示/README.md) |
 | 改网页布局、交互和文字 | [web-exhibits](web-exhibits/README.md) |
 | 查知识资料、写方案、看修改记录 | [docs](docs/README.md) |
 | 在 Blender 中修改模型 | [models](models/README.md) |
