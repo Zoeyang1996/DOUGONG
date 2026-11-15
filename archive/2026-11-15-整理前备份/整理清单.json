@@ -1,0 +1,310 @@
+{
+  "before_KiB": 962316,
+  "archived_files": [
+    {
+      "path": "models/baoguosi_guoleng_v01/保国寺四根瓜棱柱_v01.blend1",
+      "size": 3403137,
+      "sha256": "e85b76506067e0ee7dc84484c1e15dc972410cbbe930e54ccc18b4f20fb906e3"
+    },
+    {
+      "path": "models/baoguosi_interior_v01/保国寺大殿_内部结构_v01.blend1",
+      "size": 9471715,
+      "sha256": "40f1757e7f76e232d3d0ae6bd9d9dbfad1a31af402791b1eff892cc2e63ea8d5"
+    },
+    {
+      "path": "models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend1",
+      "size": 6389873,
+      "sha256": "2c731b932fae4a0ba5cf88f75340e94c8ecda62ac3079ffe8d32ce006c3754a9"
+    },
+    {
+      "path": "models/baoguosi_zhutou_v01/保国寺主铺作_v01_形制草模.blend11",
+      "size": 6391285,
+      "sha256": "08ffb239ffa49bbf2b52fc976041955f19150821e5ff8bfe789321b30484a3fb"
+    },
+    {
+      "path": "models/baoguosi_zhutou_v02_game/保国寺柱头铺作_v02_游戏搭接修正版.blend1",
+      "size": 6403314,
+      "sha256": "fe24b4a974fc1429438a6f0c0360d17755ae9774dc806f2b831f88eb3c961fb0"
+    },
+    {
+      "path": "web-exhibits/blender/拼装交互占位件.blend1",
+      "size": 92782,
+      "sha256": "d9028bff6adce0be16c674b503a226f6d981e4c5609496ceb2be5a0fd4864dc4"
+    },
+    {
+      "path": "web-exhibits/blender/榫卯原理演示.blend1",
+      "size": 90084,
+      "sha256": "999e7b72ef8526ce879640a6ae155fea9c082cba2b2eb4dd80c5f2f0288e6fb3"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G4_唐代铺作/G4.blend1",
+      "size": 1029155,
+      "sha256": "89cb4afab70c9a0b5cab7dee3466b568de3a36f7684274d92ada1da9088013ed"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G5_保国寺宋构/G5.blend1",
+      "size": 1065409,
+      "sha256": "3671b271f22830fccdc53b7dd9c7042952dfcff9e7f167c5cf093301c0bfa3f6"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/K4_昂/K4.blend1",
+      "size": 970268,
+      "sha256": "62ff26df043cf28450190dd5e59669e0c30909e1b797eae6aa3159894c6bcd48"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/K5_翘/K5.blend1",
+      "size": 971299,
+      "sha256": "e95bf7eb0982cb991d0aa629aa513a9b84f0f65358d8bc86a8f68bbc404ff927"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G2_走入生活/G2.blend1",
+      "size": 981936,
+      "sha256": "52aac8ce6669f9ae704e83c7a6ee7d6f96d5a1b2e318690b5704e0d1a9549d43"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G3_斗拱之始/G3.blend1",
+      "size": 979346,
+      "sha256": "b8343b06aa48ad51f2e096cb83f2430b3dce4943516e17c006e3c6c3df5eeb04"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/K1_斗/K1.blend1",
+      "size": 973554,
+      "sha256": "20f8234eafb61e88f568d1aea9fc1f821b3b105d41ccca70cb20ef712f58537c"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G1_榫卯初见/G1.blend1",
+      "size": 972576,
+      "sha256": "13d7a46a9c98296ed2402ec701d32aba7946229e92d4609afcc449d7100ed6e7"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/K2_拱栱/K2.blend1",
+      "size": 971176,
+      "sha256": "dcf4ffd486df1625c68f7391d4611d0f7336535a3209d768a4545cc687701c9b"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/G6_清式斗科/G6.blend1",
+      "size": 1014474,
+      "sha256": "40eb3509aedd03351ea6ebf1f456263a56371f71f4ba07047ffef84e2abf0bb1"
+    },
+    {
+      "path": "web-exhibits/act-01-history/materials-3d/K3_升/K3.blend1",
+      "size": 970803,
+      "sha256": "f3c0a88c22844cb79a7ab7f2a3fc279376279a0aaae4da6b74e88733c29ac95f"
+    },
+    {
+      "path": ".demo-build/montage.jpg",
+      "size": 236863,
+      "sha256": "7a352cf1c52041f3c65c9e9ae7485db7da4e41a85ee8a063d264a132385cf2dc"
+    },
+    {
+      "path": ".demo-build/build.js",
+      "size": 14843,
+      "sha256": "55c9d0e5365d94bee1d0c1fd791e796c463006144c70fbefe0bb9151ffebbf22"
+    },
+    {
+      "path": ".demo-build/candidate.pptx",
+      "size": 8972328,
+      "sha256": "6e5aba914dba0e536a742d15c310e265e18a3142f53d61359be927a91ad030c4"
+    },
+    {
+      "path": ".demo-build/validation.json",
+      "size": 6036,
+      "sha256": "c97ffe71d72545d1bc416cd83e12a33b3f1235d504574d5c05a25a35d06444c7"
+    },
+    {
+      "path": ".demo-build/finalize.mjs",
+      "size": 1021,
+      "sha256": "dea2e93491194826813c062ad4417fe6a9c3fdae51444fbccf31054f4f5d634d"
+    },
+    {
+      "path": ".demo-build/export.mjs",
+      "size": 15300,
+      "sha256": "bbe23c03dfae3daab998d8cf92ef44279ed486b9f981a209096266bf2b1e0779"
+    },
+    {
+      "path": ".demo-build/candidate.pptx.inspect.ndjson",
+      "size": 53899,
+      "sha256": "3401698f0d88c81044ede81b4c024ca895a46ee1c0d5e4c9824f5da69292650f"
+    },
+    {
+      "path": ".demo-build/cnnb.html",
+      "size": 35090,
+      "sha256": "d80c7e5d61bd0c429c526331acebffcb40a704da65e338e53f98ba9aa354c58c"
+    },
+    {
+      "path": ".demo-build/previews/14.png",
+      "size": 124869,
+      "sha256": "78745fb9e12aac42062241f3647bd0f4ab0205381a0db2dfa4f02b504972ad92"
+    },
+    {
+      "path": ".demo-build/previews/01.png",
+      "size": 632334,
+      "sha256": "e00e3916314afbd69767158fecc56ed625b3909743ce7e54d4aa6e57e281665f"
+    },
+    {
+      "path": ".demo-build/previews/15.png",
+      "size": 122777,
+      "sha256": "dc567a06e457db9180b04816039399fd04bda3d301373123bba68620672ee23b"
+    },
+    {
+      "path": ".demo-build/previews/03.png",
+      "size": 96615,
+      "sha256": "cc9568f35484c3cac2c719426e5c91ee91831b67d66c29ce1968f39174a757ab"
+    },
+    {
+      "path": ".demo-build/previews/17.png",
+      "size": 149790,
+      "sha256": "128474b07f230947572c93c0d6d6311ec738b825ca9b9bdd0e0f9ab62fd553e6"
+    },
+    {
+      "path": ".demo-build/previews/16.png",
+      "size": 120519,
+      "sha256": "9cc287c4469f8a7a3bd9be01e056254291263b44afce23e89aa871eeec0737e2"
+    },
+    {
+      "path": ".demo-build/previews/02.png",
+      "size": 792353,
+      "sha256": "d662cfdfd3bf22422ef6f88302e95893a61d49e9c0b0ae09aa8dbf4970acfea7"
+    },
+    {
+      "path": ".demo-build/previews/06.png",
+      "size": 761867,
+      "sha256": "c3790b0cf64edd3a77773e686fa40ee5af0356e7c623b8bea22453aa7fda6e12"
+    },
+    {
+      "path": ".demo-build/previews/12.png",
+      "size": 132724,
+      "sha256": "00ee71cfb0cd64c94d16f0bbd9a29a9ceec983941ee54067f43f512416977dec"
+    },
+    {
+      "path": ".demo-build/previews/13.png",
+      "size": 96386,
+      "sha256": "0f673f8eaf6e7efeb014748442939af1a5535f23a45de36a9909577b03173a24"
+    },
+    {
+      "path": ".demo-build/previews/07.png",
+      "size": 730442,
+      "sha256": "7d97bd66cf7ad376559eaae671c9a062520a7f9e08400208b764a27cc5bd756a"
+    },
+    {
+      "path": ".demo-build/previews/11.png",
+      "size": 106044,
+      "sha256": "848202ca99252b215cf79a782d344ee7621534e2d80cc8a72433c88dee7d990c"
+    },
+    {
+      "path": ".demo-build/previews/05.png",
+      "size": 652827,
+      "sha256": "af290ab7b2311bb71584ff1494ed8eee7abd393d58b890c5859c36c4c0526a1b"
+    },
+    {
+      "path": ".demo-build/previews/04.png",
+      "size": 745979,
+      "sha256": "0b1fc0c2ba8a9821c33998626d99ffcc137b3b6194694a7ae3a188e9962cf170"
+    },
+    {
+      "path": ".demo-build/previews/10.png",
+      "size": 129775,
+      "sha256": "5670564ac42b5494c71793b5b8326a307f7b3fcc4fe3d90521c7a9256c5f3b2e"
+    },
+    {
+      "path": ".demo-build/previews/09.png",
+      "size": 666590,
+      "sha256": "4c971e150837c7ea61eadc0293875cdb0a02131f57fcb5b79bc47971b2fd93ad"
+    },
+    {
+      "path": ".demo-build/previews/08.png",
+      "size": 113168,
+      "sha256": "cca2d20d42293c0eb34cc5e4aa9a93ac7a8c95bd56bc4a75c701a61a0439857d"
+    },
+    {
+      "path": ".demo-build/previews/18.png",
+      "size": 154773,
+      "sha256": "a23d4e0cfd41a6c72e5c337cf83d614b5aedee2b734552216d9d925277026595"
+    },
+    {
+      "path": ".demo-build/assets/assembly-v1.png",
+      "size": 2172742,
+      "sha256": "e0e817d90ecd0ba1e9329e0b0932bf797d8dbea0ad0aea8202367a03a6c50ec5"
+    },
+    {
+      "path": ".demo-build/assets/force.png",
+      "size": 1863197,
+      "sha256": "b8d163b96d6e7d824365b773c2a98f4d62e5051771b631f8a94216ae264e624f"
+    },
+    {
+      "path": ".demo-build/assets/baoguo.jpg",
+      "size": 116032,
+      "sha256": "d4c858729c54f0e804b0500a9146a8eabfc8a14651c3c83d494a6e25d8483485"
+    },
+    {
+      "path": ".demo-build/assets/ang.jpg",
+      "size": 1149714,
+      "sha256": "6fd607a695106b77884cf26c277819e995fc6edf85e69c79864731768e08b844"
+    },
+    {
+      "path": ".demo-build/assets/zaojing.jpg",
+      "size": 347927,
+      "sha256": "bf4ade7f51aa183273c4b416fc5b0a9932de5d74c13d98ccad8caa0840b1ac51"
+    },
+    {
+      "path": ".demo-build/assets/history.png",
+      "size": 1905939,
+      "sha256": "41cea700062f023160791e73ff3931da5aaa3387637da1b7bfa4886d2a255f69"
+    },
+    {
+      "path": ".demo-build/assets/assembly.png",
+      "size": 1986241,
+      "sha256": "bbb0b6efd3fb3ebd34bd57b1e872505ff39dc7d9cc0a04142d8689da9e8ef6e9"
+    },
+    {
+      "path": ".demo-build/assets/scene.png",
+      "size": 2039898,
+      "sha256": "79ac3176a7b799fa86719a0e7c3cdc0ce173bc86a5731eef35a7c14035032e8f"
+    },
+    {
+      "path": ".chart-data-LCLx3M/candidate.pptx",
+      "size": 8959134,
+      "sha256": "6bf8b5b22136c7a0d2e2e62a44bb5bf0e405ba862596b67cda6a39405fca34a7"
+    },
+    {
+      "path": ".chart-data-LCLx3M/chart-data-snapshot.json",
+      "size": 1041,
+      "sha256": "cabae4bd3d1c900ce2681f3503d17c934be865c7e16e74e863b7edd04470194b"
+    },
+    {
+      "path": ".chart-data-iOqV1S/candidate.pptx",
+      "size": 8959134,
+      "sha256": "dc3e4217d74888f4fd6ac4b885523e3b5d49161c04e75865c698e25a45665231"
+    },
+    {
+      "path": ".chart-data-iOqV1S/chart-data-snapshot.json",
+      "size": 1041,
+      "sha256": "6342532a2a39fdde7f7bdfd000ccf7b3e301d59a17111b1efe3cf3923885aa17"
+    },
+    {
+      "path": "web",
+      "size": 1775,
+      "sha256": "80784de22efd3a1d9daf1c119165ef7803f8fb491d60c4f0d4c132e4dac3b9e1"
+    }
+  ],
+  "moves": [
+    {
+      "from": "人工智能赛道+数字媒体技术.docx",
+      "to": "docs/01-依据/原始文档/人工智能赛道+数字媒体技术.docx"
+    },
+    {
+      "from": "保国寺资料调查.docx",
+      "to": "docs/01-依据/原始文档/保国寺资料调查.docx"
+    },
+    {
+      "from": "基础斗拱资料调查.docx",
+      "to": "docs/01-依据/原始文档/基础斗拱资料调查.docx"
+    },
+    {
+      "from": "网站的创意想法.docx",
+      "to": "docs/01-依据/原始文档/网站的创意想法.docx"
+    }
+  ],
+  "original_bytes": 88311213,
+  "archive_bytes": 87127878
+}

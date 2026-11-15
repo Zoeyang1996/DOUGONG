@@ -1,0 +1,10 @@
+# Local system metadata and regenerable dependencies
+.DS_Store
+**/node_modules/
+# Blender automatic backups; keep authored .blend files
+*.blend[0-9]*
+# Temporary exports / editor lock files
+.chart-data-*/
+.demo-build/
+.~*.docx
+/tmp/
