@@ -1,7 +1,7 @@
 import { el } from '../dom.js';
 
 /** 单条建筑详情：标题、年代、地点、正文、形制。 */
-export function renderDetail({ item, backLabel, onBack, onPrev, onNext }) {
+export function renderDetail({ item, backLabel, onBack, onPrev, onNext, onOpenModel }) {
   return [
     el(
       'button',
@@ -9,7 +9,7 @@ export function renderDetail({ item, backLabel, onBack, onPrev, onNext }) {
       el('span', { class: 'arrow', 'aria-hidden': 'true', text: '←' }),
       backLabel,
     ),
-    photoFrame(item),
+    photoFrame(item, onOpenModel),
     el('h2', { class: 'detail-title', text: item.name }),
     el('p', { class: 'detail-year', text: item.year }),
     el('p', { class: 'detail-meta', text: item.place }),
@@ -40,7 +40,7 @@ function needsNote(status = '') {
   return status.includes('待核') || status.includes('争议');
 }
 
-function photoFrame(item) {
+function photoFrame(item, onOpenModel) {
   const image = el('img', {
     class: 'photo',
     alt: `${item.name}外观`,
@@ -51,6 +51,21 @@ function photoFrame(item) {
   image.addEventListener('error', () => {
     image.replaceWith(el('div', { class: 'photo-fallback', text: '此建筑照片暂缺' }));
   });
+
+  // 有三维模型的建筑，图变成入口：点一下进入四级预览
+  if (item.model) {
+    return el(
+      'button',
+      {
+        class: 'photo-frame has-model',
+        type: 'button',
+        'aria-label': `打开${item.name}的三维模型`,
+        onClick: () => onOpenModel?.(item),
+      },
+      image,
+      el('span', { class: 'photo-badge', text: '三维' }),
+    );
+  }
 
   // 图下不放说明文字：图版信息已在标题与形制栏中
   return el('figure', { class: 'photo-frame' }, image);

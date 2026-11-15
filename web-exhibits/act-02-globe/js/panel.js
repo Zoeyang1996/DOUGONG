@@ -20,6 +20,7 @@ export function createPanel({ contentHost, scrollHost, total, actions }) {
         onBack: actions.back,
         onPrev: actions.prev,
         onNext: actions.next,
+        onOpenModel: actions.openModel,
       });
     } else if (!country) {
       nodes = renderIntro(total);

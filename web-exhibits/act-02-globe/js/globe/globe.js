@@ -113,6 +113,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
 
   let tween = null;
   let idleAllowed = false;
+  let paused = false;
   let lastInteraction = performance.now();
   /**
    * 镜头阶梯：以“球在屏幕上不越界的最大半径”为 1。
@@ -310,6 +311,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   // ── 每帧 ──
   let lastTime = performance.now();
   renderer.setAnimationLoop((time) => {
+    if (paused) return;
     const dt = time - lastTime;
     lastTime = time;
 
@@ -340,6 +342,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     setIdleSpin: (value) => {
       idleAllowed = value;
       lastInteraction = performance.now();
+    },
+    setPaused: (value) => {
+      paused = value;
+      lastInteraction = performance.now();
+      lastTime = performance.now();
     },
     dispose() {
       renderer.setAnimationLoop(null);

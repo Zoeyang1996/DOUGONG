@@ -5,16 +5,26 @@ import { ERAS, REGIONS, OVERVIEW_FOCUS } from './content.js';
 import { createPanel } from './panel.js';
 import { createLabels } from './labels.js';
 import { createGlobe } from './globe/globe.js';
+import { createModelViewer } from './viewer.js';
 
 const $ = (selector) => document.querySelector(selector);
 const isNarrow = () => window.matchMedia('(max-width: 1023px)').matches;
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// 模型更新时改这个版本号，避免浏览器读旧缓存
+const MODEL_V = '20261115c';
 
 const state = {
   country: null, era: '全部', province: null, selected: null, visible: [], provinces: [],
 };
 
 const all = await loadBuildings();
+
+// 四级：建筑三维预览。打开时暂停地球渲染，省一半 GPU
+const viewer = createModelViewer({
+  onOpen: () => globe?.setPaused(true),
+  onClose: () => globe?.setPaused(false),
+});
 
 const panel = createPanel({
   contentHost: $('#panel-content'),
@@ -26,6 +36,7 @@ const panel = createPanel({
     prev: () => step(-1),
     next: () => step(1),
     province: setProvince,
+    openModel: (item) => viewer.open({ url: `${item.model}?v=${MODEL_V}`, name: item.name }),
   },
 });
 
