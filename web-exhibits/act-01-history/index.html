@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>木构之间 · 一本可以翻的中式古籍</title>
+  <meta name="description" content="第一幕：从一榫一卯到一朵斗拱，可翻阅的竖排古籍科普书。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/book.css">
+  <link rel="stylesheet" href="css/type.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script>
+</head>
+<body data-state="closed" data-overlay="closed">
+
+  <main id="stage" aria-label="可翻阅的古籍"></main>
+
+  <button class="turn-zone turn-zone--next" type="button" aria-label="翻到下一页"></button>
+  <button class="turn-zone turn-zone--prev" type="button" aria-label="翻回上一页"></button>
+
+  <div class="nav-hint nav-hint--left">
+    <span>翻页</span><kbd>左</kbd>
+  </div>
+  <div class="nav-hint nav-hint--right">
+    <span>回翻</span><kbd>右</kbd>
+  </div>
+
+  <div class="progress">
+    <span class="progress-track"><span class="progress-fill"></span></span>
+    <span class="progress-text">封面 · 轻触翻开</span>
+  </div>
+
+  <noscript><p style="color:#f0e7d4;text-align:center;padding-top:40vh">本书需要启用 JavaScript。</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

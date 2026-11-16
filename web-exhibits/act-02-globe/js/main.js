@@ -106,12 +106,43 @@ function refresh() {
   globe?.setVisible(state.visible);
   globe?.setActive(state.selected);
   globe?.setIdleSpin(!state.country);
+
+  // 省界：进到朝代或单座这一级才显形，单座时高亮所在省
+  const showProvinces = state.country === '中国'
+    && (!!state.selected || state.era !== '全部' || !!state.province);
+  globe?.setProvinceOverlay({
+    show: showProvinces,
+    highlight: state.selected?.province || state.province || '',
+  });
+
+  // 近景时球面被压深，地名签改用浅底，保证在深色球面上也能读
+  document.body.classList.toggle('is-closeup', !!state.selected);
+  syncProvinceTag();
+}
+
+/** 近景时在画布上方标出当前省份，避免只剩球面纹理、失去方位 */
+function syncProvinceTag() {
+  const tag = document.getElementById('province-tag');
+  if (!tag) return;
+  const item = state.selected;
+  const name = item?.province || state.province || '';
+  const short = name ? name.replace(/(壮族|回族|维吾尔|特别行政区|自治区|省|市)/g, '') : '';
+  // 只在中国、且真的进到单座这一级时才显示
+  if (!short || state.country !== '中国' || !item) {
+    tag.hidden = true;
+    tag.textContent = '';
+    return;
+  }
+  tag.hidden = false;
+  tag.textContent = short;
 }
 
 function pick(item) {
   state.selected = item;
   refresh();
-  globe?.focus(item.lat, item.lon, 'building');
+  // 中国进到省域特写（能看到省界与轮廓）；日本、欧洲退一档，保留海岸线与周边
+  const level = state.country === '中国' ? 'building' : 'closeup';
+  globe?.focus(item.lat, item.lon, level);
   if (isNarrow()) {
     $('#panel').scrollIntoView({
       behavior: reducedMotion() ? 'auto' : 'smooth',

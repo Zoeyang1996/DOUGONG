@@ -133,9 +133,10 @@
   cursor: pointer;
   touch-action: manipulation;
   transform: translateY(-50%);
+  /* 纸色描边：无论球面是浅色还是压深后的近景，都能读出来 */
   text-shadow:
-    0 0 2px var(--paper), 0 0 5px var(--paper),
-    0 0 9px rgba(238, 202, 162, .9);
+    0 0 2px var(--paper), 0 0 4px var(--paper), 0 0 7px var(--paper),
+    0 0 12px rgba(238, 202, 162, .85), 0 1px 0 rgba(238, 202, 162, .9);
   transition: color 180ms var(--ease), transform 160ms var(--ease-press);
 }
 
@@ -235,3 +236,54 @@
 @media (max-width: 460px) {
   .earth-stage { --globe-canvas: min(84vw, 360px); }
 }
+
+/* ── 近景：球面被压深，地名签垫一层纸底 ── */
+body.is-closeup .map-label {
+  text-shadow: none;
+}
+
+body.is-closeup .map-label::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 50%;
+  height: 22px;
+  transform: translateY(-50%);
+  background: rgba(242, 228, 204, .9);
+  box-shadow: 0 1px 8px rgba(28, 23, 18, .16);
+  z-index: -1;
+}
+
+body.is-closeup .map-label::after {
+  bottom: 11px;
+}
+
+body.is-closeup #leaders line {
+  stroke: rgba(242, 228, 204, .55);
+}
+
+body.is-closeup #leaders circle {
+  fill: #f2e4cc;
+  stroke: #9c3a22;
+}
+
+/* ── 近景省名：告诉用户现在看的是哪个省 ── */
+.province-tag {
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 4px 12px;
+  background: rgba(242, 228, 204, .92);
+  box-shadow: 0 1px 10px rgba(28, 23, 18, .14);
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: .22em;
+  color: var(--ink);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.province-tag[hidden] { display: none !important; }

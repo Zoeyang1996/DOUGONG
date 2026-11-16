@@ -1,10 +1,11 @@
 import { ERAS, REGIONS } from '../content.js';
 import { shortProvince, eraSpan } from '../data.js';
+import { ERA_STATS, formatTotal, provinceMax } from '../era-stats.js';
 import { el } from '../dom.js';
 
 /** 地区 / 朝代 / 省份总览：标题、年代、引言、收录数、各省数量与名录 */
 export function renderRegion({
-  country, era, province, items, provinces, onPick, onProvince,
+  country, era, province, items, provinces, stat, onPick, onProvince,
 }) {
   const eraInfo = ERAS.find((entry) => entry.key === era && entry.key !== '全部');
   const region = REGIONS[country];
@@ -19,11 +20,12 @@ export function renderRegion({
         ? provinceLede(items)
         : (eraInfo ? eraInfo.lede : region.lede),
     }),
+    country === '中国' && !provinceName ? statBlock(stat || ERA_STATS[era]) : null,
     el(
       'div',
       { class: 'count' },
       el('strong', { text: String(items.length) }),
-      el('span', { text: '处木构' }),
+      el('span', { text: '处 · 本图册收录' }),
     ),
     provinces.length
       ? provinceBlock({ provinces, province, total: provinces.reduce((sum, p) => sum + p.count, 0), onProvince })
@@ -63,7 +65,7 @@ function provinceBlock({ provinces, province, total, onProvince }) {
     el(
       'div',
       { class: 'provinces-head' },
-      el('span', { class: 'provinces-title', text: '省份收录' }),
+      el('span', { class: 'provinces-title', text: '收录分布' }),
       el(
         'button',
         {
@@ -117,4 +119,49 @@ function buildList(items, onPick) {
   });
 
   return list;
+}
+
+/**
+ * 全国现存统计：数字 + 分省条形 + 口径说明。
+ * 数字来自独立的数据文件，与「本图册收录」严格分开，避免把收录数当现存数。
+ */
+function statBlock(stat) {
+  if (!stat) return null;
+  const max = provinceMax(stat);
+
+  return el(
+    'section',
+    { class: 'era-stat', 'aria-label': '全国现存统计' },
+    el(
+      'div',
+      { class: 'era-stat-head' },
+      el('span', { class: 'era-stat-label', text: '全国现存' }),
+      el('span', { class: 'era-stat-scope', text: stat.scope }),
+    ),
+    el(
+      'div',
+      { class: 'era-stat-num' },
+      el('strong', { text: formatTotal(stat.total) }),
+      el('span', { text: stat.unit }),
+    ),
+    stat.provinces.length
+      ? el(
+        'div',
+        { class: 'era-stat-bars' },
+        stat.provinces.map(([name, count]) => {
+          const row = el(
+            'div',
+            { class: 'era-stat-row' },
+            el('span', { class: 'era-stat-pname', text: name }),
+            el('span', { class: 'era-stat-pbar', 'aria-hidden': 'true' }),
+            el('span', { class: 'era-stat-pnum', text: String(count) }),
+          );
+          row.style.setProperty('--share', String(count / max));
+          return row;
+        }),
+      )
+      : null,
+    el('p', { class: 'era-stat-note', text: stat.note }),
+    el('p', { class: 'era-stat-src', text: `来源 · ${stat.source}` }),
+  );
 }

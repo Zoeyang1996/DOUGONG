@@ -7,6 +7,51 @@ import { DRACOLoader } from '../../shared/vendor/DRACOLoader.js';
  * 三级详情页里的"看三维"预览层。
  * 一个全屏窗口、一个常驻渲染器；每次打开只换模型，关掉即释放几何与贴图。
  */
+/* ── 离线包（file://）──────────────────────────────────────────
+   浏览器在 file:// 下禁止 fetch 本地文件，模型与解码器都读不到。
+   所以离线包把 GLB 转成 base64 存成普通 .js，用 <script src> 注入
+   （脚本加载不受该限制），再直接交给 loader.parse 解析。
+   ───────────────────────────────────────────────────────────── */
+const OFFLINE = location.protocol === 'file:';
+const b64Cache = new Map();
+
+function b64ToBuffer(b64) {
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i += 1) bytes[i] = bin.charCodeAt(i);
+  return bytes.buffer;
+}
+
+function modelKey(url) {
+  const name = url.split('/').pop() || '';
+  return name.replace(/\.glb(\?.*)?$/i, '');
+}
+
+/** 注入 assets/models-js/<key>.js，等它把 window.__MODEL_B64[key] 填好 */
+function loadB64(key) {
+  if (b64Cache.has(key)) return Promise.resolve(b64Cache.get(key));
+  const store = (window.__MODEL_B64 = window.__MODEL_B64 || {});
+  if (store[key]) {
+    b64Cache.set(key, store[key]);
+    return Promise.resolve(store[key]);
+  }
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = `assets/models-js/${key}.js`;
+    script.onload = () => {
+      const value = store[key];
+      if (value) {
+        b64Cache.set(key, value);
+        resolve(value);
+      } else {
+        reject(new Error('模型数据为空'));
+      }
+    };
+    script.onerror = () => reject(new Error('模型数据载入失败'));
+    document.head.append(script);
+  });
+}
+
 export function createModelViewer({ onOpen, onClose } = {}) {
   const root = document.createElement('div');
   root.className = 'viewer';
@@ -90,7 +135,17 @@ export function createModelViewer({ onOpen, onClose } = {}) {
 
     const loader = new GLTFLoader();
     const draco = new DRACOLoader();
-    draco.setDecoderPath(new URL('../../shared/vendor/draco/', import.meta.url).href);
+    const inlineLib = OFFLINE ? window.__DRACO_LIB : null;
+    if (inlineLib) {
+      // 解码器随离线包内联（wrapper + wasm），不再走网络请求
+      const libs = {
+        'draco_wasm_wrapper.js': new TextDecoder().decode(b64ToBuffer(inlineLib.wrapper)),
+        'draco_decoder.wasm': b64ToBuffer(inlineLib.wasm),
+      };
+      draco._loadLibrary = (name) => Promise.resolve(libs[name]);
+    } else {
+      draco.setDecoderPath(new URL('../../shared/vendor/draco/', import.meta.url).href);
+    }
     loader.setDRACOLoader(draco);
 
     resizeObserver = new ResizeObserver(resize);
@@ -191,11 +246,19 @@ export function createModelViewer({ onOpen, onClose } = {}) {
     resize();
 
     try {
-      const gltf = await root._loader.loadAsync(url, (evt) => {
-        if (token !== currentToken || !evt.total) return;
-        const pct = Math.min(99, Math.round((evt.loaded / evt.total) * 100));
-        statusEl.textContent = `模型载入中 ${pct}%`;
-      });
+      let gltf;
+      if (OFFLINE) {
+        const buffer = b64ToBuffer(await loadB64(modelKey(url)));
+        if (token !== currentToken) return;
+        statusEl.textContent = '模型解析中…';
+        gltf = await root._loader.parseAsync(buffer, '');
+      } else {
+        gltf = await root._loader.loadAsync(url, (evt) => {
+          if (token !== currentToken || !evt.total) return;
+          const pct = Math.min(99, Math.round((evt.loaded / evt.total) * 100));
+          statusEl.textContent = `模型载入中 ${pct}%`;
+        });
+      }
       if (token !== currentToken) return;
 
       clearModel();

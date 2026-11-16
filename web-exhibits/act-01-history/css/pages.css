@@ -1,0 +1,642 @@
+/* 木构之间 · 各类页面的具体版式
+   正文页、卷首、图版、模型格、构件格、问答、地图、索引
+   ------------------------------------------------------------------ */
+
+.page {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* 版框内容必须自己撑满，否则竖排会塌 */
+.frame > * {
+  position: absolute;
+  inset: 0;
+}
+
+.text-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: calc(var(--page-w) * 0.028);
+  padding: calc(var(--page-h) * 0.055) calc(var(--page-w) * 0.06) calc(var(--page-h) * 0.05)
+    calc(var(--page-w) * 0.05);
+}
+
+.text-inner .verso {
+  flex: 1;
+  min-width: 0;
+}
+
+.text-inner .title-row {
+  flex: none;
+}
+
+/* ------------------------------------------------------------ 目录 */
+
+.toc-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+  height: 100%;
+  writing-mode: vertical-rl;
+  padding-block-start: 0.4em;
+}
+
+.toc-row {
+  display: flex;
+  align-items: center;
+  gap: 0.42em;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: calc(var(--page-w) * 0.037);
+  letter-spacing: 0.06em;
+  padding: 0.1em 0.2em;
+  cursor: pointer;
+  text-align: start;
+  transition: color 160ms;
+}
+
+.toc-row:hover,
+.toc-row:focus-visible {
+  color: var(--cinnabar);
+  outline: none;
+}
+
+.toc-vol {
+  font-family: var(--kai);
+  font-size: 0.82em;
+  color: var(--cinnabar-soft);
+  letter-spacing: 0.18em;
+}
+
+.toc-name {
+  font-family: var(--kai);
+  font-size: 1.06em;
+}
+
+.toc-leader {
+  flex: 1;
+  border-inline-start: 1px dotted var(--rule);
+}
+
+.toc-page {
+  font-family: var(--kai);
+  font-size: 0.78em;
+  color: var(--ink-ghost);
+}
+
+/* ------------------------------------------------------------ 卷首（版式在 type.css） */
+
+/* ------------------------------------------------------------ 图版 */
+
+.plate img {
+  border: 1px solid rgba(70, 56, 38, 0.28);
+}
+
+.figure-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.figure-holder > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.figure-controls {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--page-w) * 0.045);
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  background: rgba(246, 239, 221, 0.9);
+  border: 1px solid var(--rule);
+  padding: 6px;
+  z-index: 6;
+}
+
+.figure-controls .ghost-btn {
+  font-size: calc(var(--page-w) * 0.028);
+  padding: 6px 9px;
+}
+
+.figure-controls--wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 88%;
+}
+
+.figure-tip {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: calc(var(--page-w) * 0.14);
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.026);
+  line-height: 1.7;
+  color: var(--ink-faint);
+  text-align: center;
+  z-index: 5;
+}
+
+.figure-error {
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.03);
+  color: var(--cinnabar);
+  text-align: center;
+  padding: 20% 10% 0;
+}
+
+/* ------------------------------------------------------------ 四种榫卯 */
+
+.model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: calc(var(--page-w) * 0.026);
+  padding: calc(var(--page-h) * 0.05) calc(var(--page-w) * 0.055) calc(var(--page-h) * 0.045);
+}
+
+.model-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid rgba(70, 56, 38, 0.24);
+  background: rgba(255, 250, 236, 0.4);
+  padding: calc(var(--page-w) * 0.03) calc(var(--page-w) * 0.02);
+  cursor: pointer;
+  transition: background 160ms, border-color 160ms, transform 160ms;
+}
+
+.model-cell:hover,
+.model-cell:focus-visible {
+  background: rgba(255, 252, 240, 0.85);
+  border-color: rgba(158, 53, 39, 0.5);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.model-glyph {
+  display: block;
+  width: 62%;
+  max-width: 96px;
+  aspect-ratio: 1;
+}
+
+.model-glyph svg {
+  width: 100%;
+  height: 100%;
+}
+
+.model-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.model-text strong {
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.042);
+  letter-spacing: 0.14em;
+  color: var(--ink);
+}
+
+.model-text em {
+  font-style: normal;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.026);
+  color: var(--cinnabar);
+  letter-spacing: 0.1em;
+}
+
+.model-text small {
+  font-size: calc(var(--page-w) * 0.024);
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+.model-open {
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.022);
+  color: var(--ink-ghost);
+  letter-spacing: 0.08em;
+}
+
+/* ------------------------------------------------------------ 六构件 */
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: calc(var(--page-w) * 0.022);
+  padding: calc(var(--page-h) * 0.045) calc(var(--page-w) * 0.05) calc(var(--page-h) * 0.04);
+}
+
+.part-cell {
+  display: grid;
+  grid-template-columns: calc(var(--page-w) * 0.18) 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0 8px;
+  border: 1px solid rgba(70, 56, 38, 0.22);
+  background: rgba(255, 250, 236, 0.42);
+  padding: 6px 8px;
+  cursor: pointer;
+  text-align: start;
+  transition: background 160ms, border-color 160ms;
+}
+
+.part-cell:hover,
+.part-cell:focus-visible {
+  background: rgba(255, 252, 240, 0.9);
+  border-color: rgba(158, 53, 39, 0.5);
+  outline: none;
+}
+
+.part-figure {
+  grid-row: 1 / span 2;
+  display: block;
+  width: 100%;
+}
+
+.part-figure svg {
+  width: 100%;
+  height: 100%;
+}
+
+.part-name {
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.05);
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  align-self: end;
+}
+
+.part-pinyin {
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.022);
+  color: var(--cinnabar-soft);
+  letter-spacing: 0.06em;
+  align-self: start;
+}
+
+.part-role {
+  grid-column: 1 / -1;
+  font-size: calc(var(--page-w) * 0.022);
+  line-height: 1.55;
+  color: var(--ink-faint);
+  margin-top: 4px;
+  border-top: 1px dashed var(--rule-soft);
+  padding-top: 4px;
+}
+
+/* ------------------------------------------------------------ 问答 */
+
+.quiz {
+  position: relative;
+  padding: calc(var(--page-h) * 0.07) calc(var(--page-w) * 0.07) calc(var(--page-h) * 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--page-w) * 0.03);
+}
+
+/* 问答页下半的斗拱线稿：做题时的参照物 */
+.quiz-art {
+  position: absolute;
+  right: 6%;
+  bottom: 3%;
+  width: 46%;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.quiz-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.quiz-step {
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.026);
+  letter-spacing: 0.34em;
+  color: var(--cinnabar);
+}
+
+.quiz-q {
+  margin: 6px 0 10px;
+  font-size: calc(var(--page-w) * 0.042);
+  line-height: 1.65;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+}
+
+.quiz-opts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.quiz-opts .ghost-btn {
+  font-size: calc(var(--page-w) * 0.03);
+  padding: 8px 10px;
+}
+
+.quiz-opts .ghost-btn.is-wrong {
+  border-color: rgba(158, 53, 39, 0.6);
+  color: var(--cinnabar-soft);
+  text-decoration: line-through;
+}
+
+.quiz-answer {
+  border-top: 1px solid var(--rule);
+  padding-top: calc(var(--page-w) * 0.03);
+}
+
+.quiz-final {
+  display: block;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.046);
+  letter-spacing: 0.1em;
+  color: var(--cinnabar);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.quiz-answer p {
+  margin: 0 0 10px;
+  font-size: calc(var(--page-w) * 0.028);
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+/* ------------------------------------------------------------ 拆解页 */
+
+.explode-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--page-w) * 0.03);
+  padding: calc(var(--page-h) * 0.06) calc(var(--page-w) * 0.08);
+  text-align: center;
+}
+
+.explode-art {
+  width: 62%;
+  max-width: 200px;
+}
+
+.explode-art svg {
+  width: 100%;
+  height: auto;
+}
+
+.explode-copy {
+  margin: 0;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.03);
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+.big-btn {
+  border: 1px solid var(--cinnabar);
+  background: rgba(158, 53, 39, 0.9);
+  color: #f8f1e2;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.034);
+  letter-spacing: 0.2em;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 160ms, transform 160ms;
+}
+
+.big-btn:hover,
+.big-btn:focus-visible {
+  background: var(--cinnabar);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* ------------------------------------------------------------ 地图 */
+
+.map-holder {
+  position: absolute;
+  inset: calc(var(--page-h) * 0.04) calc(var(--page-w) * 0.035) calc(var(--page-h) * 0.03);
+}
+
+.map-holder svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------------------------ 表 */
+
+.table-wrap {
+  padding: calc(var(--page-h) * 0.04) calc(var(--page-w) * 0.04);
+  display: grid;
+  place-items: center;
+}
+
+.verso-table {
+  max-height: 100%;
+  max-width: 100%;
+  font-size: calc(var(--page-w) * 0.028);
+}
+
+.verso-table th,
+.verso-table td {
+  padding: 0.34em 0.4em;
+  font-size: 1em;
+}
+
+/* ------------------------------------------------------------ 图版索引 */
+
+.index-plates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 6px;
+  padding: calc(var(--page-h) * 0.05) calc(var(--page-w) * 0.05) calc(var(--page-h) * 0.045);
+}
+
+.index-plate {
+  border: 1px solid rgba(70, 56, 38, 0.2);
+  background: rgba(255, 250, 236, 0.4);
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.026);
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 6px 4px;
+  transition: background 150ms, border-color 150ms, color 150ms;
+}
+
+.index-plate:hover,
+.index-plate:focus-visible {
+  background: rgba(255, 252, 240, 0.9);
+  border-color: rgba(158, 53, 39, 0.45);
+  color: var(--cinnabar);
+  outline: none;
+}
+
+/* 书耳与版心的位置在 book.css 里统一给定 */
+
+/* ------------------------------------------------------------ 窄屏收拢 */
+
+@media (max-width: 900px) {
+  .text-inner {
+    padding: calc(var(--page-h) * 0.05) calc(var(--page-w) * 0.075) calc(var(--page-h) * 0.045)
+      calc(var(--page-w) * 0.11);
+  }
+
+  .model-grid {
+    gap: 6px;
+    padding: 8px 10px 8px 14px;
+  }
+
+  .parts-grid {
+    gap: 5px;
+    padding: 8px 10px 8px 14px;
+  }
+
+  .model-text strong {
+    font-size: calc(var(--page-w) * 0.052);
+  }
+
+  .part-cell {
+    grid-template-columns: calc(var(--page-w) * 0.22) 1fr;
+  }
+}
+/* ------------------------------------------------------------ 卷首页角的线稿 */
+
+.chapter-art {
+  position: absolute;
+  right: calc(var(--page-w) * 0.09);
+  bottom: calc(var(--page-h) * 0.05);
+  width: calc(var(--page-w) * 0.34);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.chapter-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 网格页的图版号：贴住下边线即可 */
+.plate-number--bottom {
+  bottom: calc(var(--page-w) * 0.02);
+}
+
+/* ------------------------------------------------------------ 地图页：图在上、卡在下 */
+
+.map-page {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: calc(var(--page-h) * 0.035) calc(var(--page-w) * 0.035) calc(var(--page-h) * 0.028);
+}
+
+.map-page .map-holder {
+  position: relative;
+  inset: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.map-page .map-card {
+  position: relative;
+  inset: auto;
+  right: auto;
+  top: auto;
+  width: 100%;
+  flex: 0 0 auto;
+  max-height: 52%;
+  padding: 10px 11px;
+  overflow: auto;
+}
+
+.map-page .map-card[hidden] {
+  display: none;
+}
+
+/* 地图贴边时不压住版框 */
+.map-page svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------------------------ 窄屏微调 */
+
+@media (max-width: 900px) {
+  .chapter-head {
+    padding: calc(var(--page-h) * 0.06) calc(var(--page-w) * 0.07) calc(var(--page-h) * 0.05)
+      calc(var(--page-w) * 0.05);
+  }
+
+  .chapter-art {
+    width: calc(var(--page-w) * 0.3);
+    opacity: 0.42;
+  }
+
+  .quiz {
+    padding: calc(var(--page-h) * 0.06) calc(var(--page-w) * 0.09) calc(var(--page-h) * 0.05)
+      calc(var(--page-w) * 0.12);
+  }
+}
+/* ------------------------------------------------------------ 地图提示行与卡开态 */
+
+.map-hint {
+  flex: 0 0 auto;
+  text-align: center;
+  font-family: var(--kai);
+  font-size: calc(var(--page-w) * 0.025);
+  letter-spacing: 0.16em;
+  color: var(--ink-ghost);
+  padding: 2px 0 4px;
+}
+
+.map-page.has-card .map-hint {
+  display: none;
+}
+
+/* ------------------------------------------------------------ 问答页：题在上，图为底 */
+
+.quiz {
+  justify-content: flex-start;
+}
+
+.quiz-art {
+  right: auto;
+  left: 50%;
+  bottom: 5%;
+  width: 76%;
+  transform: translateX(-50%);
+  opacity: 0.26;
+}
+
+@media (max-width: 900px) {
+  .quiz-art {
+    width: 86%;
+    opacity: 0.2;
+  }
+}

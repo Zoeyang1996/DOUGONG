@@ -29,6 +29,7 @@ export function createPanel({ contentHost, scrollHost, total, actions }) {
         country,
         era,
         province,
+        stat: state.stat,
         items: visible,
         provinces,
         onPick: actions.pick,

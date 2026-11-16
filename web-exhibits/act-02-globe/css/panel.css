@@ -609,3 +609,110 @@ body.is-underlap .panel::before { opacity: 1; }
   .photo { max-height: 300px; }
   .province-grid { gap: 0 var(--s-5); }
 }
+
+/* ── 全国现存统计（与“本图册收录”分开） ── */
+.era-stat {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.era-stat-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.era-stat-label {
+  font-size: 13px;
+  letter-spacing: .14em;
+  color: var(--ink-60);
+}
+
+.era-stat-scope {
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: rgba(28, 23, 18, .42);
+}
+
+.era-stat-num {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.era-stat-num strong {
+  font-family: var(--mono);
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: var(--ink);
+}
+
+.era-stat-num span {
+  font-size: 14px;
+  color: var(--ink-60);
+}
+
+.era-stat-bars {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.era-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.era-stat-pname {
+  width: 96px;
+  flex: none;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.era-stat-pbar {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  background: rgba(28, 23, 18, .1);
+}
+
+.era-stat-pbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(var(--share, 0) * 100%);
+  background: var(--red);
+}
+
+.era-stat-pnum {
+  width: 44px;
+  flex: none;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-60);
+}
+
+.era-stat-note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--ink-60);
+}
+
+.era-stat-src {
+  margin: 6px 0 0;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: rgba(28, 23, 18, .38);
+}

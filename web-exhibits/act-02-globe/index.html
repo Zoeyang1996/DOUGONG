@@ -6,11 +6,11 @@
 <meta name="theme-color" content="#e7b878">
 <title>世界现存木构建筑图册 · 木构之间</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/panel.css">
-<link rel="stylesheet" href="css/globe.css">
-<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/theme.css?v=20261116d">
+<link rel="stylesheet" href="css/layout.css?v=20261116d">
+<link rel="stylesheet" href="css/panel.css?v=20261116d">
+<link rel="stylesheet" href="css/globe.css?v=20261116d">
+<link rel="stylesheet" href="css/viewer.css?v=20261116d">
 <script type="importmap">{"imports":{"three":"../shared/vendor/three.module.js"}}</script>
 </head>
 <body>
@@ -42,6 +42,7 @@
     <div id="globe"></div>
     <svg id="leaders" aria-hidden="true"></svg>
     <div id="map-labels"></div>
+      <p id="province-tag" class="province-tag" hidden></p>
     <div id="globe-error" hidden>地球暂时无法显示，可从左侧名录继续浏览。</div>
     <div class="map-tools">
       <button id="zoom-in" aria-label="放大地球"><span aria-hidden="true">＋</span></button>
@@ -76,6 +77,6 @@
   <p>支持鼠标拖动、滚轮缩放，以及触摸拖动、双指缩放。键盘可用 Tab 选择控件，Enter 打开条目，Esc 返回上层。</p>
 </dialog>
 
-<script type="module" src="js/main.js"></script>
+<script type="module" src="js/main.js?v=20261116d"></script>
 </body>
 </html>

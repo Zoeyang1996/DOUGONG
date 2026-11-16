@@ -6,8 +6,11 @@ import { createMarkers } from './markers.js';
 
 const RADIUS = 2;
 const MARKER_RADIUS = 2.008;
+const PROVINCE_RADIUS = 2.004;
 const MIN_DIST = 4.6;
 const MAX_DIST = 11;
+/** 贴面距离：允许镜头压到球面上方，用于省域尺度的特写 */
+const DETAIL_DIST = RADIUS * 1.08;
 const BASE_FOV = 44;
 const TWEEN_MS = 1100;
 const IDLE_DELAY = 5000;
@@ -82,6 +85,10 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   const markers = createMarkers({ items, positions, pixelRatio: renderer.getPixelRatio() });
   scene.add(markers.object3D);
 
+  // ── 省界：只在中国境内、且镜头压到省域尺度时才显形 ──
+  const provinceLayer = await createProvinceLayer();
+  scene.add(provinceLayer.object);
+
   const view = {
     width: 0,
     height: 0,
@@ -117,10 +124,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   let lastInteraction = performance.now();
   /**
    * 镜头阶梯：以“球在屏幕上不越界的最大半径”为 1。
-   * 全球 → 地区 → 朝代 → 省份 / 单座，逐级放大，后两级同时把目标转到画面中心。
-   * 省份与单座共用最深一档：整球可见的前提下已到极限，再近就必须让球边出血。
+   * 全球 → 地区 → 朝代 → 单座，逐级放大。
+   * 单座这一级会越过“整球可见”的边界，直接压到球面上方，
+   * 目的是让省界与地势在画面里展开——此时球边出血是刻意的。
    */
-  const LENS = { overview: 0.6, region: 0.86, era: 0.94, province: 1, building: 1 };
+  const LENS = { overview: 0.6, region: 0.86, era: 0.94, province: 1, closeup: 1.9, building: 2.6 };
   let maxRadius = 240;
   let fitDistance = MIN_DIST;
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -129,11 +137,19 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   const distanceForRadius = (r) => (RADIUS * view.height) / (2 * Math.max(1, r) * tanHalfFov());
   const nearestDistance = () => Math.max(MIN_DIST, distanceForRadius(maxRadius));
   const farthestDistance = () => Math.max(nearestDistance() + 0.6, distanceForRadius(maxRadius * 0.34));
+  /** 允许压到球面上的最近距离（单座特写用，会让球边出血） */
+  const detailFloor = () => DETAIL_DIST;
 
   function lensDistance(level) {
     if (typeof level === 'number') return level;
     const ratio = LENS[level] ?? LENS.building;
     return distanceForRadius(maxRadius * ratio);
+  }
+
+  /** 按层级取最近距离：单座特写（以及显式传入的距离）允许越过“整球可见”的边界 */
+  function floorFor(level) {
+    const close = level === 'building' || level === 'closeup' || typeof level === 'number';
+    return close ? detailFloor() : nearestDistance();
   }
 
   controls.addEventListener('start', () => {
@@ -144,7 +160,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
   function focus(lat, lon, level = 'building', { instant = false } = {}) {
     const targetDir = sphPoint(lat, lon, 1);
     const toDistance = THREE.MathUtils.clamp(
-      lensDistance(level), nearestDistance(), farthestDistance(),
+      lensDistance(level), floorFor(level), farthestDistance(),
     );
     if (instant || reduced) {
       camera.position.copy(targetDir.multiplyScalar(toDistance));
@@ -166,7 +182,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     tween = null;
     lastInteraction = performance.now();
     const next = THREE.MathUtils.clamp(
-      camera.position.length() * factor, nearestDistance(), farthestDistance(),
+      camera.position.length() * factor, detailFloor(), farthestDistance(),
     );
     camera.position.setLength(next);
     controls.update();
@@ -199,11 +215,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     view.maxRadius = maxRadius;
 
     // 让轨道控制器与镜头阶梯共用同一组上下限，避免滚轮/双指越界
-    controls.minDistance = nearestDistance();
+    controls.minDistance = detailFloor();
     controls.maxDistance = farthestDistance();
 
-    if (camera.position.length() < nearestDistance()) {
-      camera.position.setLength(nearestDistance());
+    if (camera.position.length() < detailFloor()) {
+      camera.position.setLength(detailFloor());
       controls.update();
     }
   }
@@ -264,7 +280,7 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
       if (dist > 0 && pinchStart.dist > 0) {
         const next = THREE.MathUtils.clamp(
           pinchStart.length * (pinchStart.dist / dist),
-          nearestDistance(),
+          detailFloor(),
           farthestDistance(),
         );
         camera.position.setLength(next);
@@ -339,6 +355,11 @@ export async function createGlobe({ host, items, onPick, onFrame }) {
     reset: () => focus(28, 85, 'overview'),
     setVisible: (list) => markers.setVisible(list),
     setActive: (item) => markers.setActive(item),
+    /** 省界显隐与高亮。highlight 传省份名（可带或不带“省/市”后缀） */
+    setProvinceOverlay: (options = {}) => {
+      if ('show' in options) provinceLayer.show(options.show);
+      if ('highlight' in options) provinceLayer.highlight(options.highlight);
+    },
     setIdleSpin: (value) => {
       idleAllowed = value;
       lastInteraction = performance.now();
@@ -365,4 +386,126 @@ function geometryDispose(scene) {
       materials.forEach((m) => m.dispose());
     }
   });
+}
+
+/** 把 GeoJSON 多边形里任意层级的 ring 摊平出来 */
+function collectRings(coords, out) {
+  if (!Array.isArray(coords) || !coords.length) return;
+  if (typeof coords[0][0] === 'number') {
+    out.push(coords);
+    return;
+  }
+  coords.forEach((child) => collectRings(child, out));
+}
+
+/** “山西省”“内蒙古自治区”“北京市”统一成短名，便于和 data.json 对齐 */
+export function normalizeProvince(name) {
+  if (!name) return '';
+  return String(name).replace(/(壮族|回族|维吾尔|特别行政区|自治区|省|市)/g, '');
+}
+
+/**
+ * 省级界线的球面线框。
+ * 底图一条线（所有省），高亮一条线（当前省），两个 draw call。
+ */
+async function createProvinceLayer() {
+  const group = new THREE.Group();
+  group.visible = false;
+
+  const baseMat = new THREE.LineBasicMaterial({
+    color: 0x3b2f22, transparent: true, opacity: 0.22, depthWrite: false,
+  });
+  const hiMat = new THREE.LineBasicMaterial({
+    color: 0xb4432a, transparent: true, opacity: 1, depthWrite: false,
+  });
+
+  let data = null;
+  try {
+    const res = await fetch('./assets/data/china-provinces.json');
+    if (res.ok) data = await res.json();
+  } catch (error) {
+    console.warn('省界数据未载入，主场景不受影响', error);
+  }
+
+  const features = data?.features || [];
+  const all = [];
+  features.forEach((feature) => {
+    const rings = [];
+    collectRings(feature.geometry?.coordinates, rings);
+    const buf = [];
+    rings.forEach((ring) => {
+      for (let i = 0; i < ring.length - 1; i += 1) {
+        const a = sphPoint(ring[i][1], ring[i][0], PROVINCE_RADIUS);
+        const b = sphPoint(ring[i + 1][1], ring[i + 1][0], PROVINCE_RADIUS);
+        buf.push(a.x, a.y, a.z, b.x, b.y, b.z);
+      }
+    });
+    feature._buf = buf;
+    all.push(...buf);
+  });
+
+  const baseGeom = new THREE.BufferGeometry();
+  baseGeom.setAttribute('position', new THREE.Float32BufferAttribute(all, 3));
+  const base = new THREE.LineSegments(baseGeom, baseMat);
+  base.frustumCulled = false;
+  group.add(base);
+
+  const hiGeom = new THREE.BufferGeometry();
+  const hi = new THREE.LineSegments(hiGeom, hiMat);
+  hi.frustumCulled = false;
+  group.add(hi);
+
+  // 高亮省份的面填充：只看线不容易认出是哪个省，填一层薄色就清楚了
+  const fillGeom = new THREE.BufferGeometry();
+  const fillMat = new THREE.MeshBasicMaterial({
+    color: 0x9c3a22, transparent: true, opacity: 0.26,
+    depthWrite: false, side: THREE.DoubleSide,
+  });
+  const fill = new THREE.Mesh(fillGeom, fillMat);
+  fill.frustumCulled = false;
+  group.add(fill);
+
+  function buildFill(feature) {
+    const out = [];
+    if (!feature) return out;
+    const rings = [];
+    collectRings(feature.geometry?.coordinates, rings);
+    rings.forEach((ring) => {
+      if (ring.length < 4) return;
+      const flat = ring.map(([lon, lat]) => new THREE.Vector2(lon, lat));
+      let faces = [];
+      try {
+        faces = THREE.ShapeUtils.triangulateShape(flat, []);
+      } catch (error) {
+        return;
+      }
+      const verts = ring.map(([lon, lat]) => sphPoint(lat, lon, PROVINCE_RADIUS - 0.0015));
+      faces.forEach((face) => {
+        face.forEach((index) => {
+          const v = verts[index];
+          if (v) out.push(v.x, v.y, v.z);
+        });
+      });
+    });
+    return out;
+  }
+
+  function highlight(name) {
+    const key = normalizeProvince(name);
+    const feature = key ? features.find((f) => normalizeProvince(f.name) === key) : null;
+    const buf = feature?._buf || [];
+    hiGeom.setAttribute('position', new THREE.Float32BufferAttribute(buf, 3));
+    hiGeom.computeBoundingSphere();
+
+    const filled = buildFill(feature);
+    fillGeom.setAttribute('position', new THREE.Float32BufferAttribute(filled, 3));
+    fillGeom.computeBoundingSphere();
+    fill.visible = filled.length > 0;
+  }
+
+  return {
+    object: group,
+    show(value) { group.visible = !!value; },
+    highlight,
+  };
 }

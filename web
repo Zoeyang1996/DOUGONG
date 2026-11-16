@@ -1,0 +1,293 @@
+/* 木构之间 · 书籍外壳
+   纸、版框、中缝、书耳、翻页几何
+   ------------------------------------------------------------------ */
+
+:root {
+  /* 纸张 */
+  --paper: #ece3cd;
+  --paper-hi: #f6efdd;
+  --paper-lo: #d8c9a9;
+  --paper-shade: #c3b291;
+
+  /* 墨与朱 */
+  --ink: #211d18;
+  --ink-soft: #443b2f;
+  --ink-faint: #786a56;
+  --ink-ghost: #a3967f;
+  --cinnabar: #9e3527;
+  --cinnabar-soft: #b8624f;
+  --gold: #8a6a33;
+  --indigo: #26454f;
+
+  --rule: rgba(70, 56, 38, 0.28);
+  --rule-soft: rgba(70, 56, 38, 0.14);
+
+  --serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC",
+    "SimSun", "Times New Roman", serif;
+  --kai: "Kaiti SC", "STKaiti", "KaiTi", "Songti SC", "STSong", serif;
+
+  /* 开本：一页 0.72 宽高比 */
+  --page-w: min(43vw, 61vh * 0.72);
+  --page-h: calc(var(--page-w) / 0.72);
+  --spine: 18px;
+  --rail: 54px;
+
+  --ease-book: cubic-bezier(0.36, 0.06, 0.18, 1);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #2a2722 0%, #171512 60%, #0e0d0b 100%);
+  color: var(--ink);
+  font-family: var(--serif);
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* 桌面：一圈低调的展厅光 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 40% at 50% 12%, rgba(255, 236, 196, 0.13), transparent 70%),
+    radial-gradient(90% 60% at 50% 100%, rgba(0, 0, 0, 0.42), transparent 60%);
+  z-index: 0;
+}
+
+/* ---------------------------------------------------------------- 舞台 */
+
+#stage {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 2400px;
+  perspective-origin: 50% 42%;
+  z-index: 1;
+}
+
+#book {
+  position: relative;
+  width: calc(var(--page-w) * 2);
+  height: var(--page-h);
+  transform-style: preserve-3d;
+  transition: transform 900ms var(--ease-book);
+}
+
+/* 合着的书：整本移到屏幕中央，只露出封面这一页 */
+body[data-state="closed"] #book {
+  transform: translateX(calc(var(--page-w) / -2));
+}
+
+/* 书页在桌面上投下的影子 */
+#book::after {
+  content: "";
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: -26px;
+  height: 34px;
+  background: radial-gradient(50% 100% at 50% 0%, rgba(0, 0, 0, 0.55), transparent 72%);
+  filter: blur(6px);
+  z-index: -1;
+}
+
+/* 书脊下的暗部，让两页有厚度差 */
+.crease {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: calc(var(--spine) * 2);
+  transform: translateX(-50%);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(42, 34, 24, 0) 0%,
+      rgba(42, 34, 24, 0.2) 38%,
+      rgba(20, 16, 11, 0.36) 50%,
+      rgba(42, 34, 24, 0.2) 62%,
+      rgba(42, 34, 24, 0) 100%
+    );
+  pointer-events: none;
+  z-index: 6;
+  mix-blend-mode: multiply;
+}
+
+/* ---------------------------------------------------------------- 页 */
+
+.leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--page-w);
+  height: var(--page-h);
+  transform-origin: 100% 50%;
+  transform-style: preserve-3d;
+  transition: transform 1050ms var(--ease-book);
+  will-change: transform;
+}
+
+.leaf.is-dragging {
+  transition: none;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+/* 背面：翻到右边后朝向读者 */
+.face--back {
+  transform: rotateY(180deg);
+}
+
+/* 纸张：多层渐变压出纤维感与边缘泛黄 */
+.paper {
+  position: absolute;
+  inset: 0;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(120% 80% at 8% 4%, rgba(255, 250, 235, 0.85), transparent 55%),
+    radial-gradient(90% 70% at 96% 94%, rgba(176, 155, 118, 0.36), transparent 62%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(120, 96, 62, 0.055) 0 1px,
+      transparent 1px 3px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(120, 96, 62, 0.045) 0 1px,
+      transparent 1px 4px
+    );
+}
+
+.paper::after {
+  /* 细密的纸屑与霉点，全部由径向渐变生成，不加图片 */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(120, 98, 62, 0.1) 0 1px, transparent 2px),
+    radial-gradient(circle at 62% 71%, rgba(120, 98, 62, 0.09) 0 1px, transparent 2px),
+    radial-gradient(circle at 84% 33%, rgba(120, 98, 62, 0.07) 0 1px, transparent 2px),
+    radial-gradient(circle at 38% 88%, rgba(120, 98, 62, 0.08) 0 1px, transparent 2px);
+  background-size: 220px 190px, 260px 240px, 300px 280px, 240px 260px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* 书页内侧（靠脊）的阴影，右页在左、左页在右 */
+.face--front .gutter {
+  box-shadow: inset 14px 0 18px -14px rgba(52, 40, 26, 0.55);
+}
+
+.face--back .gutter {
+  box-shadow: inset -14px 0 18px -14px rgba(52, 40, 26, 0.55);
+}
+
+.gutter {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* 翻页时压过页面的那道影子 */
+.turn-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 7;
+  background: linear-gradient(90deg, rgba(30, 22, 14, 0.55), rgba(30, 22, 14, 0) 62%);
+}
+
+/* ---------------------------------------------------------------- 页内版框 */
+
+.sheet {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--page-h) * 0.055) 0 calc(var(--page-h) * 0.05);
+}
+
+.frame {
+  position: relative;
+  flex: 1;
+  margin: 0 calc(var(--page-w) * 0.075);
+  border: 1px solid rgba(56, 44, 30, 0.55);
+  outline: 3px solid rgba(56, 44, 30, 0.16);
+  outline-offset: 3px;
+}
+
+/* 版心：窄栏，放鱼尾、书名与页码，靠书脊一侧 */
+.fold-column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(var(--page-w) * 0.082);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 12px;
+  font-family: var(--kai);
+  color: var(--ink-faint);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.face--front .fold-column {
+  left: 0;
+  border-right: 1px solid var(--rule-soft);
+}
+
+.face--back .fold-column {
+  right: 0;
+  border-left: 1px solid var(--rule-soft);
+}
+
+.fold-title,
+.fold-folio {
+  writing-mode: vertical-rl;
+  font-size: calc(var(--page-w) * 0.026);
+  letter-spacing: 0.32em;
+}
+
+.fold-folio {
+  color: var(--ink-soft);
+}
+
+/* 鱼尾 */
+.fish-tail {
+  width: calc(var(--page-w) * 0.05);
+  height: calc(var(--page-w) * 0.062);
+  background: var(--ink-faint);
+  clip-path: polygon(0 0, 100% 34%, 50% 50%, 100% 66%, 0 100%, 34% 50%);
+  opacity: 0.55;
+}
+
+.fish-tail--lower {
+  transform: rotate(180deg);
+}
