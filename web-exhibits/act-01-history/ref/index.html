@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>木构之间 · 古籍样张</title>
+<link rel="stylesheet" href="css/guji.css">
+</head>
+<body>
+  <!-- 钤印做旧：轻微位移，模拟印泥吃纸不匀 -->
+  <svg class="defs" aria-hidden="true">
+    <filter id="seal-rough" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="ink-rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <main id="desk">
+    <div id="book" aria-label="木构之间 · 古籍样张">
+      <div class="book__stage">
+        <div class="book__shadow"></div>
+        <div class="book__block"></div>
+        <div class="book__cast"></div>
+        <div class="book__leaves"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="hint" id="hint"><span>拖动书页 · 或点左右两边</span></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
