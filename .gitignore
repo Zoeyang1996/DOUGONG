@@ -8,3 +8,9 @@
 .demo-build/
 .~*.docx
 /tmp/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.codex-temp/
+doc_revision_extract.txt
