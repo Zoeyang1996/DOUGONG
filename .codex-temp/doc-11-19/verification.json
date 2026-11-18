@@ -1,0 +1,9 @@
+{
+  "package_integrity": "pass",
+  "original_checksum": "pass",
+  "tables": 3,
+  "paragraphs": 168,
+  "role_handoffs": "pass",
+  "folder_rename": "pass",
+  "visual_review": "not completed: packaged renderer requires unavailable soffice.exe; native preview windows inaccessible"
+}

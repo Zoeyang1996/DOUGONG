@@ -1,0 +1,6 @@
+{
+  "mode": "local",
+  "base_url": "https://api.deepseek.com",
+  "model": "",
+  "voiceEnabled": false
+}

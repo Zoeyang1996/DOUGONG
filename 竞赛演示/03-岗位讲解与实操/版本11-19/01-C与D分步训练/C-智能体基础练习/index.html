@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>C智能体流程训练</title>
+<style>body{max-width:850px;margin:40px auto;font:18px/1.8 sans-serif;padding:20px;background:#f5f1e9;color:#30291f}button,input{font:inherit;padding:12px;margin:5px}input{width:75%}pre{white-space:pre-wrap;background:white;padding:20px}#state{font-weight:bold}</style>
+<h1>C同学：知识与语音流程训练</h1><p>独立练习样例。此页用文字表示角色状态，不是正式三维小拱。默认本地检索，切换API后才调用大模型。</p>
+<p id="state">待机</p><input id="question" value="保国寺现存大殿建于哪一年？"><button id="ask">提问</button><br>
+<button id="record" disabled>开始录音</button><button id="stop">停止录音</button><button id="speak">朗读回答</button><button id="cancel">停止朗读</button>
+<p id="mode"></p><pre id="answer"></pre><h2>本轮资料</h2><pre id="refs"></pre>
+<script>
+const $=s=>document.querySelector(s);let latest='',recognition,busy=false;
+function state(s){$('#state').textContent=s}
+async function ask(){if(busy)return;busy=true;state('思考');$('#answer').textContent='';
+ try{const r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:$('#question').value})});const d=await r.json();if(!r.ok)throw Error(d.error);latest=d.answer;$('#answer').textContent=latest;$('#refs').textContent=JSON.stringify(d.refs,null,2);$('#mode').textContent=d.mode}
+ catch(e){latest='';$('#answer').textContent=e.message;$('#refs').textContent='';$('#mode').textContent='请求未完成'}finally{busy=false;state('待机')}}
+$('#ask').onclick=ask;
+$('#speak').onclick=()=>{if(!latest)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(latest);u.lang='zh-CN';u.onstart=()=>state('朗读');u.onend=u.onerror=()=>state('待机');speechSynthesis.speak(u)};
+$('#cancel').onclick=()=>{speechSynthesis.cancel();state('待机')};
+async function initVoice(){const cfg=await fetch('config.json').then(r=>r.json());if(!cfg.voiceEnabled){$('#mode').textContent='录音未接通：完成训练步骤后启用';return}
+ const R=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!R){$('#mode').textContent='此浏览器无可用语音识别接口；请改用文字测试，并记录语音未通过';return}
+ recognition=new R();recognition.lang='zh-CN';recognition.interimResults=false;
+ recognition.onstart=()=>state('聆听');recognition.onerror=e=>{$('#mode').textContent='识别失败：'+e.error;state('待机')};recognition.onend=()=>{if(!busy)state('待机')};
+ recognition.onresult=e=>{$('#question').value=e.results[0][0].transcript; /* TRAIN_C: 在这里调用问答函数 */};
+ $('#record').disabled=false;$('#record').onclick=()=>{if(!busy)try{recognition.start()}catch(e){$('#mode').textContent=e.message}};
+ $('#stop').onclick=()=>recognition.stop();}
+initVoice().catch(e=>$('#mode').textContent=e.message);
+</script></html>
