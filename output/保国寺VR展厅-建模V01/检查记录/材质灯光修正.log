@@ -1,0 +1,19 @@
+00:00.619  blend            | Read blend: "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/模型/保国寺VR数字斗拱展厅_V01_无摄像机.blend"
+REFINE_RENDER 01_主展厅_真实模型预览
+00:59.819  render           | Saved: '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/预览/01_主展厅_真实模型预览.png'
+REFINE_RENDER 02_铺作搭建区_真实模型预览
+01:56.574  render           | Saved: '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/预览/02_铺作搭建区_真实模型预览.png'
+REFINE_RENDER 03_入口转折_真实模型预览
+02:44.291  render           | Saved: '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/预览/03_入口转折_真实模型预览.png'
+REFINE_RENDER 04_大殿挑战区_真实模型预览
+03:38.758  render           | Saved: '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/预览/04_大殿挑战区_真实模型预览.png'
+Info: Saved as "保国寺VR数字斗拱展厅_V01_无摄像机.blend"
+
+FBX export starting... '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/模型/保国寺VR数字斗拱展厅_V01_无摄像机.fbx'
+export finished in 0.8661 sec.
+REFINE_COMPLETE
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Sent an internal break event. Press ^C again to kill Blender
+
+Blender quit

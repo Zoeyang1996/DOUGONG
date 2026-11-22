@@ -1,0 +1,24 @@
+{
+  "blend_reopened": {
+    "camera_objects": [],
+    "camera_datablocks": 0,
+    "scene_camera_references": [],
+    "mesh_count": 998,
+    "empty_meshes": [],
+    "packed_textures": true,
+    "external_missing_textures": [],
+    "zero_scale_objects": [],
+    "text_mesh_count": 20,
+    "floor_tile_count": 600,
+    "empty_exhibit_anchors": 8,
+    "teleport_anchors": 8
+  },
+  "fbx_reimported": {
+    "mesh_count": 998,
+    "camera_count": 0,
+    "light_count": 0,
+    "mesh_count_matches_blend": true,
+    "missing_texture_files": []
+  },
+  "passed": true
+}

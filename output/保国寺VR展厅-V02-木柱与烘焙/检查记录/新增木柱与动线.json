@@ -1,0 +1,370 @@
+{
+  "column_count": 24,
+  "columns": [
+    {
+      "id": "TimberColumn_Z01_01",
+      "zone": 1,
+      "xy_m": [
+        2,
+        3.6
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z01_02",
+      "zone": 1,
+      "xy_m": [
+        9.5,
+        5.5
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z02_01",
+      "zone": 2,
+      "xy_m": [
+        2.2,
+        9
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z02_02",
+      "zone": 2,
+      "xy_m": [
+        9.8,
+        9
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z02_03",
+      "zone": 2,
+      "xy_m": [
+        2.2,
+        15
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z02_04",
+      "zone": 2,
+      "xy_m": [
+        9.8,
+        15
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z03_01",
+      "zone": 3,
+      "xy_m": [
+        3,
+        22.3
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z03_02",
+      "zone": 3,
+      "xy_m": [
+        9,
+        22.3
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z04_01",
+      "zone": 4,
+      "xy_m": [
+        13.1,
+        18
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z04_02",
+      "zone": 4,
+      "xy_m": [
+        22.8,
+        18
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z04_03",
+      "zone": 4,
+      "xy_m": [
+        13.1,
+        22.7
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z04_04",
+      "zone": 4,
+      "xy_m": [
+        22.8,
+        22.7
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z05_01",
+      "zone": 5,
+      "xy_m": [
+        14.5,
+        9.3
+      ],
+      "top_m": 7.2,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z05_02",
+      "zone": 5,
+      "xy_m": [
+        21.3,
+        9.3
+      ],
+      "top_m": 7.2,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z05_03",
+      "zone": 5,
+      "xy_m": [
+        14.5,
+        16.1
+      ],
+      "top_m": 7.2,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z05_04",
+      "zone": 5,
+      "xy_m": [
+        21.3,
+        16.1
+      ],
+      "top_m": 7.2,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z06_01",
+      "zone": 6,
+      "xy_m": [
+        26,
+        16
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z06_02",
+      "zone": 6,
+      "xy_m": [
+        34.7,
+        16
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z06_03",
+      "zone": 6,
+      "xy_m": [
+        26,
+        22.2
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z06_04",
+      "zone": 6,
+      "xy_m": [
+        34.7,
+        22.2
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z07_01",
+      "zone": 7,
+      "xy_m": [
+        25.5,
+        2.2
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z07_02",
+      "zone": 7,
+      "xy_m": [
+        33.6,
+        2.2
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z08_01",
+      "zone": 8,
+      "xy_m": [
+        14,
+        5.5
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    },
+    {
+      "id": "TimberColumn_Z08_02",
+      "zone": 8,
+      "xy_m": [
+        22,
+        5.5
+      ],
+      "top_m": 5.4,
+      "base_diameter_m": 0.64,
+      "shaft_diameter_m": 0.45
+    }
+  ],
+  "route_clearance": [
+    {
+      "id": "TimberColumn_Z01_01",
+      "nearest_route_center_m": 1.4
+    },
+    {
+      "id": "TimberColumn_Z01_02",
+      "nearest_route_center_m": 2.0
+    },
+    {
+      "id": "TimberColumn_Z02_01",
+      "nearest_route_center_m": 2.8
+    },
+    {
+      "id": "TimberColumn_Z02_02",
+      "nearest_route_center_m": 3.9
+    },
+    {
+      "id": "TimberColumn_Z02_03",
+      "nearest_route_center_m": 2.973
+    },
+    {
+      "id": "TimberColumn_Z02_04",
+      "nearest_route_center_m": 3.9
+    },
+    {
+      "id": "TimberColumn_Z03_01",
+      "nearest_route_center_m": 3.625
+    },
+    {
+      "id": "TimberColumn_Z03_02",
+      "nearest_route_center_m": 2.603
+    },
+    {
+      "id": "TimberColumn_Z04_01",
+      "nearest_route_center_m": 1.948
+    },
+    {
+      "id": "TimberColumn_Z04_02",
+      "nearest_route_center_m": 4.305
+    },
+    {
+      "id": "TimberColumn_Z04_03",
+      "nearest_route_center_m": 2.738
+    },
+    {
+      "id": "TimberColumn_Z04_04",
+      "nearest_route_center_m": 5.968
+    },
+    {
+      "id": "TimberColumn_Z05_01",
+      "nearest_route_center_m": 0.8
+    },
+    {
+      "id": "TimberColumn_Z05_02",
+      "nearest_route_center_m": 0.7
+    },
+    {
+      "id": "TimberColumn_Z05_03",
+      "nearest_route_center_m": 0.848
+    },
+    {
+      "id": "TimberColumn_Z05_04",
+      "nearest_route_center_m": 2.8
+    },
+    {
+      "id": "TimberColumn_Z06_01",
+      "nearest_route_center_m": 1.476
+    },
+    {
+      "id": "TimberColumn_Z06_02",
+      "nearest_route_center_m": 4.397
+    },
+    {
+      "id": "TimberColumn_Z06_03",
+      "nearest_route_center_m": 7.533
+    },
+    {
+      "id": "TimberColumn_Z06_04",
+      "nearest_route_center_m": 8.596
+    },
+    {
+      "id": "TimberColumn_Z07_01",
+      "nearest_route_center_m": 2.3
+    },
+    {
+      "id": "TimberColumn_Z07_02",
+      "nearest_route_center_m": 3.606
+    },
+    {
+      "id": "TimberColumn_Z08_01",
+      "nearest_route_center_m": 2.0
+    },
+    {
+      "id": "TimberColumn_Z08_02",
+      "nearest_route_center_m": 1.091
+    }
+  ],
+  "capsule_radius_m": 0.3,
+  "column_base_radius_m": 0.32,
+  "passed": true
+}

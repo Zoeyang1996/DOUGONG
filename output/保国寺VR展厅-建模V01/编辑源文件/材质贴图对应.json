@@ -1,0 +1,12 @@
+{
+  "units": "metres",
+  "base_color_space": "sRGB",
+  "normal_space": "OpenGL tangent space, Non-Color",
+  "roughness_space": "linear, Non-Color",
+  "maps": {
+    "M01_烟熏橡木_PBR": "SmokedOak",
+    "M02_暖灰矿物墙_PBR": "WarmPlaster",
+    "M03_哑光灰石_PBR": "GreyStone"
+  },
+  "unity_note": "FBX附带基础材质及贴图路径；按项目URP或其他渲染管线校正材质。原始Roughness为粗糙度；若着色器使用Smoothness，请反相，不要直接当作同一通道。灯光在.blend内，FBX只导出网格和空锚点。"
+}

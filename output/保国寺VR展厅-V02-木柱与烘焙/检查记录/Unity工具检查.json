@@ -1,0 +1,8 @@
+{
+  "CSharp_syntax_parser": "Mono mcs --parse, C# 6, UNITY_EDITOR defined",
+  "syntax_passed": true,
+  "Unity_editor_compilation_tested": false,
+  "Unity_runtime_tested": false,
+  "PICO_device_tested": false,
+  "scope": "只完成C#语法解析；Unity API编译及实际导入需在目标Unity中检查"
+}

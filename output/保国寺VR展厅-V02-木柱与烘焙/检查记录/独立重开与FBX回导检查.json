@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "PBR_reopened": {
+    "mesh_count": 1238,
+    "triangles": 332872,
+    "camera_objects": 0,
+    "camera_datablocks": 0,
+    "light_objects": 42,
+    "bounds_m": [
+      [
+        -0.0225,
+        36.0225
+      ],
+      [
+        -0.0225,
+        24.0225
+      ],
+      [
+        -0.245,
+        7.77
+      ]
+    ],
+    "empty_meshes": [],
+    "anchors": [
+      "P01_ExhibitAnchor_EMPTY",
+      "P02_ExhibitAnchor_EMPTY",
+      "P03_ExhibitAnchor_EMPTY",
+      "P04_ExhibitAnchor_EMPTY",
+      "P05_ExhibitAnchor_EMPTY",
+      "P06_ExhibitAnchor_EMPTY",
+      "P07_ExhibitAnchor_EMPTY",
+      "P08_ExhibitAnchor_EMPTY"
+    ],
+    "teleports": [
+      "VR_Teleport_Zone01",
+      "VR_Teleport_Zone02",
+      "VR_Teleport_Zone03",
+      "VR_Teleport_Zone04",
+      "VR_Teleport_Zone05",
+      "VR_Teleport_Zone06",
+      "VR_Teleport_Zone07",
+      "VR_Teleport_Zone08"
+    ],
+    "external_missing": [],
+    "shaft_count": 24,
+    "packed_real_maps": 9,
+    "column_groups": 24
+  },
+  "baked_reopened": {
+    "mesh_count": 28,
+    "triangles": 332872,
+    "camera_objects": 0,
+    "camera_datablocks": 0,
+    "light_objects": 0,
+    "bounds_m": [
+      [
+        -0.0225,
+        36.0225
+      ],
+      [
+        -0.0225,
+        24.0225
+      ],
+      [
+        -0.245,
+        7.77
+      ]
+    ],
+    "empty_meshes": [],
+    "anchors": [
+      "P01_ExhibitAnchor_EMPTY",
+      "P02_ExhibitAnchor_EMPTY",
+      "P03_ExhibitAnchor_EMPTY",
+      "P04_ExhibitAnchor_EMPTY",
+      "P05_ExhibitAnchor_EMPTY",
+      "P06_ExhibitAnchor_EMPTY",
+      "P07_ExhibitAnchor_EMPTY",
+      "P08_ExhibitAnchor_EMPTY"
+    ],
+    "teleports": [
+      "VR_Teleport_Zone01",
+      "VR_Teleport_Zone02",
+      "VR_Teleport_Zone03",
+      "VR_Teleport_Zone04",
+      "VR_Teleport_Zone05",
+      "VR_Teleport_Zone06",
+      "VR_Teleport_Zone07",
+      "VR_Teleport_Zone08"
+    ],
+    "external_missing": [],
+    "runtime_zones": 8,
+    "packed_atlases": 8,
+    "UV_bounds": {
+      "Gallery_Baked_Zone01": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      "Gallery_Baked_Zone02": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      "Gallery_Baked_Zone03": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          0.9999999403953552,
+          0.9999999403953552
+        ]
+      },
+      "Gallery_Baked_Zone04": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      "Gallery_Baked_Zone05": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      "Gallery_Baked_Zone06": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.9999999403953552
+        ]
+      },
+      "Gallery_Baked_Zone07": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      "Gallery_Baked_Zone08": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "FBX_reimported": {
+    "mesh_count": 28,
+    "triangles": 332872,
+    "camera_objects": 0,
+    "camera_datablocks": 0,
+    "light_objects": 0,
+    "bounds_m": [
+      [
+        -0.0225,
+        36.0225
+      ],
+      [
+        -0.0225,
+        24.0225
+      ],
+      [
+        -0.245,
+        7.77
+      ]
+    ],
+    "empty_meshes": [],
+    "anchors": [
+      "P02_ExhibitAnchor_EMPTY",
+      "P03_ExhibitAnchor_EMPTY",
+      "P04_ExhibitAnchor_EMPTY",
+      "P05_ExhibitAnchor_EMPTY",
+      "P06_ExhibitAnchor_EMPTY",
+      "P01_ExhibitAnchor_EMPTY",
+      "P07_ExhibitAnchor_EMPTY",
+      "P08_ExhibitAnchor_EMPTY"
+    ],
+    "teleports": [
+      "VR_Teleport_Zone01",
+      "VR_Teleport_Zone02",
+      "VR_Teleport_Zone03",
+      "VR_Teleport_Zone04",
+      "VR_Teleport_Zone05",
+      "VR_Teleport_Zone06",
+      "VR_Teleport_Zone07",
+      "VR_Teleport_Zone08"
+    ],
+    "external_missing": [],
+    "baked_materials": [
+      "BG_Baked_Zone01",
+      "BG_Baked_Zone02",
+      "BG_Baked_Zone03",
+      "BG_Baked_Zone04",
+      "BG_Baked_Zone05",
+      "BG_Baked_Zone06",
+      "BG_Baked_Zone07",
+      "BG_Baked_Zone08",
+      "BG_Bronze",
+      "BG_Ink"
+    ]
+  },
+  "Unity_runtime_tested": false,
+  "PICO_tested": false
+}

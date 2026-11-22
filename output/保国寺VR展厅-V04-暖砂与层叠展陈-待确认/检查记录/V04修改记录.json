@@ -1,0 +1,37 @@
+{
+  "source": "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V03-墙面展陈-待确认/模型/展厅V03_墙面展陈与角落陈设_未烘焙_无摄像机.blend",
+  "source_sha256": "4fa6e5b30dd0db90ec5e9035e52152dd72bddd130cb96b385ec4d48e4cc2095c",
+  "model": "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend",
+  "palette": {
+    "wall": "暖砂黄矿物墙",
+    "timber": "深木色",
+    "paper": "旧宣纸米金",
+    "floor": "暖灰石"
+  },
+  "layered_narrative_walls": [
+    "05_W_主展墙",
+    "02_E_沿革长卷",
+    "06_N_整殿"
+  ],
+  "wall_shadow_boxes": [
+    "03_N_斗",
+    "03_N_栱",
+    "03_N_昂",
+    "04_N_整朵",
+    "04_N_分解",
+    "05_N_铺作",
+    "07_E_数字传承",
+    "07_E_小拱"
+  ],
+  "tool_wall": true,
+  "sheer_hangings": 2,
+  "existing_screens_made_translucent": 2,
+  "wall_articles_preserved": 40,
+  "cameras": 0,
+  "baked": false,
+  "final_refinements": [
+    "层叠边饰前后关系与木纹 UV",
+    "尾厅浅展龛底板避免遮挡正文",
+    "抬高尾厅标题、缩小工坊副标题以避开木框"
+  ]
+}

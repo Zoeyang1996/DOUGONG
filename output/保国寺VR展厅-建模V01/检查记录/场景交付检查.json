@@ -1,0 +1,21 @@
+{
+  "blend": "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/模型/保国寺VR数字斗拱展厅_V01_无摄像机.blend",
+  "fbx": "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-建模V01/模型/保国寺VR数字斗拱展厅_V01_无摄像机.fbx",
+  "camera_objects": 0,
+  "camera_datablocks": 0,
+  "mesh_objects": 998,
+  "triangles_instances_counted": 306184,
+  "unique_meshes": 126,
+  "lights": 42,
+  "textures": 9,
+  "all_file_textures_packed": true,
+  "route_clear": true,
+  "render_device": "METAL",
+  "duration_seconds": 370.1,
+  "footprint_m": [
+    36,
+    24
+  ],
+  "note": "这是VR场景资产，不是Unity已接好逻辑的可运行游戏。",
+  "refinement": "修正地面基层共面遮挡、降低环境灯光与曝光"
+}

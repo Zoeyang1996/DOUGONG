@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "fonts": {
+    "Songti SC Bold": {
+      "unique_characters": 19,
+      "missing": []
+    },
+    "Heiti TC Medium": {
+      "unique_characters": 458,
+      "missing": []
+    },
+    "Songti SC Black": {
+      "unique_characters": 174,
+      "missing": []
+    }
+  }
+}

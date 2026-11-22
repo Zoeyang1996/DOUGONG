@@ -1,0 +1,7 @@
+{
+  "tested_capsule_radius_m": 0.3,
+  "tested_body_height_m": 1.85,
+  "sampling_step_m": 0.1,
+  "hits": [],
+  "clear": true
+}

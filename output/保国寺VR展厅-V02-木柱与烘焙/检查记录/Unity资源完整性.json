@@ -1,0 +1,84 @@
+{
+  "resource_files": [
+    {
+      "file": "Assets/BaoguosiGalleryV02/Editor/BaoguosiGalleryV02Setup.cs",
+      "bytes": 12288,
+      "sha256": "fffe7c94f30ad5d23f4afd4eac332d894a7f3e1691e7044c2a69ab2129abc10d"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Models/Baoguosi_Gallery_V02_Baked.fbx",
+      "bytes": 7846412,
+      "sha256": "dd6d2ecef3c26dec0cf8a2d25f1433dbbe86158984642e42a357c9322b9b8935"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone01.png",
+      "bytes": 1973836,
+      "sha256": "604f65fc4338f30a066f427bde8a831ef72bfa3d4fcc4041fbb5c51aa7168906"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone02.png",
+      "bytes": 2010824,
+      "sha256": "971f34b63c027c63fb9522f9855673d3b4f424c79a42a791663401b86c192ad9"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone03.png",
+      "bytes": 1922348,
+      "sha256": "f948293747e2e38dca4aa1c0f98e48ec4f38f5f75d8cec0e746fad886ec0297d"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone04.png",
+      "bytes": 2198841,
+      "sha256": "85c790884058445572b76d23b016b4e14ab7a8e83ba45a189d7ed5fdb122caee"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone05.png",
+      "bytes": 4824071,
+      "sha256": "fbd5f72d5a609d6d02453343f2eb6c6539baa6c341f2bbf124384248fcc6b122"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone06.png",
+      "bytes": 4680138,
+      "sha256": "bafd78957ce5ae92a8b619b6ae538302501b0ad6715f2e419a1df120aaca3663"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone07.png",
+      "bytes": 1814181,
+      "sha256": "d9168ae2b51b1d8a833cda21cb33bfc9e3b05adbfc7987fdbcf4a61addb7d5d1"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Baked_Zone08.png",
+      "bytes": 2145004,
+      "sha256": "34229d198442b2af97d457d1b5787811c820198eb730a98066b718cf70837149"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Bronze.png",
+      "bytes": 76,
+      "sha256": "deff9f7f9c37541c9dffe0a32688b229adf9cb9822d94ae0ccd56ba61975eeb0"
+    },
+    {
+      "file": "Assets/BaoguosiGalleryV02/Textures/Ink.png",
+      "bytes": 76,
+      "sha256": "7f5759abdccbd956226735d09334a9ec56234660e3ae30e440f921ab1bc0029e"
+    },
+    {
+      "file": "完整使用说明.txt",
+      "bytes": 5521,
+      "sha256": "5487d7e2d365c53f92bdee2960a2ebb3339f70a4f4f8fbf1ed8e42c59bc0312f"
+    },
+    {
+      "file": "导入说明.txt",
+      "bytes": 531,
+      "sha256": "818a640b7f102f50742db596751021aabbf831f5b4a0a957403640daaebe779c"
+    },
+    {
+      "file": "贴图来源与许可.json",
+      "bytes": 1931,
+      "sha256": "fc01e05048ece90a3e5f15d43534a32cc9c0bd6ba081565fc2233c424387afc2"
+    }
+  ],
+  "missing": [],
+  "atlas_count": 8,
+  "color_swatch_count": 2,
+  "editor_helper": true,
+  "runtime_tested": false
+}
