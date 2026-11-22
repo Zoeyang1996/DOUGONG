@@ -1,0 +1,8 @@
+00:02.684  blend            | Read blend: "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V03-墙面展陈-待确认/模型/展厅V03_墙面展陈与角落陈设_未烘焙_无摄像机.blend"
+00:03.629  blend            | Read blend: "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V02-木柱与烘焙/模型/展厅V02_可编辑PBR_无摄像机.blend"
+00:04.222  blend            | Read blend: "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V03-墙面展陈-待确认/模型/展厅V03_墙面展陈与角落陈设_未烘焙_无摄像机.blend"
+Info: Saved as "展厅V03_墙面展陈与角落陈设_未烘焙_无摄像机.blend"
+VALIDATION {"source_sha256_unchanged": true, "original_shell_and_timber_meshes_unchanged": 1102, "wall_groups": 40, "four_sides_of_all_8_zones": {"1": ["E", "N", "S", "W"], "2": ["E", "N", "S", "W"], "3": ["E", "N", "S", "W"], "4": ["E", "N", "S", "W"], "5": ["E", "N", "S", "W"], "6": ["E", "N", "S", "W"], "7": ["E", "N", "S", "W"], "8": ["E", "N", "S", "W"]}, "door_overlap": [], "plinth_remnants": 0, "camera_objects": 0, "camera_data": 0, "packed_images": 11, "packed_fonts": ["Heiti TC Medium", "Songti SC Black", "Songti SC Bold"], "editable_text_objects": 164, "walk_test": {"radius_m": 0.3, "height_m": 1.85, "sampling_m": 0.1, "hits": [], "clear": true}, "no_lighting_bake_in_V03": true}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

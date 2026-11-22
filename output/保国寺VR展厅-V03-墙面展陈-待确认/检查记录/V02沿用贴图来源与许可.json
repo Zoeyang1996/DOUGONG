@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "oak_veneer_01",
+    "page": "https://polyhaven.com/a/oak_veneer_01",
+    "license": "CC0",
+    "license_page": "https://polyhaven.com/license",
+    "maps": [
+      {
+        "file": "oak_veneer_01_Diffuse_2k.jpg",
+        "sha256": "0718c2e1a209afe6138ccb41d70e1a18cd825d1e73db33ad7cf80806fa9ce5a4"
+      },
+      {
+        "file": "oak_veneer_01_Rough_2k.jpg",
+        "sha256": "5c81718ee172299c44e0754fadbe652758b6feed05a8fd88be6efff5aa70ca1e"
+      },
+      {
+        "file": "oak_veneer_01_nor_gl_2k.jpg",
+        "sha256": "e74a9d3ddcd86473a21815a28464f4dac4ceb8f86e7f170226dede8ed70d8eb9"
+      }
+    ]
+  },
+  {
+    "asset": "painted_plaster_wall",
+    "page": "https://polyhaven.com/a/painted_plaster_wall",
+    "license": "CC0",
+    "license_page": "https://polyhaven.com/license",
+    "maps": [
+      {
+        "file": "painted_plaster_wall_Diffuse_2k.jpg",
+        "sha256": "6fd812ed8dd5be1873c29aeef38ce9bf1fb30a22c6d4b3a12db725e98c26a1be"
+      },
+      {
+        "file": "painted_plaster_wall_Rough_2k.jpg",
+        "sha256": "35aad595469533cc3b7cc209cc6c7e065d660211f02c867f4492d3b371b1fee1"
+      },
+      {
+        "file": "painted_plaster_wall_nor_gl_2k.jpg",
+        "sha256": "2d601a46ed5ce2af866741c53cafa3cba472620c272e633b6484d4de16a80eb1"
+      }
+    ]
+  },
+  {
+    "asset": "granite_tile",
+    "page": "https://polyhaven.com/a/granite_tile",
+    "license": "CC0",
+    "license_page": "https://polyhaven.com/license",
+    "maps": [
+      {
+        "file": "granite_tile_Diffuse_2k.jpg",
+        "sha256": "758f9b1cdce11bc6f6a805cdea18fb789639befe40608020ab6087c5c1cba1e5"
+      },
+      {
+        "file": "granite_tile_Rough_2k.jpg",
+        "sha256": "cc05cf72ced0fdad6c6adb9d87c5b8cfc7afff7b045035974622378b38a558be"
+      },
+      {
+        "file": "granite_tile_nor_gl_2k.jpg",
+        "sha256": "53a80f10b8a8b38ac6551e4a838d1ef77602e74858dfb2364f96be5450c3bc11"
+      }
+    ]
+  }
+]

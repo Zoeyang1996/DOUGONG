@@ -1,0 +1,8 @@
+00:00.413  blend            | Read blend: "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V02-木柱与烘焙/模型/展厅V02_烘焙展示_无摄像机.blend"
+RUNTIME ['Gallery_Baked_Zone01', 'Gallery_Baked_Zone02', 'Gallery_Baked_Zone03', 'Gallery_Baked_Zone04', 'Gallery_Baked_Zone05', 'Gallery_Baked_Zone06', 'Gallery_Baked_Zone07', 'Gallery_Baked_Zone08']
+IMAGES [('Baked_Zone01.png', 'FILE', 1, True), ('Baked_Zone02.png', 'FILE', 1, True), ('Baked_Zone03.png', 'FILE', 1, True), ('Baked_Zone04.png', 'FILE', 1, True), ('Baked_Zone05.png', 'FILE', 1, True), ('Baked_Zone06.png', 'FILE', 1, True), ('Baked_Zone07.png', 'FILE', 1, True), ('Baked_Zone08.png', 'FILE', 1, True), ('granite_tile_Diffuse_2k.jpg', 'FILE', 0, True), ('granite_tile_nor_gl_2k.jpg', 'FILE', 0, True), ('granite_tile_Rough_2k.jpg', 'FILE', 0, True), ('oak_veneer_01_Diffuse_2k.jpg', 'FILE', 0, True), ('oak_veneer_01_nor_gl_2k.jpg', 'FILE', 0, True), ('oak_veneer_01_Rough_2k.jpg', 'FILE', 0, True), ('painted_plaster_wall_Diffuse_2k.jpg', 'FILE', 0, True), ('painted_plaster_wall_nor_gl_2k.jpg', 'FILE', 0, True), ('painted_plaster_wall_Rough_2k.jpg', 'FILE', 0, True)]
+CAMERAS [] 0
+MATS [('BG_Baked_Zone01', 1), ('BG_Baked_Zone02', 1), ('BG_Baked_Zone03', 1), ('BG_Baked_Zone04', 1), ('BG_Baked_Zone05', 1), ('BG_Baked_Zone06', 1), ('BG_Baked_Zone07', 1), ('BG_Baked_Zone08', 1), ('BG_Bronze', 4), ('BG_Ink', 16)]
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

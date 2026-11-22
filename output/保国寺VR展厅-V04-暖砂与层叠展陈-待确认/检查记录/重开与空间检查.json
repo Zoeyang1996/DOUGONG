@@ -1,0 +1,76 @@
+{
+  "source_sha256_unchanged": true,
+  "original_shell_and_timber_meshes_unchanged": 1102,
+  "wall_groups": 40,
+  "four_sides_of_all_8_zones": {
+    "1": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "2": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "3": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "4": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "5": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "6": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "7": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ],
+    "8": [
+      "E",
+      "N",
+      "S",
+      "W"
+    ]
+  },
+  "door_overlap": [],
+  "plinth_remnants": 0,
+  "camera_objects": 0,
+  "camera_data": 0,
+  "packed_images": 11,
+  "packed_fonts": [
+    "Heiti TC Medium",
+    "Songti SC Black",
+    "Songti SC Bold"
+  ],
+  "editable_text_objects": 168,
+  "walk_test": {
+    "radius_m": 0.3,
+    "height_m": 1.85,
+    "sampling_m": 0.1,
+    "hits": [],
+    "clear": true
+  },
+  "original_text_objects_preserved": 164,
+  "no_lighting_bake_in_V04": true,
+  "new_silk_hangings": 2
+}

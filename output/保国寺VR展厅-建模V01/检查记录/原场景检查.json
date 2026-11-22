@@ -1,0 +1,36 @@
+{
+  "source": "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/禅意木构室内场景.blend",
+  "objects": 489,
+  "meshes": 482,
+  "cameras": [
+    "检查相机_俯视",
+    "检查相机_反向"
+  ],
+  "materials": [
+    "书法墨色",
+    "旧木亮边",
+    "旧木深褐",
+    "暗赭地毯",
+    "泛黄宣纸",
+    "灯笼暖光",
+    "灰黄旧墙面",
+    "石板缝",
+    "磨损青灰石板",
+    "窗外绿意",
+    "铁件",
+    "雕花檐枋深褐",
+    "青釉陶器"
+  ],
+  "images": [
+    {
+      "name": "Render Result",
+      "path": "",
+      "packed": false
+    },
+    {
+      "name": "Viewer Node",
+      "path": "",
+      "packed": false
+    }
+  ]
+}

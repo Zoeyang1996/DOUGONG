@@ -1,0 +1,101 @@
+[
+  {
+    "id": "Entrance",
+    "axis": "X",
+    "center": 6,
+    "fixed_coordinate": 0.12,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Exit",
+    "axis": "X",
+    "center": 30,
+    "fixed_coordinate": 0.12,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_X12_Y3.5",
+    "axis": "Y",
+    "center": 3.5,
+    "fixed_coordinate": 12,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_X12_Y20",
+    "axis": "Y",
+    "center": 20,
+    "fixed_coordinate": 12,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_X24_Y4.5",
+    "axis": "Y",
+    "center": 4.5,
+    "fixed_coordinate": 24,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_X24_Y11.5",
+    "axis": "Y",
+    "center": 11.5,
+    "fixed_coordinate": 24,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_Y7_X5",
+    "axis": "X",
+    "center": 5,
+    "fixed_coordinate": 7,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_Y7_X18.5",
+    "axis": "X",
+    "center": 18.5,
+    "fixed_coordinate": 7,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_Y17_X5",
+    "axis": "X",
+    "center": 5,
+    "fixed_coordinate": 17,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_Y17_X18.5",
+    "axis": "X",
+    "center": 18.5,
+    "fixed_coordinate": 17,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  },
+  {
+    "id": "Portal_Y10_X30.5",
+    "axis": "X",
+    "center": 30.5,
+    "fixed_coordinate": 10,
+    "nominal_width": 3,
+    "clear_width": 2.87,
+    "clear_height": 3.2
+  }
+]

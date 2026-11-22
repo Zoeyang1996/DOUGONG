@@ -1,0 +1,12 @@
+00:03.226  blend            | Read blend: "/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V02-木柱与烘焙/模型/展厅V02_烘焙展示_无摄像机.blend"
+/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V02-木柱与烘焙/编辑源文件/finalize_delivery.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('BG_Bronze');m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=rgb('#8a714c');bs.inputs['Emission Color'].default_value=rgb('#8a714c');bs.inputs['Emission Strength'].default_value=1;bs.inputs['Specular IOR Level'].default_value=0
+00:05.664  render           | Saved: '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V02-木柱与烘焙/预览/04_关闭灯光后的烘焙显示验证.png'
+Info: Saved as "展厅V02_烘焙展示_无摄像机.blend"
+
+FBX export starting... '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V02-木柱与烘焙/模型/Baoguosi_Gallery_V02_Baked.fbx'
+export finished in 0.3294 sec.
+FINAL_DISPLAY_EXPORT_COMPLETE
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit
