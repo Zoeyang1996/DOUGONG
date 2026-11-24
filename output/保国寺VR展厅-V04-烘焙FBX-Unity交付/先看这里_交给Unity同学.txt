@@ -1,0 +1,63 @@
+保国寺数字斗拱展厅 V04 · 烘焙 FBX 交付
+
+一、给同学的文件
+Assets/BaoguosiGalleryV04/Models/Baoguosi_Gallery_V04_Baked.fbx：展厅模型。
+Assets/BaoguosiGalleryV04/Textures：27 张配套 PNG，不要与模型分开丢失。
+Assets/BaoguosiGalleryV04/Editor：Unity 自动配材、预制体与场景生成工具。
+Assets/BaoguosiGalleryV04/Shaders：Built-in 双面半透明纱幅材质。
+Assets/BaoguosiGalleryV04/MaterialManifest.json：材质与贴图对应表。
+Blender备份：完整交付文件夹中另存的 Blender 检查稿；精简 Unity 压缩包不包含这项备份，全部导入必需资源仍包含在压缩包内。
+预览：在关闭全部灯光的情况下渲染的实际烘焙效果。
+
+二、Unity 导入（按顺序操作）
+1. 解压压缩包。把里面的 BaoguosiGalleryV04 文件夹，复制到 Unity 项目的 Assets 目录下。
+   最终路径必须是 Assets/BaoguosiGalleryV04，包含 Models、Textures、Editor、Shaders 和 MaterialManifest.json。
+   不要只拖入一个 FBX；完整复制整个文件夹。
+2. 等 Unity 导入资源并编译完成。工具会尝试自动配置材质。
+3. 点击顶部菜单“榫卯智言 → 展厅V04 → 1 配置或修复烘焙材质”。
+   工具根据当前项目选择 Built-in 或 URP 显示材质，不会替你更换渲染管线。
+   如果显示粉色或贴图未关联，先确认整个文件夹已复制齐全，再点一次菜单 1。
+4. 点击菜单“2 创建或更新展厅预制体”。
+   在 Prefabs 文件夹生成展厅预制体，并为建筑、固定展陈添加静态网格碰撞体。
+   后续推荐把这个预制体放入现有 VR 场景。重复点击会更新本工具生成的同名预制体。
+5. 若需要一个独立检查场景，点击菜单“3 创建展厅场景（无摄像机）”。
+   工具会另存新场景，并保持原场景打开。新场景没有摄像机，也没有实时灯光。
+6. 点击菜单“4 检查导入资源”。检查异常材质/贴图是否为 0，摄像机为 0，灯光为 0，VR 定位点为 8。
+   如果原项目里另有灯光或摄像机，这些属于原项目，不属于本模型；本工具不删除原项目对象。
+
+三、接入 PICO / XR 项目
+模型采用米制，整体平面约 36×24 米。先保持导入缩放为 1。
+模型内保留 VR_Teleport_Zone01～08 八个位置锚点，供同学安排出生点与展区定位。
+定位点不是已经实现的瞬移按钮；需要在 Unity 里绑定项目现有的 XR 移动/瞬移组件。
+头盔视角由 Unity 项目里的 XR Origin / PICO Rig 提供，模型本身不附带摄像机。
+本包不安装 XR SDK，不修改原项目 Android、PICO、输入或渲染管线设置。
+
+四、这次烘焙的内容
+8 张建筑区域光影图、8 张展陈区域光影图（2048×2048），以及 4 张摄影图版光影图（1024×1024）。
+另外 7 张小尺寸色样用于清晰的文字、细线和半透明宣纱。
+Cycles 采样 32，包含材质颜色、直射、间接光、反射及自发光。
+暖砂墙、深木构、原有图文、书架、层叠展墙和半透悬幅均沿用当前 V04。
+已修正展陈构件表面朝向不一致的问题，避免封闭构件出现烘焙黑面。
+墙面文字保留正面网格轮廓，移除看不到的背面和厚度，避免小字被压进低分辨率贴图。
+交付模型为 36 个网格，约 58.4 万三角面；未添加摄像机、实时灯光或动画。
+
+五、为什么不需要重新打灯
+本包将静态光影与材质颜色一起烘焙进显示贴图。按附带工具配置 Unlit 显示材质后，即使场景关闭全部灯光，也能看到烘焙效果。
+这不是 Unity 原生 Lightmap / LightingData.asset。FBX 不承载 Unity 专用的烘焙资产。
+若同学后续要在 Unity 中重新布灯烘焙，请使用原来的可编辑 PBR V04 源文件，而不是把这些已带阴影的贴图当作纯色底图再烘焙。
+由于贴图已经包含 V04 的色调映射和曝光，请关闭用于本展厅的相机上额外的曝光、颜色分级或 Tone Mapping，避免颜色被重复处理。
+新增可移动展品、人物或动画角色可以在 Unity 中单独布光；展厅静态材质本身不再受实时灯光影响。
+
+六、已完成与待实机确认
+已完成 Blender 无灯光渲染、FBX 重新导入、材质与贴图引用、模型比例、无摄像机和 8 个定位点的检查。
+Unity 辅助 C# 脚本通过 Mono 语法编译检查（使用 API 声明桩），不等同于 Unity 编辑器运行验证。
+本机没有安装 Unity，未在 Unity 编辑器或 PICO 4 Ultra 头盔中运行。接手同学仍需按第 6 步检查，并在目标头盔测试帧率、移动与触控交互。
+Android 大图默认使用 ASTC 6×6，最大 2048，开启 Mipmap，减少头盔端贴图负担。
+
+七、原文件
+本次使用“下载”中你最后保存的 V04 文件。原始可编辑 PBR 文件保持原位，没有覆盖。
+本包 Blender备份用于核对已经烘焙的交付模型；原始可编辑文字和 PBR 请继续在原 V04 中修改。
+
+官方参考
+Unity 模型材质导入：https://docs.unity.com/en-us/engine/6000.0/manual/assets-and-media/asset-types/models/importing/fbximporter-materials
+Unity URP Unlit 与透明设置：https://docs.unity.com/en-us/engine/6000.5/manual/materials-and-shaders/built-in/shaders-in-universalrp/reference/unlit-shader

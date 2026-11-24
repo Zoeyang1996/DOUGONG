@@ -1,0 +1,155 @@
+{
+  "source": "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend",
+  "source_sha256": "9ddcd1ebb8b1c44e978519aac74fc974a2e36bbc4d7c48b5c061705cb1b7eabe",
+  "samples": 32,
+  "bake_type": "Cycles Combined appearance, direct+indirect+color+glossy+emission",
+  "not_unity_native_lightmaps": true,
+  "generated_materials_preserved": [
+    "木材_关联梁枋",
+    "木材_斗_浅褐",
+    "木材_昂_深褐",
+    "木材_栱_暖褐"
+  ],
+  "tasks": [
+    {
+      "object": "BGV04_Architecture_Zone01",
+      "id": "Architecture_Z01",
+      "size": 2048,
+      "polygons": 4630
+    },
+    {
+      "object": "BGV04_Architecture_Zone02",
+      "id": "Architecture_Z02",
+      "size": 2048,
+      "polygons": 5450
+    },
+    {
+      "object": "BGV04_Architecture_Zone03",
+      "id": "Architecture_Z03",
+      "size": 2048,
+      "polygons": 3850
+    },
+    {
+      "object": "BGV04_Architecture_Zone04",
+      "id": "Architecture_Z04",
+      "size": 2048,
+      "polygons": 4850
+    },
+    {
+      "object": "BGV04_Architecture_Zone05",
+      "id": "Architecture_Z05",
+      "size": 2048,
+      "polygons": 5576
+    },
+    {
+      "object": "BGV04_Architecture_Zone06",
+      "id": "Architecture_Z06",
+      "size": 2048,
+      "polygons": 6710
+    },
+    {
+      "object": "BGV04_Architecture_Zone07",
+      "id": "Architecture_Z07",
+      "size": 2048,
+      "polygons": 4330
+    },
+    {
+      "object": "BGV04_Architecture_Zone08",
+      "id": "Architecture_Z08",
+      "size": 2048,
+      "polygons": 3310
+    },
+    {
+      "object": "BGV04_Exhibits_Zone01",
+      "id": "Exhibits_Z01",
+      "size": 2048,
+      "polygons": 1138
+    },
+    {
+      "object": "BGV04_Exhibits_Zone02",
+      "id": "Exhibits_Z02",
+      "size": 2048,
+      "polygons": 2352
+    },
+    {
+      "object": "BGV04_Exhibits_Zone03",
+      "id": "Exhibits_Z03",
+      "size": 2048,
+      "polygons": 3330
+    },
+    {
+      "object": "BGV04_Exhibits_Zone04",
+      "id": "Exhibits_Z04",
+      "size": 2048,
+      "polygons": 6350
+    },
+    {
+      "object": "BGV04_Exhibits_Zone05",
+      "id": "Exhibits_Z05",
+      "size": 2048,
+      "polygons": 3392
+    },
+    {
+      "object": "BGV04_Exhibits_Zone06",
+      "id": "Exhibits_Z06",
+      "size": 2048,
+      "polygons": 1442
+    },
+    {
+      "object": "BGV04_Exhibits_Zone07",
+      "id": "Exhibits_Z07",
+      "size": 2048,
+      "polygons": 2236
+    },
+    {
+      "object": "BGV04_Exhibits_Zone08",
+      "id": "Exhibits_Z08",
+      "size": 2048,
+      "polygons": 1350
+    },
+    {
+      "object": "Photo_模型正面.jpg",
+      "id": "Photo_01",
+      "size": 1024,
+      "polygons": 1
+    },
+    {
+      "object": "Photo_模型侧面.jpg",
+      "id": "Photo_02",
+      "size": 1024,
+      "polygons": 1
+    },
+    {
+      "object": "Photo_模型正面.jpg.001",
+      "id": "Photo_03",
+      "size": 1024,
+      "polygons": 1
+    },
+    {
+      "object": "Photo_模型侧面.jpg.001",
+      "id": "Photo_04",
+      "size": 1024,
+      "polygons": 1
+    }
+  ],
+  "fine_text_meshes": [
+    "BGV04_Fine_Zone01",
+    "BGV04_Fine_Zone02",
+    "BGV04_Fine_Zone03",
+    "BGV04_Fine_Zone04",
+    "BGV04_Fine_Zone05",
+    "BGV04_Fine_Zone06",
+    "BGV04_Fine_Zone07",
+    "BGV04_Fine_Zone08"
+  ],
+  "transparent_meshes": [
+    "Screen_0_Paper",
+    "Screen_1_Paper",
+    "SheerHangingLeaf",
+    "SilkGlyph_木",
+    "SilkGlyph_作",
+    "SheerHangingLeaf.001",
+    "SilkGlyph_营",
+    "SilkGlyph_造"
+  ]
+}

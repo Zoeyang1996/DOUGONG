@@ -1,0 +1,282 @@
+[
+  {
+    "id": "Architecture_Z01",
+    "object": "BGV04_Architecture_Zone01",
+    "resolution": 2048,
+    "seconds": 47.0,
+    "file": "Architecture_Z01.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z02",
+    "object": "BGV04_Architecture_Zone02",
+    "resolution": 2048,
+    "seconds": 40.7,
+    "file": "Architecture_Z02.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z03",
+    "object": "BGV04_Architecture_Zone03",
+    "resolution": 2048,
+    "seconds": 41.5,
+    "file": "Architecture_Z03.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z04",
+    "object": "BGV04_Architecture_Zone04",
+    "resolution": 2048,
+    "seconds": 40.1,
+    "file": "Architecture_Z04.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z05",
+    "object": "BGV04_Architecture_Zone05",
+    "resolution": 2048,
+    "seconds": 40.5,
+    "file": "Architecture_Z05.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z06",
+    "object": "BGV04_Architecture_Zone06",
+    "resolution": 2048,
+    "seconds": 37.0,
+    "file": "Architecture_Z06.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z07",
+    "object": "BGV04_Architecture_Zone07",
+    "resolution": 2048,
+    "seconds": 41.9,
+    "file": "Architecture_Z07.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Architecture_Z08",
+    "object": "BGV04_Architecture_Zone08",
+    "resolution": 2048,
+    "seconds": 46.4,
+    "file": "Architecture_Z08.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z01",
+    "object": "BGV04_Exhibits_Zone01",
+    "resolution": 2048,
+    "seconds": 58.1,
+    "file": "Exhibits_Z01.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z02",
+    "object": "BGV04_Exhibits_Zone02",
+    "resolution": 2048,
+    "seconds": 47.8,
+    "file": "Exhibits_Z02.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z03",
+    "object": "BGV04_Exhibits_Zone03",
+    "resolution": 2048,
+    "seconds": 43.2,
+    "file": "Exhibits_Z03.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z04",
+    "object": "BGV04_Exhibits_Zone04",
+    "resolution": 2048,
+    "seconds": 44.2,
+    "file": "Exhibits_Z04.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z05",
+    "object": "BGV04_Exhibits_Zone05",
+    "resolution": 2048,
+    "seconds": 48.9,
+    "file": "Exhibits_Z05.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z06",
+    "object": "BGV04_Exhibits_Zone06",
+    "resolution": 2048,
+    "seconds": 54.0,
+    "file": "Exhibits_Z06.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z07",
+    "object": "BGV04_Exhibits_Zone07",
+    "resolution": 2048,
+    "seconds": 45.0,
+    "file": "Exhibits_Z07.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Exhibits_Z08",
+    "object": "BGV04_Exhibits_Zone08",
+    "resolution": 2048,
+    "seconds": 59.8,
+    "file": "Exhibits_Z08.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Photo_01",
+    "object": "Photo_模型正面.jpg",
+    "resolution": 1024,
+    "seconds": 19.6,
+    "file": "Photo_01.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Photo_02",
+    "object": "Photo_模型侧面.jpg",
+    "resolution": 1024,
+    "seconds": 19.6,
+    "file": "Photo_02.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Photo_03",
+    "object": "Photo_模型正面.jpg.001",
+    "resolution": 1024,
+    "seconds": 21.8,
+    "file": "Photo_03.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  },
+  {
+    "id": "Photo_04",
+    "object": "Photo_模型侧面.jpg.001",
+    "resolution": 1024,
+    "seconds": 20.1,
+    "file": "Photo_04.png",
+    "passes": [
+      "Color",
+      "Direct",
+      "Indirect",
+      "Glossy",
+      "Emission"
+    ]
+  }
+]

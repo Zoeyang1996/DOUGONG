@@ -1,0 +1,190 @@
+/* ─────────────────────────────────────────────
+   木构星图 · 布局层
+   页头只留标记与工具，画面正上方不放文字
+   ───────────────────────────────────────────── */
+
+/* ── 页头 ───────────────────────────────── */
+
+.masthead {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-5);
+  height: var(--nav);
+  margin: 0 clamp(20px, 4vw, 56px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  white-space: nowrap;
+  transition: transform 120ms var(--ease-press);
+}
+
+.brand:active { transform: translateY(1px) scale(.99); }
+
+.seal {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: var(--red);
+  color: #f8e6c8;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: transform 260ms var(--ease), box-shadow 260ms var(--ease);
+}
+
+.brand:hover .seal {
+  transform: scale(1.04);
+  box-shadow: 0 3px 10px rgba(120, 40, 12, .3);
+}
+
+.brand-text {
+  display: block;
+  font-size: var(--t-body);
+  letter-spacing: .14em;
+  line-height: 1;
+}
+
+/* ── 主舞台 ─────────────────────────────── */
+
+.atlas {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(272px, 24%) minmax(0, 1fr) clamp(144px, 12%, 188px);
+  gap: var(--s-6);
+  height: calc(100svh - var(--nav) - var(--foot));
+  min-height: 480px;
+  margin: 0 clamp(20px, 4vw, 56px);
+  padding: var(--s-2) 0 0;
+}
+
+/* ── 页脚 ───────────────────────────────── */
+
+.colophon {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-5);
+  height: var(--foot);
+  margin: 0 clamp(20px, 4vw, 56px);
+  font-size: var(--t-label);
+  color: var(--ink-60);
+}
+
+.colophon #about {
+  font-size: var(--t-label);
+  color: var(--ink-80);
+  letter-spacing: .1em;
+}
+
+.colophon .folio {
+  color: var(--ink-45);
+  font-size: var(--t-label);
+  letter-spacing: .2em;
+}
+
+/* ── 说明弹窗 ───────────────────────────── */
+
+dialog {
+  width: min(560px, calc(100% - 40px));
+  border: 1px solid var(--ink);
+  background: var(--plate);
+  color: var(--ink);
+  padding: var(--s-7) var(--s-6) var(--s-6);
+  box-shadow: 0 24px 60px rgba(70, 38, 12, .35);
+}
+
+dialog::backdrop {
+  background: rgba(46, 26, 8, .5);
+  backdrop-filter: blur(6px) saturate(.8);
+}
+
+dialog h2 {
+  font-size: clamp(22px, 2vw, 28px);
+  letter-spacing: .1em;
+  margin: var(--s-4) 0 var(--s-5);
+}
+
+dialog p {
+  font-size: var(--t-body);
+  line-height: 1.85;
+  color: var(--ink-80);
+  margin: 0 0 var(--s-3);
+}
+
+dialog .eyebrow { color: var(--red); }
+
+#close-about {
+  position: absolute;
+  top: var(--s-2);
+  right: var(--s-3);
+  width: 44px;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--ink-60);
+  transition: color 160ms var(--ease), transform 200ms var(--ease);
+}
+
+#close-about:hover { color: var(--red); }
+
+/* ── 响应式 ─────────────────────────────── */
+
+@media (min-width: 1800px) {
+  :root {
+    --nav: 84px;
+    --globe-canvas: min(88svh, 1040px);
+  }
+  .atlas { grid-template-columns: minmax(340px, 24%) minmax(0, 1fr) 188px; }
+}
+
+@media (max-width: 1180px) {
+  :root { --nav: 70px; --foot: 54px; }
+  .atlas {
+    grid-template-columns: 236px minmax(0, 1fr) 160px;
+    gap: var(--s-5);
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 900px) {
+  .atlas { grid-template-columns: 208px minmax(0, 1fr) 150px; gap: var(--s-4); }
+}
+
+@media (max-width: 1023px) {
+  :root { --nav: 68px; --foot: 52px; }
+
+  .masthead { margin: 0 24px; gap: var(--s-3); }
+  .tool-pill { padding: 8px 12px; font-size: 0; gap: 0; }
+  .tool-pill .glyph { font-size: 15px; }
+
+  .atlas {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    gap: 0;
+    margin: 0 24px;
+    padding-top: var(--s-2);
+  }
+  .navigation { order: 0; }
+  .earth-stage { order: 1; }
+  .panel { order: 2; }
+
+  .colophon { height: var(--foot); margin: 0 24px; }
+}
+
+@media (max-width: 460px) {
+  .masthead { margin: 0 20px; }
+  .atlas, .colophon { margin: 0 20px; }
+  .brand-text { display: none; }
+  .seal { width: 30px; height: 30px; font-size: 17px; }
+}

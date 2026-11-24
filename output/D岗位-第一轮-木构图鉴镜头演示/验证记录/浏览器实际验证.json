@@ -1,0 +1,33 @@
+{
+  "browser": "Chromium 应用内浏览器",
+  "HTTP_offline_bundle_tested": true,
+  "HTTP_readable_source_entry_tested": true,
+  "regions_tested": [
+    "中国",
+    "日本"
+  ],
+  "era_tested": "唐",
+  "building_tested": "佛光寺东大殿",
+  "before_distance_sample": 4.99177,
+  "after_distance_sample": 2.16,
+  "same_before_package_after_editing_only_two_numbers_and_refresh": 2.16,
+  "no_rebuild_needed_for_camera_config": true,
+  "model_preview_loaded": true,
+  "final_browser_errors": [],
+  "responsive_viewport_width": 390,
+  "responsive_document_width": 390,
+  "canvas_touch_action": "none",
+  "desktop_viewport": [
+    1440,
+    900
+  ],
+  "direct_file_protocol_tested": false,
+  "direct_file_protocol_note": "当前浏览器预览环境禁止 file 协议；未绕过限制。双击页已做资料内嵌与离线资源完整性检查，HTTP 本地部署已实测。",
+  "physical_Seewo_device_tested": false,
+  "flight_math_tests": [
+    "参数读取",
+    "球面安全边界",
+    "拉近与拉远的单调性",
+    "准确的起点和终点"
+  ]
+}

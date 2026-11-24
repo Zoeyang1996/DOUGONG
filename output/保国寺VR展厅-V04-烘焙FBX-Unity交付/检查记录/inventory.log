@@ -1,0 +1,5 @@
+00:01.820  blend            | Read blend: "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend"
+INVENTORY {'source': '/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend', 'sha256': '9ddcd1ebb8b1c44e978519aac74fc974a2e36bbc4d7c48b5c061705cb1b7eabe', 'types': {'EMPTY': 201, 'MESH': 1968, 'LIGHT': 55, 'CURVE': 297, 'FONT': 168}, 'mesh_triangles': 351312, 'lights': 55, 'unit_scale': 1.0, 'scene_engine': 'CYCLES', 'color': {'transform': 'AgX', 'look': 'AgX - Medium High Contrast', 'exposure': -0.949999988079071}}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

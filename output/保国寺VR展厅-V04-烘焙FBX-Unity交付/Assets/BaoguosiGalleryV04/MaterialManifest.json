@@ -1,0 +1,170 @@
+{
+  "materials": [
+    {
+      "name": "BGV04_Architecture_Z01",
+      "texture": "Architecture_Z01.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z02",
+      "texture": "Architecture_Z02.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z03",
+      "texture": "Architecture_Z03.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z04",
+      "texture": "Architecture_Z04.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z05",
+      "texture": "Architecture_Z05.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z06",
+      "texture": "Architecture_Z06.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z07",
+      "texture": "Architecture_Z07.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Architecture_Z08",
+      "texture": "Architecture_Z08.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z01",
+      "texture": "Exhibits_Z01.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z02",
+      "texture": "Exhibits_Z02.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z03",
+      "texture": "Exhibits_Z03.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z04",
+      "texture": "Exhibits_Z04.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z05",
+      "texture": "Exhibits_Z05.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z06",
+      "texture": "Exhibits_Z06.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z07",
+      "texture": "Exhibits_Z07.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Exhibits_Z08",
+      "texture": "Exhibits_Z08.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Photo_01",
+      "texture": "Photo_01.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Photo_02",
+      "texture": "Photo_02.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Photo_03",
+      "texture": "Photo_03.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Photo_04",
+      "texture": "Photo_04.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_01",
+      "texture": "Swatch_01.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_02",
+      "texture": "Swatch_02.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_03",
+      "texture": "Swatch_03.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_04",
+      "texture": "Swatch_04.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_05",
+      "texture": "Swatch_05.png",
+      "transparent": false,
+      "double_sided": false
+    },
+    {
+      "name": "BGV04_Swatch_06",
+      "texture": "Swatch_06.png",
+      "transparent": true,
+      "double_sided": true
+    },
+    {
+      "name": "BGV04_Swatch_07",
+      "texture": "Swatch_07.png",
+      "transparent": true,
+      "double_sided": true
+    }
+  ],
+  "texture_color_space": "sRGB appearance with AgX/exposure baked once",
+  "camera_count": 0,
+  "light_count": 0,
+  "units": "metres"
+}

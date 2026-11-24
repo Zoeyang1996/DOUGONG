@@ -1,0 +1,7 @@
+{
+  "CSharp_syntax_compiled_with_Mono_and_API_declaration_stubs": true,
+  "compiler": "Mono mcs",
+  "Unity_Editor_executed": false,
+  "PICO_device_tested": false,
+  "note": "语法检查通过，不等同于 Unity 编辑器或头盔实测。"
+}

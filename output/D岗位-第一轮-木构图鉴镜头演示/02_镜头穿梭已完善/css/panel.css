@@ -1,0 +1,718 @@
+/* ─────────────────────────────────────────────
+   木构星图 · 面板与导航
+   说明栏压在地球之上：纸质蒙版 + 明确层级
+   ───────────────────────────────────────────── */
+
+.panel {
+  position: relative;
+  z-index: 4;
+  align-self: stretch;
+  min-height: 0;
+  overflow: visible;
+}
+
+/* 纸质蒙版：球压到说明栏下方时才浮出，像一张压在球面上的纸 */
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: -18vh -150px -18vh -48px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 420ms var(--ease);
+  background: linear-gradient(
+    90deg,
+    var(--paper) 0 58%,
+    rgba(238, 202, 162, .95) 72%,
+    rgba(238, 202, 162, .58) 87%,
+    rgba(238, 202, 162, 0) 100%
+  );
+}
+
+body.is-underlap .panel::before { opacity: 1; }
+
+.panel-inner {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: var(--s-6) var(--s-6) var(--s-7) 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(28, 23, 18, .3) transparent;
+  mask-image: linear-gradient(180deg, #000 calc(100% - 32px), transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - 32px), transparent 100%);
+}
+
+/* 左侧说明随点击浮现，交代“这是新一页” */
+#panel-content.is-entering { animation: panel-in 280ms var(--ease) both; }
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.panel-inner::-webkit-scrollbar { width: 3px; }
+.panel-inner::-webkit-scrollbar-thumb { background: rgba(28, 23, 18, .22); }
+
+/* ── 通用文字 ───────────────────────────── */
+
+.overline {
+  font-family: var(--mono);
+  font-size: var(--t-label);
+  letter-spacing: .08em;
+  color: var(--ink-60);
+  margin: 0 0 var(--s-4);
+}
+
+.panel h2 {
+  font-size: var(--t-h2);
+  line-height: 1.42;
+  letter-spacing: .08em;
+  margin: 0 0 var(--s-5);
+  color: var(--ink);
+}
+
+.panel h2.detail-title {
+  font-size: clamp(23px, 1.7vw, 30px);
+  line-height: 1.5;
+  letter-spacing: .04em;
+  margin-bottom: var(--s-2);
+}
+
+.intro-title span { display: block; }
+
+.lead {
+  font-size: var(--t-body);
+  line-height: 1.9;
+  letter-spacing: .02em;
+  margin: 0 0 var(--s-6);
+  color: rgba(28, 23, 18, .78);
+  text-wrap: pretty;
+}
+
+/* ── 数目 ───────────────────────────────── */
+
+.count {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-3);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--rule-soft);
+}
+
+.count strong {
+  font-family: var(--display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--ink);
+}
+
+.count span {
+  font-size: var(--t-label);
+  letter-spacing: .08em;
+  color: var(--ink-60);
+}
+
+.period {
+  font-family: var(--mono);
+  font-size: var(--t-label);
+  letter-spacing: .06em;
+  color: var(--ink-60);
+  margin: calc(-1 * var(--s-2)) 0 var(--s-4);
+}
+
+/* ── 省份收录：一格里同时给出名称、数目与比例 ── */
+
+.provinces {
+  margin-top: var(--s-5);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--rule-soft);
+}
+
+.provinces-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  min-height: 44px;
+}
+
+.provinces-title {
+  font-size: var(--t-label);
+  letter-spacing: .12em;
+  color: var(--ink-60);
+}
+
+.provinces-all {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-left: var(--s-3);
+  font-size: var(--t-label);
+  letter-spacing: .06em;
+  color: var(--ink-60);
+  transition: color 200ms var(--ease), transform 120ms var(--ease-press);
+}
+
+.provinces-all:hover { color: var(--red); }
+.provinces-all:active { transform: translateY(1px); }
+.provinces-all.is-active { color: var(--red-deep); }
+
+.province-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 var(--s-4);
+}
+
+.province-chip {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: var(--s-2) 0 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule-soft);
+  transition: color 200ms var(--ease), border-color 200ms var(--ease),
+              transform 120ms var(--ease-press);
+}
+
+.province-chip .chip-name {
+  font-size: var(--t-body);
+  letter-spacing: .04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.province-chip .chip-count {
+  font-family: var(--display);
+  font-size: 19px;
+  line-height: 1;
+  color: var(--ink-45);
+  font-variant-numeric: lining-nums tabular-nums;
+  transition: color 200ms var(--ease);
+}
+
+/* 底栏长度即该省占最大值的比例，等宽格下可直接横向比较 */
+.province-chip .chip-bar {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: calc(var(--share, 0) * 100%);
+  /* 静息态也要看得见比例，否则只是装饰 */
+  background: rgba(191, 58, 30, .45);
+  transition: width 460ms var(--ease), background 200ms var(--ease);
+}
+
+.province-chip:hover { color: var(--red); }
+.province-chip:hover .chip-count { color: var(--red); }
+.province-chip:hover .chip-bar { background: var(--red); }
+.province-chip:active { transform: translateY(1px); }
+
+.province-chip.is-active { color: var(--red-deep); }
+.province-chip.is-active .chip-count { color: var(--red); }
+.province-chip.is-active .chip-bar { background: var(--red); }
+
+/* ── 建筑名录 ───────────────────────────── */
+
+.building-list {
+  margin-top: var(--s-6);
+  border-top: 1px solid var(--rule-soft);
+}
+
+.building-list summary {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  min-height: 48px;
+  padding: var(--s-3) 0;
+  cursor: pointer;
+  font-size: var(--t-label);
+  letter-spacing: .12em;
+  color: var(--ink-60);
+  list-style: none;
+  transition: color var(--dur) var(--ease);
+}
+
+.building-list summary::-webkit-details-marker { display: none; }
+
+.building-list summary::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  transition: transform 260ms var(--ease);
+}
+
+.building-list[open] summary::before { transform: rotate(45deg); }
+.building-list summary:hover { color: var(--red); }
+.building-list summary:active { transform: translateY(1px); }
+
+.building-list button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  min-height: 48px;
+  padding: var(--s-3) 0 var(--s-3) var(--s-3);
+  text-align: left;
+  font-size: var(--t-body);
+  letter-spacing: .02em;
+  border-top: 1px solid var(--rule-soft);
+  transition: color 200ms var(--ease), padding-left 240ms var(--ease),
+              background 200ms var(--ease);
+}
+
+.building-list button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--red);
+  transform: translateY(-50%);
+  transition: width 240ms var(--ease);
+}
+
+.building-list button .row-name { flex: 1; }
+
+.building-list button .row-arrow {
+  font-family: var(--mono);
+  font-size: var(--t-label);
+  color: var(--ink-28);
+  transition: transform 240ms var(--ease), color 200ms var(--ease);
+}
+
+.building-list button:hover {
+  color: var(--red-deep);
+  padding-left: var(--s-5);
+  background: rgba(255, 246, 226, .5);
+}
+
+.building-list button:hover::before { width: 10px; }
+.building-list button:hover .row-arrow { transform: translate(2px, -2px); color: var(--red); }
+.building-list button:active { background: rgba(255, 246, 226, .9); }
+
+/* ── 详情 ───────────────────────────────── */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  margin: 0 0 var(--s-3);
+  font-size: var(--t-label);
+  letter-spacing: .1em;
+  color: var(--ink-60);
+  transition: color 180ms var(--ease), gap 200ms var(--ease);
+}
+
+.back .arrow { transition: transform 240ms var(--ease); }
+.back:hover { color: var(--red); gap: var(--s-3); }
+.back:hover .arrow { transform: translateX(-3px); }
+.back:active { transform: translateY(1px); }
+
+.photo-frame {
+  position: relative;
+  margin: 0 0 var(--s-5);
+  padding: 6px;
+  background: #fbeccd;
+  border: 1px solid var(--rule-soft);
+  box-shadow: 0 12px 26px -20px rgba(70, 36, 8, .8);
+  transition: transform 260ms var(--ease), box-shadow 260ms var(--ease);
+}
+
+.photo-frame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -20px rgba(70, 36, 8, .85);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+  filter: grayscale(.5) sepia(.42) saturate(1.45) contrast(1.03);
+  mix-blend-mode: multiply;
+  transition: filter 500ms var(--ease);
+}
+
+.photo-frame:hover .photo {
+  filter: grayscale(.15) sepia(.3) saturate(1.4) contrast(1.01);
+}
+
+.photo-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1.62;
+  border: 1px dashed var(--rule);
+  font-size: var(--t-label);
+  letter-spacing: .1em;
+  color: var(--ink-60);
+}
+
+.detail-meta {
+  font-size: var(--t-small);
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin: 0 0 var(--s-3);
+}
+
+.detail-year {
+  display: block;
+  font-family: var(--mono);
+  font-size: var(--t-label);
+  letter-spacing: .04em;
+  color: var(--red);
+  margin: 0 0 var(--s-3);
+}
+
+.detail-body {
+  font-size: var(--t-body);
+  line-height: 1.95;
+  letter-spacing: .01em;
+  color: rgba(28, 23, 18, .82);
+  margin: var(--s-4) 0 0;
+  text-wrap: pretty;
+}
+
+.detail-quote {
+  margin: var(--s-4) 0 0;
+  padding: var(--s-2) 0 var(--s-2) var(--s-3);
+  border-left: 2px solid var(--red);
+  font-size: var(--t-small);
+  line-height: 1.85;
+  color: rgba(28, 23, 18, .8);
+}
+
+.detail-spec {
+  margin: var(--s-5) 0 0;
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--rule-soft);
+  font-size: var(--t-label);
+  line-height: 1.8;
+  color: var(--ink-60);
+}
+
+.detail-spec dt {
+  font-family: var(--mono);
+  font-size: var(--t-label);
+  letter-spacing: .06em;
+  color: var(--ink-45);
+  margin-top: var(--s-2);
+}
+
+.detail-spec dt:first-child { margin-top: 0; }
+.detail-spec dd { margin: 2px 0 0; }
+
+.status {
+  display: block;
+  font-size: var(--t-label);
+  line-height: 1.8;
+  color: var(--red-deep);
+  border-left: 2px solid var(--red);
+  padding-left: var(--s-3);
+  margin: 0 0 var(--s-3);
+}
+
+.detail-next {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-3);
+  margin-top: var(--s-5);
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--rule-soft);
+}
+
+.detail-next button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  font-size: var(--t-label);
+  letter-spacing: .08em;
+  color: var(--ink-60);
+  transition: color 180ms var(--ease), gap 200ms var(--ease);
+}
+
+.detail-next button .arrow { transition: transform 240ms var(--ease); }
+.detail-next button:hover { color: var(--red); }
+.detail-next #prev:hover { gap: var(--s-3); }
+.detail-next #prev:hover .arrow { transform: translateX(-3px); }
+.detail-next #next:hover { gap: var(--s-3); }
+.detail-next #next:hover .arrow { transform: translateX(3px); }
+.detail-next button:active { transform: translateY(1px); }
+
+/* ── 右侧导航 · 地区 ─────────────────────── */
+
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: clamp(12px, 1.4vw, 24px);
+  height: 100%;
+  padding-top: var(--s-2);
+  z-index: 5;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(12px, 2vh, 24px);
+}
+
+.countries button {
+  position: relative;
+  min-height: 44px;
+  padding: var(--s-1) 0;
+  font-size: clamp(22px, 1.9vw, 32px);
+  letter-spacing: .08em;
+  line-height: 1.2;
+  color: var(--ink);
+  transition: color 220ms var(--ease), transform 220ms var(--ease);
+}
+
+.countries button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: var(--s-1);
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 320ms var(--ease);
+}
+
+.countries button:hover { color: var(--red); transform: translateX(-3px); }
+.countries button:hover::after { transform: scaleX(1); }
+.countries button:active { transform: translateX(-1px) scale(.97); }
+.countries button.active { color: var(--red-deep); }
+
+.countries button.active::after {
+  transform: scaleX(1);
+  background: var(--red);
+  height: 2px;
+}
+
+/* ── 右侧导航 · 朝代 ─────────────────────── */
+
+.eras {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  padding-left: clamp(8px, .8vw, 14px);
+  border-left: 1px solid var(--rule-soft);
+}
+
+.eras button {
+  position: relative;
+  min-height: 40px;
+  padding: var(--s-1) 0;
+  text-align: left;
+  white-space: nowrap;
+  font-size: var(--t-small);
+  letter-spacing: .06em;
+  color: var(--ink-60);
+  transition: color 200ms var(--ease), padding-left 240ms var(--ease);
+}
+
+.eras button::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * clamp(8px, .8vw, 14px) - 1px);
+  top: 50%;
+  width: 2px;
+  height: 0;
+  background: var(--red);
+  transform: translateY(-50%);
+  transition: height 240ms var(--ease);
+}
+
+.eras button:hover { color: var(--red); padding-left: var(--s-1); }
+.eras button:active { transform: translateY(1px); }
+.eras button.active { color: var(--red-deep); }
+.eras button.active::before { height: 14px; }
+
+/* ── 响应式 ─────────────────────────────── */
+
+@media (max-width: 1180px) {
+  .panel-inner { padding-right: var(--s-5); }
+  .panel h2 { font-size: 26px; }
+  .lead { font-size: var(--t-body); }
+  .count strong { font-size: 42px; }
+  .countries button { font-size: 20px; }
+  .eras button { font-size: var(--t-label); min-height: 38px; }
+  .province-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 1023px) {
+  .panel { margin-top: var(--s-5); }
+  .panel::before, .panel::after { display: none; }
+  .panel-inner { overflow: visible; padding: 0 0 var(--s-6); }
+  .navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--s-1);
+    width: 100%;
+    height: auto;
+    padding-top: var(--s-1);
+  }
+  .countries {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-3);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .countries button { font-size: 20px; padding: var(--s-2) var(--s-1); }
+  .countries button::after { bottom: 4px; }
+  .eras {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    border-left: 0;
+    padding: 0;
+  }
+  .eras button {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: var(--s-2) var(--s-3);
+    font-size: var(--t-label);
+  }
+  .eras button::before {
+    left: 50%;
+    top: auto;
+    bottom: 2px;
+    width: 4px;
+    height: 0;
+    transform: translateX(-50%);
+  }
+  .eras button:hover { padding-left: var(--s-3); }
+  .eras button.active::before { height: 4px; width: 4px; }
+
+  .panel h2 { font-size: 26px; }
+  .panel h2.detail-title { font-size: 23px; }
+  .photo { max-height: 300px; }
+  .province-grid { gap: 0 var(--s-5); }
+}
+
+/* ── 全国现存统计（与“本图册收录”分开） ── */
+.era-stat {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.era-stat-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.era-stat-label {
+  font-size: 13px;
+  letter-spacing: .14em;
+  color: var(--ink-60);
+}
+
+.era-stat-scope {
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: rgba(28, 23, 18, .42);
+}
+
+.era-stat-num {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.era-stat-num strong {
+  font-family: var(--mono);
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: var(--ink);
+}
+
+.era-stat-num span {
+  font-size: 14px;
+  color: var(--ink-60);
+}
+
+.era-stat-bars {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.era-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.era-stat-pname {
+  width: 96px;
+  flex: none;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.era-stat-pbar {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  background: rgba(28, 23, 18, .1);
+}
+
+.era-stat-pbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(var(--share, 0) * 100%);
+  background: var(--red);
+}
+
+.era-stat-pnum {
+  width: 44px;
+  flex: none;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-60);
+}
+
+.era-stat-note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--ink-60);
+}
+
+.era-stat-src {
+  margin: 6px 0 0;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: rgba(28, 23, 18, .38);
+}

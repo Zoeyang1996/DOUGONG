@@ -1,0 +1,477 @@
+{
+  "buildings": 39,
+  "photos": 39,
+  "models": 12,
+  "file_count_per_package": 96,
+  "different_files": [
+    "camera-config.js"
+  ],
+  "config_before": {
+    "DETAIL_ZOOM": 1.05,
+    "FLIGHT_MS": 900
+  },
+  "config_after": {
+    "DETAIL_ZOOM": 3.4,
+    "FLIGHT_MS": 2400
+  },
+  "checks": [
+    {
+      "file": "assets/buildings/01-中国-唐/01-nanchansi-dadian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/01-中国-唐/02-foguangsi-dongdadian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/01-中国-唐/03-guangrenwangmiao-zhengdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/02-中国-五代/01-tiantaian-mitudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/02-中国-五代/02-zhengousi-wanfodian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/02-中国-五代/03-dayuanyuan-mitudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/02-中国-五代/04-longmensi-xipeidian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/02-中国-五代/05-hualinsi-dadian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/01-dulesi-guanyinge/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/02-dulesi-shanmen/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/03-fengguosi-daxiongbaodian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/04-yingxian-muta/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/05-shanhuasi-daxiongbaodian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/06-huayansi-bojiajiaozangdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/07-geyuansi-wenshudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/03-中国-辽/08-kaishansi-daxiongbaodian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/01-baoguosi-dadian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/02-jinci-shengmudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/03-longxingsi-monidian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/04-xuanmiaoguan-sanqingdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/05-putian-yuanmiaoguan/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/04-中国-宋/06-zhaoqing-meian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/05-中国-金/01-huayansi-daxiongbaodian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/05-中国-金/02-chongfusi-mitudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/05-中国-金/03-shanhuasi-sanshengdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/05-中国-金/04-foguangsi-wenshudian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/06-中国-元/01-yonglegong-sanqingdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/06-中国-元/02-beiyuemiao-deningdian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/06-中国-元/03-guangshengsi-xiasi/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/07-中国-明清/01-gugong-taihedian/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/07-中国-明清/02-zhihuasi/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/08-日本/01-horyuji-kondo-tou/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/08-日本/02-toshodaiji-kondo/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/08-日本/03-todaiji-daibutsuden/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/08-日本/04-yakushiji-toutou/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/09-欧洲/01-urnes-stave-church/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/09-欧洲/02-borgund-stave-church/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/09-欧洲/03-heddal-stave-church/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/buildings/09-欧洲/04-kizhi-transfiguration/01.jpg",
+      "identical": true
+    },
+    {
+      "file": "assets/data/china-provinces.json",
+      "identical": true
+    },
+    {
+      "file": "assets/data/land.geojson",
+      "identical": true
+    },
+    {
+      "file": "assets/data/图片资料来源.json",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/eu-01-urnes-stave-church.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/jin-02-chongfusi-mitudian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/jp-01-horyuji-kondo-tou.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/jp-02-toshodaiji-kondo.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/jp-03-todaiji-daibutsuden.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/liao-04-yingxian-muta.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/mingqing-01-gugong-taihedian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/song-03-longxingsi-monidian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/tang-01-nanchansi-dadian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/tang-02-foguangsi-dongdadian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/wudai-01-tiantaian-mitudian.js",
+      "identical": true
+    },
+    {
+      "file": "assets/models-js/yuan-02-beiyuemiao-deningdian.js",
+      "identical": true
+    },
+    {
+      "file": "build_offline.py",
+      "identical": true
+    },
+    {
+      "file": "camera-config.js",
+      "identical": false
+    },
+    {
+      "file": "css/globe.css",
+      "identical": true
+    },
+    {
+      "file": "css/layout.css",
+      "identical": true
+    },
+    {
+      "file": "css/panel.css",
+      "identical": true
+    },
+    {
+      "file": "css/theme.css",
+      "identical": true
+    },
+    {
+      "file": "css/viewer.css",
+      "identical": true
+    },
+    {
+      "file": "data.json",
+      "identical": true
+    },
+    {
+      "file": "favicon.svg",
+      "identical": true
+    },
+    {
+      "file": "index.html",
+      "identical": true
+    },
+    {
+      "file": "js/camera.js",
+      "identical": true
+    },
+    {
+      "file": "js/content.js",
+      "identical": true
+    },
+    {
+      "file": "js/data.js",
+      "identical": true
+    },
+    {
+      "file": "js/dom.js",
+      "identical": true
+    },
+    {
+      "file": "js/era-stats.js",
+      "identical": true
+    },
+    {
+      "file": "js/globe/globe.js",
+      "identical": true
+    },
+    {
+      "file": "js/globe/markers.js",
+      "identical": true
+    },
+    {
+      "file": "js/globe/shaders.js",
+      "identical": true
+    },
+    {
+      "file": "js/globe/texture.js",
+      "identical": true
+    },
+    {
+      "file": "js/labels.js",
+      "identical": true
+    },
+    {
+      "file": "js/main.js",
+      "identical": true
+    },
+    {
+      "file": "js/panel.js",
+      "identical": true
+    },
+    {
+      "file": "js/viewer.js",
+      "identical": true
+    },
+    {
+      "file": "js/views/detail.js",
+      "identical": true
+    },
+    {
+      "file": "js/views/intro.js",
+      "identical": true
+    },
+    {
+      "file": "js/views/region.js",
+      "identical": true
+    },
+    {
+      "file": "start_server.py",
+      "identical": true
+    },
+    {
+      "file": "vendor/BufferGeometryUtils.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/DRACOLoader.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/GLTFLoader.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/OrbitControls.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/THREE-LICENSE.txt",
+      "identical": true
+    },
+    {
+      "file": "vendor/draco/draco_decoder.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/draco/draco_decoder.wasm",
+      "identical": true
+    },
+    {
+      "file": "vendor/draco/draco_wasm_wrapper.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/draco-inline.js",
+      "identical": true
+    },
+    {
+      "file": "vendor/three.module.js",
+      "identical": true
+    },
+    {
+      "file": "先看这里-D现场操作.txt",
+      "identical": true
+    },
+    {
+      "file": "启动-Mac.command",
+      "identical": true
+    },
+    {
+      "file": "启动-Windows.bat",
+      "identical": true
+    },
+    {
+      "file": "导出原始GLB.py",
+      "identical": true
+    },
+    {
+      "file": "开发预览.html",
+      "identical": true
+    }
+  ],
+  "models_byte_identical_to_original": [
+    {
+      "name": "tang-02-foguangsi-dongdadian",
+      "bytes": 767668,
+      "original_sha256": "0340a7f8017a718197607986ac4844126c587230280aaa52413e0226a6b88014",
+      "external_resources": []
+    },
+    {
+      "name": "wudai-01-tiantaian-mitudian",
+      "bytes": 396088,
+      "original_sha256": "c732dac00e4d3f3317da94a286ba7ba01a588d553f78b1520e37b367e40efbc1",
+      "external_resources": []
+    },
+    {
+      "name": "tang-01-nanchansi-dadian",
+      "bytes": 634424,
+      "original_sha256": "7f9e78e4a72ef5e7f26b955224947ff098782da1835b0859634d7af551691590",
+      "external_resources": []
+    },
+    {
+      "name": "song-03-longxingsi-monidian",
+      "bytes": 1682936,
+      "original_sha256": "6a8a9160f33dc01c3f994b374f990d8becbd996c5b951189e4eef3b2557bfe13",
+      "external_resources": []
+    },
+    {
+      "name": "yuan-02-beiyuemiao-deningdian",
+      "bytes": 224928,
+      "original_sha256": "85fcfe9d9eae8e8a96ccd8bb4accfcb160ad6e24c35d1359bc04b0541d7bbec7",
+      "external_resources": []
+    },
+    {
+      "name": "mingqing-01-gugong-taihedian",
+      "bytes": 7330492,
+      "original_sha256": "908452bb2b5030cf132eed463cfcbc8ccfded1e2cf0050c30690fe87fc95032b",
+      "external_resources": []
+    },
+    {
+      "name": "jin-02-chongfusi-mitudian",
+      "bytes": 2421064,
+      "original_sha256": "bd3890527959d18a7bf66e3f0088ad4b33c56cedb756e0fb4f1b7734cfc95df2",
+      "external_resources": []
+    },
+    {
+      "name": "jp-01-horyuji-kondo-tou",
+      "bytes": 1399524,
+      "original_sha256": "1411b2869cc397548e33389ec6be18356406e887fba1b42d9d70f0612c9a42a4",
+      "external_resources": []
+    },
+    {
+      "name": "jp-03-todaiji-daibutsuden",
+      "bytes": 3414464,
+      "original_sha256": "628177e042a8e20c38572d0d9a90d3a66d1c7ea1dc76dd2bd615aac555c47443",
+      "external_resources": []
+    },
+    {
+      "name": "jp-02-toshodaiji-kondo",
+      "bytes": 1127312,
+      "original_sha256": "afa909cc2d3715e1737dbd24d481bd50f8f2db7b0b5bd40d7a277e6e272c8f5b",
+      "external_resources": []
+    },
+    {
+      "name": "eu-01-urnes-stave-church",
+      "bytes": 1283000,
+      "original_sha256": "f9758aef5b425c339b2a46b2f8873d46782f8c9c172168e7cfdec540120ef584",
+      "external_resources": []
+    },
+    {
+      "name": "liao-04-yingxian-muta",
+      "bytes": 3297704,
+      "original_sha256": "cec9422fb3ce21dff5581df360efe4053a6a8d3bc3aa8d080cee193a86d8b88d",
+      "external_resources": []
+    }
+  ]
+}

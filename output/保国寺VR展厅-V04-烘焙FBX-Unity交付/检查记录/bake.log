@@ -1,0 +1,77 @@
+00:00.892  blend            | Read blend: "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend"
+/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V04-烘焙FBX-Unity交付/编辑源文件/bake_v04.py:63: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:continue
+Info: Saved as "烘焙准备检查点.blend"
+BAKE_START 1 20 Architecture_Z01 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z01", "object": "BGV04_Architecture_Zone01", "resolution": 2048, "seconds": 47.0, "file": "Architecture_Z01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 2 20 Architecture_Z02 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z02", "object": "BGV04_Architecture_Zone02", "resolution": 2048, "seconds": 40.7, "file": "Architecture_Z02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 3 20 Architecture_Z03 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z03", "object": "BGV04_Architecture_Zone03", "resolution": 2048, "seconds": 41.5, "file": "Architecture_Z03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 4 20 Architecture_Z04 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z04", "object": "BGV04_Architecture_Zone04", "resolution": 2048, "seconds": 40.1, "file": "Architecture_Z04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 5 20 Architecture_Z05 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z05", "object": "BGV04_Architecture_Zone05", "resolution": 2048, "seconds": 40.5, "file": "Architecture_Z05.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 6 20 Architecture_Z06 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z06", "object": "BGV04_Architecture_Zone06", "resolution": 2048, "seconds": 37.0, "file": "Architecture_Z06.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 7 20 Architecture_Z07 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z07", "object": "BGV04_Architecture_Zone07", "resolution": 2048, "seconds": 41.9, "file": "Architecture_Z07.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 8 20 Architecture_Z08 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Architecture_Z08", "object": "BGV04_Architecture_Zone08", "resolution": 2048, "seconds": 46.4, "file": "Architecture_Z08.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 9 20 Exhibits_Z01 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z01", "object": "BGV04_Exhibits_Zone01", "resolution": 2048, "seconds": 58.1, "file": "Exhibits_Z01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 10 20 Exhibits_Z02 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z02", "object": "BGV04_Exhibits_Zone02", "resolution": 2048, "seconds": 47.8, "file": "Exhibits_Z02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 11 20 Exhibits_Z03 2048
+Info: No active image found in material slot (8) for object "BGV04_Exhibits_Zone03"
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z03", "object": "BGV04_Exhibits_Zone03", "resolution": 2048, "seconds": 43.2, "file": "Exhibits_Z03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 12 20 Exhibits_Z04 2048
+Info: No active image found in material slot (7) for object "BGV04_Exhibits_Zone04"
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z04", "object": "BGV04_Exhibits_Zone04", "resolution": 2048, "seconds": 44.2, "file": "Exhibits_Z04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 13 20 Exhibits_Z05 2048
+Info: No active image found in material slot (6) for object "BGV04_Exhibits_Zone05"
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z05", "object": "BGV04_Exhibits_Zone05", "resolution": 2048, "seconds": 48.9, "file": "Exhibits_Z05.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 14 20 Exhibits_Z06 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z06", "object": "BGV04_Exhibits_Zone06", "resolution": 2048, "seconds": 54.0, "file": "Exhibits_Z06.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 15 20 Exhibits_Z07 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z07", "object": "BGV04_Exhibits_Zone07", "resolution": 2048, "seconds": 45.0, "file": "Exhibits_Z07.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 16 20 Exhibits_Z08 2048
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Exhibits_Z08", "object": "BGV04_Exhibits_Zone08", "resolution": 2048, "seconds": 59.8, "file": "Exhibits_Z08.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 17 20 Photo_01 1024
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Photo_01", "object": "Photo_模型正面.jpg", "resolution": 1024, "seconds": 19.6, "file": "Photo_01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 18 20 Photo_02 1024
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Photo_02", "object": "Photo_模型侧面.jpg", "resolution": 1024, "seconds": 19.6, "file": "Photo_02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 19 20 Photo_03 1024
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Photo_03", "object": "Photo_模型正面.jpg.001", "resolution": 1024, "seconds": 21.8, "file": "Photo_03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+BAKE_START 20 20 Photo_04 1024
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_DONE {"id": "Photo_04", "object": "Photo_模型侧面.jpg.001", "resolution": 1024, "seconds": 20.1, "file": "Photo_04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}
+/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V04-烘焙FBX-Unity交付/编辑源文件/bake_v04.py:145: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;nodes=m.node_tree.nodes;links=m.node_tree.links;bs=nodes.get('Principled BSDF')
+Info: Saved as "展厅V04_烘焙展示_无摄像机.blend"
+
+FBX export starting... '/Users/yangzhe/Desktop/浙江工商/DOUGONG/output/保国寺VR展厅-V04-烘焙FBX-Unity交付/Assets/BaoguosiGalleryV04/Models/Baoguosi_Gallery_V04_Baked.fbx'
+export finished in 1.9853 sec.
+BAKE_EXPORT_COMPLETE {"source": "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend", "source_sha256": "9ddcd1ebb8b1c44e978519aac74fc974a2e36bbc4d7c48b5c061705cb1b7eabe", "source_unchanged": true, "bake_count": 20, "records": [{"id": "Architecture_Z01", "object": "BGV04_Architecture_Zone01", "resolution": 2048, "seconds": 47.0, "file": "Architecture_Z01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z02", "object": "BGV04_Architecture_Zone02", "resolution": 2048, "seconds": 40.7, "file": "Architecture_Z02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z03", "object": "BGV04_Architecture_Zone03", "resolution": 2048, "seconds": 41.5, "file": "Architecture_Z03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z04", "object": "BGV04_Architecture_Zone04", "resolution": 2048, "seconds": 40.1, "file": "Architecture_Z04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z05", "object": "BGV04_Architecture_Zone05", "resolution": 2048, "seconds": 40.5, "file": "Architecture_Z05.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z06", "object": "BGV04_Architecture_Zone06", "resolution": 2048, "seconds": 37.0, "file": "Architecture_Z06.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z07", "object": "BGV04_Architecture_Zone07", "resolution": 2048, "seconds": 41.9, "file": "Architecture_Z07.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Architecture_Z08", "object": "BGV04_Architecture_Zone08", "resolution": 2048, "seconds": 46.4, "file": "Architecture_Z08.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z01", "object": "BGV04_Exhibits_Zone01", "resolution": 2048, "seconds": 58.1, "file": "Exhibits_Z01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z02", "object": "BGV04_Exhibits_Zone02", "resolution": 2048, "seconds": 47.8, "file": "Exhibits_Z02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z03", "object": "BGV04_Exhibits_Zone03", "resolution": 2048, "seconds": 43.2, "file": "Exhibits_Z03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z04", "object": "BGV04_Exhibits_Zone04", "resolution": 2048, "seconds": 44.2, "file": "Exhibits_Z04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z05", "object": "BGV04_Exhibits_Zone05", "resolution": 2048, "seconds": 48.9, "file": "Exhibits_Z05.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z06", "object": "BGV04_Exhibits_Zone06", "resolution": 2048, "seconds": 54.0, "file": "Exhibits_Z06.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z07", "object": "BGV04_Exhibits_Zone07", "resolution": 2048, "seconds": 45.0, "file": "Exhibits_Z07.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Exhibits_Z08", "object": "BGV04_Exhibits_Zone08", "resolution": 2048, "seconds": 59.8, "file": "Exhibits_Z08.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Photo_01", "object": "Photo_模型正面.jpg", "resolution": 1024, "seconds": 19.6, "file": "Photo_01.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Photo_02", "object": "Photo_模型侧面.jpg", "resolution": 1024, "seconds": 19.6, "file": "Photo_02.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Photo_03", "object": "Photo_模型正面.jpg.001", "resolution": 1024, "seconds": 21.8, "file": "Photo_03.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}, {"id": "Photo_04", "object": "Photo_模型侧面.jpg.001", "resolution": 1024, "seconds": 20.1, "file": "Photo_04.png", "passes": ["Color", "Direct", "Indirect", "Glossy", "Emission"]}], "seconds": 998.8, "meshes": 36, "triangles": 1811288, "materials": 27, "camera_objects": 0, "camera_data": 0, "lights": 0, "appearance_bake": true, "native_Unity_lightmap": false, "textures": 27, "fbx_bytes": 42985084}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

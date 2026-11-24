@@ -1,0 +1,42 @@
+[
+  {
+    "atlas": "Exhibits_Z01",
+    "seconds": 61.3,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z02",
+    "seconds": 47.5,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z03",
+    "seconds": 44.5,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z04",
+    "seconds": 45.0,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z05",
+    "seconds": 46.3,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z06",
+    "seconds": 58.3,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z07",
+    "seconds": 45.9,
+    "outward_normals": true
+  },
+  {
+    "atlas": "Exhibits_Z08",
+    "seconds": 57.3,
+    "outward_normals": true
+  }
+]

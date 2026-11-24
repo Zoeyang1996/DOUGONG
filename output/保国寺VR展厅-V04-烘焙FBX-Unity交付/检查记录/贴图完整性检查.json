@@ -1,0 +1,256 @@
+{
+  "count": 27,
+  "files": [
+    {
+      "name": "Architecture_Z01.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "d56e503b7aa838871bc949367a39f22d4c22a6d19c92fcdd33fab954856f53e7"
+    },
+    {
+      "name": "Architecture_Z02.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "5afd3bb1075ffcd937082c08e10589c1aded43a247a090b988a6b22bbd0fa708"
+    },
+    {
+      "name": "Architecture_Z03.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "c1089b37f0bec56b3757f27c04eeb7a51e353f125416bb3f4218372f8e1b0939"
+    },
+    {
+      "name": "Architecture_Z04.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "e7864d69bf87bffabe1025b030d0299671667b9519171f014b4e800c61a9f646"
+    },
+    {
+      "name": "Architecture_Z05.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "57bc0b5d5cc117353d35ee90b2f407c13e4cec2d912518760250746ad4df3dcc"
+    },
+    {
+      "name": "Architecture_Z06.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "bf55be746bed1b16b39d2148903734b271e5b526d55b50d82acd57d9ce7c7f69"
+    },
+    {
+      "name": "Architecture_Z07.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "1a37a59f11f498cc463481f44570134d9d422ef55f9a89d89f525f8db28f533a"
+    },
+    {
+      "name": "Architecture_Z08.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "e96122166f5a77a8c5ac9a0a5e40844067cc3dee6766dd57290228fd48fd44e3"
+    },
+    {
+      "name": "Exhibits_Z01.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "fd24a725116a4df8bb4e685a12dc7fa38c72a51451fa950f1fba03881404a05b"
+    },
+    {
+      "name": "Exhibits_Z02.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "aae976c3e0b8a4069a00ca32a2851efe0d68856c87474097752b88ffd1a92be7"
+    },
+    {
+      "name": "Exhibits_Z03.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "3ecf97483f0cfc9938eb42c3ae77af3f0d3b66ab5da0b47693476b5225ee3bc4"
+    },
+    {
+      "name": "Exhibits_Z04.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "e583aa8608c5e5887f29fbd7345cee368c1283c75dfa93d0b07cea096827df04"
+    },
+    {
+      "name": "Exhibits_Z05.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "6cc067d96515af3dba6ab62ab1a24ab6db505599921c26528d31a809b557d17f"
+    },
+    {
+      "name": "Exhibits_Z06.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "93421c20e6989f09b59c72d19c6e6dd6e63637ac8884bd263901412b20bc9b69"
+    },
+    {
+      "name": "Exhibits_Z07.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "da6179c13a3beedd094c699f2359ef3efa163a6bc724fb0c1bba787856754d38"
+    },
+    {
+      "name": "Exhibits_Z08.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "sha256": "b168f4d9bec362baa0ff87377222ad3e72752c64b070937ec8feb70e940bdec4"
+    },
+    {
+      "name": "Photo_01.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "6a25eb7e4b1c5fe1f9534592e952bc0f4a82de4f53ff182955c1d4bb21daec44"
+    },
+    {
+      "name": "Photo_02.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "121b6d71a0214aa95af80167400f52ce8a0b0eeba9985b7179e56ccb39a9747a"
+    },
+    {
+      "name": "Photo_03.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "4fedd9e15bef1d71cc214f3c444785925e80ef1f3ab28f32e2f657e642c71de0"
+    },
+    {
+      "name": "Photo_04.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "2d66f0729000d1cbac207fcf84a7d5fb5843dcface57922ea70bd6a58359a2ff"
+    },
+    {
+      "name": "Swatch_01.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGB",
+      "sha256": "c066f976c0e0d30b5fec46426be6c081d0a3c3b396ed5cce1b674f1b8239e88b"
+    },
+    {
+      "name": "Swatch_02.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGB",
+      "sha256": "da62905f7b641af51b6c13b3f5d47468cc071578e2173eda6ae667edb3165341"
+    },
+    {
+      "name": "Swatch_03.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGB",
+      "sha256": "fdea39b3bc7abea6d9ca58bc8bd6be685a6e01d766e2659b6540de1afbe88fc2"
+    },
+    {
+      "name": "Swatch_04.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGB",
+      "sha256": "02dbc6ab7329b385874f378a728be05b69f9ac7ac174b973dab7f3935571a0bf"
+    },
+    {
+      "name": "Swatch_05.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGB",
+      "sha256": "30b087c0ae0d73c4348afecafa18aa5f45d399dd23f6d7992215fa722935c604"
+    },
+    {
+      "name": "Swatch_06.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGBA",
+      "sha256": "a5d4e45111ff67b02a3fb7e19f0b7dda17028f4513531a0329dcaf42964562da",
+      "alpha_range": [
+        82,
+        82
+      ]
+    },
+    {
+      "name": "Swatch_07.png",
+      "size": [
+        8,
+        8
+      ],
+      "mode": "RGBA",
+      "sha256": "fe7b02a2bb61b2d1db57c58bbf9c64185ac5b5eabf876e6b15cb176a5ea16a43",
+      "alpha_range": [
+        171,
+        171
+      ]
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "source": "/Users/yangzhe/Downloads/榫卯修改/国风室内场景/保国寺VR展厅-V04-暖砂与层叠展陈-待确认/模型/展厅V04_暖砂黄与层叠展陈_未烘焙_无摄像机.blend",
+  "source_sha256": "9ddcd1ebb8b1c44e978519aac74fc974a2e36bbc4d7c48b5c061705cb1b7eabe",
+  "source_unchanged": true,
+  "bake_count": 20,
+  "records": [
+    {
+      "id": "Architecture_Z01",
+      "object": "BGV04_Architecture_Zone01",
+      "resolution": 2048,
+      "seconds": 47.0,
+      "file": "Architecture_Z01.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z02",
+      "object": "BGV04_Architecture_Zone02",
+      "resolution": 2048,
+      "seconds": 40.7,
+      "file": "Architecture_Z02.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z03",
+      "object": "BGV04_Architecture_Zone03",
+      "resolution": 2048,
+      "seconds": 41.5,
+      "file": "Architecture_Z03.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z04",
+      "object": "BGV04_Architecture_Zone04",
+      "resolution": 2048,
+      "seconds": 40.1,
+      "file": "Architecture_Z04.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z05",
+      "object": "BGV04_Architecture_Zone05",
+      "resolution": 2048,
+      "seconds": 40.5,
+      "file": "Architecture_Z05.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z06",
+      "object": "BGV04_Architecture_Zone06",
+      "resolution": 2048,
+      "seconds": 37.0,
+      "file": "Architecture_Z06.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z07",
+      "object": "BGV04_Architecture_Zone07",
+      "resolution": 2048,
+      "seconds": 41.9,
+      "file": "Architecture_Z07.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Architecture_Z08",
+      "object": "BGV04_Architecture_Zone08",
+      "resolution": 2048,
+      "seconds": 46.4,
+      "file": "Architecture_Z08.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z01",
+      "object": "BGV04_Exhibits_Zone01",
+      "resolution": 2048,
+      "seconds": 58.1,
+      "file": "Exhibits_Z01.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z02",
+      "object": "BGV04_Exhibits_Zone02",
+      "resolution": 2048,
+      "seconds": 47.8,
+      "file": "Exhibits_Z02.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z03",
+      "object": "BGV04_Exhibits_Zone03",
+      "resolution": 2048,
+      "seconds": 43.2,
+      "file": "Exhibits_Z03.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z04",
+      "object": "BGV04_Exhibits_Zone04",
+      "resolution": 2048,
+      "seconds": 44.2,
+      "file": "Exhibits_Z04.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z05",
+      "object": "BGV04_Exhibits_Zone05",
+      "resolution": 2048,
+      "seconds": 48.9,
+      "file": "Exhibits_Z05.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z06",
+      "object": "BGV04_Exhibits_Zone06",
+      "resolution": 2048,
+      "seconds": 54.0,
+      "file": "Exhibits_Z06.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z07",
+      "object": "BGV04_Exhibits_Zone07",
+      "resolution": 2048,
+      "seconds": 45.0,
+      "file": "Exhibits_Z07.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Exhibits_Z08",
+      "object": "BGV04_Exhibits_Zone08",
+      "resolution": 2048,
+      "seconds": 59.8,
+      "file": "Exhibits_Z08.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Photo_01",
+      "object": "Photo_模型正面.jpg",
+      "resolution": 1024,
+      "seconds": 19.6,
+      "file": "Photo_01.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Photo_02",
+      "object": "Photo_模型侧面.jpg",
+      "resolution": 1024,
+      "seconds": 19.6,
+      "file": "Photo_02.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Photo_03",
+      "object": "Photo_模型正面.jpg.001",
+      "resolution": 1024,
+      "seconds": 21.8,
+      "file": "Photo_03.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    },
+    {
+      "id": "Photo_04",
+      "object": "Photo_模型侧面.jpg.001",
+      "resolution": 1024,
+      "seconds": 20.1,
+      "file": "Photo_04.png",
+      "passes": [
+        "Color",
+        "Direct",
+        "Indirect",
+        "Glossy",
+        "Emission"
+      ]
+    }
+  ],
+  "seconds": 998.8,
+  "meshes": 36,
+  "triangles": 1811288,
+  "materials": 27,
+  "camera_objects": 0,
+  "camera_data": 0,
+  "lights": 0,
+  "appearance_bake": true,
+  "native_Unity_lightmap": false,
+  "textures": 27,
+  "fbx_bytes": 42985084,
+  "final_material_texture_links_verified": 27,
+  "empty_nodes": 9,
+  "teleport_anchors": 8,
+  "final_fbx_bytes": 15220540,
+  "text_hidden_faces_removed": [
+    {
+      "object": "BGV04_Fine_Zone01",
+      "before": 51272,
+      "after": 51272
+    },
+    {
+      "object": "BGV04_Fine_Zone02",
+      "before": 76729,
+      "after": 76729
+    },
+    {
+      "object": "BGV04_Fine_Zone03",
+      "before": 47620,
+      "after": 47620
+    },
+    {
+      "object": "BGV04_Fine_Zone04",
+      "before": 52253,
+      "after": 52253
+    },
+    {
+      "object": "BGV04_Fine_Zone05",
+      "before": 88733,
+      "after": 88733
+    },
+    {
+      "object": "BGV04_Fine_Zone06",
+      "before": 58170,
+      "after": 58170
+    },
+    {
+      "object": "BGV04_Fine_Zone07",
+      "before": 56377,
+      "after": 56377
+    },
+    {
+      "object": "BGV04_Fine_Zone08",
+      "before": 23909,
+      "after": 23909
+    }
+  ],
+  "final_triangles": 583477,
+  "closed_mesh_normals_corrected_and_rebaked": true,
+  "embedded_mount_cleats_removed": 70
+}

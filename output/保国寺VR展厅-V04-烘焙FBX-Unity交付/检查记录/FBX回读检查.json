@@ -1,0 +1,20 @@
+{
+  "fbx_reimported_in_Blender": true,
+  "mesh_count": 36,
+  "triangles": 583477,
+  "materials": 27,
+  "texture_files_found": 27,
+  "missing_textures": [],
+  "camera_objects": 0,
+  "camera_data": 0,
+  "light_objects": 0,
+  "VR_anchors": 8,
+  "bounds_xyz_m": [
+    36.04499912261963,
+    24.045001033693552,
+    8.015003889799118
+  ],
+  "source_unchanged": true,
+  "Unity_editor_executed": false,
+  "PICO_device_tested": false
+}
